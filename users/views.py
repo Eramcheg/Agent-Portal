@@ -6,7 +6,7 @@ from django.contrib.auth import authenticate, login
 
 from django.shortcuts import render, redirect
 from django.views import View
-import wget
+
 from users.forms import UserCreationForm
 
 
@@ -16,8 +16,6 @@ class ShowTable(View):
     #     with open('OutputResult249.xlsx', 'wb') as f:
     #         shutil.copyfileobj(r, f)
     link = 'ftp://admin:admin1234@192.168.56.1/OutputResult249.xlsx'
-    wget.download(link)
-
 
     def get(self, request):
         return render(request, self.template_name)
