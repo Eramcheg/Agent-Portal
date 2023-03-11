@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+<h1>Not Found!</h1>
+<hr>
+Maybe you are not logged in or this page is unavailable for you.
+<br>
+{%  if user.is_authenticated %}
+
+    {% else %}
+        <a href="{% url 'login'%}">Login</a>
+        {% endif %}
+</body>
+
+
+{% endblock %}
