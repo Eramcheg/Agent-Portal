@@ -59,7 +59,7 @@ ROOT_URLCONF = 'Agent_Portal_Authorization.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates']
+        'DIRS': [BASE_DIR / 'users/templates']
         ,
         'APP_DIRS': True,
         'OPTIONS': {
