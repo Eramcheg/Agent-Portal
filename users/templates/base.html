@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Auth</title>
+    <script src="https://kit.fontawesome.com/ba99d1b9b2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<style>
+    .toolbar {
+    background-color: #01447B;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.logo img {
+
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.links {
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link {
+    color: white;
+    font-family: poppins,Verdana,sans-serif;
+    font-size: 15px;
+    text-decoration: none !important;
+    padding: 5px;
+    margin: 0 0px;
+    margin-right: 5px;
+    /*    text-decoration: none !important;*/
+    /*    color: #ffffff !important;*/
+        position: relative;
+}
+
+.link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 0%;
+    height: 1.5px;
+    background-color: #ffffff;
+    transition: width 0.3s ease;
+}
+.link:hover::after {
+    width: 100%;
+}
+.link:hover {
+    color: #ffffff !important;
+}
+.users{
+    text-align: right;
+}
+{#    body{#}
+{#        font-family: "Arial", sans-serif;#}
+{#    }#}
+{#    .logo{#}
+{#        float: top;#}
+{#        margin-top: -40px;#}
+{##}
+{#    }#}
+{#    .user{#}
+{#        float: right;#}
+{#        margin-top:-70px;#}
+{#        color: white;#}
+{#    }#}
+{# .links {#}
+{##}
+{#     margin-left: 40px;#}
+{#     margin-right: 10px;#}
+{#     justify-content: center;#}
+{#     align-items: center;#}
+{#     text-align: center;#}
+    {#box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);#}
+{#     margin-top: -70px;#}
+{#     text-decoration: underline;#}
+{#     transition: all 0.05s ease-in-out;#}
+{##}
+{# .toolbar{#}
+{#display: flex;#}
+{#  justify-content: space-between;#}
+{#  align-items: center;#}
+  {#background-color: #f2f2f2;#}
+{#  padding: 10px;#}
+{#    background-color: #01447B;#}
+    {#padding: 50px;#}
+{##}
+{# }#}
+{# .toolbar:hover{#}
+{#     text-decoration: none;#}
+{# }#}
+{#.toolbar-link {#}
+{#  text-decoration: none; /* disable the default underline */#}
+{#  color: #333;#}
+{#  position: relative;#}
+
+{##}
+{# .toolbar-link::after {#}
+{#  content: "";#}
+{#  position: absolute;#}
+{#  left: 0;#}
+{#  bottom: -2px;#}
+{#  width: 0%;#}
+{#  height: 2px;#}
+{#  background-color: #333;#}
+{#  transition: width 0.3s ease;#}
+{##}
+
+{##}
+{#.toolbar-link:hover::after {#}
+{##}
+{#  width: 100%;#}
+
+{##}
+{#.button-30 {#}
+{##}
+{##}
+{##}
+{#    text-decoration: none;#}
+{#    color: #333;#}
+{#    font-weight: bold;#}
+{#    padding: 10px 20px;#}
+{#    border: 0.1px solid #333;#}
+{#    border-radius: 2px;#}
+{#    background: linear-gradient(to bottom, #f5f5f5, #dcdcdc);#}
+{#    box-shadow: 0 5px 0 rgba(0,0,0,0.1), 0 0px 0px rgba(0,0,0,0.2);#}
+{#    transition: all 0.05s ease-in-out;#}
+
+
+.button-30:active {
+     box-shadow: 0 4px 2px rgba(0, 0, 0, 0.3);
+    transform: translateY(3px);
+}
+.button-30:hover{
+    text-decoration: none;
+}
+.button-30_disabled{
+    transform: translateY(3px);
+    margin: 0 -0.2px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 0.1px solid #333;
+    border-radius: 2px;
+    background: linear-gradient(to bottom, #f5f5f5, #dcdcdc);
+
+    transition: all 0.05s ease-in-out;
+    box-shadow: 0 0px 2px rgba(0, 0, 0, 0.3);
+}
+</style>
+
+<body>
+
+
+
+<tr>
+
+        <div class="toolbar">
+<div class="logo">
+<img class = "imag" src="{% static "Agent_Portal_Authorization/media/logo.webp" %}" alt="home" />
+</div>
+            <a href="{% url 'home' %}" class="link">Home</a>
+                <a href="{% url 'profile' %}" class="link">Profile</a>
+                <a href="{% url 'table' %}?name=BEZDAR" class="link">Tables</a>
+                {% if is_authenticated %}
+                     <a href=" {% url 'global' %}?name=BEZDAR" class="link">Global</a>
+                {% else %}
+                {% endif %}
+
+<a></a>     <div class="users">
+            <a class="user" style="font-size: 15px; color: white; font-family: poppins,Verdana,sans-serif;">
+                User : {{ user }}<br>
+                {%  if user.is_authenticated %}
+        <a href="{% url 'logout' %}" style="font-size: 10px; color: white; font-family: poppins,Verdana,sans-serif;">Logout</a>
+    {% else %}
+        <a href="{% url 'login'%}" style="font-size: 10px; color: white; font-family: poppins,Verdana,sans-serif;">Login</a>
+
+                    <a href="{% url 'register' %}" style="font-size: 10px; color: white; font-family: poppins,Verdana,sans-serif;">Register</a>
+    {% endif %}
+            </a>
+        </div>
+
+ </div>
+
+
+
+
+
+
+{#                        <ul>#}
+{##}
+{##}
+{#                            <li> <a href="{% url 'home' %}" class="toolbar-link">Home</a> </li>#}
+{#                            <li> <a href="{% url 'profile' %}" class="toolbar-link">Profile</a></li>#}
+{#                            <li> <a href="{% url 'table' %}?name=BEZDAR" class="toolbar-link">Tables</a></li>#}
+{#                            {% if is_authenticated %}#}
+{#                                <li> <a href=" {% url 'global' %}?name=BEZDAR" class="toolbar-link">Global</a> </li>#}
+{#                            {% else %}#}
+{##}
+{#                        {% endif %}#}
+{##}
+{#                        </ul>#}
+{#                            {% if is_home_page %}#}
+{#                                <span class="button-30_disabled"><i class="fa-solid fa-house"></i></span>#}
+{#                             {% else %}#}
+
+{#                            {% endif %}#}
+{#                        {% if is_profile_page %}#}
+{#                            <span class="button-30_disabled">Profile</span>#}
+{#                         {% else %}#}
+
+{#                            {% endif %}#}
+{#                        {% if is_tables_page %}#}
+{#                              <span class="button-30_disabled">Tables</span>#}
+{#                        {% else %}#}
+
+{#                        {% endif %}#}
+
+{#                            {% if is_all_tables_page %}#}
+{#                                <span class = "button-30_disabled">Global</span>#}
+{#                            {% else %}#}
+
+{#                            {% endif %}#}
+
+
+
+
+</tr>
+
+
+{% block content%}
+{% endblock %}
+
+</body>
+</html>

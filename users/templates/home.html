@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+    <style>
+        .information{
+            float: left;
+            margin-left: 200px ;
+            margin-top: 100px ;
+            margin-right: 10px ;
+        }
+        .text{
+            margin: 100px 100px;
+            text-align: right;
+        }
+        h2 {
+            text-align: center;
+        }
+    </style>
+    <body>
+    <br>
+<div class="information">
+    <img class = "imag" src="{% static "Agent_Portal_Authorization/media/test.jpg" %}" alt="home"  height="300"/>
+
+
+    </div>
+    <div class="text">
+        <h1>Welcome to Agent Portal Service!</h1>
+            Welcome to the portal, here you can track current payment status of your orders.
+            On this service you can check the status of payments in previous months individually and, if you are an authorized user, you can check the status of all payments together.
+    In current version global ftp-server is absent, so project works only in localhost.
+    <br>
+
+
+    <br>
+    <br><br>
+    <br><br>
+
+
+
+{#    <h1> Home Page </h1>#}
+{#    <hr>#}
+{#    Welcome to Home page of Agent Portal Service, where you will find current payment status of your orders.#}
+{#    <br>#}
+{#    In current version you need installed xlsx files with tables on your device to display they here.#}
+{#    <hr>#}
+
+    </div>
+    </body>
+
+
+{% endblock %}
