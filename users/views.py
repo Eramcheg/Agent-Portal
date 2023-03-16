@@ -13,6 +13,19 @@ from openpyxl import load_workbook
 from users.forms import UserCreationForm
 
 
+
+
+class All_tables(View):
+    def get(self, request):
+
+        context = {'is_home_page': False,
+                   'is_tables_page': False,
+                   'is_profile_page': False,
+                   'is_all_tables_page': True,
+                   'is_authenticated': request.user.is_authenticated
+                   }
+        return render(request,'All_Tables.html', context)
+
 class Table(View):
     def get(self, request):
 
@@ -76,6 +89,16 @@ class Table(View):
             return False
 
 
+class Home(View):
+    def get(self, request):
+        is_auth = request.user.is_authenticated
+        context = {'is_home_page': True,
+                   'is_tables_page': False,
+                   'is_profile_page':False,
+                   'is_all_tables_page': False,
+                   'is_authenticated': is_auth
+                   }
+        return render(request, 'home.html', context)
 
 class ShowTable(View):
     template_name = 'Cabine.html'
@@ -83,18 +106,33 @@ class ShowTable(View):
 
     def get(self, request):
         if request.user.is_authenticated:
-
             username = str(request.user.username)
             print(username)
+        is_auth = request.user.is_authenticated
+        context = {'is_home_page': False,
+                   'is_tables_page': True,
+                   'is_profile_page': False,
+                   'is_all_tables_page': False,
+
+                   'is_authenticated': is_auth}
+
         print(str(request.GET.get('name')))
 
-        return render(request, self.template_name)
+        return render(request, self.template_name, context)
 
 
 class Profile(View):
     template_name = 'Profile.html'
+
     def get(self, request):
-        return render(request, self.template_name)
+        is_auth = request.user.is_authenticated
+        context = {'is_home_page': False,
+                   'is_tables_page': False,
+                   'is_all_tables_page': False,
+                   'is_profile_page': True,
+                   'is_authenticated': is_auth
+                   }
+        return render(request, self.template_name, context)
 
 class Register(View):
     template_name = 'registration/register.html'

@@ -1,6 +1,6 @@
 from django.urls import path, include
 
-from users.views import Register, Profile, Table
+from users.views import Register, Profile, Table, All_tables
 from users.views import ShowTable
 urlpatterns = [
     path('', include('django.contrib.auth.urls')),
@@ -8,4 +8,5 @@ urlpatterns = [
     path('Num1/', ShowTable.as_view(), name='table'),
     path('table/', Table.as_view(), name='year'),
     path('Profile/', Profile.as_view(), name='profile'),
+    path('Global/', All_tables.as_view(), name='global'),
 ]
