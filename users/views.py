@@ -24,10 +24,10 @@ class All_tables(View):
                    'is_tables_page': False,
                    'is_profile_page': False,
                    'is_all_tables_page': True,
-                   'is_authenticated': request.user.is_authenticated
+                   'is_authenticated': request.user.username == 'admin'
                    }
         try:
-            return render(request,template_name+'.html', context)
+            return render(request,'admin_Global'+'.html', context)
         except:
             trueOrFalse = self.create_table(template_name)
             if trueOrFalse:
@@ -151,7 +151,7 @@ class Table(View):
 
 class Home(View):
     def get(self, request):
-        is_auth = request.user.is_authenticated
+        is_auth = request.user.username == 'admin'
         context = {'is_home_page': True,
                    'is_tables_page': False,
                    'is_profile_page':False,
@@ -168,7 +168,7 @@ class ShowTable(View):
         if request.user.is_authenticated:
             username = str(request.user.username)
             print(username)
-        is_auth = request.user.is_authenticated
+        is_auth = request.user.username == 'admin'
         context = {'is_home_page': False,
                    'is_tables_page': True,
                    'is_profile_page': False,
@@ -185,7 +185,7 @@ class Profile(View):
     template_name = 'Profile.html'
 
     def get(self, request):
-        is_auth = request.user.is_authenticated
+        is_auth = request.user.username == 'admin'
         context = {'is_home_page': False,
                    'is_tables_page': False,
                    'is_all_tables_page': False,
