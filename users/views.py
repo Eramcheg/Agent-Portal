@@ -142,7 +142,7 @@ class Table(View):
             html += """ </tbody>
             </table>"""
             html.encode('UTF-8')
-            with open('templates/'+name_html+".html", 'w', encoding='utf-8') as f:
+            with open('users/templates/'+name_html+".html", 'w', encoding='utf-8') as f:
                 f.write(html)
                 return True
         except :
