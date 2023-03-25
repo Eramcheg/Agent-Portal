@@ -1,11 +1,5 @@
-import ftplib
-import os.path
-import shutil
 import urllib.request
-from contextlib import closing
 
-import django.template.loader
-import wget
 from django.contrib.auth import authenticate, login
 
 from django.shortcuts import render, redirect
@@ -197,6 +191,9 @@ class Profile(View):
             return render(request, 'map.html', context)
         else:
             return render(request, self.template_name, context)
+
+def login_view(request):
+    return render(request, 'registration/login.html')
 
 class Register(View):
     template_name = 'registration/register.html'
