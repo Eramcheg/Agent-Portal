@@ -82,12 +82,22 @@
 <div class="logo">
 <img class = "imag" src="{% static "Agent_Portal_Authorization/media/logo.webp" %}" alt="home" />
 </div>
-            <a href="{% url 'home' %}" class="link">Home</a>
-                <a href="{% url 'profile' %}" class="link">Profile</a>
-                <a href="{% url 'table' %}?name=BEZDAR" class="link">Tables</a>
-                {% if is_authenticated %}
-                     <a href=" {% url 'global' %}?name=BEZDAR" class="link">Global</a>
+
+                {% if user.is_authenticated %}
+                    <a href="{% url 'home' %}" class="link">Home</a>
+
+                    {% if is_authenticated %}
+                         <a href="{% url 'profile' %}" class="link">Profile</a>
+                         <a href=" {% url 'global' %}?name=BEZDAR" class="link">Global</a>
+                    {% else %}
+
+                    <a href="{% url 'profile' %}" class="link">Profile</a>
+                    <a href="{% url 'table' %}?name=BEZDAR" class="link">Tables</a>
+
+                    {% endif %}
                 {% else %}
+                <a></a>
+                <a href="{% url 'home' %}" class="link">Home</a>
                 {% endif %}
 
 <a></a>     <div class="users">

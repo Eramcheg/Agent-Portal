@@ -80,6 +80,7 @@ class Table(View):
         if request.user.is_authenticated:
 
             username = str(request.user.username)
+
             print(username)
 
             name_html = username + "_" + str(request.GET.get('name'))
@@ -162,7 +163,12 @@ class ShowTable(View):
         if request.user.is_authenticated:
             username = str(request.user.username)
             print(username)
+
         is_auth = request.user.username == 'admin'
+
+        showTable  = True
+        if request.user.username == 'admin':
+            showTable = False
         context = {'is_home_page': False,
                    'is_tables_page': True,
                    'is_profile_page': False,
