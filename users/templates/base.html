@@ -6,16 +6,21 @@
     <meta charset="UTF-8">
     <title>User Auth</title>
     <script src="https://kit.fontawesome.com/ba99d1b9b2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 </head>
 <style>
+
+
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css');
     .toolbar {
-        overflow: hidden;
+        {#overflow: hidden;#}
         {#position: fixed;#}
 
     background-color: #01447B;
-    padding: 10px;
+    padding: 6px;
     display: flex;
     width: 100%;
     align-items: center;
@@ -70,6 +75,103 @@
 .users{
     text-align: right;
 }
+.lang-menu {
+    width: 100px;
+    text-align: right;
+    font-weight: bold;
+    margin-top: 0px;
+    position: relative;
+}
+.selected-lang{
+    font-weight: normal;
+}
+.lang-menu .selected-lang:before {
+  content: '';
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.lang-menu .selected-lang {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 2;
+  cursor: pointer;
+  color: white;
+  font-family: poppins, Verdana, sans-serif;
+  background-color: #01447B;
+}
+
+
+.lang-menu ul {
+    margin: 0;
+    padding: 0;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #f8f8f8;
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    width: 125px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+}
+
+
+.lang-menu ul li {
+    list-style: none;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lang-menu ul li a {
+    text-decoration: none;
+    width: 125px;
+    padding: 5px 10px;
+    display: block;
+}
+
+.lang-menu ul li:hover {
+    background-color: #f2f2f2;
+}
+
+.lang-menu ul li a:before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    text-align: center;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.gm:before {
+    background-image: url(https://www.worldometers.info/img/flags/gm-flag.gif);
+}
+
+.uk:before {
+    background-image: url(https://www.worldometers.info/img/flags/uk-flag.gif);
+}
+.fr:before {
+    background-image: url(https://www.worldometers.info/img/flags/fr-flag.gif);
+}
+
+.sp:before {
+    background-image: url(https://www.worldometers.info/img/flags/sp-flag.gif);
+}
+.it:before {
+    background-image: url(https://www.worldometers.info/img/flags/it-flag.gif);
+}
+
+.lang-menu:hover ul {
+    display: block;
+}
 </style>
 
 <body>
@@ -77,10 +179,9 @@
 
 
 <tr>
-
         <div class="toolbar">
 <div class="logo">
-<img class = "imag" src="{% static "Agent_Portal_Authorization/media/logo.webp" %}" alt="home" />
+<img class = "imag" src="{% static "Agent_Portal_Authorization/media/logonormal.webp" %}" height="70px" alt="home" />
 </div>
 
                 {% if user.is_authenticated %}
@@ -96,67 +197,57 @@
 
                     {% endif %}
                 {% else %}
-                <a></a>
-                <a href="{% url 'home' %}" class="link">Home</a>
-                {% endif %}
 
-<a></a>     <div class="users">
+                <a href="{% url 'home' %}"
+                   class="link" style="font-size: 20px; color: white; font-family: poppins,Verdana,sans-serif;">Home</a>
+{% endif %}
+        <div class="users">
             <a class="user" style="font-size: 15px; color: white; font-family: poppins,Verdana,sans-serif;">
-                User : {{ user }}<br>
-                {%  if user.is_authenticated %}
-        <a href="{% url 'logout' %}" style="font-size: 10px; color: white; font-family: poppins,Verdana,sans-serif;">Logout</a>
-    {% else %}
-        <a href="{% url 'login'%}" style="font-size: 10px; color: white; font-family: poppins,Verdana,sans-serif;">Login</a>
 
-                    <a href="{% url 'register' %}" style="font-size: 10px; color: white; font-family: poppins,Verdana,sans-serif;">Register</a>
+                {%  if user.is_authenticated %}
+        <a href="{% url 'logout' %}" style="font-size: 20px; color: white; font-family: poppins,Verdana,sans-serif;">Logout</a>
+    {% else %}
+        <a href="{% url 'login'%}" style="font-size: 20px; color: white; font-family: poppins,Verdana,sans-serif;">Login</a>
+
+
     {% endif %}
             </a>
         </div>
 
+<a></a>
+<div class="lang-menu">
+                <div class="selected-lang">
+                    English
+                </div>
+{#                <select>#}
+{#                    <option value="German" class="de">German</option>#}
+{#                    <option value="English" class="en">English</option>#}
+{#                    <option value="Italian" class="it">Italian</option>#}
+{#                    <option value="Spanish" class="sp">Spanish</option>#}
+{#                    <option value="French" class="fr">French</option>#}
+{#                </select>#}
+                <ul>
+                     <li>
+                        <a href="#" class="gm">German</a>
+                    </li>
+                    <li>
+                        <a href="" class="uk">English</a>
+                    </li>
+                      <li>
+                        <a href="" class="it">Italian</a>
+                    </li>
+                    <li>
+                        <a href="" class="sp">Spanish</a>
+                    </li>
+                    <li>
+                        <a href="" class="fr">French</a>
+                    </li>
+
+
+                </ul>
+
+            </div>
  </div>
-
-
-
-
-
-
-{#                        <ul>#}
-{##}
-{##}
-{#                            <li> <a href="{% url 'home' %}" class="toolbar-link">Home</a> </li>#}
-{#                            <li> <a href="{% url 'profile' %}" class="toolbar-link">Profile</a></li>#}
-{#                            <li> <a href="{% url 'table' %}?name=BEZDAR" class="toolbar-link">Tables</a></li>#}
-{#                            {% if is_authenticated %}#}
-{#                                <li> <a href=" {% url 'global' %}?name=BEZDAR" class="toolbar-link">Global</a> </li>#}
-{#                            {% else %}#}
-{##}
-{#                        {% endif %}#}
-{##}
-{#                        </ul>#}
-{#                            {% if is_home_page %}#}
-{#                                <span class="button-30_disabled"><i class="fa-solid fa-house"></i></span>#}
-{#                             {% else %}#}
-
-{#                            {% endif %}#}
-{#                        {% if is_profile_page %}#}
-{#                            <span class="button-30_disabled">Profile</span>#}
-{#                         {% else %}#}
-
-{#                            {% endif %}#}
-{#                        {% if is_tables_page %}#}
-{#                              <span class="button-30_disabled">Tables</span>#}
-{#                        {% else %}#}
-
-{#                        {% endif %}#}
-
-{#                            {% if is_all_tables_page %}#}
-{#                                <span class = "button-30_disabled">Global</span>#}
-{#                            {% else %}#}
-
-{#                            {% endif %}#}
-
-
-
 
 </tr>
 
@@ -166,3 +257,31 @@
 
 </body>
 </html>
+<script>
+const langLinks = document.querySelectorAll('.lang-menu ul li a');
+const selectedLang = document.querySelector('.lang-menu .selected-lang');
+const langMenu = document.querySelector('.lang-menu ul');
+
+langLinks.forEach(link => {
+  link.addEventListener('click', (event) => {
+      const lang = link.getAttribute("class");
+    event.preventDefault();
+    selectedLang.textContent = event.target.textContent
+      let flagSpan = document.createElement('span');
+    flagSpan.classList.add('flag');
+    selectedLang.appendChild(flagSpan);
+    flagSpan.style.backgroundImage = `url(https://www.worldometers.info/img/flags/`+lang+'-flag.gif)';
+    langMenu.style.display = 'none';
+  });
+});
+selectedLang.addEventListener('mouseenter', function() {
+  langMenu.style.display = 'block';
+});
+
+// Hide the menu when the mouse leaves the dropdown menu
+langMenu.addEventListener('mouseleave', function() {
+  langMenu.style.display = 'none';
+});
+
+
+</script>

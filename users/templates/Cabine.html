@@ -29,18 +29,22 @@
 /* The container <div> - needed to position the dropdown content */
 .dropdown2022, .dropdown2023 {
   position: relative;
-  display: inline-block;
+  {#display: inline-block;#}
 }
 
 /* Dropdown Content (Hidden by Default) */
-.dropdown-content2023{
+.dropdown-content2023 {
   display: none;
-  position:absolute;
-
+  position: absolute;
+  {#right: 10; /* add this line */#}
+  top: 100%; /* modify this line */
   background-color: #f1f1f1;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+}
+.dropdown2023:hover .dropdown-content2023 {
+  {#display: block;#}
 }
 .dropdown-content2022 {
 display: none;
@@ -58,7 +62,7 @@ display: none;
   color: black;
   padding: 12px 16px;
   text-decoration: none;
-  display: block;
+  {#display: block;#}
 }
 
 
@@ -78,9 +82,9 @@ display: none;
 
 
 <div class="dropdown2022">
-<button onclick="myFunction(this.className)" class="dropbtn2022">2022</button>
+{#<button onclick="myFunction(this.className)" class="dropbtn2022">2022</button>#}
 <div id="myDropdown2022" class="dropdown-content2022">
-
+    <a href="{% url 'year' %}?name=2022_Total">Total</a>
     <a href="{% url 'year' %}?name=2022_January">January</a>
     <a href="{% url 'year' %}?name=2022_February">February</a>
     <a href="{% url 'year' %}?name=2022_March">March</a>
@@ -102,6 +106,7 @@ display: none;
 
     <div id="myDropdown2023" class="dropdown-content2023">
 
+    <a href="{% url 'year' %}?name=2023_Total">Total</a>
     <a href="{% url 'year' %}?name=2023_January">January</a>
     <a href="{% url 'year' %}?name=2023_February">February</a>
     <a href="{% url 'year' %}?name=2023_March">March</a>
@@ -125,7 +130,31 @@ function myFunction(name) {
   document.getElementById('myDropdown202'+name[name.length-1]).classList.toggle("show");
 //+name[name.length-1].toString
 }
+var dropdownContainer = document.getElementById("myDropdown2023");
 
+// add an event listener to the dropdown container
+dropdownContainer.addEventListener("mouseenter", function(event) {
+  event.stopPropagation(); // prevent the event from propagating up to the button
+  this.classList.add("show"); // display the dropdown content
+});
+
+// remove the "show" class when the mouse leaves the dropdown container
+dropdownContainer.addEventListener("mouseleave", function() {
+  this.classList.remove("show");
+});
+
+// hide all dropdowns when the user clicks anywhere outside them
+window.addEventListener("click", function(event) {
+  if (!event.target.matches('.dropbtn2023')) {
+    var dropdowns2023 = document.getElementsByClassName("dropdown-content2023");
+    for (var i = 0; i < dropdowns2023.length; i++) {
+      var openDropdown2023 = dropdowns2023[i];
+      if (openDropdown2023.classList.contains('show')) {
+        openDropdown2023.classList.remove('show');
+      }
+    }
+  }
+});
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
