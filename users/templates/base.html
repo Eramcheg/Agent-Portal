@@ -1,6 +1,7 @@
 
 <!DOCTYPE html>
 {% load static %}
+{% load i18n %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -45,8 +46,9 @@
 
 .link {
     color: white;
-    font-family: poppins,Verdana,sans-serif;
-    font-size: 15px;
+    font-size: 20px; color: white; font-family: poppins,Verdana,sans-serif;
+    {#font-family: poppins,Verdana,sans-serif;#}
+    {#font-size: 15px;#}
     text-decoration: none !important;
     padding: 5px;
     margin: 0 0px;
@@ -151,6 +153,9 @@
     background-size: contain;
     background-repeat: no-repeat;
 }
+.selected-lang::before{
+    background-image: url(https://www.worldometers.info/img/flags/gm-flag.gif);
+}
 .gm:before {
     background-image: url(https://www.worldometers.info/img/flags/gm-flag.gif);
 }
@@ -172,6 +177,30 @@
 .lang-menu:hover ul {
     display: block;
 }
+
+ .circular-select {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ccc;
+    background-image: url('https://www.worldometers.info/img/flags/gm-flag.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+     appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+  }
+ .circular-select{
+     color: transparent;
+ }
+ .circular-select option{
+     color: black;
+ }
+
 </style>
 
 <body>
@@ -183,70 +212,74 @@
 <div class="logo">
 <img class = "imag" src="{% static "Agent_Portal_Authorization/media/logonormal.webp" %}" height="70px" alt="home" />
 </div>
+        <a></a>
+        <a></a>
+        <a></a>
 
                 {% if user.is_authenticated %}
-                    <a href="{% url 'home' %}" class="link">Home</a>
+                    <a href="{% if language == '' or language == 'en'  %} {% url 'home_en' %} {% elif language == 'es' %} {% url 'home_es' %}{% elif language == 'it' %} {% url 'home_it' %} {% elif language == 'de' %} {% url 'home_de' %} {% elif language == 'fr' %} {% url 'home_fr' %} {% endif %}" class="link">
+                        {% if language == 'de' %} Zuhause{% elif language == 'fr' %} Maison{% elif language == 'it' %}  Casa{% elif language == 'es' %}  Hogar{% elif language == '' or language == 'en' %}  Home{% endif %}</a>
 
                     {% if is_authenticated %}
-                         <a href="{% url 'profile' %}" class="link">Profile</a>
-                         <a href=" {% url 'global' %}?name=BEZDAR" class="link">Global</a>
-                    {% else %}
+                         <a href="{% if language == '' or language == 'en'  %} {% url 'profile_en' %} {% elif language == 'es' %} {% url 'profile_es' %}{% elif language == 'it' %} {% url 'profile_it' %} {% elif language == 'de' %} {% url 'profile_de' %} {% elif language == 'fr' %} {% url 'profile_fr' %} {% endif %}" class="link">
+                             {% if language == 'de' %} Profil{% elif language == 'fr' %} Profil{% elif language == 'it' %}  Profilo{% elif language == 'es' %}  Perfil{% elif language == '' or language == 'en' %}  Profile{% endif %} </a>
+                         <a href=" {% url 'global' %}" class="link">{% if language == 'de' %} Profil{% elif language == 'fr' %} Profil{% elif language == 'it' %}  Profilo{% elif language == 'es' %}  Perfil{% elif language == '' or language == 'en' %}  Profile{% endif %} </a>
 
-                    <a href="{% url 'profile' %}" class="link">Profile</a>
-                    <a href="{% url 'table' %}?name=BEZDAR" class="link">Tables</a>
+                    {% else %}
+<a></a>
+                        <a></a>
+                    <a href="{% if language == '' or language == 'en'  %} {% url 'profile_en' %} {% elif language == 'es' %} {% url 'profile_es' %}{% elif language == 'it' %} {% url 'profile_it' %} {% elif language == 'de' %} {% url 'profile_de' %} {% elif language == 'fr' %} {% url 'profile_fr' %} {% endif %}" class="link">
+                        {% if language == 'de' %} Profil{% elif language == 'fr' %} Profil{% elif language == 'it' %}  Profilo{% elif language == 'es' %}  Perfil{% elif language == '' or language == 'en' %}  Profile{% endif %} </a>
+                        <a></a>
+                        <a></a>
+                    <a href="{% if language == '' or language == 'en'  %} {% url 'table_en' %} {% elif language == 'es' %} {% url 'table_es' %}{% elif language == 'it' %} {% url 'table_it' %} {% elif language == 'de' %} {% url 'table_de' %} {% elif language == 'fr' %} {% url 'table_fr' %} {% endif %}" class="link">
+                        {% if language == 'de' %} Tische{% elif language == 'fr' %} Tableaux {% elif language == 'it' %} Tavoli{% elif language == 'es' %}  Mesas{% elif language == '' or language == 'en' %}  Tables{% endif %} </a>
 
                     {% endif %}
                 {% else %}
 
-                <a href="{% url 'home' %}"
-                   class="link" style="font-size: 20px; color: white; font-family: poppins,Verdana,sans-serif;">Home</a>
+                <a href="{% url 'home_en' %}"
+                   class="link" style="font-size: 20px; color: white; font-family: poppins,Verdana,sans-serif;">{% if language == 'de' %} Zuhause{% elif language == 'fr' %} Maison{% elif language == 'it' %}  Casa{% elif language == 'es' %}  Hogar{% elif language == '' or language == 'en'%}  Home{% endif %}</a>
+
 {% endif %}
+<a></a>
+<a></a>
+        <a></a>
         <div class="users">
             <a class="user" style="font-size: 15px; color: white; font-family: poppins,Verdana,sans-serif;">
 
                 {%  if user.is_authenticated %}
-        <a href="{% url 'logout' %}" style="font-size: 20px; color: white; font-family: poppins,Verdana,sans-serif;">Logout</a>
-    {% else %}
-        <a href="{% url 'login'%}" style="font-size: 20px; color: white; font-family: poppins,Verdana,sans-serif;">Login</a>
 
+        <a href="{% url 'logout' %}"  class="link" style="right: 0px;">Logout</a>
+    {% else %}
+        <a href="{% url 'login'%}" class="link" style="font-size: 20px; color: white; font-family: poppins,Verdana,sans-serif;">Login</a>
 
     {% endif %}
             </a>
         </div>
 
-<a></a>
+
+
 <div class="lang-menu">
-                <div class="selected-lang">
-                    English
-                </div>
-{#                <select>#}
-{#                    <option value="German" class="de">German</option>#}
-{#                    <option value="English" class="en">English</option>#}
-{#                    <option value="Italian" class="it">Italian</option>#}
-{#                    <option value="Spanish" class="sp">Spanish</option>#}
-{#                    <option value="French" class="fr">French</option>#}
-{#                </select>#}
-                <ul>
-                     <li>
-                        <a href="#" class="gm">German</a>
-                    </li>
-                    <li>
-                        <a href="" class="uk">English</a>
-                    </li>
-                      <li>
-                        <a href="" class="it">Italian</a>
-                    </li>
-                    <li>
-                        <a href="" class="sp">Spanish</a>
-                    </li>
-                    <li>
-                        <a href="" class="fr">French</a>
-                    </li>
 
+    <select class="circular-select" id="language-select"
+            {% if language == 'de' %} style="background-image: url('https://www.worldometers.info/img/flags/gm-flag.gif')"
+            {% elif language == 'fr' %}  style="background-image: url('https://www.worldometers.info/img/flags/fr-flag.gif')"
+            {% elif language == 'it' %}  style="background-image: url('https://www.worldometers.info/img/flags/it-flag.gif')"
+            {% elif language == 'es' %}  style="background-image: url('https://www.worldometers.info/img/flags/sp-flag.gif')"
+            {% elif language == '' or language == 'en'%} style="background-image: url('https://www.worldometers.info/img/flags/uk-flag.gif')"
+            {% endif %}>
 
-                </ul>
+  <option value="DE" {% if language == 'de' %} selected {% endif %}>German</option>
+  <option value="FR" class="fr" {% if language == 'fr' %} selected  {% endif %}>French</option>
+  <option value="IT" class="it" {% if language == 'it' %} selected {% endif %}>Italian</option>
+  <option value="ES" class="sp" {% if language == 'es' %} selected {% endif %}>Spain</option>
+  <option value="EN" class="en" {% if language == '' or language == 'en' %} selected  {% endif %}>English</option>
+
+</select>
 
             </div>
+        <a></a>
  </div>
 
 </tr>
@@ -258,19 +291,56 @@
 </body>
 </html>
 <script>
+  const select = document.getElementById('language-select');
+  select.addEventListener('change', (event) => {
+
+    const languageCode = event.target.value;
+    switch (languageCode) {
+      case 'DE':
+        select.style.backgroundImage = 'url("https://www.worldometers.info/img/flags/gm-flag.gif")';
+        window.location.href = '/de/';
+        translatePage('de');
+        break;
+      case 'FR':
+        select.style.backgroundImage = 'url("https://www.worldometers.info/img/flags/fr-flag.gif")';
+        window.location.href = '/fr/';
+        translatePage('fr');
+        break;
+      case 'IT':
+        select.style.backgroundImage = 'url("https://www.worldometers.info/img/flags/it-flag.gif")';
+        window.location.href = '/it/';
+        translatePage('it');
+        break;
+      case 'ES':
+        select.style.backgroundImage = 'url("https://www.worldometers.info/img/flags/sp-flag.gif")';
+        window.location.href = '/es/';
+        translatePage('es');
+        break;
+      case 'EN':
+        select.style.backgroundImage = 'url("https://www.worldometers.info/img/flags/uk-flag.gif")';
+        window.location.href = '/';
+        translatePage('en');
+        break;
+    }
+  });
+</script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+<script>
 const langLinks = document.querySelectorAll('.lang-menu ul li a');
 const selectedLang = document.querySelector('.lang-menu .selected-lang');
 const langMenu = document.querySelector('.lang-menu ul');
+const label = document.querySelector('.selected-lang');
 
 langLinks.forEach(link => {
   link.addEventListener('click', (event) => {
       const lang = link.getAttribute("class");
     event.preventDefault();
     selectedLang.textContent = event.target.textContent
-      let flagSpan = document.createElement('span');
-    flagSpan.classList.add('flag');
-    selectedLang.appendChild(flagSpan);
-    flagSpan.style.backgroundImage = `url(https://www.worldometers.info/img/flags/`+lang+'-flag.gif)';
+      label.style.setProperty('--image-url', `url('https://www.worldometers.info/img/flags/${lang}-flag.gif')`);
+
+    {#selectedLang.style.backgroundImage = `url(https://www.worldometers.info/img/flags/`+lang+'-flag.gif)';#}
     langMenu.style.display = 'none';
   });
 });
@@ -284,4 +354,4 @@ langMenu.addEventListener('mouseleave', function() {
 });
 
 
-</script>
+</script>W

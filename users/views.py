@@ -1,29 +1,29 @@
 import urllib.request
-
+import time
 from django.contrib.auth import authenticate, login
-
 from django.shortcuts import render, redirect
 from django.views import View
 from openpyxl import load_workbook
 from users.forms import UserCreationForm
 
 
-
-
 class All_tables(View):
     def get(self, request):
         template_name = str(request.user.username)+'_Global_'
-
+        language_code = request.path.split('/')[1]
         context = {'is_home_page': False,
                    'is_tables_page': False,
                    'is_profile_page': False,
                    'is_all_tables_page': True,
-                   'is_authenticated': request.user.username == 'admin'
+                   'is_authenticated': request.user.username == 'admin',
+                   'language':language_code,
                    }
+
         try:
             return render(request,'admin_Global'+'.html', context)
         except:
             trueOrFalse = self.create_table(template_name)
+
             if trueOrFalse:
                 return render(request, template_name + '.html')
             else:
@@ -31,7 +31,7 @@ class All_tables(View):
 
     def create_table(self, name_html):
         try:
-            link = f'ftp://admin:admin1234@192.168.56.1/{name_html}.xlsx'
+            link = 'ftp://oliverweber%40agentsoliverweber.com:Zh5%5DMVF%28GhZ%7B@server1.agentsoliverweber.com:21//ftp/' + f'{name_html}.xlsx'
 
             with urllib.request.urlopen(link) as response, open(f"{name_html}.xlsx", 'wb') as out_file:
                 data = response.read()  # Read the contents of the file
@@ -40,43 +40,74 @@ class All_tables(View):
             wb = load_workbook(f'{name_html}.xlsx')
             ws = wb['Sheet']
             html = """<meta charset="utf-8">
-             <table border="1" class="dataframe">
-                         <thead>
-                             <tr style="text-align: right;">\n"""
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+            <!--<link rel="stylesheet" type="text/css" href="normas.css">-->
+            <style>
+                body{
+                    background-color: #d6e1f8;
+
+                }
+                th, td {
+                    border: 1px solid #ccc;
+
+                    text-align: center;
+                }
+
+                table {
+
+                    border-collapse: collapse !important; /* optional: collapse the table borders */
+                }
+
+                table tr {
+                    background-color: #8BC34A !important; /* Set background color of all rows */
+                }
+
+                table tr:hover td {
+                    background-color: #2196F3 !important; /* Set background color of cells when hovered */
+                }
+
+            </style>
+                             <table border="1" class="dataframe" style="width:100%;">
+                                         <thead>
+                                             <tr style="text-align: right;">\n"""
             k = 0
+            counter_max = 0
+            for i in ws.iter_rows():
+                counter_max += 1
 
             for i in ws.iter_rows():
-                if k > 0:
-                    html += '<tr>\n'
-                for j in range(len(i)):
-                    value = str(i[j].value)
-                    color = str(i[j].fill.start_color.rgb)
-                    if (value == 'None'):
-                        value = ' '
-                    if color == '00000000':
-                        color = 'FFFFFFFF'
+                if str(i[0].fill.start_color.rgb) != 'FFFFFFFF' or k == 0 or k == counter_max:
+                    if k > 0:
+                        html += '<tr>\n'
+                    for j in range(len(i) - 1):
+                        value = str(i[j].value)
+                        color = str(i[j].fill.start_color.rgb)
+                        if (value == 'None'):
+                            value = ' '
+                        if color == '00000000':
+                            color = 'FFFFFFFF'
 
+                        if k < 1:
+                            html += "<th style='background-color: #" + color[2:8] + "'>" + value + "</th>\n"
+                        else:
+                            html += "<td style='background-color: #" + color[2:8] + "'>" + value + "</td>\n"
+                    html += '</tr>\n'
                     if k < 1:
-                        html += "<th style='background-color: #" + color[2:8] + "'>" + value + "</th>\n"
-                    else:
-                        html += "<td style='background-color: #" + color[2:8] + "'>" + value + "</td>\n"
-                html += '</tr>\n'
-                if k < 1:
-                    html += """</thead>
-              <tbody>"""
-                k += 1
+                        html += """</thead>
+                    <tbody>"""
+                    k += 1
             html += """ </tbody>
             </table>"""
             html.encode('UTF-8')
-            with open('templates/'+name_html+".html", 'w', encoding='utf-8') as f:
+            with open('users\\templates\\'+name_html+".html", 'w', encoding='utf-8') as f:
                 f.write(html)
                 return True
-        except :
+        except:
             return False
 
 class Table(View):
     def get(self, request):
-
+        language_code = request.path.split('/')[2]
         if request.user.is_authenticated:
 
             username = str(request.user.username)
@@ -92,15 +123,38 @@ class Table(View):
                 return render(request, html)
             except:
                 trueOrFalse = self.create_table(name_html)
+
                 if trueOrFalse:
-                      return render(request, name_html+'.html')
+
+                    # while not os.path.exists('users\\templates\\'+name_html+'.html'):  # replace "file_path" with the actual path to your file
+                    #     time.sleep(1)
+                    #     print("File is not ready")
+                    # while os.path.isfile("users\\templates\\"+name_html+".html")==False:
+                    #     pass
+                    return render(request, name_html + '.html')
+                    # for i in range(10):
+                    #     try:
+                    #         return render(request, name_html+'.html')
+                    #         break
+                    #     except:
+                    #         time.sleep(6)
+
+                    # for i in range(5):
+                        #
+                        # try:
+                        #     return render(request, name_html+'.html')
+                        #     break
+                        # except:
+                        #     time.sleep(i)
+
+
                 else:
                       return render(request, 'NotFoundHtml.html')
         else:
             return render(request, 'NotFoundHtml.html')
     def create_table(self, name_html):
         try:
-            link = f'ftp://admin:admin1234@192.168.56.1/{name_html}.xlsx'
+            link = 'ftp://oliverweber%40agentsoliverweber.com:Zh5%5DMVF%28GhZ%7B@server1.agentsoliverweber.com:21//ftp/' + f'{name_html}.xlsx'
 
             with urllib.request.urlopen(link) as response, open(f"{name_html}.xlsx", 'wb') as out_file:
                 data = response.read()  # Read the contents of the file
@@ -109,49 +163,87 @@ class Table(View):
             wb = load_workbook(f'{name_html}.xlsx')
             ws = wb['Sheet']
             html = """<meta charset="utf-8">
-             <table border="1" class="dataframe">
-                         <thead>
-                             <tr style="text-align: right;">\n"""
+                            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+                        <!--<link rel="stylesheet" type="text/css" href="normas.css">-->
+                        <style>
+                            body{
+                                background-color: #d6e1f8;
+
+                            }
+                            th, td {
+                                border: 1px solid #ccc;
+
+                                text-align: center;
+                            }
+
+                            table {
+
+                                border-collapse: collapse !important; /* optional: collapse the table borders */
+                            }
+
+                            table tr {
+                                background-color: #8BC34A !important; /* Set background color of all rows */
+                            }
+
+                            table tr:hover td {
+                                background-color: #2196F3 !important; /* Set background color of cells when hovered */
+                            }
+
+                        </style>
+                                         <table border="1" class="dataframe" style="width:100%;">
+                                                     <thead>
+                                                         <tr style="text-align: right;">\n"""
             k = 0
+            counter_max = 0
+            for i in ws.iter_rows():
+                counter_max += 1
 
             for i in ws.iter_rows():
-                if k > 0:
-                    html += '<tr>\n'
-                for j in range(len(i)):
-                    value = str(i[j].value)
-                    color = str(i[j].fill.start_color.rgb)
-                    if (value == 'None'):
-                        value = ' '
-                    if color == '00000000':
-                        color = 'FFFFFFFF'
+                if str(i[0].fill.start_color.rgb) != 'FFFFFFFF' or k == 0 or k == counter_max:
+                    if k > 0:
+                        html += '<tr>\n'
+                    for j in range(len(i) - 1):
+                        value = str(i[j].value)
+                        color = str(i[j].fill.start_color.rgb)
+                        if (value == 'None'):
+                            value = ' '
+                        if color == '00000000':
+                            color = 'FFFFFFFF'
 
+                        if k < 1:
+                            html += "<th style='background-color: #" + color[2:8] + "'>" + value + "</th>\n"
+                        else:
+                            html += "<td style='background-color: #" + color[2:8] + "'>" + value + "</td>\n"
+                    html += '</tr>\n'
                     if k < 1:
-                        html += "<th style='background-color: #" + color[2:8] + "'>" + value + "</th>\n"
-                    else:
-                        html += "<td style='background-color: #" + color[2:8] + "'>" + value + "</td>\n"
-                html += '</tr>\n'
-                if k < 1:
-                    html += """</thead>
-              <tbody>"""
-                k += 1
-            html += """ </tbody>
-            </table>"""
-            html.encode('UTF-8')
-            with open('users/templates/'+name_html+".html", 'w', encoding='utf-8') as f:
-                f.write(html)
-                return True
-        except :
-            return False
+                        html += """</thead>
+                            <tbody>"""
+                    k += 1
 
+            html += """ </tbody>
+                        </table>"""
+            html.encode('UTF-8')
+            file = open('users\\templates\\'+name_html+'.html', 'w', encoding='utf-8')
+            file.write(html)
+            file.close()
+            # with open(name_html + ".html", 'w', encoding='utf-8') as f:
+            #     f.write(html)
+            time.sleep(5)
+            return True
+        except:
+            return False
 
 class Home(View):
     def get(self, request):
+        language_code = request.path.split('/')[1]
+        print(language_code)
         is_auth = request.user.username == 'admin'
         context = {'is_home_page': True,
                    'is_tables_page': False,
                    'is_profile_page':False,
                    'is_all_tables_page': False,
-                   'is_authenticated': is_auth
+                   'is_authenticated': is_auth,
+                   'language': language_code,
                    }
         return render(request, 'home.html', context)
 
@@ -160,6 +252,7 @@ class ShowTable(View):
 
 
     def get(self, request):
+        language_code = request.path.split('/')[2]
         if request.user.is_authenticated:
             username = str(request.user.username)
             print(username)
@@ -173,8 +266,8 @@ class ShowTable(View):
                    'is_tables_page': True,
                    'is_profile_page': False,
                    'is_all_tables_page': False,
-
-                   'is_authenticated': is_auth}
+                   'is_authenticated': is_auth,
+                   'language':language_code}
 
         print(str(request.GET.get('name')))
 
@@ -185,12 +278,15 @@ class Profile(View):
     template_name = 'Profile.html'
 
     def get(self, request):
+        language_code = request.path.split('/')[2]
+        print(language_code)
         is_auth = request.user.username == 'admin'
         context = {'is_home_page': False,
                    'is_tables_page': False,
                    'is_all_tables_page': False,
                    'is_profile_page': True,
-                   'is_authenticated': is_auth
+                   'is_authenticated': is_auth,
+                   'language':language_code,
                    }
 
         if request.user.username=='admin':

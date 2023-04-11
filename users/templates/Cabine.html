@@ -16,12 +16,11 @@
 .dropbtn2023, .dropbtn2022 {
  background-color: #04AA6D;
   color: white;
-  padding: 16px;
-  font-size: 16px;
+  padding: 40px;
+    margin-top: 20px;
+  font-size: 20px;
   border: none;
 }
-
-/* Dropdown button on hover & focus */
 .dropbtn2023:hover,.dropbtn2022:hover,.dropbtn2023:focus, .dropbtn2022:focus {
   background-color: #2980B9;
 }
@@ -73,40 +72,41 @@ display: none;
 .dropdown2022:hover .dropdown-content2022 {display: block;}
 
 .dropdown2022:hover .dropbtn2022 {background-color: #3e8e41;}
-.dropdown2023:hover .dropbtn2023 {background-color: #3e8e41;}
+{#.dropdown2023:hover .dropbtn2023 {background-color: #3e8e41;}#}
 
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+
+{#/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */#}
 .show {display:block;}
     </style>
 <body>&nbsp;&nbsp;
 
 
-<div class="dropdown2022">
+{#<div class="dropdown2022">#}
 {#<button onclick="myFunction(this.className)" class="dropbtn2022">2022</button>#}
-<div id="myDropdown2022" class="dropdown-content2022">
-    <a href="{% url 'year' %}?name=2022_Total">Total</a>
-    <a href="{% url 'year' %}?name=2022_January">January</a>
-    <a href="{% url 'year' %}?name=2022_February">February</a>
-    <a href="{% url 'year' %}?name=2022_March">March</a>
-    <a href="{% url 'year' %}?name=2022_April">April</a>
-    <a href="{% url 'year' %}?name=2022_May">May</a>
-    <a href="{% url 'year' %}?name=2022_June">June</a>
-    <a href="{% url 'year' %}?name=2022_July">July</a>
-    <a href="{% url 'year' %}?name=2022_August">August</a>
-    <a href="{% url 'year' %}?name=2022_September">September</a>
-    <a href="{% url 'year' %}?name=2022_October">October</a>
-    <a href="{% url 'year' %}?name=2022_November">November</a>
-    <a href="{% url 'year' %}?name=2022_December">December</a>
-  </div>
-    </div>
+{#<div id="myDropdown2022" class="dropdown-content2022">#}
+{#    <a href="{% url 'year' %}?name=2022_Total">Total</a>#}
+{#    <a href="{% url 'year' %}?name=2022_January">January</a>#}
+{#    <a href="{% url 'year' %}?name=2022_February">February</a>#}
+{#    <a href="{% url 'year' %}?name=2022_March">March</a>#}
+{#    <a href="{% url 'year' %}?name=2022_April">April</a>#}
+{#    <a href="{% url 'year' %}?name=2022_May">May</a>#}
+{#    <a href="{% url 'year' %}?name=2022_June">June</a>#}
+{#    <a href="{% url 'year' %}?name=2022_July">July</a>#}
+{#    <a href="{% url 'year' %}?name=2022_August">August</a>#}
+{#    <a href="{% url 'year' %}?name=2022_September">September</a>#}
+{#    <a href="{% url 'year' %}?name=2022_October">October</a>#}
+{#    <a href="{% url 'year' %}?name=2022_November">November</a>#}
+{#    <a href="{% url 'year' %}?name=2022_December">December</a>#}
+{#  </div>#}
+{#    </div>#}
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <div class="dropdown2023">
-    <button onclick="myFunction(this.className)" class="dropbtn2023">2023</button>
+    <button onclick="myFunction(this.className)" class="dropbtn2023" >2023</button>
 
 
     <div id="myDropdown2023" class="dropdown-content2023">
 
-    <a href="{% url 'year' %}?name=2023_Total">Total</a>
+    <a href="{% url 'year' %}?name=2023_Total" style="height: 40px">Total</a>
     <a href="{% url 'year' %}?name=2023_January">January</a>
     <a href="{% url 'year' %}?name=2023_February">February</a>
     <a href="{% url 'year' %}?name=2023_March">March</a>
