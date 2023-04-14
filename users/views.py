@@ -16,7 +16,7 @@ class All_tables(View):
                    'is_profile_page': False,
                    'is_all_tables_page': True,
                    'is_authenticated': request.user.username == 'admin',
-                   'language':language_code,
+                   'language' : language_code,
                    }
 
         try:
@@ -113,14 +113,14 @@ class Table(View):
             username = str(request.user.username)
 
             print(username)
-
+            context = {'language' : language_code}
             name_html = username + "_" + str(request.GET.get('name'))
 
             print(name_html)
             html = name_html+'.html'
 
             try:
-                return render(request, html)
+                return render(request, html,  context)
             except:
                 trueOrFalse = self.create_table(name_html)
 
@@ -131,7 +131,7 @@ class Table(View):
                     #     print("File is not ready")
                     # while os.path.isfile("users\\templates\\"+name_html+".html")==False:
                     #     pass
-                    return render(request, name_html + '.html')
+                    return render(request, name_html + '.html', context)
                     # for i in range(10):
                     #     try:
                     #         return render(request, name_html+'.html')
@@ -149,7 +149,7 @@ class Table(View):
 
 
                 else:
-                      return render(request, 'NotFoundHtml.html')
+                      return render(request, 'NotFoundHtml.html',context)
         else:
             return render(request, 'NotFoundHtml.html')
     def create_table(self, name_html):
@@ -162,7 +162,9 @@ class Table(View):
 
             wb = load_workbook(f'{name_html}.xlsx')
             ws = wb['Sheet']
-            html = """<meta charset="utf-8">
+            html = """{%extends 'base.html'%}
+                        {% block content %}
+                        <meta charset="utf-8">
                             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
                         <!--<link rel="stylesheet" type="text/css" href="normas.css">-->
                         <style>
@@ -221,7 +223,9 @@ class Table(View):
                     k += 1
 
             html += """ </tbody>
-                        </table>"""
+                        </table>
+                        {% endblock %}
+                        """
             html.encode('UTF-8')
             file = open('users\\templates\\'+name_html+'.html', 'w', encoding='utf-8')
             file.write(html)
@@ -289,7 +293,7 @@ class Profile(View):
                    'language':language_code,
                    }
 
-        if request.user.username=='admin':
+        if request.user.username == 'admin':
             return render(request, 'map.html', context)
         else:
             return render(request, self.template_name, context)
