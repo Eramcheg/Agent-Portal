@@ -223,7 +223,7 @@
                     {% if is_authenticated %}
                          <a href="{% if language == '' or language == 'en'  %} {% url 'profile_en' %} {% elif language == 'es' %} {% url 'profile_es' %}{% elif language == 'it' %} {% url 'profile_it' %} {% elif language == 'de' %} {% url 'profile_de' %} {% elif language == 'fr' %} {% url 'profile_fr' %} {% endif %}" class="link">
                              {% if language == 'de' %} Profil{% elif language == 'fr' %} Profil{% elif language == 'it' %}  Profilo{% elif language == 'es' %}  Perfil{% elif language == '' or language == 'en' %}  Profile{% endif %} </a>
-                         <a href=" {% url 'global' %}" class="link">{% if language == 'de' %} Profil{% elif language == 'fr' %} Profil{% elif language == 'it' %}  Profilo{% elif language == 'es' %}  Perfil{% elif language == '' or language == 'en' %}  Profile{% endif %} </a>
+                         <a href=" {% url 'global' %}" class="link"> Global </a>
 
                     {% else %}
 <a></a>

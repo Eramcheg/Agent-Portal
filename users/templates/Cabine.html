@@ -16,8 +16,7 @@
 .dropbtn2023, .dropbtn2022 {
  background-color: #04AA6D;
   color: white;
-  padding: 40px;
-    margin-top: 20px;
+  width: 7%;
   font-size: 20px;
   border: none;
 }
@@ -25,102 +24,163 @@
   background-color: #2980B9;
 }
 
-/* The container <div> - needed to position the dropdown content */
-.dropdown2022, .dropdown2023 {
-  position: relative;
-  {#display: inline-block;#}
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content2023 {
-  display: none;
-  position: absolute;
-  {#right: 10; /* add this line */#}
-  top: 100%; /* modify this line */
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-.dropdown2023:hover .dropdown-content2023 {
-  {#display: block;#}
-}
-.dropdown-content2022 {
-display: none;
-  position:absolute;
-
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-
-}
-
-/* Links inside the dropdown */
-.dropdown-content2023 a, .dropdown-content2022 a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  {#display: block;#}
-}
-
-
-
-/* Change color of dropdown links on hover */
-.dropdown-content2023 a:hover,.dropdown-content2022 a:hover {background-color: #ddd;}
-.dropdown2023:hover .dropdown-content2023 {display: block;}
-.dropdown2022:hover .dropdown-content2022 {display: block;}
-
-.dropdown2022:hover .dropbtn2022 {background-color: #3e8e41;}
-{#.dropdown2023:hover .dropbtn2023 {background-color: #3e8e41;}#}
-
-
-{#/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */#}
-.show {display:block;}
+     .aaa {
+  display: flex;
+         font-size: 17px;
+        text-decoration: none;
+        {#display: inline-block;#}
+        {#text-align: center;#}
+         justify-content: center;align-items: center;
+         {#justify-content: center;#}
+        padding: 10px;
+        background-color: #e0e0e0;
+        transition: background-color 0.3s ease;
+        color: black;
+        flex: 1;
+         {#align-items: center;#}
+    }
+    .aaa:hover {
+        background-color: #f0f0f0;
+        color: black;
+        text-decoration: none;
+    }
     </style>
-<body>&nbsp;&nbsp;
+<body>
+<div style="display: flex; width: 100%; height: 90px">
+     <button class="dropbtn2023" >2023</button>
 
+        <a href="{% if language == '' or language == 'en'  %} {% url 'year_en' %}?name=2023_Total {% elif language == 'es' %} {% url 'year_es' %}?name=2023_Total {% elif language == 'it' %} {% url 'year_it' %}?name=2023_Total {% elif language == 'de' %} {% url 'year_de' %}?name=2023_Total {% elif language == 'fr' %} {% url 'year_fr' %}?name=2023_Total {% endif %}" class="aaa">{% if language == '' or language == 'en'  %} Total {% elif language == 'es' %} Total {% elif language == 'it' %} Totale {% elif language == 'de' %} Gesamt {% elif language == 'fr' %} Total {% endif %}</a>
+    <a href="{% if language == '' or language == 'en'  %} {% url 'year_en' %}?name=2023_January {% elif language == 'es' %} {% url 'year_es' %}?name=2023_January {% elif language == 'it' %} {% url 'year_it' %}?name=2023_January {% elif language == 'de' %} {% url 'year_de' %}?name=2023_January {% elif language == 'fr' %} {% url 'year_fr' %}?name=2023_January{% endif %}" class="aaa">{% if language == '' or language == 'en' %}January
+{% elif language == 'es' %}Enero
+{% elif language == 'it' %}Gennaio
+{% elif language == 'de' %}Januar
+{% elif language == 'fr' %}Janvier
+{% endif %}</a>
+    <a href="{% if language == '' or language == 'en'  %} {% url 'year_en' %}?name=2023_February {% elif language == 'es' %} {% url 'year_es' %}?name=2023_February {% elif language == 'it' %} {% url 'year_it' %}?name=2023_February {% elif language == 'de' %} {% url 'year_de' %}?name=2023_February {% elif language == 'fr' %} {% url 'year_fr' %}?name=2023_February{% endif %}" class="aaa">{% if language == '' or language == 'en' %}
+February
+{% elif language == 'es' %}
+Febrero
+{% elif language == 'it' %}
+Febbraio
+{% elif language == 'de' %}
+Februar
+{% elif language == 'fr' %}
+Février
+{% endif %}</a>
+    <a href="{% if language == '' or language == 'en'  %} {% url 'year_en' %}?name=2023_March {% elif language == 'es' %} {% url 'year_es' %}?name=2023_March {% elif language == 'it' %} {% url 'year_it' %}?name=2023_March {% elif language == 'de' %} {% url 'year_de' %}?name=2023_March {% elif language == 'fr' %} {% url 'year_fr' %}?name=2023_March{% endif %}" class="aaa">{% if language == '' or language == 'en' %}
+March
+{% elif language == 'es' %}
+Marzo
+{% elif language == 'it' %}
+Marzo
+{% elif language == 'de' %}
+März
+{% elif language == 'fr' %}
+Mars
+{% endif %}</a>
+    <a href="{% if language == '' or language == 'en'  %} {% url 'year_en' %}?name=2023_April {% elif language == 'es' %} {% url 'year_es' %}?name=2023_April {% elif language == 'it' %} {% url 'year_it' %}?name=2023_April {% elif language == 'de' %} {% url 'year_de' %}?name=2023_April {% elif language == 'fr' %} {% url 'year_fr' %}?name=2023_April{% endif %}" class="aaa">{% if language == '' or language == 'en' %}
+April
+{% elif language == 'es' %}
+Abril
+{% elif language == 'it' %}
+Aprile
+{% elif language == 'de' %}
+April
+{% elif language == 'fr' %}
+Avril
+{% endif %}
 
-{#<div class="dropdown2022">#}
-{#<button onclick="myFunction(this.className)" class="dropbtn2022">2022</button>#}
-{#<div id="myDropdown2022" class="dropdown-content2022">#}
-{#    <a href="{% url 'year' %}?name=2022_Total">Total</a>#}
-{#    <a href="{% url 'year' %}?name=2022_January">January</a>#}
-{#    <a href="{% url 'year' %}?name=2022_February">February</a>#}
-{#    <a href="{% url 'year' %}?name=2022_March">March</a>#}
-{#    <a href="{% url 'year' %}?name=2022_April">April</a>#}
-{#    <a href="{% url 'year' %}?name=2022_May">May</a>#}
-{#    <a href="{% url 'year' %}?name=2022_June">June</a>#}
-{#    <a href="{% url 'year' %}?name=2022_July">July</a>#}
-{#    <a href="{% url 'year' %}?name=2022_August">August</a>#}
-{#    <a href="{% url 'year' %}?name=2022_September">September</a>#}
-{#    <a href="{% url 'year' %}?name=2022_October">October</a>#}
-{#    <a href="{% url 'year' %}?name=2022_November">November</a>#}
-{#    <a href="{% url 'year' %}?name=2022_December">December</a>#}
-{#  </div>#}
-{#    </div>#}
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<div class="dropdown2023">
-    <button onclick="myFunction(this.className)" class="dropbtn2023" >2023</button>
-
-
-    <div id="myDropdown2023" class="dropdown-content2023">
-
-    <a href="{% url 'year' %}?name=2023_Total" style="height: 40px">Total</a>
-    <a href="{% url 'year' %}?name=2023_January">January</a>
-    <a href="{% url 'year' %}?name=2023_February">February</a>
-    <a href="{% url 'year' %}?name=2023_March">March</a>
-    <a href="{% url 'year' %}?name=2023_April">April</a>
-    <a href="{% url 'year' %}?name=2023_May">May</a>
-    <a href="{% url 'year' %}?name=2023_June">June</a>
-    <a href="{% url 'year' %}?name=2023_July">July</a>
-    <a href="{% url 'year' %}?name=2023_August">August</a>
-    <a href="{% url 'year' %}?name=2023_September">September</a>
-    <a href="{% url 'year' %}?name=2023_October">October</a>
-    <a href="{% url 'year' %}?name=2023_November">November</a>
-    <a href="{% url 'year' %}?name=2023_December">December</a>
-  </div>
+</a>
+    <a href="{% if language == '' or language == 'en'  %} {% url 'year_en' %}?name=2023_May {% elif language == 'es' %} {% url 'year_es' %}?name=2023_May {% elif language == 'it' %} {% url 'year_it' %}?name=2023_May {% elif language == 'de' %} {% url 'year_de' %}?name=2023_May {% elif language == 'fr' %} {% url 'year_fr' %}?name=2023_May{% endif %}" class="aaa">{% if language == '' or language == 'en' %}
+May
+{% elif language == 'es' %}
+Mayo
+{% elif language == 'it' %}
+Maggio
+{% elif language == 'de' %}
+Mai
+{% elif language == 'fr' %}
+Mai
+{% endif %}</a>
+    <a href="{% if language == '' or language == 'en'  %} {% url 'year_en' %}?name=2023_June {% elif language == 'es' %} {% url 'year_es' %}?name=2023_June {% elif language == 'it' %} {% url 'year_it' %}?name=2023_June {% elif language == 'de' %} {% url 'year_de' %}?name=2023_June {% elif language == 'fr' %} {% url 'year_fr' %}?name=2023_June{% endif %}" class="aaa">{% if language == '' or language == 'en' %}
+June
+{% elif language == 'es' %}
+Junio
+{% elif language == 'it' %}
+Giugno
+{% elif language == 'de' %}
+Juni
+{% elif language == 'fr' %}
+Juin
+{% endif %}</a>
+    <a href="{% if language == '' or language == 'en'  %} {% url 'year_en' %}?name=2023_July {% elif language == 'es' %} {% url 'year_es' %}?name=2023_July {% elif language == 'it' %} {% url 'year_it' %}?name=2023_July {% elif language == 'de' %} {% url 'year_de' %}?name=2023_July {% elif language == 'fr' %} {% url 'year_fr' %}?name=2023_July{% endif %}" class="aaa">{% if language == '' or language == 'en' %}
+July
+{% elif language == 'es' %}
+Julio
+{% elif language == 'it' %}
+Luglio
+{% elif language == 'de' %}
+Juli
+{% elif language == 'fr' %}
+Juillet
+{% endif %}</a>
+    <a href="{% if language == '' or language == 'en'  %} {% url 'year_en' %}?name=2023_August {% elif language == 'es' %} {% url 'year_es' %}?name=2023_August {% elif language == 'it' %} {% url 'year_it' %}?name=2023_August {% elif language == 'de' %} {% url 'year_de' %}?name=2023_August {% elif language == 'fr' %} {% url 'year_fr' %}?name=2023_August{% endif %}" class="aaa">{% if language == '' or language == 'en' %}
+August
+{% elif language == 'es' %}
+Agosto
+{% elif language == 'it' %}
+Agosto
+{% elif language == 'de' %}
+August
+{% elif language == 'fr' %}
+Août
+{% endif %}</a>
+    <a href="{% if language == '' or language == 'en'  %} {% url 'year_en' %}?name=2023_September {% elif language == 'es' %} {% url 'year_es' %}?name=2023_September {% elif language == 'it' %} {% url 'year_it' %}?name=2023_September {% elif language == 'de' %} {% url 'year_de' %}?name=2023_September {% elif language == 'fr' %} {% url 'year_fr' %}?name=2023_September{% endif %}" class="aaa">{% if language == '' or language == 'en' %}
+September
+{% elif language == 'es' %}
+Septiembre
+{% elif language == 'it' %}
+Settembre
+{% elif language == 'de' %}
+September
+{% elif language == 'fr' %}
+Septembre
+{% endif %}</a>
+    <a href="{% if language == '' or language == 'en'  %} {% url 'year_en' %}?name=2023_October {% elif language == 'es' %} {% url 'year_es' %}?name=2023_October {% elif language == 'it' %} {% url 'year_it' %}?name=2023_October {% elif language == 'de' %} {% url 'year_de' %}?name=2023_October {% elif language == 'fr' %} {% url 'year_fr' %}?name=2023_October{% endif %}" class="aaa">{% if language == '' or language == 'en' %}
+October
+{% elif language == 'es' %}
+Octubre
+{% elif language == 'it' %}
+Ottobre
+{% elif language == 'de' %}
+Oktober
+{% elif language == 'fr' %}
+Octobre
+{% endif %}</a>
+    <a href="{% if language == '' or language == 'en'  %} {% url 'year_en' %}?name=2023_November {% elif language == 'es' %} {% url 'year_es' %}?name=2023_November {% elif language == 'it' %} {% url 'year_it' %}?name=2023_November {% elif language == 'de' %} {% url 'year_de' %}?name=2023_November {% elif language == 'fr' %} {% url 'year_fr' %}?name=2023_November{% endif %}" class="aaa">{% if language == '' or language == 'en' %}
+November
+{% elif language == 'es' %}
+Noviembre
+{% elif language == 'it' %}
+Novembre
+{% elif language == 'de' %}
+November
+{% elif language == 'fr' %}
+Novembre
+{% endif %}</a>
+    <a href="{% if language == '' or language == 'en'  %} {% url 'year_en' %}?name=2023_December {% elif language == 'es' %} {% url 'year_es' %}?name=2023_December {% elif language == 'it' %} {% url 'year_it' %}?name=2023_December {% elif language == 'de' %} {% url 'year_de' %}?name=2023_December {% elif language == 'fr' %} {% url 'year_fr' %}?name=2023_December{% endif %}" class="aaa">{% if language == '' or language == 'en' %}
+December
+{% elif language == 'es' %}
+Diciembre
+{% elif language == 'it' %}
+Dicembre
+{% elif language == 'de' %}
+Dezember
+{%elif language == 'fr' %}
+Décembre
+{% endif %}</a>
 </div>
+
 
 
 

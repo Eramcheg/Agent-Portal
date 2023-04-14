@@ -6,8 +6,8 @@
 <body>
 <h1>{{ user }}</h1>
 <hr>
-Role: admin<br>
-Current comission from payments: In this version we have no access to tables<br>
+Role: User <br>
+{% if language == '' or language == 'en'  %} Here will be placed information about Your account, global payment status, etc. {% elif language == 'es' %} Aquí se colocarán información sobre tu cuenta, el estado global de pagos, etc. {% elif language == 'it' %} Qui saranno inserite informazioni sul tuo account, lo stato globale dei pagamenti, ecc {% elif language == 'de' %} Hier werden Informationen zu Ihrem Konto, zum globalen Zahlungsstatus usw. platziert. {% elif language == 'fr' %}  Ici seront placées des informations sur votre compte, l'état global des paiements, etc.{% endif %}<br>
 
 <hr>
 
