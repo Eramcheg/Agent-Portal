@@ -238,7 +238,7 @@
                     {% endif %}
                 {% else %}
 
-                <a href="{% url 'home_en' %}"
+                <a href="{% if language == '' or language == 'en'  %} {% url 'home_en' %} {% elif language == 'es' %} {% url 'home_es' %}{% elif language == 'it' %} {% url 'home_it' %} {% elif language == 'de' %} {% url 'home_de' %} {% elif language == 'fr' %} {% url 'home_fr' %} {% endif %}"
                    class="link" style="font-size: 20px; color: white; font-family: poppins,Verdana,sans-serif;">{% if language == 'de' %} Zuhause{% elif language == 'fr' %} Maison{% elif language == 'it' %}  Casa{% elif language == 'es' %}  Hogar{% elif language == '' or language == 'en'%}  Home{% endif %}</a>
 
 {% endif %}
