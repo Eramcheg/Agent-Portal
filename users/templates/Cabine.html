@@ -17,6 +17,7 @@
  background-color: #04AA6D;
   color: white;
   width: 7%;
+    height: 90px;
   font-size: 20px;
   border: none;
 }
@@ -28,17 +29,35 @@
   display: flex;
          font-size: 17px;
         text-decoration: none;
-        {#display: inline-block;#}
-        {#text-align: center;#}
          justify-content: center;align-items: center;
-         {#justify-content: center;#}
         padding: 10px;
+         height: 90px;
         background-color: #e0e0e0;
         transition: background-color 0.3s ease;
         color: black;
         flex: 1;
          {#align-items: center;#}
     }
+     .download{
+         color: #ffffff;
+         background-color: #037049;
+          font-size: 17px;
+
+          display: inline-block;
+  padding: 12px 24px;
+  border-radius: 5px;
+  {#background-color: #7db9e8;#}
+
+  text-align: center;
+         {#justify-content: center;align-items: center;#}
+
+         transition: background-color 0.3s ease;
+text-decoration: none;
+     }
+     .download:hover{
+         color: #fff3cd;
+         text-decoration: none;
+     }
     .aaa:hover {
         background-color: #f0f0f0;
         color: black;
@@ -49,8 +68,11 @@
 <div style="display: flex; width: 100%; height: 90px">
      <button class="dropbtn2023" >2023</button>
 
-        <a href="{% if language == '' or language == 'en'  %} {% url 'year_en' %}?name=2023_Total {% elif language == 'es' %} {% url 'year_es' %}?name=2023_Total {% elif language == 'it' %} {% url 'year_it' %}?name=2023_Total {% elif language == 'de' %} {% url 'year_de' %}?name=2023_Total {% elif language == 'fr' %} {% url 'year_fr' %}?name=2023_Total {% endif %}" class="aaa">{% if language == '' or language == 'en'  %} Total {% elif language == 'es' %} Total {% elif language == 'it' %} Totale {% elif language == 'de' %} Gesamt {% elif language == 'fr' %} Total {% endif %}</a>
-    <a href="{% if language == '' or language == 'en'  %} {% url 'year_en' %}?name=2023_January {% elif language == 'es' %} {% url 'year_es' %}?name=2023_January {% elif language == 'it' %} {% url 'year_it' %}?name=2023_January {% elif language == 'de' %} {% url 'year_de' %}?name=2023_January {% elif language == 'fr' %} {% url 'year_fr' %}?name=2023_January{% endif %}" class="aaa">{% if language == '' or language == 'en' %}January
+        <span><a href="{% if language == '' or language == 'en'  %} {% url 'year_en' %}?name=2023_Total {% elif language == 'es' %} {% url 'year_es' %}?name=2023_Total {% elif language == 'it' %} {% url 'year_it' %}?name=2023_Total {% elif language == 'de' %} {% url 'year_de' %}?name=2023_Total {% elif language == 'fr' %} {% url 'year_fr' %}?name=2023_Total {% endif %}" class="aaa">{% if language == '' or language == 'en'  %} Total {% elif language == 'es' %} Total {% elif language == 'it' %} Totale {% elif language == 'de' %} Gesamt {% elif language == 'fr' %} Total {% endif %}</a>
+        <a href="{% url 'download' %}?name=2023_Total" class="download">
+            {% if language == '' or language == 'en'  %} Download Total {% elif language == 'es' %} Descargar Total {% elif language == 'it' %} Scaricare Totale {% elif language == 'de' %} Herunterladen Gesamt {% elif language == 'fr' %} Télécharger Total {% endif %}</a>
+        </span>
+            <a href="{% if language == '' or language == 'en'  %} {% url 'year_en' %}?name=2023_January {% elif language == 'es' %} {% url 'year_es' %}?name=2023_January {% elif language == 'it' %} {% url 'year_it' %}?name=2023_January {% elif language == 'de' %} {% url 'year_de' %}?name=2023_January {% elif language == 'fr' %} {% url 'year_fr' %}?name=2023_January{% endif %}" class="aaa">{% if language == '' or language == 'en' %}January
 {% elif language == 'es' %}Enero
 {% elif language == 'it' %}Gennaio
 {% elif language == 'de' %}Januar
@@ -179,7 +201,7 @@ Dezember
 {%elif language == 'fr' %}
 Décembre
 {% endif %}</a>
-    <a href="{% url 'download' %}?name=2023_February"> Total </a>
+
 
 </div>
 
