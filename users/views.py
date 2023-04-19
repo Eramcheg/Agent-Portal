@@ -5,8 +5,31 @@ from django.shortcuts import render, redirect
 from django.views import View
 from openpyxl import load_workbook
 from users.forms import UserCreationForm
+import ftplib
+from django.http import HttpResponse
 
 
+def download(request):
+    ftp = ftplib.FTP('server1.agentsoliverweber.com')
+    ftp.login('oliverweber@agentsoliverweber.com', 'Zh5]MVF(GhZ{')
+    ftp.cwd('/ftp')
+
+    # Replace with your file name
+
+    username = str(request.user.username)
+
+    print(username)
+    name_html = username + "_" + str(request.GET.get('name'))
+    file_name = f'{name_html}.xlsx'
+
+    response = HttpResponse(content_type='application/vnd.ms-excel')
+    response['Content-Disposition'] = 'attachment; filename=%s' % file_name
+
+    ftp.retrbinary('RETR %s' % file_name, response.write)
+
+    ftp.quit()
+
+    return response
 class All_tables(View):
     def get(self, request):
         template_name = str(request.user.username)+'_Global_'
