@@ -1,0 +1,645 @@
+{%extends 'base.html'%}
+                        {% block content %}
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!--<link rel="stylesheet" type="text/css" href="normas.css">-->
+<style>
+    body{
+        background-color: #d6e1f8;
+         
+    }
+    th, td {
+        border: 1px solid #ccc;
+        
+        text-align: center;
+    }
+
+    table {
+   
+        border-collapse: collapse !important; /* optional: collapse the table borders */
+    }
+
+    table tr {
+        background-color: #8BC34A !important; /* Set background color of all rows */
+    }
+
+    table tr:hover td {
+        background-color: #2196F3 !important; /* Set background color of cells when hovered */
+    }
+
+</style>
+                 <table border="1" class="dataframe" style="width:100%;">
+                             <thead>
+                                 <tr style="text-align: right;">
+<th style='background-color: #B0CBF0'>RK</th>
+<th style='background-color: #B0CBF0'>GF-Nr</th>
+<th style='background-color: #B0CBF0'>Datum</th>
+<th style='background-color: #B0CBF0'>Vertreter</th>
+<th style='background-color: #B0CBF0'>ProvProz</th>
+<th style='background-color: #B0CBF0'>Provision</th>
+<th style='background-color: #B0CBF0'>Summe</th>
+<th style='background-color: #B0CBF0'>Lieferant</th>
+<th style='background-color: #B0CBF0'>Lieferantenname</th>
+<th style='background-color: #B0CBF0'>Name2</th>
+<th style='background-color: #B0CBF0'>IntKz</th>
+<th style='background-color: #B0CBF0'>PLZ Neu</th>
+<th style='background-color: #B0CBF0'>Ort</th>
+<th style='background-color: #FFFFFF'> </th>
+<th style='background-color: #899EF0'>Paid amount</th>
+<th style='background-color: #899EF0'>Payment status</th>
+<th style='background-color: #899EF0'>Payment commission</th>
+<th style='background-color: #899EF0'>Payments with Rest</th>
+<th style='background-color: #899EF0'>Payments Dates</th>
+</tr>
+</thead>
+                      <tbody><tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4200312</td>
+<td style='background-color: #00FF00'>2022-02-10 00:00:00</td>
+<td style='background-color: #00FF00'>V000104</td>
+<td style='background-color: #00FF00'>10</td>
+<td style='background-color: #00FF00'>55.685</td>
+<td style='background-color: #00FF00'>556.85</td>
+<td style='background-color: #00FF00'>K004628</td>
+<td style='background-color: #00FF00'>HELLENIC DISTRIBUTIONS S.A.</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>GR</td>
+<td style='background-color: #00FF00'>14565</td>
+<td style='background-color: #00FF00'>Agios Stefanos</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>300.11</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #00FF00'>30</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>17.01.2023,  300.1</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4200314</td>
+<td style='background-color: #00FF00'>2022-02-10 00:00:00</td>
+<td style='background-color: #00FF00'>V000104</td>
+<td style='background-color: #00FF00'>10</td>
+<td style='background-color: #00FF00'>55.685</td>
+<td style='background-color: #00FF00'>556.85</td>
+<td style='background-color: #00FF00'>K004628</td>
+<td style='background-color: #00FF00'>HELLENIC DISTRIBUTIONS S.A.</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>GR</td>
+<td style='background-color: #00FF00'>14565</td>
+<td style='background-color: #00FF00'>Agios Stefanos</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>309.75</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #00FF00'>31</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>17.01.2023,  309.8</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4200315</td>
+<td style='background-color: #00FF00'>2022-02-10 00:00:00</td>
+<td style='background-color: #00FF00'>V000104</td>
+<td style='background-color: #00FF00'>10</td>
+<td style='background-color: #00FF00'>95.025</td>
+<td style='background-color: #00FF00'>950.25</td>
+<td style='background-color: #00FF00'>K004628</td>
+<td style='background-color: #00FF00'>HELLENIC DISTRIBUTIONS S.A.</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>GR</td>
+<td style='background-color: #00FF00'>14565</td>
+<td style='background-color: #00FF00'>Agios Stefanos</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>950.25</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #00FF00'>95</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.01.2023,  950.2</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4200316</td>
+<td style='background-color: #00FF00'>2022-02-10 00:00:00</td>
+<td style='background-color: #00FF00'>V000104</td>
+<td style='background-color: #00FF00'>10</td>
+<td style='background-color: #00FF00'>52.92</td>
+<td style='background-color: #00FF00'>529.2</td>
+<td style='background-color: #00FF00'>K004628</td>
+<td style='background-color: #00FF00'>HELLENIC DISTRIBUTIONS S.A.</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>GR</td>
+<td style='background-color: #00FF00'>14565</td>
+<td style='background-color: #00FF00'>Agios Stefanos</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>529.2</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #00FF00'>52.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.01.2023,  529.2</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4200317</td>
+<td style='background-color: #00FF00'>2022-02-10 00:00:00</td>
+<td style='background-color: #00FF00'>V000104</td>
+<td style='background-color: #00FF00'>10</td>
+<td style='background-color: #00FF00'>92.75</td>
+<td style='background-color: #00FF00'>927.5</td>
+<td style='background-color: #00FF00'>K004628</td>
+<td style='background-color: #00FF00'>HELLENIC DISTRIBUTIONS S.A.</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>GR</td>
+<td style='background-color: #00FF00'>14565</td>
+<td style='background-color: #00FF00'>Agios Stefanos</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>927.5</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #00FF00'>92.8</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.01.2023,  927.5</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4200717</td>
+<td style='background-color: #00FF00'>2022-04-06 00:00:00</td>
+<td style='background-color: #00FF00'>V000104</td>
+<td style='background-color: #00FF00'>10</td>
+<td style='background-color: #00FF00'>129.5</td>
+<td style='background-color: #00FF00'>1295</td>
+<td style='background-color: #00FF00'>K004628</td>
+<td style='background-color: #00FF00'>HELLENIC DISTRIBUTIONS S.A.</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>GR</td>
+<td style='background-color: #00FF00'>14565</td>
+<td style='background-color: #00FF00'>Agios Stefanos</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1295</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #00FF00'>129.5</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.01.2023,  1295.0</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4201196</td>
+<td style='background-color: #00FF00'>2022-06-09 00:00:00</td>
+<td style='background-color: #00FF00'>V000104</td>
+<td style='background-color: #00FF00'>10</td>
+<td style='background-color: #00FF00'>66.22</td>
+<td style='background-color: #00FF00'>662.2</td>
+<td style='background-color: #00FF00'>K004628</td>
+<td style='background-color: #00FF00'>HELLENIC DISTRIBUTIONS S.A.</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>GR</td>
+<td style='background-color: #00FF00'>14565</td>
+<td style='background-color: #00FF00'>Agios Stefanos</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>559.96</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #00FF00'>56</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.01.2023,  560.0</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4201438</td>
+<td style='background-color: #00FF00'>2022-07-07 00:00:00</td>
+<td style='background-color: #00FF00'>V000104</td>
+<td style='background-color: #00FF00'>10</td>
+<td style='background-color: #00FF00'>42.105</td>
+<td style='background-color: #00FF00'>421.05</td>
+<td style='background-color: #00FF00'>K004628</td>
+<td style='background-color: #00FF00'>HELLENIC DISTRIBUTIONS S.A.</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>GR</td>
+<td style='background-color: #00FF00'>14565</td>
+<td style='background-color: #00FF00'>Agios Stefanos</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>421.05</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #00FF00'>42.1</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>17.01.2023,  421.1</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4201853</td>
+<td style='background-color: #00FF00'>2022-08-31 00:00:00</td>
+<td style='background-color: #00FF00'>V000104</td>
+<td style='background-color: #00FF00'>10</td>
+<td style='background-color: #00FF00'>31.22</td>
+<td style='background-color: #00FF00'>312.2</td>
+<td style='background-color: #00FF00'>K004628</td>
+<td style='background-color: #00FF00'>HELLENIC DISTRIBUTIONS S.A.</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>GR</td>
+<td style='background-color: #00FF00'>14565</td>
+<td style='background-color: #00FF00'>Agios Stefanos</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>312.2</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #00FF00'>31.2</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>17.01.2023,  312.2</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4201856</td>
+<td style='background-color: #00FF00'>2022-08-31 00:00:00</td>
+<td style='background-color: #00FF00'>V000104</td>
+<td style='background-color: #00FF00'>10</td>
+<td style='background-color: #00FF00'>59.745</td>
+<td style='background-color: #00FF00'>597.45</td>
+<td style='background-color: #00FF00'>K004628</td>
+<td style='background-color: #00FF00'>HELLENIC DISTRIBUTIONS S.A.</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>GR</td>
+<td style='background-color: #00FF00'>14565</td>
+<td style='background-color: #00FF00'>Agios Stefanos</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>597.45</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #00FF00'>59.7</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>17.01.2023,  597.5</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4201857</td>
+<td style='background-color: #00FF00'>2022-08-31 00:00:00</td>
+<td style='background-color: #00FF00'>V000104</td>
+<td style='background-color: #00FF00'>10</td>
+<td style='background-color: #00FF00'>59.745</td>
+<td style='background-color: #00FF00'>597.45</td>
+<td style='background-color: #00FF00'>K004628</td>
+<td style='background-color: #00FF00'>HELLENIC DISTRIBUTIONS S.A.</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>GR</td>
+<td style='background-color: #00FF00'>14565</td>
+<td style='background-color: #00FF00'>Agios Stefanos</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>597.45</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #00FF00'>59.7</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>17.01.2023,  597.5</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4201858</td>
+<td style='background-color: #00FF00'>2022-08-31 00:00:00</td>
+<td style='background-color: #00FF00'>V000104</td>
+<td style='background-color: #00FF00'>10</td>
+<td style='background-color: #00FF00'>61.46</td>
+<td style='background-color: #00FF00'>614.6</td>
+<td style='background-color: #00FF00'>K004628</td>
+<td style='background-color: #00FF00'>HELLENIC DISTRIBUTIONS S.A.</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>GR</td>
+<td style='background-color: #00FF00'>14565</td>
+<td style='background-color: #00FF00'>Agios Stefanos</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>135</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #00FF00'>13.5</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>17.01.2023,  135.0</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4201921</td>
+<td style='background-color: #00FF00'>2022-09-09 00:00:00</td>
+<td style='background-color: #00FF00'>V000104</td>
+<td style='background-color: #00FF00'>10</td>
+<td style='background-color: #00FF00'>74.27</td>
+<td style='background-color: #00FF00'>742.7</td>
+<td style='background-color: #00FF00'>K005020</td>
+<td style='background-color: #00FF00'>DUTY FREE SHOPS SINGLE MEMBER S.A</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>GR</td>
+<td style='background-color: #00FF00'>14565</td>
+<td style='background-color: #00FF00'>Agios Stefanos, Attika</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>569.94</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #00FF00'>57</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>27.01.2023,  569.9</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4201950</td>
+<td style='background-color: #00FF00'>2022-09-15 00:00:00</td>
+<td style='background-color: #00FF00'>V000104</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>472.845</td>
+<td style='background-color: #00FF00'>3152.3</td>
+<td style='background-color: #00FF00'>K003570</td>
+<td style='background-color: #00FF00'>Prisma</td>
+<td style='background-color: #00FF00'>BENIOUDAKI AIKATERINI ELEFTHERIOS</td>
+<td style='background-color: #00FF00'>GR</td>
+<td style='background-color: #00FF00'>73100</td>
+<td style='background-color: #00FF00'>Chania Kreta</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>500</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #00FF00'>75</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>12.01.2023,  500.0</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4202174</td>
+<td style='background-color: #00FF00'>2022-10-20 00:00:00</td>
+<td style='background-color: #00FF00'>V000104</td>
+<td style='background-color: #00FF00'>10</td>
+<td style='background-color: #00FF00'>384.23</td>
+<td style='background-color: #00FF00'>3842.3</td>
+<td style='background-color: #00FF00'>K005020</td>
+<td style='background-color: #00FF00'>DUTY FREE SHOPS SINGLE MEMBER S.A</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>GR</td>
+<td style='background-color: #00FF00'>14565</td>
+<td style='background-color: #00FF00'>Agios Stefanos, Attika</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>2551.92</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #00FF00'>255.2</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>27.01.2023,  2551.9</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4202175</td>
+<td style='background-color: #00FF00'>2022-10-20 00:00:00</td>
+<td style='background-color: #00FF00'>V000104</td>
+<td style='background-color: #00FF00'>10</td>
+<td style='background-color: #00FF00'>434.98</td>
+<td style='background-color: #00FF00'>4349.8</td>
+<td style='background-color: #00FF00'>K005020</td>
+<td style='background-color: #00FF00'>DUTY FREE SHOPS SINGLE MEMBER S.A</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>GR</td>
+<td style='background-color: #00FF00'>14565</td>
+<td style='background-color: #00FF00'>Agios Stefanos, Attika</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>643.44</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #00FF00'>64.3</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>27.01.2023,  643.4</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4202280</td>
+<td style='background-color: #00FF00'>2022-11-07 00:00:00</td>
+<td style='background-color: #00FF00'>V000104</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>167.055</td>
+<td style='background-color: #00FF00'>1113.7</td>
+<td style='background-color: #00FF00'>K005992</td>
+<td style='background-color: #00FF00'>Lazaros Karantzas</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>GR</td>
+<td style='background-color: #00FF00'>531 00</td>
+<td style='background-color: #00FF00'>Florina</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1113.7</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #00FF00'>167.1</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>10.01.2023,  1113.7</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4202447</td>
+<td style='background-color: #00FF00'>2022-11-30 00:00:00</td>
+<td style='background-color: #00FF00'>V000104</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>235.695</td>
+<td style='background-color: #00FF00'>1571.3</td>
+<td style='background-color: #00FF00'>K005324</td>
+<td style='background-color: #00FF00'>EIRHNH STAVRIANOU</td>
+<td style='background-color: #00FF00'>SINGLE MEMBER PRIVATE COMPANY</td>
+<td style='background-color: #00FF00'>GR</td>
+<td style='background-color: #00FF00'>26221</td>
+<td style='background-color: #00FF00'>Patra</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>965.1</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #00FF00'>144.8</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>30.01.2023,  965.0</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4202605</td>
+<td style='background-color: #00FF00'>2022-12-15 00:00:00</td>
+<td style='background-color: #00FF00'>V000104</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>167.7</td>
+<td style='background-color: #00FF00'>1118</td>
+<td style='background-color: #00FF00'>K003397</td>
+<td style='background-color: #00FF00'>Kosmidoy Theodora</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>GR</td>
+<td style='background-color: #00FF00'>61100</td>
+<td style='background-color: #00FF00'>Kilkis</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1118</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #00FF00'>167.7</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>09.01.2023,  1118.0</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4202708</td>
+<td style='background-color: #00FF00'>2022-12-30 00:00:00</td>
+<td style='background-color: #00FF00'>V000104</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>89.1</td>
+<td style='background-color: #00FF00'>594</td>
+<td style='background-color: #00FF00'>K006154</td>
+<td style='background-color: #00FF00'>GEORGIADIS DIMITRIS & SIA EE</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>GR</td>
+<td style='background-color: #00FF00'>18755</td>
+<td style='background-color: #00FF00'>KERATSINI</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>594</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #00FF00'>89.1</td>
+<td style='background-color: #FFAB83'>04.01.2023,  65</td>
+<td style='background-color: #FFFFFF'>04.01.2023,  658.7</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4202719</td>
+<td style='background-color: #00FF00'>2022-12-31 00:00:00</td>
+<td style='background-color: #00FF00'>V000104</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>205.995</td>
+<td style='background-color: #00FF00'>1373.3</td>
+<td style='background-color: #00FF00'>K006185</td>
+<td style='background-color: #00FF00'>GERGOS IOANNIS</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>GR</td>
+<td style='background-color: #00FF00'>59132</td>
+<td style='background-color: #00FF00'>VEROIA</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1373.3</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #00FF00'>206</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>13.01.2023,  1373.3</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300014</td>
+<td style='background-color: #00FF00'>2023-01-10 00:00:00</td>
+<td style='background-color: #00FF00'>V000104</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>176.61</td>
+<td style='background-color: #00FF00'>1177.4</td>
+<td style='background-color: #00FF00'>K004123</td>
+<td style='background-color: #00FF00'>Grekas Daniel - LI-LO ACCESSORIES</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>GR</td>
+<td style='background-color: #00FF00'>16675</td>
+<td style='background-color: #00FF00'>GLYFADA</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1177.4</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #00FF00'>176.6</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>24.01.2023,  1177.4</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300015</td>
+<td style='background-color: #00FF00'>2023-01-10 00:00:00</td>
+<td style='background-color: #00FF00'>V000104</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>181.035</td>
+<td style='background-color: #00FF00'>1206.9</td>
+<td style='background-color: #00FF00'>K006157</td>
+<td style='background-color: #00FF00'>P. MISTILLIOGLOU & SIA OE</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>GR</td>
+<td style='background-color: #00FF00'>17343</td>
+<td style='background-color: #00FF00'>AGIOS DIMITRIOS</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1206.9</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #00FF00'>181</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>24.01.2023,  1206.9</td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300114</td>
+<td style='background-color: #FFF300'>2023-01-27 00:00:00</td>
+<td style='background-color: #FFF300'>V000104</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-117.57</td>
+<td style='background-color: #FFF300'>-783.8</td>
+<td style='background-color: #FFF300'>K004123</td>
+<td style='background-color: #FFF300'>Grekas Daniel - LI-LO ACCESSORIES</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>GR</td>
+<td style='background-color: #FFF300'>16675</td>
+<td style='background-color: #FFF300'>GLYFADA</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>-783.8</td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFF300'>-117.57</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #68BF9D'>17964.8</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #68BF9D'>2159.6</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+ </tbody>
+                </table>
+                {% endblock %}
