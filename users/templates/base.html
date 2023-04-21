@@ -221,12 +221,15 @@
                         {% if language == 'de' %} Zuhause{% elif language == 'fr' %} Maison{% elif language == 'it' %}  Casa{% elif language == 'es' %}  Hogar{% elif language == '' or language == 'en' %}  Home{% endif %}</a>
 
                     {% if is_authenticated %}
+                        <a></a>
+                        <a></a>
                          <a href="{% if language == '' or language == 'en'  %} {% url 'profile_en' %} {% elif language == 'es' %} {% url 'profile_es' %}{% elif language == 'it' %} {% url 'profile_it' %} {% elif language == 'de' %} {% url 'profile_de' %} {% elif language == 'fr' %} {% url 'profile_fr' %} {% endif %}" class="link">
                              {% if language == 'de' %} Profil{% elif language == 'fr' %} Profil{% elif language == 'it' %}  Profilo{% elif language == 'es' %}  Perfil{% elif language == '' or language == 'en' %}  Profile{% endif %} </a>
-                         <a href=" {% url 'global' %}" class="link"> Global </a>
-
+                        <a></a>
+                        <a></a>
+                        <a href=" {% url 'global' %}" class="link"> Global </a>
                     {% else %}
-<a></a>
+                        <a></a>
                         <a></a>
                     <a href="{% if language == '' or language == 'en'  %} {% url 'profile_en' %} {% elif language == 'es' %} {% url 'profile_es' %}{% elif language == 'it' %} {% url 'profile_it' %} {% elif language == 'de' %} {% url 'profile_de' %} {% elif language == 'fr' %} {% url 'profile_fr' %} {% endif %}" class="link">
                         {% if language == 'de' %} Profil{% elif language == 'fr' %} Profil{% elif language == 'it' %}  Profilo{% elif language == 'es' %}  Perfil{% elif language == '' or language == 'en' %}  Profile{% endif %} </a>
@@ -234,7 +237,6 @@
                         <a></a>
                     <a href="{% if language == '' or language == 'en'  %} {% url 'table_en' %} {% elif language == 'es' %} {% url 'table_es' %}{% elif language == 'it' %} {% url 'table_it' %} {% elif language == 'de' %} {% url 'table_de' %} {% elif language == 'fr' %} {% url 'table_fr' %} {% endif %}" class="link">
                         {% if language == 'de' %} Tische{% elif language == 'fr' %} Tableaux {% elif language == 'it' %} Tavoli{% elif language == 'es' %}  Mesas{% elif language == '' or language == 'en' %}  Tables{% endif %} </a>
-
                     {% endif %}
                 {% else %}
 
