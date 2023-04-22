@@ -1,5 +1,34 @@
-<meta charset="utf-8">
-                 <table border="1" class="dataframe">
+{%extends 'base.html'%}
+                        {% block content %}
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!--<link rel="stylesheet" type="text/css" href="normas.css">-->
+<style>
+    body{
+        background-color: #d6e1f8;
+         
+    }
+    th, td {
+        border: 1px solid #ccc;
+        
+        text-align: center;
+    }
+
+    table {
+   
+        border-collapse: collapse !important; /* optional: collapse the table borders */
+    }
+
+    table tr {
+        background-color: #8BC34A !important; /* Set background color of all rows */
+    }
+
+    table tr:hover td {
+        background-color: #2196F3 !important; /* Set background color of cells when hovered */
+    }
+
+</style>
+                 <table border="1" class="dataframe" style="width:100%;">
                              <thead>
                                  <tr style="text-align: right;">
 <th style='background-color: #B0CBF0'>RK</th>
@@ -15,7 +44,7 @@
 <th style='background-color: #B0CBF0'>IntKz</th>
 <th style='background-color: #B0CBF0'>PLZ Neu</th>
 <th style='background-color: #B0CBF0'>Ort</th>
-<th style='background-color: #B0CBF0'> </th>
+<th style='background-color: #FFFFFF'> </th>
 <th style='background-color: #899EF0'>Paid amount</th>
 <th style='background-color: #899EF0'>Payment status</th>
 <th style='background-color: #899EF0'>Payment commission</th>
@@ -24,95 +53,7 @@
 <th style='background-color: #FFFFFF'> </th>
 </tr>
 </thead>
-                  <tbody><tr>
-<td style='background-color: #92D050'></td>
-<td style='background-color: #92D050'>RE-4200156</td>
-<td style='background-color: #92D050'>2022-01-26 00:00:00</td>
-<td style='background-color: #92D050'>V000134</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>100.022</td>
-<td style='background-color: #92D050'>769.4</td>
-<td style='background-color: #92D050'>K004678</td>
-<td style='background-color: #92D050'>PUERTA PALACIO MESONES SL</td>
-<td style='background-color: #92D050'></td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>45001</td>
-<td style='background-color: #92D050'>Toledo</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>PAID IN 2022</td>
-<td style='background-color: #92D050'>=ROUND(O2*E2/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'></td>
-<td style='background-color: #92D050'>RE-4200203</td>
-<td style='background-color: #92D050'>2022-01-28 00:00:00</td>
-<td style='background-color: #92D050'>V000134</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>344.448</td>
-<td style='background-color: #92D050'>2649.6</td>
-<td style='background-color: #92D050'>K004678</td>
-<td style='background-color: #92D050'>PUERTA PALACIO MESONES SL</td>
-<td style='background-color: #92D050'></td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>45001</td>
-<td style='background-color: #92D050'>Toledo</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>PAID IN 2022</td>
-<td style='background-color: #92D050'>=ROUND(O3*E3/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200246</td>
-<td style='background-color: #92D050'>2022-02-03 00:00:00</td>
-<td style='background-color: #92D050'>V000134</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>113.217</td>
-<td style='background-color: #92D050'>870.9</td>
-<td style='background-color: #92D050'>K004678</td>
-<td style='background-color: #92D050'>PUERTA PALACIO MESONES SL</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>45001</td>
-<td style='background-color: #92D050'>Toledo</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>PAID IN 2022</td>
-<td style='background-color: #92D050'>=ROUND(O4*E4/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200689</td>
-<td style='background-color: #92D050'>2022-04-05 00:00:00</td>
-<td style='background-color: #92D050'>V000134</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>285.779</td>
-<td style='background-color: #92D050'>2198.3</td>
-<td style='background-color: #92D050'>K004678</td>
-<td style='background-color: #92D050'>PUERTA PALACIO MESONES SL</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>45001</td>
-<td style='background-color: #92D050'>Toledo</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>PAID IN 2022</td>
-<td style='background-color: #92D050'>=ROUND(O5*E5/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
+                      <tbody><tr>
 <td style='background-color: #00FF00'> </td>
 <td style='background-color: #00FF00'>RE-4200749</td>
 <td style='background-color: #00FF00'>2022-04-12 00:00:00</td>
@@ -127,12 +68,12 @@
 <td style='background-color: #00FF00'>45001</td>
 <td style='background-color: #00FF00'>Toledo</td>
 <td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>2742.57</td>
-<td style='background-color: #00FF00'>PARTIALLY PAID(1364.27 PAID IN 2022)</td>
-<td style='background-color: #00FF00'>=ROUND(O6*E6/100,1)</td>
+<td style='background-color: #00FF00'>2249.2</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #00FF00'>292.4</td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'>02.01.2023,  2249.2</td>
-<td style='background-color: #FFFFFF'>02.06.2022,  493.4</td>
+<td style='background-color: #FFFFFF'> </td>
 </tr>
 <tr>
 <td style='background-color: #00FF00'> </td>
@@ -150,76 +91,10 @@
 <td style='background-color: #00FF00'>Toledo</td>
 <td style='background-color: #00FF00'> </td>
 <td style='background-color: #00FF00'>491.2</td>
-<td style='background-color: #00FF00'>PARTIALLY PAID(491.2 PAID IN 2022)</td>
-<td style='background-color: #00FF00'>=ROUND(O7*E7/100,1)</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #00FF00'>63.9</td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'>02.01.2023,  491.2</td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>RE-4201089</td>
-<td style='background-color: #FFFFFF'>2022-05-25 00:00:00</td>
-<td style='background-color: #FFFFFF'>V000134</td>
-<td style='background-color: #FFFFFF'>13</td>
-<td style='background-color: #FFFFFF'>59.475</td>
-<td style='background-color: #FFFFFF'>457.5</td>
-<td style='background-color: #FFFFFF'>K004678</td>
-<td style='background-color: #FFFFFF'>PUERTA PALACIO MESONES SL</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>ES</td>
-<td style='background-color: #FFFFFF'>45001</td>
-<td style='background-color: #FFFFFF'>Toledo</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>228.8 PAID in 2022</td>
-<td style='background-color: #FFFFFF'>=ROUND(O8*E8/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>RE-4202010</td>
-<td style='background-color: #FFFFFF'>2022-09-26 00:00:00</td>
-<td style='background-color: #FFFFFF'>V000134</td>
-<td style='background-color: #FFFFFF'>13</td>
-<td style='background-color: #FFFFFF'>3348.7675</td>
-<td style='background-color: #FFFFFF'>25759.75</td>
-<td style='background-color: #FFFFFF'>V000134</td>
-<td style='background-color: #FFFFFF'>Manuel Fernandez Diaz</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>ES</td>
-<td style='background-color: #FFFFFF'>45122</td>
-<td style='background-color: #FFFFFF'>Argés (Toledo)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>=ROUND(O9*E9/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #FFC000'> </td>
-<td style='background-color: #FFC000'>RE-4202457</td>
-<td style='background-color: #FFC000'>2022-11-30 00:00:00</td>
-<td style='background-color: #FFC000'>V000134</td>
-<td style='background-color: #FFC000'>13</td>
-<td style='background-color: #FFC000'>-3348.7675</td>
-<td style='background-color: #FFC000'>-25759.75</td>
-<td style='background-color: #FFC000'>V000134</td>
-<td style='background-color: #FFC000'>Manuel Fernandez Diaz</td>
-<td style='background-color: #FFC000'> </td>
-<td style='background-color: #FFC000'>ES</td>
-<td style='background-color: #FFC000'>45122</td>
-<td style='background-color: #FFC000'>Argés (Toledo)</td>
-<td style='background-color: #FFC000'> </td>
-<td style='background-color: #FFC000'> </td>
-<td style='background-color: #FFC000'>CREDIT NOTE(calc. In 2022)</td>
-<td style='background-color: #FFC000'>=ROUND(O10*E10/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
 </tr>
 <tr>
@@ -239,10 +114,10 @@
 <td style='background-color: #00FF00'> </td>
 <td style='background-color: #00FF00'>12586.33</td>
 <td style='background-color: #00FF00'>PARTIALLY PAID</td>
-<td style='background-color: #00FF00'>=ROUND(O11*E11/100,1)</td>
+<td style='background-color: #00FF00'>1636.2</td>
 <td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>31.01.2023,  4000.0</td>
 <td style='background-color: #FFFFFF'>02.01.2023,  8586.3</td>
+<td style='background-color: #FFFFFF'>31.01.2023,  4000.0</td>
 </tr>
 <tr>
 <td style='background-color: #00FF00'> </td>
@@ -261,7 +136,7 @@
 <td style='background-color: #00FF00'> </td>
 <td style='background-color: #00FF00'>2456.33</td>
 <td style='background-color: #00FF00'>PARTIALLY PAID</td>
-<td style='background-color: #00FF00'>=ROUND(O12*E12/100,1)</td>
+<td style='background-color: #00FF00'>319.3</td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'>02.01.2023,  2456.3</td>
 <td style='background-color: #FFFFFF'> </td>
@@ -283,7 +158,7 @@
 <td style='background-color: #00FF00'> </td>
 <td style='background-color: #00FF00'>923.77</td>
 <td style='background-color: #00FF00'>PARTIALLY PAID</td>
-<td style='background-color: #00FF00'>=ROUND(O13*E13/100,1)</td>
+<td style='background-color: #00FF00'>120.1</td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'>16.01.2023,  923.8</td>
 <td style='background-color: #FFFFFF'> </td>
@@ -305,7 +180,7 @@
 <td style='background-color: #00FF00'> </td>
 <td style='background-color: #00FF00'>756.87</td>
 <td style='background-color: #00FF00'>PARTIALLY PAID</td>
-<td style='background-color: #00FF00'>=ROUND(O14*E14/100,1)</td>
+<td style='background-color: #00FF00'>98.4</td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'>16.01.2023,  756.9</td>
 <td style='background-color: #FFFFFF'> </td>
@@ -327,7 +202,7 @@
 <td style='background-color: #00FF00'> </td>
 <td style='background-color: #00FF00'>270.7</td>
 <td style='background-color: #00FF00'>PARTIALLY PAID</td>
-<td style='background-color: #00FF00'>=ROUND(O15*E15/100,1)</td>
+<td style='background-color: #00FF00'>35.2</td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'>16.01.2023,  270.7</td>
 <td style='background-color: #FFFFFF'> </td>
@@ -349,7 +224,7 @@
 <td style='background-color: #00FF00'> </td>
 <td style='background-color: #00FF00'>657.2</td>
 <td style='background-color: #00FF00'>PARTIALLY PAID</td>
-<td style='background-color: #00FF00'>=ROUND(O16*E16/100,1)</td>
+<td style='background-color: #00FF00'>85.4</td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'>16.01.2023,  657.2</td>
 <td style='background-color: #FFFFFF'> </td>
@@ -361,7 +236,6 @@
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFF300'>57089.8</td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
@@ -369,12 +243,14 @@
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #68BF9D'>=SUM(O2:O16)</td>
 <td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #68BF9D'>=SUM(Q2:Q16)</td>
+<td style='background-color: #68BF9D'>20391.6</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #68BF9D'>2650.9</td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
 </tr>
  </tbody>
                 </table>
+                {% endblock %}

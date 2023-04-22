@@ -1,5 +1,34 @@
-<meta charset="utf-8">
-                 <table border="1" class="dataframe">
+{%extends 'base.html'%}
+                        {% block content %}
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!--<link rel="stylesheet" type="text/css" href="normas.css">-->
+<style>
+    body{
+        background-color: #d6e1f8;
+         
+    }
+    th, td {
+        border: 1px solid #ccc;
+        
+        text-align: center;
+    }
+
+    table {
+   
+        border-collapse: collapse !important; /* optional: collapse the table borders */
+    }
+
+    table tr {
+        background-color: #8BC34A !important; /* Set background color of all rows */
+    }
+
+    table tr:hover td {
+        background-color: #2196F3 !important; /* Set background color of cells when hovered */
+    }
+
+</style>
+                 <table border="1" class="dataframe" style="width:100%;">
                              <thead>
                                  <tr style="text-align: right;">
 <th style='background-color: #B0CBF0'>RK</th>
@@ -15,258 +44,16 @@
 <th style='background-color: #B0CBF0'>IntKz</th>
 <th style='background-color: #B0CBF0'>PLZ Neu</th>
 <th style='background-color: #B0CBF0'>Ort</th>
-<th style='background-color: #B0CBF0'> </th>
+<th style='background-color: #FFFFFF'> </th>
 <th style='background-color: #899EF0'>Paid amount</th>
 <th style='background-color: #899EF0'>Payment status</th>
 <th style='background-color: #899EF0'>Payment commission</th>
-<th style='background-color: #899EF0'>Rest</th>
+<th style='background-color: #899EF0'>Payments with Rest</th>
 <th style='background-color: #899EF0'>Payments Dates</th>
 <th style='background-color: #FFFFFF'> </th>
 </tr>
 </thead>
-                  <tbody><tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200149</td>
-<td style='background-color: #92D050'>2022-01-25 00:00:00</td>
-<td style='background-color: #92D050'>V000093</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>35.126</td>
-<td style='background-color: #92D050'>270.2</td>
-<td style='background-color: #92D050'>K005246</td>
-<td style='background-color: #92D050'>SALROS TRENDS</td>
-<td style='background-color: #92D050'>Centro Comercial Rincon de</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>29720</td>
-<td style='background-color: #92D050'>Rincon de la Victoria</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>PAID IN 2022</td>
-<td style='background-color: #92D050'>=ROUND(O2*E2/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200157</td>
-<td style='background-color: #92D050'>2022-01-26 00:00:00</td>
-<td style='background-color: #92D050'>V000093</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>197.34</td>
-<td style='background-color: #92D050'>1518</td>
-<td style='background-color: #92D050'>K002313</td>
-<td style='background-color: #92D050'>"SELECTION"</td>
-<td style='background-color: #92D050'>Maria Luisa Correal Delgado</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>29620</td>
-<td style='background-color: #92D050'>La Carihuela - Torremolinos - Malaga</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>PAID IN 2022</td>
-<td style='background-color: #92D050'>=ROUND(O3*E3/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200324</td>
-<td style='background-color: #92D050'>2022-02-11 00:00:00</td>
-<td style='background-color: #92D050'>V000093</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>91.299</td>
-<td style='background-color: #92D050'>702.3</td>
-<td style='background-color: #92D050'>K002313</td>
-<td style='background-color: #92D050'>"SELECTION"</td>
-<td style='background-color: #92D050'>Maria Luisa Correal Delgado</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>29620</td>
-<td style='background-color: #92D050'>La Carihuela - Torremolinos - Malaga</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>PAID IN 2022</td>
-<td style='background-color: #92D050'>=ROUND(O4*E4/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200417</td>
-<td style='background-color: #92D050'>2022-02-24 00:00:00</td>
-<td style='background-color: #92D050'>V000093</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>356.6316</td>
-<td style='background-color: #92D050'>2743.32</td>
-<td style='background-color: #92D050'>K003186</td>
-<td style='background-color: #92D050'>Joyeria Armaan</td>
-<td style='background-color: #92D050'>Sunil C y Sunil C Sadhwani S.C</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>29640</td>
-<td style='background-color: #92D050'>Fuengirola, Malaga</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>PAID IN 2022</td>
-<td style='background-color: #92D050'>=ROUND(O5*E5/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200422</td>
-<td style='background-color: #92D050'>2022-02-25 00:00:00</td>
-<td style='background-color: #92D050'>V000093</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>65.065</td>
-<td style='background-color: #92D050'>500.5</td>
-<td style='background-color: #92D050'>K005149</td>
-<td style='background-color: #92D050'>ALVAREZ JOYEROS S.C</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>29670</td>
-<td style='background-color: #92D050'>SAN PEDRO DE ALCANTARA MALAGA</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>PAID IN 2022</td>
-<td style='background-color: #92D050'>=ROUND(O6*E6/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200433</td>
-<td style='background-color: #92D050'>2022-02-28 00:00:00</td>
-<td style='background-color: #92D050'>V000093</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>545.9714</td>
-<td style='background-color: #92D050'>4199.78</td>
-<td style='background-color: #92D050'>K003186</td>
-<td style='background-color: #92D050'>Joyeria Armaan</td>
-<td style='background-color: #92D050'>Sunil C y Sunil C Sadhwani S.C</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>29640</td>
-<td style='background-color: #92D050'>Fuengirola, Malaga</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>PAID IN 2022</td>
-<td style='background-color: #92D050'>=ROUND(O7*E7/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200467</td>
-<td style='background-color: #92D050'>2022-03-08 00:00:00</td>
-<td style='background-color: #92D050'>V000093</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>99.281</td>
-<td style='background-color: #92D050'>763.7</td>
-<td style='background-color: #92D050'>K002313</td>
-<td style='background-color: #92D050'>"SELECTION"</td>
-<td style='background-color: #92D050'>Maria Luisa Correal Delgado</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>29620</td>
-<td style='background-color: #92D050'>La Carihuela - Torremolinos - Malaga</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>PAID IN 2022</td>
-<td style='background-color: #92D050'>=ROUND(O8*E8/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200514</td>
-<td style='background-color: #92D050'>2022-03-15 00:00:00</td>
-<td style='background-color: #92D050'>V000093</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>50.83</td>
-<td style='background-color: #92D050'>391</td>
-<td style='background-color: #92D050'>K002313</td>
-<td style='background-color: #92D050'>"SELECTION"</td>
-<td style='background-color: #92D050'>Maria Luisa Correal Delgado</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>29620</td>
-<td style='background-color: #92D050'>La Carihuela - Torremolinos - Malaga</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>PAID IN 2022</td>
-<td style='background-color: #92D050'>=ROUND(O9*E9/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200652</td>
-<td style='background-color: #92D050'>2022-03-31 00:00:00</td>
-<td style='background-color: #92D050'>V000093</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>112.372</td>
-<td style='background-color: #92D050'>864.4</td>
-<td style='background-color: #92D050'>K003186</td>
-<td style='background-color: #92D050'>Joyeria Armaan</td>
-<td style='background-color: #92D050'>Sunil C y Sunil C Sadhwani S.C</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>29640</td>
-<td style='background-color: #92D050'>Fuengirola, Malaga</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>PAID IN 2022</td>
-<td style='background-color: #92D050'>=ROUND(O10*E10/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200654</td>
-<td style='background-color: #92D050'>2022-03-31 00:00:00</td>
-<td style='background-color: #92D050'>V000093</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>93.2997</td>
-<td style='background-color: #92D050'>717.69</td>
-<td style='background-color: #92D050'>K003186</td>
-<td style='background-color: #92D050'>Joyeria Armaan</td>
-<td style='background-color: #92D050'>Sunil C y Sunil C Sadhwani S.C</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>29640</td>
-<td style='background-color: #92D050'>Fuengirola, Malaga</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>PAID IN 2022</td>
-<td style='background-color: #92D050'>=ROUND(O11*E11/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200668</td>
-<td style='background-color: #92D050'>2022-04-01 00:00:00</td>
-<td style='background-color: #92D050'>V000093</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>139.542</td>
-<td style='background-color: #92D050'>1073.4</td>
-<td style='background-color: #92D050'>K005236</td>
-<td style='background-color: #92D050'>SEANNA</td>
-<td style='background-color: #92D050'>Sachin Rajan Kirpalani</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>29630</td>
-<td style='background-color: #92D050'>Málaga</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>PAID IN 2022</td>
-<td style='background-color: #92D050'>=ROUND(O12*E12/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
+                      <tbody><tr>
 <td style='background-color: #00FF00'> </td>
 <td style='background-color: #00FF00'>RE-4200830</td>
 <td style='background-color: #00FF00'>2022-04-21 00:00:00</td>
@@ -283,142 +70,10 @@
 <td style='background-color: #00FF00'> </td>
 <td style='background-color: #00FF00'>177.4</td>
 <td style='background-color: #00FF00'>PAID</td>
-<td style='background-color: #00FF00'>=ROUND(O13*E13/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #00FF00'>23.1</td>
+<td style='background-color: #FFAB83'>25.01.2023,  177</td>
+<td style='background-color: #FFFFFF'>31.01.2023,  177.4</td>
 <td style='background-color: #FFFFFF'>25.01.2023,  177.4</td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200848</td>
-<td style='background-color: #92D050'>2022-04-25 00:00:00</td>
-<td style='background-color: #92D050'>V000093</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>151.099</td>
-<td style='background-color: #92D050'>1162.3</td>
-<td style='background-color: #92D050'>K002313</td>
-<td style='background-color: #92D050'>"SELECTION"</td>
-<td style='background-color: #92D050'>Maria Luisa Correal Delgado</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>29620</td>
-<td style='background-color: #92D050'>La Carihuela - Torremolinos - Malaga</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>PAID IN 2022</td>
-<td style='background-color: #92D050'>=ROUND(O14*E14/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200953</td>
-<td style='background-color: #92D050'>2022-05-09 00:00:00</td>
-<td style='background-color: #92D050'>V000093</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>188.006</td>
-<td style='background-color: #92D050'>1446.2</td>
-<td style='background-color: #92D050'>K006104</td>
-<td style='background-color: #92D050'>ASWANIBROS SL</td>
-<td style='background-color: #92D050'>Joyeria Deluxe</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>29620</td>
-<td style='background-color: #92D050'>Torremolinos / Malaga</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>PAID IN 2022</td>
-<td style='background-color: #92D050'>=ROUND(O15*E15/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200976</td>
-<td style='background-color: #92D050'>2022-05-12 00:00:00</td>
-<td style='background-color: #92D050'>V000093</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>127.4897</td>
-<td style='background-color: #92D050'>980.69</td>
-<td style='background-color: #92D050'>K003186</td>
-<td style='background-color: #92D050'>Joyeria Armaan</td>
-<td style='background-color: #92D050'>Sunil C y Sunil C Sadhwani S.C</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>29640</td>
-<td style='background-color: #92D050'>Fuengirola, Malaga</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>PAID IN 2022</td>
-<td style='background-color: #92D050'>=ROUND(O16*E16/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200977</td>
-<td style='background-color: #92D050'>2022-05-12 00:00:00</td>
-<td style='background-color: #92D050'>V000093</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>545.1277</td>
-<td style='background-color: #92D050'>4193.29</td>
-<td style='background-color: #92D050'>K003186</td>
-<td style='background-color: #92D050'>Joyeria Armaan</td>
-<td style='background-color: #92D050'>Sunil C y Sunil C Sadhwani S.C</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>29640</td>
-<td style='background-color: #92D050'>Fuengirola, Malaga</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>PAID IN 2022</td>
-<td style='background-color: #92D050'>=ROUND(O17*E17/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201028</td>
-<td style='background-color: #92D050'>2022-05-19 00:00:00</td>
-<td style='background-color: #92D050'>V000093</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>156.741</td>
-<td style='background-color: #92D050'>1205.7</td>
-<td style='background-color: #92D050'>K002313</td>
-<td style='background-color: #92D050'>"SELECTION"</td>
-<td style='background-color: #92D050'>Maria Luisa Correal Delgado</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>29620</td>
-<td style='background-color: #92D050'>La Carihuela - Torremolinos - Malaga</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>PAID IN 2022</td>
-<td style='background-color: #92D050'>=ROUND(O18*E18/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #FFC000'> </td>
-<td style='background-color: #FFC000'>RE-4201127</td>
-<td style='background-color: #FFC000'>2022-05-31 00:00:00</td>
-<td style='background-color: #FFC000'>V000093</td>
-<td style='background-color: #FFC000'>13</td>
-<td style='background-color: #FFC000'>-3.575</td>
-<td style='background-color: #FFC000'>-27.5</td>
-<td style='background-color: #FFC000'>K002313</td>
-<td style='background-color: #FFC000'>"SELECTION"</td>
-<td style='background-color: #FFC000'>Maria Luisa Correal Delgado</td>
-<td style='background-color: #FFC000'>ES</td>
-<td style='background-color: #FFC000'>29620</td>
-<td style='background-color: #FFC000'>La Carihuela - Torremolinos - Malaga</td>
-<td style='background-color: #FFC000'> </td>
-<td style='background-color: #FFC000'> </td>
-<td style='background-color: #FFC000'>CREDIT NOTE(calc. 2022)</td>
-<td style='background-color: #FFC000'>=ROUND(O19*E19/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
 </tr>
 <tr>
 <td style='background-color: #00FF00'> </td>
@@ -435,275 +90,11 @@
 <td style='background-color: #00FF00'>29630</td>
 <td style='background-color: #00FF00'>Benalmádena Costa, Puerto Marina</td>
 <td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>876.56</td>
-<td style='background-color: #00FF00'>PAID (1314.84 PAID in 2022)</td>
-<td style='background-color: #00FF00'>=ROUND(O20*E20/100,1)</td>
-<td style='background-color: #00B0F0'>438.28</td>
+<td style='background-color: #00FF00'>1314.84</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #00FF00'>170.9</td>
+<td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'>26.01.2023,  1314.8</td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201268</td>
-<td style='background-color: #92D050'>2022-06-15 00:00:00</td>
-<td style='background-color: #92D050'>V000093</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>401.206</td>
-<td style='background-color: #92D050'>3086.2</td>
-<td style='background-color: #92D050'>K002313</td>
-<td style='background-color: #92D050'>"SELECTION"</td>
-<td style='background-color: #92D050'>Maria Luisa Correal Delgado</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>29620</td>
-<td style='background-color: #92D050'>La Carihuela - Torremolinos - Malaga</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>PAID IN 2022</td>
-<td style='background-color: #92D050'>=ROUND(O21*E21/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201290</td>
-<td style='background-color: #92D050'>2022-06-20 00:00:00</td>
-<td style='background-color: #92D050'>V000093</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>280.4256</td>
-<td style='background-color: #92D050'>2157.12</td>
-<td style='background-color: #92D050'>K003186</td>
-<td style='background-color: #92D050'>Joyeria Armaan</td>
-<td style='background-color: #92D050'>Sunil C y Sunil C Sadhwani S.C</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>29640</td>
-<td style='background-color: #92D050'>Fuengirola, Malaga</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>PAID IN 2022</td>
-<td style='background-color: #92D050'>=ROUND(O22*E22/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201447</td>
-<td style='background-color: #92D050'>2022-07-08 00:00:00</td>
-<td style='background-color: #92D050'>V000093</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>160.654</td>
-<td style='background-color: #92D050'>1235.8</td>
-<td style='background-color: #92D050'>K005092</td>
-<td style='background-color: #92D050'>ANTONIO RUIZ MUÑOZ</td>
-<td style='background-color: #92D050'>Viuda de Cipriano</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>29400</td>
-<td style='background-color: #92D050'>Ronda, Málaga</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>PAID IN 2022</td>
-<td style='background-color: #92D050'>=ROUND(O23*E23/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201452</td>
-<td style='background-color: #92D050'>2022-07-11 00:00:00</td>
-<td style='background-color: #92D050'>V000093</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>422.4259</td>
-<td style='background-color: #92D050'>3249.43</td>
-<td style='background-color: #92D050'>K003186</td>
-<td style='background-color: #92D050'>Joyeria Armaan</td>
-<td style='background-color: #92D050'>Sunil C y Sunil C Sadhwani S.C</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>29640</td>
-<td style='background-color: #92D050'>Fuengirola, Malaga</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>PAID IN 2022</td>
-<td style='background-color: #92D050'>=ROUND(O24*E24/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201472</td>
-<td style='background-color: #92D050'>2022-07-13 00:00:00</td>
-<td style='background-color: #92D050'>V000093</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>126.568</td>
-<td style='background-color: #92D050'>973.6</td>
-<td style='background-color: #92D050'>K002313</td>
-<td style='background-color: #92D050'>"SELECTION"</td>
-<td style='background-color: #92D050'>Maria Luisa Correal Delgado</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>29620</td>
-<td style='background-color: #92D050'>La Carihuela - Torremolinos - Malaga</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>PAID IN 2022</td>
-<td style='background-color: #92D050'>=ROUND(O25*E25/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201493</td>
-<td style='background-color: #92D050'>2022-07-18 00:00:00</td>
-<td style='background-color: #92D050'>V000093</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>48.022</td>
-<td style='background-color: #92D050'>369.4</td>
-<td style='background-color: #92D050'>K005092</td>
-<td style='background-color: #92D050'>ANTONIO RUIZ MUÑOZ</td>
-<td style='background-color: #92D050'>Viuda de Cipriano</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>29400</td>
-<td style='background-color: #92D050'>Ronda, Málaga</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>PAID IN 2022</td>
-<td style='background-color: #92D050'>=ROUND(O26*E26/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>RE-4201497</td>
-<td style='background-color: #FFFFFF'>2022-07-18 00:00:00</td>
-<td style='background-color: #FFFFFF'>V000093</td>
-<td style='background-color: #FFFFFF'>13</td>
-<td style='background-color: #FFFFFF'>99.645</td>
-<td style='background-color: #FFFFFF'>766.5</td>
-<td style='background-color: #FFFFFF'>K006135</td>
-<td style='background-color: #FFFFFF'>MISS AASHITA BHARAT MIRWANI</td>
-<td style='background-color: #FFFFFF'>DNI 25738932T</td>
-<td style='background-color: #FFFFFF'>ES</td>
-<td style='background-color: #FFFFFF'>29620</td>
-<td style='background-color: #FFFFFF'>TORREMOLINOS-MALAGA</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>UNPAID </td>
-<td style='background-color: #FFFFFF'>=ROUND(O27*E27/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #FFC000'> </td>
-<td style='background-color: #FFC000'>RE-4201562</td>
-<td style='background-color: #FFC000'>2022-07-22 00:00:00</td>
-<td style='background-color: #FFC000'>V000093</td>
-<td style='background-color: #FFC000'>13</td>
-<td style='background-color: #FFC000'>-4.0144</td>
-<td style='background-color: #FFC000'>-30.88</td>
-<td style='background-color: #FFC000'>K003186</td>
-<td style='background-color: #FFC000'>Joyeria Armaan</td>
-<td style='background-color: #FFC000'>Sunil C y Sunil C Sadhwani S.C</td>
-<td style='background-color: #FFC000'>ES</td>
-<td style='background-color: #FFC000'>29640</td>
-<td style='background-color: #FFC000'>Fuengirola, Malaga</td>
-<td style='background-color: #FFC000'> </td>
-<td style='background-color: #FFC000'> </td>
-<td style='background-color: #FFC000'>CREDIT NOTE(calc. 2022)</td>
-<td style='background-color: #FFC000'>=ROUND(O28*E28/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #FFC000'> </td>
-<td style='background-color: #FFC000'>RE-4201578</td>
-<td style='background-color: #FFC000'>2022-07-25 00:00:00</td>
-<td style='background-color: #FFC000'>V000093</td>
-<td style='background-color: #FFC000'>13</td>
-<td style='background-color: #FFC000'>-2.119</td>
-<td style='background-color: #FFC000'>-16.3</td>
-<td style='background-color: #FFC000'>K001892</td>
-<td style='background-color: #FFC000'>ROMA LALCHAND</td>
-<td style='background-color: #FFC000'>RAMCHADANI RAMCHADANI</td>
-<td style='background-color: #FFC000'>ES</td>
-<td style='background-color: #FFC000'>29630</td>
-<td style='background-color: #FFC000'>Benalmádena Costa, Puerto Marina</td>
-<td style='background-color: #FFC000'> </td>
-<td style='background-color: #FFC000'> </td>
-<td style='background-color: #FFC000'>CREDIT NOTE(calc. 2022)</td>
-<td style='background-color: #FFC000'>=ROUND(O29*E29/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201681</td>
-<td style='background-color: #92D050'>2022-08-04 00:00:00</td>
-<td style='background-color: #92D050'>V000093</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>150.9248</td>
-<td style='background-color: #92D050'>1160.96</td>
-<td style='background-color: #92D050'>K003186</td>
-<td style='background-color: #92D050'>Joyeria Armaan</td>
-<td style='background-color: #92D050'>Sunil C y Sunil C Sadhwani S.C</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>29640</td>
-<td style='background-color: #92D050'>Fuengirola, Malaga</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>PAID IN 2022</td>
-<td style='background-color: #92D050'>=ROUND(O30*E30/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201682</td>
-<td style='background-color: #92D050'>2022-08-04 00:00:00</td>
-<td style='background-color: #92D050'>V000093</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>312.8476</td>
-<td style='background-color: #92D050'>2406.52</td>
-<td style='background-color: #92D050'>K003186</td>
-<td style='background-color: #92D050'>Joyeria Armaan</td>
-<td style='background-color: #92D050'>Sunil C y Sunil C Sadhwani S.C</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>29640</td>
-<td style='background-color: #92D050'>Fuengirola, Malaga</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>PAID IN 2022</td>
-<td style='background-color: #92D050'>=ROUND(O31*E31/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201754</td>
-<td style='background-color: #92D050'>2022-08-17 00:00:00</td>
-<td style='background-color: #92D050'>V000093</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>135.837</td>
-<td style='background-color: #92D050'>1044.9</td>
-<td style='background-color: #92D050'>K002313</td>
-<td style='background-color: #92D050'>"SELECTION"</td>
-<td style='background-color: #92D050'>Maria Luisa Correal Delgado</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>29620</td>
-<td style='background-color: #92D050'>La Carihuela - Torremolinos - Malaga</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>PAID IN 2022</td>
-<td style='background-color: #92D050'>=ROUND(O32*E32/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
 </tr>
 <tr>
@@ -723,10 +114,10 @@
 <td style='background-color: #00FF00'> </td>
 <td style='background-color: #00FF00'>419.4</td>
 <td style='background-color: #00FF00'>PAID</td>
-<td style='background-color: #00FF00'>=ROUND(O33*E33/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #00FF00'>54.5</td>
+<td style='background-color: #FFAB83'>25.01.2023,  419</td>
+<td style='background-color: #FFFFFF'>31.01.2023,  419.4</td>
 <td style='background-color: #FFFFFF'>25.01.2023,  419.4</td>
-<td style='background-color: #FFFFFF'> </td>
 </tr>
 <tr>
 <td style='background-color: #00FF00'> </td>
@@ -744,142 +135,10 @@
 <td style='background-color: #00FF00'>Fuengirola, Malaga</td>
 <td style='background-color: #00FF00'> </td>
 <td style='background-color: #00FF00'>702.95</td>
-<td style='background-color: #00FF00'>PAID (702.95 PAID in 2022)</td>
-<td style='background-color: #00FF00'>=ROUND(O34*E34/100,1)</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #00FF00'>91.4</td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'>16.01.2023,  703.0</td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201926</td>
-<td style='background-color: #92D050'>2022-09-12 00:00:00</td>
-<td style='background-color: #92D050'>V000093</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>286.013</td>
-<td style='background-color: #92D050'>2200.1</td>
-<td style='background-color: #92D050'>K002313</td>
-<td style='background-color: #92D050'>"SELECTION"</td>
-<td style='background-color: #92D050'>Maria Luisa Correal Delgado</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>29620</td>
-<td style='background-color: #92D050'>La Carihuela - Torremolinos - Malaga</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>PAID IN 2022</td>
-<td style='background-color: #92D050'>=ROUND(O35*E35/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201988</td>
-<td style='background-color: #92D050'>2022-09-22 00:00:00</td>
-<td style='background-color: #92D050'>V000093</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>53.521</td>
-<td style='background-color: #92D050'>411.7</td>
-<td style='background-color: #92D050'>K006104</td>
-<td style='background-color: #92D050'>ASWANIBROS SL</td>
-<td style='background-color: #92D050'>Joyeria Deluxe</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>29620</td>
-<td style='background-color: #92D050'>Torremolinos / Malaga</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>PAID IN 2022</td>
-<td style='background-color: #92D050'>=ROUND(O36*E36/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201989</td>
-<td style='background-color: #92D050'>2022-09-22 00:00:00</td>
-<td style='background-color: #92D050'>V000093</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>267.3749</td>
-<td style='background-color: #92D050'>2056.73</td>
-<td style='background-color: #92D050'>K005059</td>
-<td style='background-color: #92D050'>Joyería Argenta</td>
-<td style='background-color: #92D050'>ARGENTA, C.B</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>03710</td>
-<td style='background-color: #92D050'>Calpe - Alicante</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>PAID IN 2022</td>
-<td style='background-color: #92D050'>=ROUND(O37*E37/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4202014</td>
-<td style='background-color: #92D050'>2022-09-27 00:00:00</td>
-<td style='background-color: #92D050'>V000093</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>91.078</td>
-<td style='background-color: #92D050'>700.6</td>
-<td style='background-color: #92D050'>K001892</td>
-<td style='background-color: #92D050'>ROMA LALCHAND</td>
-<td style='background-color: #92D050'>RAMCHADANI RAMCHADANI</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>29630</td>
-<td style='background-color: #92D050'>Benalmádena Costa, Puerto Marina</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>PAID IN 2022</td>
-<td style='background-color: #92D050'>=ROUND(O38*E38/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4202015</td>
-<td style='background-color: #92D050'>2022-09-27 00:00:00</td>
-<td style='background-color: #92D050'>V000093</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>222.0348</td>
-<td style='background-color: #92D050'>1707.96</td>
-<td style='background-color: #92D050'>K002313</td>
-<td style='background-color: #92D050'>"SELECTION"</td>
-<td style='background-color: #92D050'>Maria Luisa Correal Delgado</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>29620</td>
-<td style='background-color: #92D050'>La Carihuela - Torremolinos - Malaga</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>PAID IN 2022</td>
-<td style='background-color: #92D050'>=ROUND(O39*E39/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #FFC000'> </td>
-<td style='background-color: #FFC000'>RE-4202118</td>
-<td style='background-color: #FFC000'>2022-10-11 00:00:00</td>
-<td style='background-color: #FFC000'>V000093</td>
-<td style='background-color: #FFC000'>13</td>
-<td style='background-color: #FFC000'>-2.6</td>
-<td style='background-color: #FFC000'>-20</td>
-<td style='background-color: #FFC000'>K001892</td>
-<td style='background-color: #FFC000'>ROMA LALCHAND</td>
-<td style='background-color: #FFC000'>RAMCHADANI RAMCHADANI</td>
-<td style='background-color: #FFC000'>ES</td>
-<td style='background-color: #FFC000'>29630</td>
-<td style='background-color: #FFC000'>Benalmádena Costa, Puerto Marina</td>
-<td style='background-color: #FFC000'> </td>
-<td style='background-color: #FFC000'> </td>
-<td style='background-color: #FFC000'>CREDIT NOTE(calc. 2022)</td>
-<td style='background-color: #FFC000'>=ROUND(O40*E40/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
 </tr>
 <tr>
@@ -899,120 +158,10 @@
 <td style='background-color: #00FF00'> </td>
 <td style='background-color: #00FF00'>1422.2</td>
 <td style='background-color: #00FF00'>PAID</td>
-<td style='background-color: #00FF00'>=ROUND(O41*E41/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #00FF00'>184.9</td>
+<td style='background-color: #FFAB83'>16.01.2023,  1422</td>
+<td style='background-color: #FFFFFF'>02.01.2023,  1422.2</td>
 <td style='background-color: #FFFFFF'>16.01.2023,  1422.2</td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>RE-4202223</td>
-<td style='background-color: #FFFFFF'>2022-10-27 00:00:00</td>
-<td style='background-color: #FFFFFF'>V000093</td>
-<td style='background-color: #FFFFFF'>13</td>
-<td style='background-color: #FFFFFF'>307.06</td>
-<td style='background-color: #FFFFFF'>2362</td>
-<td style='background-color: #FFFFFF'>K005301</td>
-<td style='background-color: #FFFFFF'>Sunil Kirpalani Kirpalani</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>ES</td>
-<td style='background-color: #FFFFFF'>29620</td>
-<td style='background-color: #FFFFFF'>Torremolinos, Malaga</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>0</td>
-<td style='background-color: #FFFFFF'>UNPAID </td>
-<td style='background-color: #FFFFFF'>=ROUND(O42*E42/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>RE-4202289</td>
-<td style='background-color: #FFFFFF'>2022-11-07 00:00:00</td>
-<td style='background-color: #FFFFFF'>V000093</td>
-<td style='background-color: #FFFFFF'>13</td>
-<td style='background-color: #FFFFFF'>460.7551</td>
-<td style='background-color: #FFFFFF'>3544.27</td>
-<td style='background-color: #FFFFFF'>K003186</td>
-<td style='background-color: #FFFFFF'>Joyeria Armaan</td>
-<td style='background-color: #FFFFFF'>Sunil C y Sunil C Sadhwani S.C</td>
-<td style='background-color: #FFFFFF'>ES</td>
-<td style='background-color: #FFFFFF'>29640</td>
-<td style='background-color: #FFFFFF'>Fuengirola, Malaga</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>0</td>
-<td style='background-color: #FFFFFF'>UNPAID</td>
-<td style='background-color: #FFFFFF'>=ROUND(O43*E43/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>RE-4202303</td>
-<td style='background-color: #FFFFFF'>2022-11-08 00:00:00</td>
-<td style='background-color: #FFFFFF'>V000093</td>
-<td style='background-color: #FFFFFF'>13</td>
-<td style='background-color: #FFFFFF'>273.8008</td>
-<td style='background-color: #FFFFFF'>2106.16</td>
-<td style='background-color: #FFFFFF'>K003186</td>
-<td style='background-color: #FFFFFF'>Joyeria Armaan</td>
-<td style='background-color: #FFFFFF'>Sunil C y Sunil C Sadhwani S.C</td>
-<td style='background-color: #FFFFFF'>ES</td>
-<td style='background-color: #FFFFFF'>29640</td>
-<td style='background-color: #FFFFFF'>Fuengirola, Malaga</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>0</td>
-<td style='background-color: #FFFFFF'>UNPAID</td>
-<td style='background-color: #FFFFFF'>=ROUND(O44*E44/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #FFC000'> </td>
-<td style='background-color: #FFC000'>RE-4202307</td>
-<td style='background-color: #FFC000'>2022-11-08 00:00:00</td>
-<td style='background-color: #FFC000'>V000093</td>
-<td style='background-color: #FFC000'>13</td>
-<td style='background-color: #FFC000'>-307.06</td>
-<td style='background-color: #FFC000'>-2362</td>
-<td style='background-color: #FFC000'>K005301</td>
-<td style='background-color: #FFC000'>Sunil Kirpalani Kirpalani</td>
-<td style='background-color: #FFC000'> </td>
-<td style='background-color: #FFC000'>ES</td>
-<td style='background-color: #FFC000'>29620</td>
-<td style='background-color: #FFC000'>Torremolinos, Malaga</td>
-<td style='background-color: #FFC000'> </td>
-<td style='background-color: #FFC000'>0</td>
-<td style='background-color: #FFC000'>CREDIT NOTE(calc. 2022)</td>
-<td style='background-color: #FFC000'>=ROUND(O45*E45/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>RE-4202308</td>
-<td style='background-color: #FFFFFF'>2022-11-01 00:00:00</td>
-<td style='background-color: #FFFFFF'>V000093</td>
-<td style='background-color: #FFFFFF'>13</td>
-<td style='background-color: #FFFFFF'>291.7512</td>
-<td style='background-color: #FFFFFF'>2244.24</td>
-<td style='background-color: #FFFFFF'>K003186</td>
-<td style='background-color: #FFFFFF'>Joyeria Armaan</td>
-<td style='background-color: #FFFFFF'>Sunil C y Sunil C Sadhwani S.C</td>
-<td style='background-color: #FFFFFF'>ES</td>
-<td style='background-color: #FFFFFF'>29640</td>
-<td style='background-color: #FFFFFF'>Fuengirola, Malaga</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>0</td>
-<td style='background-color: #FFFFFF'>UNPAID</td>
-<td style='background-color: #FFFFFF'>=ROUND(O46*E46/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
 </tr>
 <tr>
 <td style='background-color: #00FF00'> </td>
@@ -1030,8 +179,8 @@
 <td style='background-color: #00FF00'>La Carihuela - Torremolinos - Malaga</td>
 <td style='background-color: #00FF00'> </td>
 <td style='background-color: #00FF00'>963.3</td>
-<td style='background-color: #00FF00'>PAID (963.3 PAID in 2022)</td>
-<td style='background-color: #00FF00'>=ROUND(O47*E47/100,1)</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #00FF00'>125.2</td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'>16.01.2023,  963.3</td>
 <td style='background-color: #FFFFFF'> </td>
@@ -1053,7 +202,7 @@
 <td style='background-color: #00FF00'> </td>
 <td style='background-color: #00FF00'>171.4</td>
 <td style='background-color: #00FF00'>PAID</td>
-<td style='background-color: #00FF00'>=ROUND(O48*E48/100,1)</td>
+<td style='background-color: #00FF00'>22.3</td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'>31.01.2023,  171.4</td>
 <td style='background-color: #FFFFFF'> </td>
@@ -1075,10 +224,10 @@
 <td style='background-color: #00FF00'> </td>
 <td style='background-color: #00FF00'>473.4</td>
 <td style='background-color: #00FF00'>PAID</td>
-<td style='background-color: #00FF00'>=ROUND(O49*E49/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>31.01.2023,  0.1</td>
+<td style='background-color: #00FF00'>61.5</td>
+<td style='background-color: #FFAB83'>31.01.2023,  0</td>
 <td style='background-color: #FFFFFF'>25.01.2023,  473.4</td>
+<td style='background-color: #FFFFFF'>31.01.2023,  0.1</td>
 </tr>
 <tr>
 <td style='background-color: #00FF00'> </td>
@@ -1097,63 +246,13 @@
 <td style='background-color: #00FF00'> </td>
 <td style='background-color: #00FF00'>688.9</td>
 <td style='background-color: #00FF00'>PARTIALLY PAID</td>
-<td style='background-color: #00FF00'>=ROUND(O50*E50/100,1)</td>
+<td style='background-color: #00FF00'>89.6</td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'>31.01.2023,  688.9</td>
 <td style='background-color: #FFFFFF'> </td>
 </tr>
 <tr>
 <td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>RE-4300068</td>
-<td style='background-color: #FFFFFF'>2023-01-19 00:00:00</td>
-<td style='background-color: #FFFFFF'>V000093</td>
-<td style='background-color: #FFFFFF'>13</td>
-<td style='background-color: #FFFFFF'>166.686</td>
-<td style='background-color: #FFFFFF'>1282.2</td>
-<td style='background-color: #FFFFFF'>K002313</td>
-<td style='background-color: #FFFFFF'>"SELECTION"</td>
-<td style='background-color: #FFFFFF'>Maria Luisa Correal Delgado</td>
-<td style='background-color: #FFFFFF'>ES</td>
-<td style='background-color: #FFFFFF'>29620</td>
-<td style='background-color: #FFFFFF'>La Carihuela - Torremolinos - Malaga</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>0</td>
-<td style='background-color: #FFFFFF'>UNPAID</td>
-<td style='background-color: #FFFFFF'>=ROUND(O51*E51/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>RE-4300090</td>
-<td style='background-color: #FFFFFF'>2023-01-24 00:00:00</td>
-<td style='background-color: #FFFFFF'>V000093</td>
-<td style='background-color: #FFFFFF'>13</td>
-<td style='background-color: #FFFFFF'>287.5158</td>
-<td style='background-color: #FFFFFF'>2211.66</td>
-<td style='background-color: #FFFFFF'>K003186</td>
-<td style='background-color: #FFFFFF'>Joyeria Armaan</td>
-<td style='background-color: #FFFFFF'>Sunil C y Sunil C Sadhwani S.C</td>
-<td style='background-color: #FFFFFF'>ES</td>
-<td style='background-color: #FFFFFF'>29640</td>
-<td style='background-color: #FFFFFF'>Fuengirola, Malaga</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>0</td>
-<td style='background-color: #FFFFFF'>UNPAID</td>
-<td style='background-color: #FFFFFF'>=ROUND(O52*E52/100,1)</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFF300'>67119.3</td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
@@ -1161,12 +260,19 @@
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #68BF9D'>=SUM(O2:O52)</td>
 <td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #68BF9D'>=SUM(Q2:Q52)</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #68BF9D'>6333.8</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #68BF9D'>823.4</td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
 </tr>
  </tbody>
                 </table>
+                {% endblock %}

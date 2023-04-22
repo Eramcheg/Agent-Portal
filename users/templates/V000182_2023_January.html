@@ -1,5 +1,34 @@
-<meta charset="utf-8">
-                 <table border="1" class="dataframe">
+{%extends 'base.html'%}
+                        {% block content %}
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!--<link rel="stylesheet" type="text/css" href="normas.css">-->
+<style>
+    body{
+        background-color: #d6e1f8;
+         
+    }
+    th, td {
+        border: 1px solid #ccc;
+        
+        text-align: center;
+    }
+
+    table {
+   
+        border-collapse: collapse !important; /* optional: collapse the table borders */
+    }
+
+    table tr {
+        background-color: #8BC34A !important; /* Set background color of all rows */
+    }
+
+    table tr:hover td {
+        background-color: #2196F3 !important; /* Set background color of cells when hovered */
+    }
+
+</style>
+                 <table border="1" class="dataframe" style="width:100%;">
                              <thead>
                                  <tr style="text-align: right;">
 <th style='background-color: #B0CBF0'>RK</th>
@@ -23,56 +52,7 @@
 <th style='background-color: #899EF0'>Payments Dates</th>
 </tr>
 </thead>
-                  <tbody><tr>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>RE-4300120</td>
-<td style='background-color: #FFFFFF'>2023-01-30 00:00:00</td>
-<td style='background-color: #FFFFFF'>V000182</td>
-<td style='background-color: #FFFFFF'>10</td>
-<td style='background-color: #FFFFFF'>=G2*0.1</td>
-<td style='background-color: #FFFFFF'>1439.5</td>
-<td style='background-color: #FFFFFF'>K003577</td>
-<td style='background-color: #FFFFFF'>Concepcion Durendez Soria</td>
-<td style='background-color: #FFFFFF'>"SERGE"</td>
-<td style='background-color: #FFFFFF'>ES</td>
-<td style='background-color: #FFFFFF'>03181</td>
-<td style='background-color: #FFFFFF'>Torrevieja, Alicante</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>0</td>
-<td style='background-color: #FFFFFF'>UNPAID</td>
-<td style='background-color: #FFFFFF'>0</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>RE-4300121</td>
-<td style='background-color: #FFFFFF'>2023-01-30 00:00:00</td>
-<td style='background-color: #FFFFFF'>V000182</td>
-<td style='background-color: #FFFFFF'>10</td>
-<td style='background-color: #FFFFFF'>=G3*0.1</td>
-<td style='background-color: #FFFFFF'>675.6</td>
-<td style='background-color: #FFFFFF'>K001626</td>
-<td style='background-color: #FFFFFF'>Cristaleria Rovira</td>
-<td style='background-color: #FFFFFF'>Cristaleria Rovira, S.L.</td>
-<td style='background-color: #FFFFFF'>ES</td>
-<td style='background-color: #FFFFFF'>12100</td>
-<td style='background-color: #FFFFFF'>Grao de Castellón, Castellón</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>0</td>
-<td style='background-color: #FFFFFF'>UNPAID</td>
-<td style='background-color: #FFFFFF'>0</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFF300'>2115.1</td>
+                      <tbody><tr>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
@@ -80,7 +60,14 @@
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #68BF9D'>0.0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #68BF9D'>0</td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #68BF9D'>0</td>
 <td style='background-color: #FFFFFF'> </td>
@@ -88,3 +75,4 @@
 </tr>
  </tbody>
                 </table>
+                {% endblock %}
