@@ -1,0 +1,920 @@
+{%extends 'base.html'%}
+                        {% block content %}
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!--<link rel="stylesheet" type="text/css" href="normas.css">-->
+<style>
+    body{
+        background-color: #d6e1f8;
+         
+    }
+    th, td {
+        border: 1px solid #ccc;
+        
+        text-align: center;
+    }
+
+    table {
+   
+        border-collapse: collapse !important; /* optional: collapse the table borders */
+    }
+
+    table tr {
+        background-color: #8BC34A !important; /* Set background color of all rows */
+    }
+
+    table tr:hover td {
+        background-color: #2196F3 !important; /* Set background color of cells when hovered */
+    }
+
+</style>
+                 <table border="1" class="dataframe" style="width:100%;">
+                             <thead>
+                                 <tr style="text-align: right;">
+<th style='background-color: #B0CBF0'>RK</th>
+<th style='background-color: #B0CBF0'>GF-Nr</th>
+<th style='background-color: #B0CBF0'>Data</th>
+<th style='background-color: #B0CBF0'>Representante</th>
+<th style='background-color: #B0CBF0'>Proviggioni </th>
+<th style='background-color: #B0CBF0'>Proviggioni somma</th>
+<th style='background-color: #B0CBF0'>Somme</th>
+<th style='background-color: #B0CBF0'>Numero cliente</th>
+<th style='background-color: #B0CBF0'>Nome cliente</th>
+<th style='background-color: #B0CBF0'>Nome cliente 2</th>
+<th style='background-color: #B0CBF0'>IntKz</th>
+<th style='background-color: #B0CBF0'>CAP</th>
+<th style='background-color: #B0CBF0'>Indirizzo</th>
+<th style='background-color: #FFFFFF'> </th>
+<th style='background-color: #899EF0'>Pagato</th>
+<th style='background-color: #899EF0'>Stato pagamento</th>
+<th style='background-color: #899EF0'>Proviggioni su pagato</th>
+<th style='background-color: #899EF0'> </th>
+<th style='background-color: #899EF0'>Data pagamento</th>
+<th style='background-color: #FFFFFF'> </th>
+<th style='background-color: #FFFFFF'> </th>
+<th style='background-color: #FFFFFF'> </th>
+<th style='background-color: #FFFFFF'> </th>
+<th style='background-color: #FFFFFF'> </th>
+</tr>
+</thead>
+                      <tbody><tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4202131</td>
+<td style='background-color: #00FF00'>2022-10-14 00:00:00</td>
+<td style='background-color: #00FF00'>V000030</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>165.705</td>
+<td style='background-color: #00FF00'>1104.7</td>
+<td style='background-color: #00FF00'>K003715</td>
+<td style='background-color: #00FF00'>Alta Classe Gioie & C.</td>
+<td style='background-color: #00FF00'>di Giada Maria Cascio SAS</td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>90011</td>
+<td style='background-color: #00FF00'>Bagheria (PA)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1104.7</td>
+<td style='background-color: #00FF00'>PAGATO</td>
+<td style='background-color: #00FF00'>165.7</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>12.01.2023,  1104.7</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4202146</td>
+<td style='background-color: #00FF00'>2022-10-17 00:00:00</td>
+<td style='background-color: #00FF00'>V000030</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>135.435</td>
+<td style='background-color: #00FF00'>902.9</td>
+<td style='background-color: #00FF00'>K005019</td>
+<td style='background-color: #00FF00'>Gioielleria Dario Subba di</td>
+<td style='background-color: #00FF00'>ALEXANDRA CATALANO</td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>98055</td>
+<td style='background-color: #00FF00'>Lipari (ME)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>451.45</td>
+<td style='background-color: #00FF00'>PAGAMENTO PARZIALE</td>
+<td style='background-color: #00FF00'>67.7</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>02.01.2023,  451.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4202168</td>
+<td style='background-color: #00FF00'>2022-10-20 00:00:00</td>
+<td style='background-color: #00FF00'>V000030</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>143.0805</td>
+<td style='background-color: #00FF00'>953.87</td>
+<td style='background-color: #00FF00'>K006035</td>
+<td style='background-color: #00FF00'>Taormina 1982 di Caminiti Lucia</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>98039</td>
+<td style='background-color: #00FF00'>Taormina (ME)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>900</td>
+<td style='background-color: #00FF00'>PAGAMENTO PARZIALE</td>
+<td style='background-color: #00FF00'>135</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>15.03.2023,  300.0</td>
+<td style='background-color: #FFFFFF'>02.01.2023,  300.0</td>
+<td style='background-color: #FFFFFF'>31.01.2023,  300.0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4202259</td>
+<td style='background-color: #00FF00'>2022-11-03 00:00:00</td>
+<td style='background-color: #00FF00'>V000030</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>114.75</td>
+<td style='background-color: #00FF00'>765</td>
+<td style='background-color: #00FF00'>K006098</td>
+<td style='background-color: #00FF00'>Antonio Prelati  Srl</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>97019</td>
+<td style='background-color: #00FF00'>Vittoria (RG)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>765</td>
+<td style='background-color: #00FF00'>PAGATO</td>
+<td style='background-color: #00FF00'>114.8</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>21.03.2023,  765.0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4202260</td>
+<td style='background-color: #00FF00'>2022-11-03 00:00:00</td>
+<td style='background-color: #00FF00'>V000030</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>158.775</td>
+<td style='background-color: #00FF00'>1058.5</td>
+<td style='background-color: #00FF00'>K005098</td>
+<td style='background-color: #00FF00'>Battiato Silvia</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>95024</td>
+<td style='background-color: #00FF00'>Acireale (CT)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1058.5</td>
+<td style='background-color: #00FF00'>PAGATO</td>
+<td style='background-color: #00FF00'>158.8</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>02.01.2023,  529.2</td>
+<td style='background-color: #FFFFFF'>31.01.2023,  529.2</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4202313</td>
+<td style='background-color: #00FF00'>2022-11-09 00:00:00</td>
+<td style='background-color: #00FF00'>V000030</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>27.9</td>
+<td style='background-color: #00FF00'>186</td>
+<td style='background-color: #00FF00'>K006039</td>
+<td style='background-color: #00FF00'>Galleria del Regalo e della Luce</td>
+<td style='background-color: #00FF00'>Srl</td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>97015</td>
+<td style='background-color: #00FF00'>Modica (RG)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>186</td>
+<td style='background-color: #00FF00'>PAGATO</td>
+<td style='background-color: #00FF00'>27.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>02.01.2023,  186.0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4202326</td>
+<td style='background-color: #00FF00'>2022-11-11 00:00:00</td>
+<td style='background-color: #00FF00'>V000030</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>156.54</td>
+<td style='background-color: #00FF00'>1043.6</td>
+<td style='background-color: #00FF00'>K005981</td>
+<td style='background-color: #00FF00'>Riflessi sas</td>
+<td style='background-color: #00FF00'>di Gugliotta - Centro Agorâ</td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>98076</td>
+<td style='background-color: #00FF00'>Sant'Agata di Militello (ME)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1043.6</td>
+<td style='background-color: #00FF00'>PAGATO</td>
+<td style='background-color: #00FF00'>156.5</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>16.02.2023,  1043.6</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4202327</td>
+<td style='background-color: #00FF00'>2022-11-11 00:00:00</td>
+<td style='background-color: #00FF00'>V000030</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>69.9105</td>
+<td style='background-color: #00FF00'>466.07</td>
+<td style='background-color: #00FF00'>K005071</td>
+<td style='background-color: #00FF00'>Romeo Santi</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>98123</td>
+<td style='background-color: #00FF00'>Messina</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>466.07</td>
+<td style='background-color: #00FF00'>PAGATO</td>
+<td style='background-color: #00FF00'>69.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>06.01.2023,  233.0</td>
+<td style='background-color: #FFFFFF'>02.02.2023,  233.0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4202328</td>
+<td style='background-color: #00FF00'>2022-11-14 00:00:00</td>
+<td style='background-color: #00FF00'>V000030</td>
+<td style='background-color: #00FF00'>16</td>
+<td style='background-color: #00FF00'>217.376</td>
+<td style='background-color: #00FF00'>1358.6</td>
+<td style='background-color: #00FF00'>K006169</td>
+<td style='background-color: #00FF00'>PIROSA GIOIELLI</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>97100</td>
+<td style='background-color: #00FF00'>Ragusa</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1358.6</td>
+<td style='background-color: #00FF00'>PAGATO</td>
+<td style='background-color: #00FF00'>217.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.01.2023,  452.9</td>
+<td style='background-color: #FFFFFF'>31.01.2023,  452.9</td>
+<td style='background-color: #FFFFFF'>28.02.2023,  452.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4202330</td>
+<td style='background-color: #00FF00'>2022-11-14 00:00:00</td>
+<td style='background-color: #00FF00'>V000030</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>84.585</td>
+<td style='background-color: #00FF00'>563.9</td>
+<td style='background-color: #00FF00'>K004613</td>
+<td style='background-color: #00FF00'>La Bomboniera</td>
+<td style='background-color: #00FF00'>Di Sturiale Silvana  & C. sas</td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>98028</td>
+<td style='background-color: #00FF00'>S.Teresa di Riva (ME)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>563.9</td>
+<td style='background-color: #00FF00'>PAGATO</td>
+<td style='background-color: #00FF00'>84.6</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>02.01.2023,  563.9</td>
+<td style='background-color: #FFFFFF'>09.01.2023,  563.9</td>
+<td style='background-color: #FFFFFF'>23.01.2023,  563.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4202331</td>
+<td style='background-color: #00FF00'>2022-11-14 00:00:00</td>
+<td style='background-color: #00FF00'>V000030</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>18.96</td>
+<td style='background-color: #00FF00'>126.4</td>
+<td style='background-color: #00FF00'>K005019</td>
+<td style='background-color: #00FF00'>Gioielleria Dario Subba di</td>
+<td style='background-color: #00FF00'>ALEXANDRA CATALANO</td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>98055</td>
+<td style='background-color: #00FF00'>Lipari (ME)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>126.4</td>
+<td style='background-color: #00FF00'>PAGATO</td>
+<td style='background-color: #00FF00'>19</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>02.01.2023,  126.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4202332</td>
+<td style='background-color: #00FF00'>2022-11-14 00:00:00</td>
+<td style='background-color: #00FF00'>V000030</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>314.9835</td>
+<td style='background-color: #00FF00'>2099.89</td>
+<td style='background-color: #00FF00'>K006035</td>
+<td style='background-color: #00FF00'>Taormina 1982 di Caminiti Lucia</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>98039</td>
+<td style='background-color: #00FF00'>Taormina (ME)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>2099.89</td>
+<td style='background-color: #00FF00'>PAGATO</td>
+<td style='background-color: #00FF00'>315</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>02.01.2023,  2099.9</td>
+<td style='background-color: #FFFFFF'>15.03.2023,  29.8</td>
+<td style='background-color: #FFFFFF'>21.03.2023,  500.0</td>
+<td style='background-color: #FFFFFF'>31.01.2023,  700.0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4202337</td>
+<td style='background-color: #00FF00'>2022-11-15 00:00:00</td>
+<td style='background-color: #00FF00'>V000030</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>289.32</td>
+<td style='background-color: #00FF00'>1928.8</td>
+<td style='background-color: #00FF00'>K006107</td>
+<td style='background-color: #00FF00'>Le Chic s.r.l</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>94015</td>
+<td style='background-color: #00FF00'>Piazza Armerina (EN)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1928.8</td>
+<td style='background-color: #00FF00'>PAGATO</td>
+<td style='background-color: #00FF00'>289.3</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>02.01.2023,  964.4</td>
+<td style='background-color: #FFFFFF'>28.02.2023,  964.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4202340</td>
+<td style='background-color: #00FF00'>2022-11-15 00:00:00</td>
+<td style='background-color: #00FF00'>V000030</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>153.1305</td>
+<td style='background-color: #00FF00'>1020.87</td>
+<td style='background-color: #00FF00'>K004738</td>
+<td style='background-color: #00FF00'>SOLHAMBRA di LIZZIO ROSARIO</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>95024</td>
+<td style='background-color: #00FF00'>Acireale  (CT)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1020.87</td>
+<td style='background-color: #00FF00'>PAGATO</td>
+<td style='background-color: #00FF00'>153.1</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>23.02.2023,  510.4</td>
+<td style='background-color: #FFFFFF'>21.03.2023,  510.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4202408</td>
+<td style='background-color: #00FF00'>2022-11-28 00:00:00</td>
+<td style='background-color: #00FF00'>V000030</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>256.5</td>
+<td style='background-color: #00FF00'>1710</td>
+<td style='background-color: #00FF00'>K006039</td>
+<td style='background-color: #00FF00'>Galleria del Regalo e della Luce</td>
+<td style='background-color: #00FF00'>Srl</td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>97015</td>
+<td style='background-color: #00FF00'>Modica (RG)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1710</td>
+<td style='background-color: #00FF00'>PAGATO</td>
+<td style='background-color: #00FF00'>256.5</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>27.02.2023,  855.0</td>
+<td style='background-color: #FFFFFF'>14.02.2023,  855.0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4202425</td>
+<td style='background-color: #00FF00'>2022-11-28 00:00:00</td>
+<td style='background-color: #00FF00'>V000030</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>135.105</td>
+<td style='background-color: #00FF00'>900.7</td>
+<td style='background-color: #00FF00'>K002662</td>
+<td style='background-color: #00FF00'>La Gioielleria</td>
+<td style='background-color: #00FF00'>di Triscari Maria Catena</td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>96063</td>
+<td style='background-color: #00FF00'>San Giorgio di Gioiosa Marea (ME)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>900.7</td>
+<td style='background-color: #00FF00'>PAGATO</td>
+<td style='background-color: #00FF00'>135.1</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>09.01.2023,  450.7</td>
+<td style='background-color: #FFFFFF'>08.02.2023,  450.0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4202431</td>
+<td style='background-color: #00FF00'>2022-11-29 00:00:00</td>
+<td style='background-color: #00FF00'>V000030</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>126.657</td>
+<td style='background-color: #00FF00'>844.38</td>
+<td style='background-color: #00FF00'>K005205</td>
+<td style='background-color: #00FF00'>Augello di vincenzo Augello</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>92011</td>
+<td style='background-color: #00FF00'>Cattolica Eraclea  (AG)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>844.38</td>
+<td style='background-color: #00FF00'>PAGATO</td>
+<td style='background-color: #00FF00'>126.7</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>02.01.2023,  844.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4202615</td>
+<td style='background-color: #00FF00'>2022-12-16 00:00:00</td>
+<td style='background-color: #00FF00'>V000030</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>58.725</td>
+<td style='background-color: #00FF00'>391.5</td>
+<td style='background-color: #00FF00'>K002662</td>
+<td style='background-color: #00FF00'>La Gioielleria</td>
+<td style='background-color: #00FF00'>di Triscari Maria Catena</td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>96063</td>
+<td style='background-color: #00FF00'>San Giorgio di Gioiosa Marea (ME)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>391.5</td>
+<td style='background-color: #00FF00'>PAGATO</td>
+<td style='background-color: #00FF00'>58.7</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>08.02.2023,  391.5</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4202623</td>
+<td style='background-color: #00FF00'>2022-12-19 00:00:00</td>
+<td style='background-color: #00FF00'>V000030</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>111.267</td>
+<td style='background-color: #00FF00'>741.78</td>
+<td style='background-color: #00FF00'>K005794</td>
+<td style='background-color: #00FF00'>Roberta Gioielli</td>
+<td style='background-color: #00FF00'>di Randazzo Pietra</td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>98124</td>
+<td style='background-color: #00FF00'>Messina</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>741.78</td>
+<td style='background-color: #00FF00'>PAGATO</td>
+<td style='background-color: #00FF00'>111.3</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.01.2023,  370.9</td>
+<td style='background-color: #FFFFFF'>28.02.2023,  370.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4202628</td>
+<td style='background-color: #00FF00'>2022-12-19 00:00:00</td>
+<td style='background-color: #00FF00'>V000030</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>17.7705</td>
+<td style='background-color: #00FF00'>118.47</td>
+<td style='background-color: #00FF00'>K006035</td>
+<td style='background-color: #00FF00'>Taormina 1982 di Caminiti Lucia</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>98039</td>
+<td style='background-color: #00FF00'>Taormina (ME)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>118.47</td>
+<td style='background-color: #00FF00'>PAGATO</td>
+<td style='background-color: #00FF00'>17.8</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.01.2023,  118.5</td>
+<td style='background-color: #FFFFFF'>15.03.2023,  118.5</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4202629</td>
+<td style='background-color: #00FF00'>2022-12-19 00:00:00</td>
+<td style='background-color: #00FF00'>V000030</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>83.1</td>
+<td style='background-color: #00FF00'>554</td>
+<td style='background-color: #00FF00'>K005019</td>
+<td style='background-color: #00FF00'>Gioielleria Dario Subba di</td>
+<td style='background-color: #00FF00'>ALEXANDRA CATALANO</td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>98055</td>
+<td style='background-color: #00FF00'>Lipari (ME)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>554</td>
+<td style='background-color: #00FF00'>PAGATO</td>
+<td style='background-color: #00FF00'>83.1</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.01.2023,  554.0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4202631</td>
+<td style='background-color: #00FF00'>2022-12-19 00:00:00</td>
+<td style='background-color: #00FF00'>V000030</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>4.245</td>
+<td style='background-color: #00FF00'>28.3</td>
+<td style='background-color: #00FF00'>K005098</td>
+<td style='background-color: #00FF00'>Battiato Silvia</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>95024</td>
+<td style='background-color: #00FF00'>Acireale (CT)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>28.3</td>
+<td style='background-color: #00FF00'>PAGATO</td>
+<td style='background-color: #00FF00'>4.2</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.01.2023,  28.3</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4202658</td>
+<td style='background-color: #00FF00'>2022-12-20 00:00:00</td>
+<td style='background-color: #00FF00'>V000030</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>18.045</td>
+<td style='background-color: #00FF00'>120.3</td>
+<td style='background-color: #00FF00'>K006039</td>
+<td style='background-color: #00FF00'>Galleria del Regalo e della Luce</td>
+<td style='background-color: #00FF00'>Srl</td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>97015</td>
+<td style='background-color: #00FF00'>Modica (RG)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>120.3</td>
+<td style='background-color: #00FF00'>PAGATO</td>
+<td style='background-color: #00FF00'>18</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>27.02.2023,  120.3</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300049</td>
+<td style='background-color: #00FF00'>2023-01-16 00:00:00</td>
+<td style='background-color: #00FF00'>V000030</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>57.225</td>
+<td style='background-color: #00FF00'>381.5</td>
+<td style='background-color: #00FF00'>K005019</td>
+<td style='background-color: #00FF00'>Gioielleria Dario Subba di</td>
+<td style='background-color: #00FF00'>ALEXANDRA CATALANO</td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>98055</td>
+<td style='background-color: #00FF00'>Lipari (ME)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>381.5</td>
+<td style='background-color: #00FF00'>PAGATO</td>
+<td style='background-color: #00FF00'>57.2</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>28.02.2023,  381.5</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300051</td>
+<td style='background-color: #00FF00'>2023-01-16 00:00:00</td>
+<td style='background-color: #00FF00'>V000030</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>87.33</td>
+<td style='background-color: #00FF00'>582.2</td>
+<td style='background-color: #00FF00'>K004803</td>
+<td style='background-color: #00FF00'>PREZIOSI</td>
+<td style='background-color: #00FF00'>di Dalila Garofalo</td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>90036</td>
+<td style='background-color: #00FF00'>Misilmeri (PA)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>300</td>
+<td style='background-color: #00FF00'>PAGAMENTO PARZIALE</td>
+<td style='background-color: #00FF00'>45</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>27.02.2023,  300.0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300062</td>
+<td style='background-color: #00FF00'>2023-01-18 00:00:00</td>
+<td style='background-color: #00FF00'>V000030</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>65.085</td>
+<td style='background-color: #00FF00'>433.9</td>
+<td style='background-color: #00FF00'>K005098</td>
+<td style='background-color: #00FF00'>Battiato Silvia</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>95024</td>
+<td style='background-color: #00FF00'>Acireale (CT)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>433.9</td>
+<td style='background-color: #00FF00'>PAGATO</td>
+<td style='background-color: #00FF00'>65.1</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>28.02.2023,  433.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300117</td>
+<td style='background-color: #00FF00'>2023-01-30 00:00:00</td>
+<td style='background-color: #00FF00'>V000030</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>18.606</td>
+<td style='background-color: #00FF00'>124.04</td>
+<td style='background-color: #00FF00'>K005205</td>
+<td style='background-color: #00FF00'>Augello di vincenzo Augello</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>92011</td>
+<td style='background-color: #00FF00'>Cattolica Eraclea  (AG)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>124.04</td>
+<td style='background-color: #00FF00'>PAGATO</td>
+<td style='background-color: #00FF00'>18.6</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>28.02.2023,  124.0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300180</td>
+<td style='background-color: #00FF00'>2023-02-08 00:00:00</td>
+<td style='background-color: #00FF00'>V000030</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>97.1745</td>
+<td style='background-color: #00FF00'>647.83</td>
+<td style='background-color: #00FF00'>K005098</td>
+<td style='background-color: #00FF00'>Battiato Silvia</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>95024</td>
+<td style='background-color: #00FF00'>Acireale (CT)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>647.83</td>
+<td style='background-color: #00FF00'>PAGATO</td>
+<td style='background-color: #00FF00'>97.2</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>30.03.2023,  647.8</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300256</td>
+<td style='background-color: #00FF00'>2023-02-22 00:00:00</td>
+<td style='background-color: #00FF00'>V000030</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>80.235</td>
+<td style='background-color: #00FF00'>534.9</td>
+<td style='background-color: #00FF00'>K005019</td>
+<td style='background-color: #00FF00'>Gioielleria Dario Subba di</td>
+<td style='background-color: #00FF00'>ALEXANDRA CATALANO</td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>98055</td>
+<td style='background-color: #00FF00'>Lipari (ME)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>534.9</td>
+<td style='background-color: #00FF00'>PAGATO</td>
+<td style='background-color: #00FF00'>80.2</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>30.03.2023,  534.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300274</td>
+<td style='background-color: #00FF00'>2023-02-27 00:00:00</td>
+<td style='background-color: #00FF00'>V000030</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>204.735</td>
+<td style='background-color: #00FF00'>1364.9</td>
+<td style='background-color: #00FF00'>K006107</td>
+<td style='background-color: #00FF00'>Le Chic s.r.l</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>94015</td>
+<td style='background-color: #00FF00'>Piazza Armerina (EN)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>454.97</td>
+<td style='background-color: #00FF00'>PAGAMENTO PARZIALE</td>
+<td style='background-color: #00FF00'>68.2</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>30.03.2023,  455.0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300295</td>
+<td style='background-color: #00FF00'>2023-02-28 00:00:00</td>
+<td style='background-color: #00FF00'>V000030</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>30.93</td>
+<td style='background-color: #00FF00'>206.2</td>
+<td style='background-color: #00FF00'>K005098</td>
+<td style='background-color: #00FF00'>Battiato Silvia</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>95024</td>
+<td style='background-color: #00FF00'>Acireale (CT)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>206.2</td>
+<td style='background-color: #00FF00'>PAGATO</td>
+<td style='background-color: #00FF00'>30.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>30.03.2023,  206.2</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300323</td>
+<td style='background-color: #FFF300'>2023-03-06 00:00:00</td>
+<td style='background-color: #FFF300'>V000030</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-52.32</td>
+<td style='background-color: #FFF300'>-348.8</td>
+<td style='background-color: #FFF300'>K006107</td>
+<td style='background-color: #FFF300'>Le Chic s.r.l</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>94015</td>
+<td style='background-color: #FFF300'>Piazza Armerina (EN)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>-348.8</td>
+<td style='background-color: #FFF300'>NOTA DI CREDITO</td>
+<td style='background-color: #FFF300'>-52.32</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #68BF9D'>21217.8</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #68BF9D'>3196.2</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+ </tbody>
+                </table>
+                {% endblock %}
