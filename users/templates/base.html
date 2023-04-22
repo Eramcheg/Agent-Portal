@@ -236,7 +236,7 @@
                         <a></a>
                         <a></a>
                     <a href="{% if language == '' or language == 'en'  %} {% url 'table_en' %} {% elif language == 'es' %} {% url 'table_es' %}{% elif language == 'it' %} {% url 'table_it' %} {% elif language == 'de' %} {% url 'table_de' %} {% elif language == 'fr' %} {% url 'table_fr' %} {% endif %}" class="link">
-                        {% if language == 'de' %} Tische {% elif language == 'fr' %} Tableaux {% elif language == 'it' %} Tavoli {% elif language == 'es' %}  Tablas {% elif language == '' or language == 'en' %}  Tables{% endif %} </a>
+                        {% if language == 'de' %} Tische {% elif language == 'fr' %} Tableaux {% elif language == 'it' %} Tabelle {% elif language == 'es' %}  Tablas {% elif language == '' or language == 'en' %}  Tables{% endif %} </a>
                     {% endif %}
                 {% else %}
 
