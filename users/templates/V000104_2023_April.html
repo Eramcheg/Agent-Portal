@@ -1,0 +1,162 @@
+{%extends 'base.html'%}
+                        {% block content %}
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!--<link rel="stylesheet" type="text/css" href="normas.css">-->
+<style>
+    body{
+        background-color: #d6e1f8;
+         
+    }
+    th, td {
+        border: 1px solid #ccc;
+        
+        text-align: center;
+    }
+
+    table {
+   
+        border-collapse: collapse !important; /* optional: collapse the table borders */
+    }
+
+    table tr {
+        background-color: #8BC34A !important; /* Set background color of all rows */
+    }
+
+    table tr:hover td {
+        background-color: #2196F3 !important; /* Set background color of cells when hovered */
+    }
+
+</style>
+                 <table border="1" class="dataframe" style="width:100%;">
+                             <thead>
+                                 <tr style="text-align: right;">
+<th style='background-color: #B0CBF0'>RK</th>
+<th style='background-color: #B0CBF0'>GF-Nr</th>
+<th style='background-color: #B0CBF0'>Datum</th>
+<th style='background-color: #B0CBF0'>Vertreter</th>
+<th style='background-color: #B0CBF0'>ProvProz</th>
+<th style='background-color: #B0CBF0'>Provision</th>
+<th style='background-color: #B0CBF0'>Summe</th>
+<th style='background-color: #B0CBF0'>Lieferant</th>
+<th style='background-color: #B0CBF0'>Lieferantenname</th>
+<th style='background-color: #B0CBF0'>Name2</th>
+<th style='background-color: #B0CBF0'>IntKz</th>
+<th style='background-color: #B0CBF0'>PLZ Neu</th>
+<th style='background-color: #B0CBF0'>Ort</th>
+<th style='background-color: #FFFFFF'> </th>
+<th style='background-color: #899EF0'>Paid amount</th>
+<th style='background-color: #899EF0'>Payment status</th>
+<th style='background-color: #899EF0'>Payment commission</th>
+<th style='background-color: #899EF0'>Payments with Rest</th>
+<th style='background-color: #899EF0'>Payments Dates</th>
+</tr>
+</thead>
+                      <tbody><tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4201960</td>
+<td style='background-color: #00FF00'>2022-09-19 00:00:00</td>
+<td style='background-color: #00FF00'>V000104</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>73.74</td>
+<td style='background-color: #00FF00'>491.6</td>
+<td style='background-color: #00FF00'>K006079</td>
+<td style='background-color: #00FF00'>KARAGOUNI DIMITRA</td>
+<td style='background-color: #00FF00'>DK JEWELS</td>
+<td style='background-color: #00FF00'>GR</td>
+<td style='background-color: #00FF00'>14231</td>
+<td style='background-color: #00FF00'>NEA IONIA</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>412.3</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #00FF00'>61.8</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>24.04.2023,  412.3</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4202597</td>
+<td style='background-color: #00FF00'>2022-12-15 00:00:00</td>
+<td style='background-color: #00FF00'>V000104</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>267.78</td>
+<td style='background-color: #00FF00'>1785.2</td>
+<td style='background-color: #00FF00'>K003563</td>
+<td style='background-color: #00FF00'>Garufalia Charalambaki</td>
+<td style='background-color: #00FF00'>+30 22210 86560</td>
+<td style='background-color: #00FF00'>GR</td>
+<td style='background-color: #00FF00'>34100</td>
+<td style='background-color: #00FF00'>Kalkida</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>416.51</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #00FF00'>62.5</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>05.04.2023,  416.5</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300397</td>
+<td style='background-color: #00FF00'>2023-03-20 00:00:00</td>
+<td style='background-color: #00FF00'>V000104</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>109.26</td>
+<td style='background-color: #00FF00'>728.4</td>
+<td style='background-color: #00FF00'>K006160</td>
+<td style='background-color: #00FF00'>VOULKIDIS CHRISTOS</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>GR</td>
+<td style='background-color: #00FF00'>68100</td>
+<td style='background-color: #00FF00'>ALEXANDROUPOLIS</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>728.4</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #00FF00'>109.3</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>24.04.2023,  728.4</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300433</td>
+<td style='background-color: #00FF00'>2023-03-28 00:00:00</td>
+<td style='background-color: #00FF00'>V000104</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>276.9</td>
+<td style='background-color: #00FF00'>1846</td>
+<td style='background-color: #00FF00'>K006230</td>
+<td style='background-color: #00FF00'>QUALITY RIVER CATERING I LTD</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>ZY</td>
+<td style='background-color: #00FF00'>3305</td>
+<td style='background-color: #00FF00'>Limassol</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1846</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #00FF00'>276.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>13.04.2023,  1846.0</td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>All requested: </td>
+<td style='background-color: #FFF300'>405467.3</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #68BF9D'>3403.21</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #68BF9D'>510.5</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+ </tbody>
+                </table>
+                {% endblock %}
