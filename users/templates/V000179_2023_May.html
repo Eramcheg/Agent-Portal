@@ -1,0 +1,1414 @@
+{%extends 'base.html'%}
+                        {% block content %}
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!--<link rel="stylesheet" type="text/css" href="normas.css">-->
+<style>
+    body{
+        background-color: #d6e1f8;
+         
+    }
+    th, td {
+        border: 1px solid #ccc;
+        
+        text-align: center;
+    }
+
+    table {
+   
+        border-collapse: collapse !important; /* optional: collapse the table borders */
+    }
+
+    table tr {
+        background-color: #8BC34A !important; /* Set background color of all rows */
+    }
+
+    table tr:hover td {
+        background-color: #2196F3 !important; /* Set background color of cells when hovered */
+    }
+
+</style>
+                 <table border="1" class="dataframe" style="width:100%;">
+                             <thead>
+                                 <tr style="text-align: right;">
+<th style='background-color: #B0CBF0'>RK</th>
+<th style='background-color: #B0CBF0'>GF-Nr</th>
+<th style='background-color: #B0CBF0'>Datum</th>
+<th style='background-color: #B0CBF0'>Vertreter</th>
+<th style='background-color: #B0CBF0'>ProvProz</th>
+<th style='background-color: #B0CBF0'>Provision</th>
+<th style='background-color: #B0CBF0'>Summe</th>
+<th style='background-color: #B0CBF0'>Lieferant</th>
+<th style='background-color: #B0CBF0'>Lieferantenname</th>
+<th style='background-color: #B0CBF0'>Name2</th>
+<th style='background-color: #B0CBF0'>IntKz</th>
+<th style='background-color: #B0CBF0'>PLZ Neu</th>
+<th style='background-color: #B0CBF0'>Ort</th>
+<th style='background-color: #FFFFFF'> </th>
+<th style='background-color: #899EF0'>Paid amount</th>
+<th style='background-color: #899EF0'>Payment status</th>
+<th style='background-color: #899EF0'>Payment commission</th>
+<th style='background-color: #899EF0'>Payments with Rest</th>
+<th style='background-color: #899EF0'>Payments Dates</th>
+<th style='background-color: #FFFFFF'> </th>
+<th style='background-color: #FFFFFF'> </th>
+<th style='background-color: #FFFFFF'> </th>
+<th style='background-color: #FFFFFF'> </th>
+<th style='background-color: #FFFFFF'> </th>
+</tr>
+</thead>
+                      <tbody><tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4202230</td>
+<td style='background-color: #FFF300'>2022-10-28 00:00:00</td>
+<td style='background-color: #FFF300'>V000179</td>
+<td style='background-color: #FFF300'>13</td>
+<td style='background-color: #FFF300'>-3.497</td>
+<td style='background-color: #FFF300'>-26.9</td>
+<td style='background-color: #FFF300'>K005235</td>
+<td style='background-color: #FFF300'>Aurea Arranz Pelayo</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>ES</td>
+<td style='background-color: #FFF300'>08024</td>
+<td style='background-color: #FFF300'>Barcelona</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4202461</td>
+<td style='background-color: #FFF300'>2022-11-30 00:00:00</td>
+<td style='background-color: #FFF300'>V000179</td>
+<td style='background-color: #FFF300'>13</td>
+<td style='background-color: #FFF300'>-1296.308</td>
+<td style='background-color: #FFF300'>-9971.6</td>
+<td style='background-color: #FFF300'>K004557</td>
+<td style='background-color: #FFF300'>ISHAN S.L.</td>
+<td style='background-color: #FFF300'>Ultimate Gallery</td>
+<td style='background-color: #FFF300'>AN</td>
+<td style='background-color: #FFF300'>700</td>
+<td style='background-color: #FFF300'>Escaldes-Engordany (Andorra)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300044</td>
+<td style='background-color: #FFF300'>2023-01-13 00:00:00</td>
+<td style='background-color: #FFF300'>V000179</td>
+<td style='background-color: #FFF300'>13</td>
+<td style='background-color: #FFF300'>-78.975</td>
+<td style='background-color: #FFF300'>-607.5</td>
+<td style='background-color: #FFF300'>K006165</td>
+<td style='background-color: #FFF300'>Matilde Rodriguez de Vera Mas</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>ES</td>
+<td style='background-color: #FFF300'>02001</td>
+<td style='background-color: #FFF300'>Albacete</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300072</td>
+<td style='background-color: #00FF00'>2023-01-19 00:00:00</td>
+<td style='background-color: #00FF00'>V000179</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>69.862</td>
+<td style='background-color: #00FF00'>537.4</td>
+<td style='background-color: #00FF00'>K005166</td>
+<td style='background-color: #00FF00'>RG DISTRIBUTCIONS</td>
+<td style='background-color: #00FF00'>RG Import-Export S.L.</td>
+<td style='background-color: #00FF00'>AN</td>
+<td style='background-color: #00FF00'>AD500</td>
+<td style='background-color: #00FF00'>Andorra</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>537.4</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #00FF00'>69.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>22.05.2023,  537.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300073</td>
+<td style='background-color: #FFF300'>2023-01-19 00:00:00</td>
+<td style='background-color: #FFF300'>V000179</td>
+<td style='background-color: #FFF300'>10</td>
+<td style='background-color: #FFF300'>-2.176</td>
+<td style='background-color: #FFF300'>-21.76</td>
+<td style='background-color: #FFF300'>K005171</td>
+<td style='background-color: #FFF300'>EIS Marítimo</td>
+<td style='background-color: #FFF300'>Attn. Jorge Luengo Marcos</td>
+<td style='background-color: #FFF300'>ES</td>
+<td style='background-color: #FFF300'>28006</td>
+<td style='background-color: #FFF300'>Madrid</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300082</td>
+<td style='background-color: #00FF00'>2023-01-23 00:00:00</td>
+<td style='background-color: #00FF00'>V000179</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>109.226</td>
+<td style='background-color: #00FF00'>840.2</td>
+<td style='background-color: #00FF00'>K004618</td>
+<td style='background-color: #00FF00'>ESCUDELLERS ART, S.L.</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>08002</td>
+<td style='background-color: #00FF00'>Barcelona</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>840.2</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #00FF00'>109.2</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>30.05.2023,  840.2</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300083</td>
+<td style='background-color: #00FF00'>2023-01-23 00:00:00</td>
+<td style='background-color: #00FF00'>V000179</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>96.681</td>
+<td style='background-color: #00FF00'>743.7</td>
+<td style='background-color: #00FF00'>K004618</td>
+<td style='background-color: #00FF00'>ESCUDELLERS ART, S.L.</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>08002</td>
+<td style='background-color: #00FF00'>Barcelona</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>743.7</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #00FF00'>96.7</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>30.05.2023,  743.7</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300084</td>
+<td style='background-color: #00FF00'>2023-01-23 00:00:00</td>
+<td style='background-color: #00FF00'>V000179</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>107.042</td>
+<td style='background-color: #00FF00'>823.4</td>
+<td style='background-color: #00FF00'>K004618</td>
+<td style='background-color: #00FF00'>ESCUDELLERS ART, S.L.</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>08002</td>
+<td style='background-color: #00FF00'>Barcelona</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>823.4</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #00FF00'>107</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>30.05.2023,  823.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300085</td>
+<td style='background-color: #00FF00'>2023-01-23 00:00:00</td>
+<td style='background-color: #00FF00'>V000179</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>90.389</td>
+<td style='background-color: #00FF00'>695.3</td>
+<td style='background-color: #00FF00'>K004618</td>
+<td style='background-color: #00FF00'>ESCUDELLERS ART, S.L.</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>08002</td>
+<td style='background-color: #00FF00'>Barcelona</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>695.3</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #00FF00'>90.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>30.05.2023,  695.3</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300087</td>
+<td style='background-color: #00FF00'>2023-01-23 00:00:00</td>
+<td style='background-color: #00FF00'>V000179</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>108.446</td>
+<td style='background-color: #00FF00'>834.2</td>
+<td style='background-color: #00FF00'>K004618</td>
+<td style='background-color: #00FF00'>ESCUDELLERS ART, S.L.</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>08002</td>
+<td style='background-color: #00FF00'>Barcelona</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>834.2</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #00FF00'>108.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>30.05.2023,  834.2</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300107</td>
+<td style='background-color: #FFF300'>2023-01-26 00:00:00</td>
+<td style='background-color: #FFF300'>V000179</td>
+<td style='background-color: #FFF300'>10</td>
+<td style='background-color: #FFF300'>-12.036</td>
+<td style='background-color: #FFF300'>-120.36</td>
+<td style='background-color: #FFF300'>K005171</td>
+<td style='background-color: #FFF300'>EIS Marítimo</td>
+<td style='background-color: #FFF300'>Attn. Jorge Luengo Marcos</td>
+<td style='background-color: #FFF300'>ES</td>
+<td style='background-color: #FFF300'>28006</td>
+<td style='background-color: #FFF300'>Madrid</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300113</td>
+<td style='background-color: #00FF00'>2023-01-27 00:00:00</td>
+<td style='background-color: #00FF00'>V000179</td>
+<td style='background-color: #00FF00'>10</td>
+<td style='background-color: #00FF00'>432.31</td>
+<td style='background-color: #00FF00'>4323.1</td>
+<td style='background-color: #00FF00'>K006043</td>
+<td style='background-color: #00FF00'>Boutique21</td>
+<td style='background-color: #00FF00'>Pina López, Ma Eugenia</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>03590</td>
+<td style='background-color: #00FF00'>Altea</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>2161.56</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #00FF00'>216.2</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>02.05.2023,  720.5</td>
+<td style='background-color: #FFFFFF'>15.05.2023,  1441.0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300239</td>
+<td style='background-color: #00FF00'>2023-02-16 00:00:00</td>
+<td style='background-color: #00FF00'>V000179</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>266.214</td>
+<td style='background-color: #00FF00'>2047.8</td>
+<td style='background-color: #00FF00'>K005138</td>
+<td style='background-color: #00FF00'>HADAS XIANNV S.L.</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>08015</td>
+<td style='background-color: #00FF00'>Barcelona</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>2047.8</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #00FF00'>266.2</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>02.05.2023,  1023.9</td>
+<td style='background-color: #FFFFFF'>31.05.2023,  1023.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300292</td>
+<td style='background-color: #00FF00'>2023-02-28 00:00:00</td>
+<td style='background-color: #00FF00'>V000179</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>295.867</td>
+<td style='background-color: #00FF00'>2275.9</td>
+<td style='background-color: #00FF00'>K005235</td>
+<td style='background-color: #00FF00'>Aurea Arranz Pelayo</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>08024</td>
+<td style='background-color: #00FF00'>Barcelona</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1137.95</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #00FF00'>147.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>15.05.2023,  1138.0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300314</td>
+<td style='background-color: #00FF00'>2023-03-03 00:00:00</td>
+<td style='background-color: #00FF00'>V000179</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>561.379</td>
+<td style='background-color: #00FF00'>4318.3</td>
+<td style='background-color: #00FF00'>K004405</td>
+<td style='background-color: #00FF00'>IKRAM EL BAKKOURI EL ALAMI</td>
+<td style='background-color: #00FF00'>Victoria Jewelry</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>17510</td>
+<td style='background-color: #00FF00'>Lloret de Mar</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>129.55</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #00FF00'>16.8</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.05.2023,  129.6</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300320</td>
+<td style='background-color: #FFF300'>2023-03-03 00:00:00</td>
+<td style='background-color: #FFF300'>V000179</td>
+<td style='background-color: #FFF300'>10</td>
+<td style='background-color: #FFF300'>-2.312</td>
+<td style='background-color: #FFF300'>-23.12</td>
+<td style='background-color: #FFF300'>K005171</td>
+<td style='background-color: #FFF300'>EIS Marítimo</td>
+<td style='background-color: #FFF300'>Attn. Jorge Luengo Marcos</td>
+<td style='background-color: #FFF300'>ES</td>
+<td style='background-color: #FFF300'>28006</td>
+<td style='background-color: #FFF300'>Madrid</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300330</td>
+<td style='background-color: #FFF300'>2023-03-06 00:00:00</td>
+<td style='background-color: #FFF300'>V000179</td>
+<td style='background-color: #FFF300'>13</td>
+<td style='background-color: #FFF300'>-14.664</td>
+<td style='background-color: #FFF300'>-112.8</td>
+<td style='background-color: #FFF300'>K005063</td>
+<td style='background-color: #FFF300'>Tienda RINGELS</td>
+<td style='background-color: #FFF300'>GLENRUN SPAIN S.L.</td>
+<td style='background-color: #FFF300'>ES</td>
+<td style='background-color: #FFF300'>08013</td>
+<td style='background-color: #FFF300'>Barcelona</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300343</td>
+<td style='background-color: #00FF00'>2023-03-08 00:00:00</td>
+<td style='background-color: #00FF00'>V000179</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>87.672</td>
+<td style='background-color: #00FF00'>674.4</td>
+<td style='background-color: #00FF00'>K004031</td>
+<td style='background-color: #00FF00'>BIS-2 S.L.</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>08002</td>
+<td style='background-color: #00FF00'>Barcelona</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>674.4</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #00FF00'>87.7</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>15.05.2023,  674.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300359</td>
+<td style='background-color: #FFF300'>2023-03-10 00:00:00</td>
+<td style='background-color: #FFF300'>V000179</td>
+<td style='background-color: #FFF300'>10</td>
+<td style='background-color: #FFF300'>-66.2</td>
+<td style='background-color: #FFF300'>-662</td>
+<td style='background-color: #FFF300'>K006043</td>
+<td style='background-color: #FFF300'>Boutique21</td>
+<td style='background-color: #FFF300'>Pina López, Ma Eugenia</td>
+<td style='background-color: #FFF300'>ES</td>
+<td style='background-color: #FFF300'>03590</td>
+<td style='background-color: #FFF300'>Altea</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300365</td>
+<td style='background-color: #00FF00'>2023-03-13 00:00:00</td>
+<td style='background-color: #00FF00'>V000179</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>154.115</td>
+<td style='background-color: #00FF00'>1185.5</td>
+<td style='background-color: #00FF00'>K004033</td>
+<td style='background-color: #00FF00'>Concepcion Marsal SANS</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>43201</td>
+<td style='background-color: #00FF00'>Reus (Tarragona)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>592.75</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #00FF00'>77.1</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>15.05.2023,  592.8</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300372</td>
+<td style='background-color: #00FF00'>2023-03-15 00:00:00</td>
+<td style='background-color: #00FF00'>V000179</td>
+<td style='background-color: #00FF00'>10</td>
+<td style='background-color: #00FF00'>50.94</td>
+<td style='background-color: #00FF00'>509.4</td>
+<td style='background-color: #00FF00'>K006043</td>
+<td style='background-color: #00FF00'>Boutique21</td>
+<td style='background-color: #00FF00'>Pina López, Ma Eugenia</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>03590</td>
+<td style='background-color: #00FF00'>Altea</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>169.8</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #00FF00'>17</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>15.05.2023,  169.8</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300378</td>
+<td style='background-color: #00FF00'>2023-03-16 00:00:00</td>
+<td style='background-color: #00FF00'>V000179</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>99.788</td>
+<td style='background-color: #00FF00'>767.6</td>
+<td style='background-color: #00FF00'>K004706</td>
+<td style='background-color: #00FF00'>COMERCIANTS DEL PORT BARCELONA SL</td>
+<td style='background-color: #00FF00'>Terminal E (Entrega los viernes),</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>08039</td>
+<td style='background-color: #00FF00'>Barcelona</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>767.6</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #00FF00'>99.8</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>02.05.2023,  767.6</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300379</td>
+<td style='background-color: #00FF00'>2023-03-16 00:00:00</td>
+<td style='background-color: #00FF00'>V000179</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>71.526</td>
+<td style='background-color: #00FF00'>550.2</td>
+<td style='background-color: #00FF00'>K004906</td>
+<td style='background-color: #00FF00'>COMERCIAL DEVNANI GARZON S.L.</td>
+<td style='background-color: #00FF00'>ELI & ANA</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>08002</td>
+<td style='background-color: #00FF00'>Barcelona</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>550.2</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #00FF00'>71.5</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>02.05.2023,  550.2</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300394</td>
+<td style='background-color: #00FF00'>2023-03-20 00:00:00</td>
+<td style='background-color: #00FF00'>V000179</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>212.823</td>
+<td style='background-color: #00FF00'>1637.1</td>
+<td style='background-color: #00FF00'>K004455</td>
+<td style='background-color: #00FF00'>Ikhlass Alami Mesrar</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>17310</td>
+<td style='background-color: #00FF00'>Lloret de Mar</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1637.1</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #00FF00'>212.8</td>
+<td style='background-color: #FFAB83'>31.05.2023,  327</td>
+<td style='background-color: #FFFFFF'>31.05.2023,  1964.5</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300414</td>
+<td style='background-color: #FFF300'>2023-03-23 00:00:00</td>
+<td style='background-color: #FFF300'>V000179</td>
+<td style='background-color: #FFF300'>10</td>
+<td style='background-color: #FFF300'>-3.5</td>
+<td style='background-color: #FFF300'>-35</td>
+<td style='background-color: #FFF300'>K005171</td>
+<td style='background-color: #FFF300'>EIS Marítimo</td>
+<td style='background-color: #FFF300'>Attn. Jorge Luengo Marcos</td>
+<td style='background-color: #FFF300'>ES</td>
+<td style='background-color: #FFF300'>28006</td>
+<td style='background-color: #FFF300'>Madrid</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300425</td>
+<td style='background-color: #00FF00'>2023-03-24 00:00:00</td>
+<td style='background-color: #00FF00'>V000179</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>260.689</td>
+<td style='background-color: #00FF00'>2005.3</td>
+<td style='background-color: #00FF00'>K005063</td>
+<td style='background-color: #00FF00'>Tienda RINGELS</td>
+<td style='background-color: #00FF00'>GLENRUN SPAIN S.L.</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>08013</td>
+<td style='background-color: #00FF00'>Barcelona</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>2005.3</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #00FF00'>260.7</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.05.2023,  2005.3</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300428</td>
+<td style='background-color: #FFF300'>2023-03-24 00:00:00</td>
+<td style='background-color: #FFF300'>V000179</td>
+<td style='background-color: #FFF300'>13</td>
+<td style='background-color: #FFF300'>-0.182</td>
+<td style='background-color: #FFF300'>-1.4</td>
+<td style='background-color: #FFF300'>K002409</td>
+<td style='background-color: #FFF300'>Les Perles - dentro del recinto del</td>
+<td style='background-color: #FFF300'>Español de Barcelona</td>
+<td style='background-color: #FFF300'>ES</td>
+<td style='background-color: #FFF300'>08038</td>
+<td style='background-color: #FFF300'>Barcelona</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300430</td>
+<td style='background-color: #00FF00'>2023-03-27 00:00:00</td>
+<td style='background-color: #00FF00'>V000179</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>313.742</td>
+<td style='background-color: #00FF00'>2413.4</td>
+<td style='background-color: #00FF00'>K004356</td>
+<td style='background-color: #00FF00'>Vivanilia S.L.</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>08013</td>
+<td style='background-color: #00FF00'>Barcelona</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>2413.4</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #00FF00'>313.7</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.05.2023,  2413.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300434</td>
+<td style='background-color: #00FF00'>2023-03-28 00:00:00</td>
+<td style='background-color: #00FF00'>V000179</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>118.586</td>
+<td style='background-color: #00FF00'>912.2</td>
+<td style='background-color: #00FF00'>K004356</td>
+<td style='background-color: #00FF00'>Vivanilia S.L.</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>08013</td>
+<td style='background-color: #00FF00'>Barcelona</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>912.2</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #00FF00'>118.6</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.05.2023,  912.2</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300456</td>
+<td style='background-color: #00FF00'>2023-03-30 00:00:00</td>
+<td style='background-color: #00FF00'>V000179</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>154.622</td>
+<td style='background-color: #00FF00'>1189.4</td>
+<td style='background-color: #00FF00'>K002409</td>
+<td style='background-color: #00FF00'>Les Perles - dentro del recinto del</td>
+<td style='background-color: #00FF00'>Español de Barcelona</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>08038</td>
+<td style='background-color: #00FF00'>Barcelona</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1189.4</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #00FF00'>154.6</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.05.2023,  1189.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300473</td>
+<td style='background-color: #00FF00'>2023-03-31 00:00:00</td>
+<td style='background-color: #00FF00'>V000179</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>31.005</td>
+<td style='background-color: #00FF00'>238.5</td>
+<td style='background-color: #00FF00'>K004706</td>
+<td style='background-color: #00FF00'>COMERCIANTS DEL PORT BARCELONA SL</td>
+<td style='background-color: #00FF00'>Terminal E - entrega diaria</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>08039</td>
+<td style='background-color: #00FF00'>Barcelona</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>238.5</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #00FF00'>31</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>15.05.2023,  238.5</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300481</td>
+<td style='background-color: #00FF00'>2023-03-31 00:00:00</td>
+<td style='background-color: #00FF00'>V000179</td>
+<td style='background-color: #00FF00'>10</td>
+<td style='background-color: #00FF00'>29.92</td>
+<td style='background-color: #00FF00'>299.2</td>
+<td style='background-color: #00FF00'>K005171</td>
+<td style='background-color: #00FF00'>EIS Marítimo</td>
+<td style='background-color: #00FF00'>Attn. Jorge Luengo Marcos</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>28006</td>
+<td style='background-color: #00FF00'>Madrid</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>299.2</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #00FF00'>29.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>02.05.2023,  299.2</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300499</td>
+<td style='background-color: #00FF00'>2023-03-31 00:00:00</td>
+<td style='background-color: #00FF00'>V000179</td>
+<td style='background-color: #00FF00'>10</td>
+<td style='background-color: #00FF00'>37.536</td>
+<td style='background-color: #00FF00'>375.36</td>
+<td style='background-color: #00FF00'>K005171</td>
+<td style='background-color: #00FF00'>EIS Marítimo</td>
+<td style='background-color: #00FF00'>Attn. Jorge Luengo Marcos</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>28006</td>
+<td style='background-color: #00FF00'>Madrid</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>375.36</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #00FF00'>37.5</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>02.05.2023,  375.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300504</td>
+<td style='background-color: #00FF00'>2023-03-31 00:00:00</td>
+<td style='background-color: #00FF00'>V000179</td>
+<td style='background-color: #00FF00'>10</td>
+<td style='background-color: #00FF00'>50.694</td>
+<td style='background-color: #00FF00'>506.94</td>
+<td style='background-color: #00FF00'>K005171</td>
+<td style='background-color: #00FF00'>EIS Marítimo</td>
+<td style='background-color: #00FF00'>Attn. Jorge Luengo Marcos</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>28006</td>
+<td style='background-color: #00FF00'>Madrid</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>506.94</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #00FF00'>50.7</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>02.05.2023,  506.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300516</td>
+<td style='background-color: #00FF00'>2023-04-06 00:00:00</td>
+<td style='background-color: #00FF00'>V000179</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>26.377</td>
+<td style='background-color: #00FF00'>202.9</td>
+<td style='background-color: #00FF00'>K004033</td>
+<td style='background-color: #00FF00'>Concepcion Marsal SANS</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>43201</td>
+<td style='background-color: #00FF00'>Reus (Tarragona)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>202.9</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #00FF00'>26.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>15.05.2023,  202.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300543</td>
+<td style='background-color: #00FF00'>2023-04-12 00:00:00</td>
+<td style='background-color: #00FF00'>V000179</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>185.731</td>
+<td style='background-color: #00FF00'>1428.7</td>
+<td style='background-color: #00FF00'>K004033</td>
+<td style='background-color: #00FF00'>Concepcion Marsal SANS</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>43201</td>
+<td style='background-color: #00FF00'>Reus (Tarragona)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>714.35</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #00FF00'>92.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>15.05.2023,  714.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300574</td>
+<td style='background-color: #00FF00'>2023-04-17 00:00:00</td>
+<td style='background-color: #00FF00'>V000179</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>106.106</td>
+<td style='background-color: #00FF00'>816.2</td>
+<td style='background-color: #00FF00'>K005121</td>
+<td style='background-color: #00FF00'>Sandeep & Sunil S.L.</td>
+<td style='background-color: #00FF00'>ESB66195488</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>08003</td>
+<td style='background-color: #00FF00'>Barcelona</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>816.2</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #00FF00'>106.1</td>
+<td style='background-color: #FFAB83'>31.05.2023,  163</td>
+<td style='background-color: #FFFFFF'>31.05.2023,  979.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300577</td>
+<td style='background-color: #00FF00'>2023-04-11 00:00:00</td>
+<td style='background-color: #00FF00'>V000179</td>
+<td style='background-color: #00FF00'>10</td>
+<td style='background-color: #00FF00'>36.413</td>
+<td style='background-color: #00FF00'>364.13</td>
+<td style='background-color: #00FF00'>K003738</td>
+<td style='background-color: #00FF00'>Explotaciones Comerciales</td>
+<td style='background-color: #00FF00'>Portuarias, S.L.</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>08039</td>
+<td style='background-color: #00FF00'>Barcelona</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>364.13</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #00FF00'>36.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>02.05.2023,  364.1</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300578</td>
+<td style='background-color: #00FF00'>2023-04-11 00:00:00</td>
+<td style='background-color: #00FF00'>V000179</td>
+<td style='background-color: #00FF00'>10</td>
+<td style='background-color: #00FF00'>119.464</td>
+<td style='background-color: #00FF00'>1194.64</td>
+<td style='background-color: #00FF00'>K005242</td>
+<td style='background-color: #00FF00'>TERMINALES DEL ATLANTICO MEDIO, SL</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>38700</td>
+<td style='background-color: #00FF00'>Santa Cruz de la Palma (La Palma)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1194.64</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #00FF00'>119.5</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>02.05.2023,  1194.6</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300583</td>
+<td style='background-color: #00FF00'>2023-04-18 00:00:00</td>
+<td style='background-color: #00FF00'>V000179</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>152.893</td>
+<td style='background-color: #00FF00'>1176.1</td>
+<td style='background-color: #00FF00'>K004706</td>
+<td style='background-color: #00FF00'>COMERCIANTS DEL PORT BARCELONA SL</td>
+<td style='background-color: #00FF00'>Terminal E - entrega diaria</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>08039</td>
+<td style='background-color: #00FF00'>Barcelona</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1176.1</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #00FF00'>152.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.05.2023,  1176.1</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300619</td>
+<td style='background-color: #00FF00'>2023-04-21 00:00:00</td>
+<td style='background-color: #00FF00'>V000179</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>158.028</td>
+<td style='background-color: #00FF00'>1215.6</td>
+<td style='background-color: #00FF00'>K006124</td>
+<td style='background-color: #00FF00'>RAVI KUMAR</td>
+<td style='background-color: #00FF00'>Tienda Gaudi - Sagrada Familia</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>08017</td>
+<td style='background-color: #00FF00'>Barcelona</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>729.36</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #00FF00'>94.8</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.05.2023,  729.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300662</td>
+<td style='background-color: #00FF00'>2023-04-28 00:00:00</td>
+<td style='background-color: #00FF00'>V000179</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>320.047</td>
+<td style='background-color: #00FF00'>2461.9</td>
+<td style='background-color: #00FF00'>K005235</td>
+<td style='background-color: #00FF00'>Aurea Arranz Pelayo</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>08024</td>
+<td style='background-color: #00FF00'>Barcelona</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1230.95</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #00FF00'>160</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.05.2023,  1231.0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300675</td>
+<td style='background-color: #00FF00'>2023-04-30 00:00:00</td>
+<td style='background-color: #00FF00'>V000179</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>58.422</td>
+<td style='background-color: #00FF00'>449.4</td>
+<td style='background-color: #00FF00'>K004706</td>
+<td style='background-color: #00FF00'>COMERCIANTS DEL PORT BARCELONA SL</td>
+<td style='background-color: #00FF00'>Terminal E - entrega diaria</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>08039</td>
+<td style='background-color: #00FF00'>Barcelona</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>449.4</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #00FF00'>58.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.05.2023,  449.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300930</td>
+<td style='background-color: #FFF300'>2023-06-05 00:00:00</td>
+<td style='background-color: #FFF300'>V000179</td>
+<td style='background-color: #FFF300'>13</td>
+<td style='background-color: #FFF300'>-215.956</td>
+<td style='background-color: #FFF300'>-1661.2</td>
+<td style='background-color: #FFF300'>K006177</td>
+<td style='background-color: #FFF300'>VICTARIMEMBRE & DETALLE  S.L.</td>
+<td style='background-color: #FFF300'>Tienda no. 14 "Victoria"</td>
+<td style='background-color: #FFF300'>ES</td>
+<td style='background-color: #FFF300'>08860</td>
+<td style='background-color: #FFF300'>Castelldefels</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301028</td>
+<td style='background-color: #FFF300'>2023-06-15 00:00:00</td>
+<td style='background-color: #FFF300'>V000179</td>
+<td style='background-color: #FFF300'>13</td>
+<td style='background-color: #FFF300'>-96.135</td>
+<td style='background-color: #FFF300'>-739.5</td>
+<td style='background-color: #FFF300'>K004557</td>
+<td style='background-color: #FFF300'>ISHAN S.L.</td>
+<td style='background-color: #FFF300'>Ultimate Gallery</td>
+<td style='background-color: #FFF300'>AN</td>
+<td style='background-color: #FFF300'>700</td>
+<td style='background-color: #FFF300'>Escaldes-Engordany (Andorra)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301055</td>
+<td style='background-color: #FFF300'>2023-06-20 00:00:00</td>
+<td style='background-color: #FFF300'>V000179</td>
+<td style='background-color: #FFF300'>10</td>
+<td style='background-color: #FFF300'>-72.49</td>
+<td style='background-color: #FFF300'>-724.9</td>
+<td style='background-color: #FFF300'>K005171</td>
+<td style='background-color: #FFF300'>EIS Marítimo</td>
+<td style='background-color: #FFF300'>Attn. Jorge Luengo Marcos</td>
+<td style='background-color: #FFF300'>ES</td>
+<td style='background-color: #FFF300'>28006</td>
+<td style='background-color: #FFF300'>Madrid</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>Paid:</td>
+<td style='background-color: #00B050'>29161.240000000005</td>
+<td style='background-color: #FFFFFF'>Comission to pay:</td>
+<td style='background-color: #00B050'>3638.7</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>Marinelly Acuna</td>
+<td style='background-color: #00B050'>5741.47</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #00B050'>287.1</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>Ramon Alcazar</td>
+<td style='background-color: #00B050'>4391.400000000001</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #00B050'>219.6</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>Javier Moreno Cabrera</td>
+<td style='background-color: #00B050'>1486.25</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #00B050'>74.35</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>Jorge Puyo Arnau</td>
+<td style='background-color: #00B050'>2207</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #00B050'>286.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>Total:</td>
+<td style='background-color: #00B0F0'>42987.36</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #00B0F0'>4219.75</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+ </tbody>
+                </table>
+                {% endblock %}
