@@ -9,6 +9,9 @@
     .content{
 
     }
+    .InfoAlert{
+        text-align: center;
+    }
         .information{
             float: left;
             margin-left: 200px ;
@@ -26,6 +29,35 @@
     <body>
     <div class="content">
     <br>
+    <div class="InfoAlert">
+        {% if language == "" %}
+
+             <h1>Dear colleagues! <br>
+        Unfortunately, due to holiday period,<br>
+        there are some delays in the publication of agency reports.<br>
+        We sincerely apologize!</h1>
+    {% elif language == "de" %}
+ <h1>Liebe Kollegen!<br>
+Leider kommt es aufgrund der Urlaubszeit zu einigen Verzögerungen bei der Veröffentlichung von Agenturberichten.<br>
+Wir entschuldigen uns aufrichtig!</h1>
+            {% elif language == "fr" %}
+          <h1>Chers collègues ! <br>
+Malheureusement, en raison de la période de vacances, <br>
+il y a des retards dans la publication des rapports de l'agence. <br>
+Nous nous excusons sincèrement !</h1>
+            {% elif language == "it" %}
+           <h1>Cari colleghi!<br>
+Purtroppo, a causa del periodo di ferie,<br>
+ci sono dei ritardi nella pubblicazione dei rapporti dell'agenzia.<br>
+Ci scusiamo sinceramente!</h1>
+            {% elif language == "es" %}
+            <h1>¡Estimados colegas!<br>
+Lamentablemente, debido a la época de vacaciones,<br>
+hay algunos retrasos en la publicación de los informes de la agencia.<br>
+¡Nos disculpamos sinceramente!</h1>
+        {% endif %}
+
+    </div>
 <div class="information">
     <img class = "imag" src="{% static "Agent_Portal_Authorization/media/oliverweber.png" %}" alt="home"  height="300"/>
 
