@@ -1,0 +1,128 @@
+{%extends 'base.html'%}
+                            {% block content %}     
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--<link rel="stylesheet" type="text/css" href="normas.css">-->
+    <style>
+        body{
+            background-color: #d6e1f8;
+    
+        }
+        th, td {
+            border: 1px solid #ccc;
+    
+            text-align: center;
+        }
+    
+        table {
+    
+            border-collapse: collapse !important; /* optional: collapse the table borders */
+        }
+    
+        table tr {
+            background-color: #8BC34A !important; /* Set background color of all rows */
+        }
+    
+        table tr:hover td {
+            background-color: #2196F3 !important; /* Set background color of cells when hovered */
+        }
+    
+    </style>
+                     <table border="1" class="dataframe" style="width:100%;">
+                                 <thead>
+                                     <tr style="text-align: right;">
+<th style='background-color: #B0CBF0'>RK</th>
+<th style='background-color: #B0CBF0'>GF-Nr</th>
+<th style='background-color: #B0CBF0'>Datum</th>
+<th style='background-color: #B0CBF0'>Vertreter</th>
+<th style='background-color: #B0CBF0'>ProvProz</th>
+<th style='background-color: #B0CBF0'>Provision</th>
+<th style='background-color: #B0CBF0'>Summe</th>
+<th style='background-color: #B0CBF0'>Lieferant</th>
+<th style='background-color: #B0CBF0'>Lieferantenname</th>
+<th style='background-color: #B0CBF0'>Name2</th>
+<th style='background-color: #B0CBF0'>IntKz</th>
+<th style='background-color: #B0CBF0'>PLZ Neu</th>
+<th style='background-color: #B0CBF0'>Ort</th>
+<th style='background-color: #FFFFFF'> </th>
+<th style='background-color: #899EF0'>Paid amount</th>
+<th style='background-color: #899EF0'>Payment status</th>
+<th style='background-color: #899EF0'>Payment commission</th>
+<th style='background-color: #899EF0'>Payments with Rest</th>
+<th style='background-color: #899EF0'>Payments Dates</th>
+<th style='background-color: #FFFFFF'> </th>
+<th style='background-color: #FFFFFF'> </th>
+</tr>
+</thead>
+                          <tbody><tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4200991</td>
+<td style='background-color: #00FF00'>2022-05-13 00:00:00</td>
+<td style='background-color: #00FF00'>V000172</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>377.624</td>
+<td style='background-color: #00FF00'>2904.8</td>
+<td style='background-color: #00FF00'>K005900</td>
+<td style='background-color: #00FF00'>José Ángel Sancho Redondo</td>
+<td style='background-color: #00FF00'>Top de Gala</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07590</td>
+<td style='background-color: #00FF00'>Cala Rajada</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>2904.8</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #00FF00'>377.6</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>14.07.2023,  2904.8</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4201264</td>
+<td style='background-color: #FFF300'>2022-06-14 00:00:00</td>
+<td style='background-color: #FFF300'>V000172</td>
+<td style='background-color: #FFF300'>13</td>
+<td style='background-color: #FFF300'>-32.097</td>
+<td style='background-color: #FFF300'>-246.9</td>
+<td style='background-color: #FFF300'>K005263</td>
+<td style='background-color: #FFF300'>PERLEI</td>
+<td style='background-color: #FFF300'>Fernandez Gomez, Maria del Carmen</td>
+<td style='background-color: #FFF300'>ES</td>
+<td style='background-color: #FFF300'>15630</td>
+<td style='background-color: #FFF300'>Miño (A Coruña)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #00B050'>2904.8</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #00B0F0'>377.6</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+ </tbody>
+                    </table>
+                    {% endblock %}
