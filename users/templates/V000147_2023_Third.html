@@ -1,0 +1,582 @@
+{%extends 'base.html'%}
+                            {% block content %}     
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--<link rel="stylesheet" type="text/css" href="normas.css">-->
+    <style>
+        body{
+            background-color: #d6e1f8;
+    
+        }
+        th, td {
+            border: 1px solid #ccc;
+    
+            text-align: center;
+        }
+    
+        table {
+    
+            border-collapse: collapse !important; /* optional: collapse the table borders */
+        }
+    
+        table tr {
+            background-color: #8BC34A !important; /* Set background color of all rows */
+        }
+    
+        table tr:hover td {
+            background-color: #2196F3 !important; /* Set background color of cells when hovered */
+        }
+    
+    </style>
+                     <table border="1" class="dataframe" style="width:100%;">
+                                 <thead>
+                                     <tr style="text-align: right;">
+<th style='background-color: #B0CBF0'>RK</th>
+<th style='background-color: #B0CBF0'>GF-Nr</th>
+<th style='background-color: #B0CBF0'>Data</th>
+<th style='background-color: #B0CBF0'>Representante</th>
+<th style='background-color: #B0CBF0'>Proviggioni </th>
+<th style='background-color: #B0CBF0'>Proviggioni somma</th>
+<th style='background-color: #B0CBF0'>Somme</th>
+<th style='background-color: #B0CBF0'>Numero cliente</th>
+<th style='background-color: #B0CBF0'>Nome cliente</th>
+<th style='background-color: #B0CBF0'>Nome cliente 2</th>
+<th style='background-color: #B0CBF0'>IntKz</th>
+<th style='background-color: #B0CBF0'>CAP</th>
+<th style='background-color: #B0CBF0'>Indirizzo</th>
+<th style='background-color: #FFFFFF'> </th>
+<th style='background-color: #899EF0'>Pagato</th>
+<th style='background-color: #899EF0'>Stato pagamento</th>
+<th style='background-color: #899EF0'>Proviggioni su pagato</th>
+<th style='background-color: #899EF0'> </th>
+<th style='background-color: #899EF0'>Data pagamento</th>
+<th style='background-color: #FFFFFF'> </th>
+<th style='background-color: #FFFFFF'> </th>
+<th style='background-color: #FFFFFF'> </th>
+<th style='background-color: #FFFFFF'> </th>
+<th style='background-color: #FFFFFF'> </th>
+</tr>
+</thead>
+                          <tbody><tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4200293</td>
+<td style='background-color: #FFF300'>2022-02-09 00:00:00</td>
+<td style='background-color: #FFF300'>V000147</td>
+<td style='background-color: #FFF300'>14</td>
+<td style='background-color: #FFF300'>-124.726</td>
+<td style='background-color: #FFF300'>-890.9</td>
+<td style='background-color: #FFF300'>K005937</td>
+<td style='background-color: #FFF300'>IDEEREGALO di Pizzinat Maria Teresa</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>31046</td>
+<td style='background-color: #FFF300'>Oderzo (TV)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>NOTA DI CREDITO</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4200899</td>
+<td style='background-color: #FFF300'>2022-04-29 00:00:00</td>
+<td style='background-color: #FFF300'>V000147</td>
+<td style='background-color: #FFF300'>14</td>
+<td style='background-color: #FFF300'>-12.138</td>
+<td style='background-color: #FFF300'>-86.7</td>
+<td style='background-color: #FFF300'>K003743</td>
+<td style='background-color: #FFF300'>STILE di OREL ERIKA</td>
+<td style='background-color: #FFF300'>STILE</td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>33052</td>
+<td style='background-color: #FFF300'>Cervignano del Friuli</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>NOTA DI CREDITO</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4201752</td>
+<td style='background-color: #FFF300'>2022-08-17 00:00:00</td>
+<td style='background-color: #FFF300'>V000147</td>
+<td style='background-color: #FFF300'>14</td>
+<td style='background-color: #FFF300'>-21.546</td>
+<td style='background-color: #FFF300'>-153.9</td>
+<td style='background-color: #FFF300'>K005937</td>
+<td style='background-color: #FFF300'>IDEEREGALO di Pizzinat Maria Teresa</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>31046</td>
+<td style='background-color: #FFF300'>Oderzo (TV)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>NOTA DI CREDITO</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4201755</td>
+<td style='background-color: #FFF300'>2022-08-17 00:00:00</td>
+<td style='background-color: #FFF300'>V000147</td>
+<td style='background-color: #FFF300'>14</td>
+<td style='background-color: #FFF300'>-12.7022</td>
+<td style='background-color: #FFF300'>-90.73</td>
+<td style='background-color: #FFF300'>K002957</td>
+<td style='background-color: #FFF300'>Cose Belle di Libralon Luca & C.snc</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>35010</td>
+<td style='background-color: #FFF300'>Santa Giustina In colle (PD)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>NOTA DI CREDITO</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4202393</td>
+<td style='background-color: #FFF300'>2022-11-24 00:00:00</td>
+<td style='background-color: #FFF300'>V000147</td>
+<td style='background-color: #FFF300'>14</td>
+<td style='background-color: #FFF300'>-20.8012</td>
+<td style='background-color: #FFF300'>-148.58</td>
+<td style='background-color: #FFF300'>K002957</td>
+<td style='background-color: #FFF300'>Cose Belle di Libralon Luca & C.snc</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>35010</td>
+<td style='background-color: #FFF300'>Santa Giustina In colle (PD)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>NOTA DI CREDITO</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4202692</td>
+<td style='background-color: #FFF300'>2022-12-22 00:00:00</td>
+<td style='background-color: #FFF300'>V000147</td>
+<td style='background-color: #FFF300'>14</td>
+<td style='background-color: #FFF300'>-7.791</td>
+<td style='background-color: #FFF300'>-55.65</td>
+<td style='background-color: #FFF300'>K003094</td>
+<td style='background-color: #FFF300'>Scatola Magica</td>
+<td style='background-color: #FFF300'>di Sardanelli Daniela</td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>33100</td>
+<td style='background-color: #FFF300'>Udine</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>NOTA DI CREDITO</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300412</td>
+<td style='background-color: #FFF300'>2023-03-22 00:00:00</td>
+<td style='background-color: #FFF300'>V000147</td>
+<td style='background-color: #FFF300'>14</td>
+<td style='background-color: #FFF300'>-9.212</td>
+<td style='background-color: #FFF300'>-65.8</td>
+<td style='background-color: #FFF300'>K005206</td>
+<td style='background-color: #FFF300'>REGAL CASA</td>
+<td style='background-color: #FFF300'>di Faidutti Anna Maria</td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>33043</td>
+<td style='background-color: #FFF300'>Cividale del Friuli (UD)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>NOTA DI CREDITO</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300533</td>
+<td style='background-color: #FFF300'>2023-04-12 00:00:00</td>
+<td style='background-color: #FFF300'>V000147</td>
+<td style='background-color: #FFF300'>14</td>
+<td style='background-color: #FFF300'>-36.4644</td>
+<td style='background-color: #FFF300'>-260.46</td>
+<td style='background-color: #FFF300'>K002957</td>
+<td style='background-color: #FFF300'>Cose Belle di Libralon Luca & C.snc</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>35010</td>
+<td style='background-color: #FFF300'>Santa Giustina In colle (PD)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>NOTA DI CREDITO</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300915</td>
+<td style='background-color: #00FF00'>2023-05-31 00:00:00</td>
+<td style='background-color: #00FF00'>V000147</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>60.865</td>
+<td style='background-color: #00FF00'>434.75</td>
+<td style='background-color: #00FF00'>K005001</td>
+<td style='background-color: #00FF00'>Olalla.it SRL</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>35030</td>
+<td style='background-color: #00FF00'>Rubano (PD)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>260.85</td>
+<td style='background-color: #00FF00'>PAGAMENTO PARZIALE</td>
+<td style='background-color: #00FF00'>36.5</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.07.2023,  260.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300983</td>
+<td style='background-color: #00FF00'>2023-06-12 00:00:00</td>
+<td style='background-color: #00FF00'>V000147</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>17.276</td>
+<td style='background-color: #00FF00'>123.4</td>
+<td style='background-color: #00FF00'>K005937</td>
+<td style='background-color: #00FF00'>IDEEREGALO di Pizzinat Maria Teresa</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>31046</td>
+<td style='background-color: #00FF00'>Oderzo (TV)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>123.4</td>
+<td style='background-color: #00FF00'>PAGATO</td>
+<td style='background-color: #00FF00'>17.3</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.07.2023,  123.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301011</td>
+<td style='background-color: #00FF00'>2023-06-14 00:00:00</td>
+<td style='background-color: #00FF00'>V000147</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>13.237</td>
+<td style='background-color: #00FF00'>94.55</td>
+<td style='background-color: #00FF00'>K005001</td>
+<td style='background-color: #00FF00'>Olalla.it SRL</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>35030</td>
+<td style='background-color: #00FF00'>Rubano (PD)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>94.55</td>
+<td style='background-color: #00FF00'>PAGATO</td>
+<td style='background-color: #00FF00'>13.2</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.07.2023,  94.5</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301033</td>
+<td style='background-color: #FFF300'>2023-06-16 00:00:00</td>
+<td style='background-color: #FFF300'>V000147</td>
+<td style='background-color: #FFF300'>14</td>
+<td style='background-color: #FFF300'>-128.3646</td>
+<td style='background-color: #FFF300'>-916.89</td>
+<td style='background-color: #FFF300'>K002957</td>
+<td style='background-color: #FFF300'>Cose Belle di Libralon Luca & C.snc</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>35010</td>
+<td style='background-color: #FFF300'>Santa Giustina In colle (PD)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>NOTA DI CREDITO</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301034</td>
+<td style='background-color: #FFF300'>2023-06-16 00:00:00</td>
+<td style='background-color: #FFF300'>V000147</td>
+<td style='background-color: #FFF300'>14</td>
+<td style='background-color: #FFF300'>-67.3694</td>
+<td style='background-color: #FFF300'>-481.21</td>
+<td style='background-color: #FFF300'>K002957</td>
+<td style='background-color: #FFF300'>Cose Belle di Libralon Luca & C.snc</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>35010</td>
+<td style='background-color: #FFF300'>Santa Giustina In colle (PD)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>NOTA DI CREDITO</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301062</td>
+<td style='background-color: #00FF00'>2023-06-21 00:00:00</td>
+<td style='background-color: #00FF00'>V000147</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>64.4</td>
+<td style='background-color: #00FF00'>460</td>
+<td style='background-color: #00FF00'>K005001</td>
+<td style='background-color: #00FF00'>Olalla.it SRL</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>35030</td>
+<td style='background-color: #00FF00'>Rubano (PD)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>460</td>
+<td style='background-color: #00FF00'>PAGATO</td>
+<td style='background-color: #00FF00'>64.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.07.2023,  460.0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301092</td>
+<td style='background-color: #FFF300'>2023-06-27 00:00:00</td>
+<td style='background-color: #FFF300'>V000147</td>
+<td style='background-color: #FFF300'>14</td>
+<td style='background-color: #FFF300'>-37.282</td>
+<td style='background-color: #FFF300'>-266.3</td>
+<td style='background-color: #FFF300'>K005937</td>
+<td style='background-color: #FFF300'>IDEEREGALO di Pizzinat Maria Teresa</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>31046</td>
+<td style='background-color: #FFF300'>Oderzo (TV)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>NOTA DI CREDITO</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301113</td>
+<td style='background-color: #00FF00'>2023-06-28 00:00:00</td>
+<td style='background-color: #00FF00'>V000147</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>3.612</td>
+<td style='background-color: #00FF00'>25.8</td>
+<td style='background-color: #00FF00'>K005135</td>
+<td style='background-color: #00FF00'>Curto sas di Sasset Vania</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>32032</td>
+<td style='background-color: #00FF00'>Feltre (BL)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>25.8</td>
+<td style='background-color: #00FF00'>PAGATO</td>
+<td style='background-color: #00FF00'>3.6</td>
+<td style='background-color: #FFAB83'>14.08.2023,  26</td>
+<td style='background-color: #FFFFFF'>31.07.2023,  25.8</td>
+<td style='background-color: #FFFFFF'>14.08.2023,  25.8</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301301</td>
+<td style='background-color: #00FF00'>2023-07-28 00:00:00</td>
+<td style='background-color: #00FF00'>V000147</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>36.596</td>
+<td style='background-color: #00FF00'>261.4</td>
+<td style='background-color: #00FF00'>K005937</td>
+<td style='background-color: #00FF00'>IDEEREGALO di Pizzinat Maria Teresa</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>31046</td>
+<td style='background-color: #00FF00'>Oderzo (TV)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>261.4</td>
+<td style='background-color: #00FF00'>PAGATO</td>
+<td style='background-color: #00FF00'>36.6</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.08.2023,  261.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301539</td>
+<td style='background-color: #FFF300'>2023-09-12 00:00:00</td>
+<td style='background-color: #FFF300'>V000147</td>
+<td style='background-color: #FFF300'>14</td>
+<td style='background-color: #FFF300'>-18.214</td>
+<td style='background-color: #FFF300'>-130.1</td>
+<td style='background-color: #FFF300'>K005937</td>
+<td style='background-color: #FFF300'>IDEEREGALO di Pizzinat Maria Teresa</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>31046</td>
+<td style='background-color: #FFF300'>Oderzo (TV)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>NOTA DI CREDITO</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301671</td>
+<td style='background-color: #FFF300'>2023-09-28 00:00:00</td>
+<td style='background-color: #FFF300'>V000147</td>
+<td style='background-color: #FFF300'>14</td>
+<td style='background-color: #FFF300'>-216.608</td>
+<td style='background-color: #FFF300'>-1547.2</td>
+<td style='background-color: #FFF300'>K005937</td>
+<td style='background-color: #FFF300'>IDEEREGALO di Pizzinat Maria Teresa</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>31046</td>
+<td style='background-color: #FFF300'>Oderzo (TV)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>NOTA DI CREDITO</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>Totale:</td>
+<td style='background-color: #00B050'>1226</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #00B0F0'>171.6</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+ </tbody>
+                    </table>
+                    {% endblock %}

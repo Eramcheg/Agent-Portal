@@ -1,0 +1,738 @@
+{%extends 'base.html'%}
+                            {% block content %}     
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--<link rel="stylesheet" type="text/css" href="normas.css">-->
+    <style>
+        body{
+            background-color: #d6e1f8;
+    
+        }
+        th, td {
+            border: 1px solid #ccc;
+    
+            text-align: center;
+        }
+    
+        table {
+    
+            border-collapse: collapse !important; /* optional: collapse the table borders */
+        }
+    
+        table tr {
+            background-color: #8BC34A !important; /* Set background color of all rows */
+        }
+    
+        table tr:hover td {
+            background-color: #2196F3 !important; /* Set background color of cells when hovered */
+        }
+    
+    </style>
+                     <table border="1" class="dataframe" style="width:100%;">
+                                 <thead>
+                                     <tr style="text-align: right;">
+<th style='background-color: #B0CBF0'>RK</th>
+<th style='background-color: #B0CBF0'>GF-Nr</th>
+<th style='background-color: #B0CBF0'>Data</th>
+<th style='background-color: #B0CBF0'>Representante</th>
+<th style='background-color: #B0CBF0'>Proviggioni </th>
+<th style='background-color: #B0CBF0'>Proviggioni somma</th>
+<th style='background-color: #B0CBF0'>Somme</th>
+<th style='background-color: #B0CBF0'>Numero cliente</th>
+<th style='background-color: #B0CBF0'>Nome cliente</th>
+<th style='background-color: #B0CBF0'>Nome cliente 2</th>
+<th style='background-color: #B0CBF0'>IntKz</th>
+<th style='background-color: #B0CBF0'>CAP</th>
+<th style='background-color: #B0CBF0'>Indirizzo</th>
+<th style='background-color: #FFFFFF'> </th>
+<th style='background-color: #899EF0'>Pagato</th>
+<th style='background-color: #899EF0'>Stato pagamento</th>
+<th style='background-color: #899EF0'>Proviggioni su pagato</th>
+<th style='background-color: #899EF0'> </th>
+<th style='background-color: #899EF0'>Data pagamento</th>
+<th style='background-color: #FFFFFF'> </th>
+<th style='background-color: #FFFFFF'> </th>
+<th style='background-color: #FFFFFF'> </th>
+<th style='background-color: #FFFFFF'> </th>
+<th style='background-color: #FFFFFF'> </th>
+</tr>
+</thead>
+                          <tbody><tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4200360</td>
+<td style='background-color: #FFF300'>2022-02-15 00:00:00</td>
+<td style='background-color: #FFF300'>V000155</td>
+<td style='background-color: #FFF300'>14</td>
+<td style='background-color: #FFF300'>-39.984</td>
+<td style='background-color: #FFF300'>-285.6</td>
+<td style='background-color: #FFF300'>K005996</td>
+<td style='background-color: #FFF300'>Le Gogge degli Angeli</td>
+<td style='background-color: #FFF300'>di Rosca Angela</td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>19124</td>
+<td style='background-color: #FFF300'>La Spezia</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>NOTA DI CREDITO</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4202109</td>
+<td style='background-color: #00FF00'>2022-10-11 00:00:00</td>
+<td style='background-color: #00FF00'>V000155</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>188.986</td>
+<td style='background-color: #00FF00'>1349.9</td>
+<td style='background-color: #00FF00'>K005082</td>
+<td style='background-color: #00FF00'>GIOVANNINI RENZA</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>50032</td>
+<td style='background-color: #00FF00'>BORGO SAN LORENZO ( FI)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1349.9</td>
+<td style='background-color: #00FF00'>PAGATO</td>
+<td style='background-color: #00FF00'>189</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>18.07.2023,  1349.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300181</td>
+<td style='background-color: #00FF00'>2023-02-09 00:00:00</td>
+<td style='background-color: #00FF00'>V000155</td>
+<td style='background-color: #00FF00'>7</td>
+<td style='background-color: #00FF00'>38.766</td>
+<td style='background-color: #00FF00'>553.8</td>
+<td style='background-color: #00FF00'>K005217</td>
+<td style='background-color: #00FF00'>ARCA* di Ammannati Marco e C. SAS</td>
+<td style='background-color: #00FF00'>Cliente 905430</td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>57123</td>
+<td style='background-color: #00FF00'>Livorno (LI)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>553.8</td>
+<td style='background-color: #00FF00'>PAGATO</td>
+<td style='background-color: #00FF00'>38.8</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>09.08.2023,  553.8</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300185</td>
+<td style='background-color: #00FF00'>2023-02-09 00:00:00</td>
+<td style='background-color: #00FF00'>V000155</td>
+<td style='background-color: #00FF00'>7</td>
+<td style='background-color: #00FF00'>1.75</td>
+<td style='background-color: #00FF00'>25</td>
+<td style='background-color: #00FF00'>K005217</td>
+<td style='background-color: #00FF00'>ARCA* di Ammannati Marco e C. SAS</td>
+<td style='background-color: #00FF00'>Cliente 905430</td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>57123</td>
+<td style='background-color: #00FF00'>Livorno (LI)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>25</td>
+<td style='background-color: #00FF00'>PAGATO</td>
+<td style='background-color: #00FF00'>1.8</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>09.08.2023,  25.0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300193</td>
+<td style='background-color: #FFF300'>2023-02-10 00:00:00</td>
+<td style='background-color: #FFF300'>V000155</td>
+<td style='background-color: #FFF300'>7</td>
+<td style='background-color: #FFF300'>-1.75</td>
+<td style='background-color: #FFF300'>-25</td>
+<td style='background-color: #FFF300'>K005217</td>
+<td style='background-color: #FFF300'>ARCA* di Ammannati Marco e C. SAS</td>
+<td style='background-color: #FFF300'>Cliente 905430</td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>57123</td>
+<td style='background-color: #FFF300'>Livorno (LI)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>NOTA DI CREDITO</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300234</td>
+<td style='background-color: #FFF300'>2023-02-15 00:00:00</td>
+<td style='background-color: #FFF300'>V000155</td>
+<td style='background-color: #FFF300'>7</td>
+<td style='background-color: #FFF300'>-1.204</td>
+<td style='background-color: #FFF300'>-17.2</td>
+<td style='background-color: #FFF300'>K001115</td>
+<td style='background-color: #FFF300'>F.lli Gallo SNC</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>55049</td>
+<td style='background-color: #FFF300'>Viareggio (LU)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>NOTA DI CREDITO</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300235</td>
+<td style='background-color: #FFF300'>2023-02-15 00:00:00</td>
+<td style='background-color: #FFF300'>V000155</td>
+<td style='background-color: #FFF300'>7</td>
+<td style='background-color: #FFF300'>-6.5429</td>
+<td style='background-color: #FFF300'>-93.47</td>
+<td style='background-color: #FFF300'>K001115</td>
+<td style='background-color: #FFF300'>F.lli Gallo SNC</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>55049</td>
+<td style='background-color: #FFF300'>Viareggio (LU)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>NOTA DI CREDITO</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300243</td>
+<td style='background-color: #FFF300'>2023-01-30 00:00:00</td>
+<td style='background-color: #FFF300'>V000155</td>
+<td style='background-color: #FFF300'>7</td>
+<td style='background-color: #FFF300'>-409.6239</td>
+<td style='background-color: #FFF300'>-5851.77</td>
+<td style='background-color: #FFF300'>K001115</td>
+<td style='background-color: #FFF300'>F.lli Gallo SNC</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>55049</td>
+<td style='background-color: #FFF300'>Viareggio (LU)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>NOTA DI CREDITO</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300247</td>
+<td style='background-color: #FFF300'>2023-02-16 00:00:00</td>
+<td style='background-color: #FFF300'>V000155</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-36.366</td>
+<td style='background-color: #FFF300'>-242.44</td>
+<td style='background-color: #FFF300'>K004828</td>
+<td style='background-color: #FFF300'>LDM</td>
+<td style='background-color: #FFF300'>Gioielleria Argenteria Orologeria</td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>50019</td>
+<td style='background-color: #FFF300'>Sesto Fiorentino</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>NOTA DI CREDITO</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300276</td>
+<td style='background-color: #00FF00'>2023-02-28 00:00:00</td>
+<td style='background-color: #00FF00'>V000155</td>
+<td style='background-color: #00FF00'>7</td>
+<td style='background-color: #00FF00'>32.739</td>
+<td style='background-color: #00FF00'>467.7</td>
+<td style='background-color: #00FF00'>K005217</td>
+<td style='background-color: #00FF00'>ARCA* di Ammannati Marco e C. SAS</td>
+<td style='background-color: #00FF00'>Cliente 905430</td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>57123</td>
+<td style='background-color: #00FF00'>Livorno (LI)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>467.7</td>
+<td style='background-color: #00FF00'>PAGATO</td>
+<td style='background-color: #00FF00'>32.7</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>09.08.2023,  467.7</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300348</td>
+<td style='background-color: #00FF00'>2023-03-09 00:00:00</td>
+<td style='background-color: #00FF00'>V000155</td>
+<td style='background-color: #00FF00'>7</td>
+<td style='background-color: #00FF00'>266.0707</td>
+<td style='background-color: #00FF00'>3801.01</td>
+<td style='background-color: #00FF00'>K004570</td>
+<td style='background-color: #00FF00'>Galletti Sas di Galletti A.</td>
+<td style='background-color: #00FF00'>C/C coop di Pontedera</td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>56025</td>
+<td style='background-color: #00FF00'>Pontedera (Pisa)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>950.26</td>
+<td style='background-color: #00FF00'>PAGAMENTO PARZIALE</td>
+<td style='background-color: #00FF00'>66.5</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.07.2023,  950.3</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300522</td>
+<td style='background-color: #FFF300'>2023-04-11 00:00:00</td>
+<td style='background-color: #FFF300'>V000155</td>
+<td style='background-color: #FFF300'>14</td>
+<td style='background-color: #FFF300'>-29.358</td>
+<td style='background-color: #FFF300'>-209.7</td>
+<td style='background-color: #FFF300'>K003864</td>
+<td style='background-color: #FFF300'>Gioielleria Marchetti Angelo</td>
+<td style='background-color: #FFF300'>dal 1890</td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>06034</td>
+<td style='background-color: #FFF300'>Foligno (PG)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>NOTA DI CREDITO</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300883</td>
+<td style='background-color: #FFF300'>2023-05-31 00:00:00</td>
+<td style='background-color: #FFF300'>V000155</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-17.265</td>
+<td style='background-color: #FFF300'>-115.1</td>
+<td style='background-color: #FFF300'>K006186</td>
+<td style='background-color: #FFF300'>ETA Pink SRL</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>50121</td>
+<td style='background-color: #FFF300'>Firenze - FI-</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>NOTA DI CREDITO</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300992</td>
+<td style='background-color: #00FF00'>2023-06-13 00:00:00</td>
+<td style='background-color: #00FF00'>V000155</td>
+<td style='background-color: #00FF00'>7</td>
+<td style='background-color: #00FF00'>74.879</td>
+<td style='background-color: #00FF00'>1069.7</td>
+<td style='background-color: #00FF00'>K001115</td>
+<td style='background-color: #00FF00'>F.lli Gallo SNC</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>55049</td>
+<td style='background-color: #00FF00'>Viareggio (LU)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1069.7</td>
+<td style='background-color: #00FF00'>PAGATO</td>
+<td style='background-color: #00FF00'>74.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.07.2023,  534.9</td>
+<td style='background-color: #FFFFFF'>31.08.2023,  534.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301074</td>
+<td style='background-color: #00FF00'>2023-06-23 00:00:00</td>
+<td style='background-color: #00FF00'>V000155</td>
+<td style='background-color: #00FF00'>7</td>
+<td style='background-color: #00FF00'>30.6733</td>
+<td style='background-color: #00FF00'>438.19</td>
+<td style='background-color: #00FF00'>K004570</td>
+<td style='background-color: #00FF00'>Galletti Sas di Galletti A.</td>
+<td style='background-color: #00FF00'>C/C coop di Pontedera</td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>56025</td>
+<td style='background-color: #00FF00'>Pontedera (Pisa)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>438.19</td>
+<td style='background-color: #00FF00'>PAGATO</td>
+<td style='background-color: #00FF00'>30.7</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.07.2023,  219.1</td>
+<td style='background-color: #FFFFFF'>31.08.2023,  219.1</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301112</td>
+<td style='background-color: #00FF00'>2023-06-28 00:00:00</td>
+<td style='background-color: #00FF00'>V000155</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>54.894</td>
+<td style='background-color: #00FF00'>392.1</td>
+<td style='background-color: #00FF00'>K005996</td>
+<td style='background-color: #00FF00'>Gocce degli Angeli</td>
+<td style='background-color: #00FF00'>di Rosca Angela</td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>19124</td>
+<td style='background-color: #00FF00'>La Spezia</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>392.1</td>
+<td style='background-color: #00FF00'>PAGATO</td>
+<td style='background-color: #00FF00'>54.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>09.08.2023,  392.1</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301121</td>
+<td style='background-color: #FFF300'>2023-06-28 00:00:00</td>
+<td style='background-color: #FFF300'>V000155</td>
+<td style='background-color: #FFF300'>14</td>
+<td style='background-color: #FFF300'>-9.968</td>
+<td style='background-color: #FFF300'>-71.2</td>
+<td style='background-color: #FFF300'>K005996</td>
+<td style='background-color: #FFF300'>Gocce degli Angeli</td>
+<td style='background-color: #FFF300'>di Rosca Angela</td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>19124</td>
+<td style='background-color: #FFF300'>La Spezia</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>NOTA DI CREDITO</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301124</td>
+<td style='background-color: #FFF300'>2023-06-28 00:00:00</td>
+<td style='background-color: #FFF300'>V000155</td>
+<td style='background-color: #FFF300'>7</td>
+<td style='background-color: #FFF300'>-1.344</td>
+<td style='background-color: #FFF300'>-19.2</td>
+<td style='background-color: #FFF300'>K001115</td>
+<td style='background-color: #FFF300'>F.lli Gallo SNC</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>55049</td>
+<td style='background-color: #FFF300'>Viareggio (LU)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>NOTA DI CREDITO</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301126</td>
+<td style='background-color: #00FF00'>2023-06-28 00:00:00</td>
+<td style='background-color: #00FF00'>V000155</td>
+<td style='background-color: #00FF00'>7</td>
+<td style='background-color: #00FF00'>3.7177</td>
+<td style='background-color: #00FF00'>53.11</td>
+<td style='background-color: #00FF00'>K001115</td>
+<td style='background-color: #00FF00'>F.lli Gallo SNC</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>55049</td>
+<td style='background-color: #00FF00'>Viareggio (LU)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>53.11</td>
+<td style='background-color: #00FF00'>PAGATO</td>
+<td style='background-color: #00FF00'>3.7</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>14.07.2023,  53.1</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301149</td>
+<td style='background-color: #00FF00'>2023-06-30 00:00:00</td>
+<td style='background-color: #00FF00'>V000155</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>74.004</td>
+<td style='background-color: #00FF00'>528.6</td>
+<td style='background-color: #00FF00'>K005878</td>
+<td style='background-color: #00FF00'>Cose Belle di Fatarella SNC</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>58031</td>
+<td style='background-color: #00FF00'>Arcidosso (GR)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>528.6</td>
+<td style='background-color: #00FF00'>PAGATO</td>
+<td style='background-color: #00FF00'>74</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>14.07.2023,  528.6</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301226</td>
+<td style='background-color: #00FF00'>2023-07-13 00:00:00</td>
+<td style='background-color: #00FF00'>V000155</td>
+<td style='background-color: #00FF00'>7</td>
+<td style='background-color: #00FF00'>19.978</td>
+<td style='background-color: #00FF00'>285.4</td>
+<td style='background-color: #00FF00'>K001115</td>
+<td style='background-color: #00FF00'>F.lli Gallo SNC</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>55049</td>
+<td style='background-color: #00FF00'>Viareggio (LU)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>285.4</td>
+<td style='background-color: #00FF00'>PAGATO</td>
+<td style='background-color: #00FF00'>20</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.08.2023,  285.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301270</td>
+<td style='background-color: #00FF00'>2023-07-24 00:00:00</td>
+<td style='background-color: #00FF00'>V000155</td>
+<td style='background-color: #00FF00'>7</td>
+<td style='background-color: #00FF00'>127.9768</td>
+<td style='background-color: #00FF00'>1828.24</td>
+<td style='background-color: #00FF00'>K001115</td>
+<td style='background-color: #00FF00'>F.lli Gallo SNC</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>55049</td>
+<td style='background-color: #00FF00'>Viareggio (LU)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>609.41</td>
+<td style='background-color: #00FF00'>PAGAMENTO PARZIALE</td>
+<td style='background-color: #00FF00'>42.7</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.08.2023,  609.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301316</td>
+<td style='background-color: #00FF00'>2023-07-31 00:00:00</td>
+<td style='background-color: #00FF00'>V000155</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>48.482</td>
+<td style='background-color: #00FF00'>346.3</td>
+<td style='background-color: #00FF00'>K004526</td>
+<td style='background-color: #00FF00'>Matazzoni Claudia</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>54033</td>
+<td style='background-color: #00FF00'>Avenza</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>346.3</td>
+<td style='background-color: #00FF00'>PAGATO</td>
+<td style='background-color: #00FF00'>48.5</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.08.2023,  346.3</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301335</td>
+<td style='background-color: #00FF00'>2023-07-31 00:00:00</td>
+<td style='background-color: #00FF00'>V000155</td>
+<td style='background-color: #00FF00'>7</td>
+<td style='background-color: #00FF00'>15.372</td>
+<td style='background-color: #00FF00'>219.6</td>
+<td style='background-color: #00FF00'>K004570</td>
+<td style='background-color: #00FF00'>Galletti Sas di Galletti A.</td>
+<td style='background-color: #00FF00'>C/C coop di Pontedera</td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>56025</td>
+<td style='background-color: #00FF00'>Pontedera (Pisa)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>219.6</td>
+<td style='background-color: #00FF00'>PAGATO</td>
+<td style='background-color: #00FF00'>15.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.08.2023,  219.6</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301381</td>
+<td style='background-color: #FFF300'>2023-08-09 00:00:00</td>
+<td style='background-color: #FFF300'>V000155</td>
+<td style='background-color: #FFF300'>14</td>
+<td style='background-color: #FFF300'>-3.724</td>
+<td style='background-color: #FFF300'>-26.6</td>
+<td style='background-color: #FFF300'>K005996</td>
+<td style='background-color: #FFF300'>Gocce degli Angeli</td>
+<td style='background-color: #FFF300'>di Rosca Angela</td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>19124</td>
+<td style='background-color: #FFF300'>La Spezia</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>NOTA DI CREDITO</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>Totale:</td>
+<td style='background-color: #00B050'>7289.07</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #00B0F0'>693.6</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+ </tbody>
+                    </table>
+                    {% endblock %}
