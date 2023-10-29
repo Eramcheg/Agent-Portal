@@ -1,0 +1,141 @@
+{%extends 'base.html'%}
+                            {% block content %}     
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--<link rel="stylesheet" type="text/css" href="normas.css">-->
+    <style>
+        body{
+            background-color: #d6e1f8;
+    
+        }
+        th, td {
+            border: 1px solid #ccc;
+    
+            text-align: center;
+        }
+    
+        table {
+    
+            border-collapse: collapse !important; /* optional: collapse the table borders */
+        }
+    
+        table tr {
+            background-color: #8BC34A !important; /* Set background color of all rows */
+        }
+    
+        table tr:hover td {
+            background-color: #2196F3 !important; /* Set background color of cells when hovered */
+        }
+    
+    </style>
+                     <table border="1" class="dataframe" style="width:100%;">
+                                 <thead>
+                                     <tr style="text-align: right;">
+<th style='background-color: #899EF0'>RK</th>
+<th style='background-color: #899EF0'>GF-Nr</th>
+<th style='background-color: #899EF0'>Datum</th>
+<th style='background-color: #899EF0'>Vertreter</th>
+<th style='background-color: #899EF0'>ProvProz</th>
+<th style='background-color: #899EF0'>Provision</th>
+<th style='background-color: #899EF0'>Summe</th>
+<th style='background-color: #899EF0'>Lieferant</th>
+<th style='background-color: #899EF0'>Lieferantenname</th>
+<th style='background-color: #899EF0'>Name2</th>
+<th style='background-color: #899EF0'>IntKz</th>
+<th style='background-color: #899EF0'>PLZ Neu</th>
+<th style='background-color: #899EF0'>Ort</th>
+<th style='background-color: #899EF0'>s</th>
+<th style='background-color: #899EF0'>Paid amount</th>
+<th style='background-color: #899EF0'>Payment status</th>
+<th style='background-color: #899EF0'>Payment commission</th>
+<th style='background-color: #899EF0'>Payments with Rest</th>
+<th style='background-color: #899EF0'>Payments Dates</th>
+</tr>
+</thead>
+                          <tbody><tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300652</td>
+<td style='background-color: #FFF300'>2023-04-27</td>
+<td style='background-color: #FFF300'>V000133</td>
+<td style='background-color: #FFF300'>13</td>
+<td style='background-color: #FFF300'>-4.55</td>
+<td style='background-color: #FFF300'>-35</td>
+<td style='background-color: #FFF300'>K004160</td>
+<td style='background-color: #FFF300'>Saagar Vatnani Vatnani "MIDAS"</td>
+<td style='background-color: #FFF300'>42212048-X</td>
+<td style='background-color: #FFF300'>ES</td>
+<td style='background-color: #FFF300'>35130</td>
+<td style='background-color: #FFF300'>Puerto Rico, Gran Canaria</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301165</td>
+<td style='background-color: #00FF00'>2023-07-04</td>
+<td style='background-color: #00FF00'>V000133</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>128.648</td>
+<td style='background-color: #00FF00'>989.6</td>
+<td style='background-color: #00FF00'>K004160</td>
+<td style='background-color: #00FF00'>Saagar Vatnani Vatnani "MIDAS"</td>
+<td style='background-color: #00FF00'>42212048-X</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>35130</td>
+<td style='background-color: #00FF00'>Puerto Rico, Gran Canaria</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>989.6</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>128.6</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>15.09.2023,  989.6</td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301186</td>
+<td style='background-color: #FFF300'>2023-07-10</td>
+<td style='background-color: #FFF300'>V000133</td>
+<td style='background-color: #FFF300'>13</td>
+<td style='background-color: #FFF300'>-0.481</td>
+<td style='background-color: #FFF300'>-3.7</td>
+<td style='background-color: #FFF300'>K002551</td>
+<td style='background-color: #FFF300'>Manoj Lellani Lellani</td>
+<td style='background-color: #FFF300'>"INFINITY"</td>
+<td style='background-color: #FFF300'>ES</td>
+<td style='background-color: #FFF300'>35626</td>
+<td style='background-color: #FFF300'>Jandia, Fuerteventura.</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>All paid amount</td>
+<td style='background-color: #90EE90'>989.6</td>
+<td style='background-color: #FFFFFF'>All comissions</td>
+<td style='background-color: #90EE90'>128.65</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+ </tbody>
+                    </table>
+                    {% endblock %}

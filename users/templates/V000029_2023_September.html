@@ -1,0 +1,784 @@
+{%extends 'base.html'%}
+                            {% block content %}     
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--<link rel="stylesheet" type="text/css" href="normas.css">-->
+    <style>
+        body{
+            background-color: #d6e1f8;
+    
+        }
+        th, td {
+            border: 1px solid #ccc;
+    
+            text-align: center;
+        }
+    
+        table {
+    
+            border-collapse: collapse !important; /* optional: collapse the table borders */
+        }
+    
+        table tr {
+            background-color: #8BC34A !important; /* Set background color of all rows */
+        }
+    
+        table tr:hover td {
+            background-color: #2196F3 !important; /* Set background color of cells when hovered */
+        }
+    
+    </style>
+                     <table border="1" class="dataframe" style="width:100%;">
+                                 <thead>
+                                     <tr style="text-align: right;">
+<th style='background-color: #899EF0'>RK</th>
+<th style='background-color: #899EF0'>GF-Nr</th>
+<th style='background-color: #899EF0'>Datum</th>
+<th style='background-color: #899EF0'>Vertreter</th>
+<th style='background-color: #899EF0'>ProvProz</th>
+<th style='background-color: #899EF0'>Provision</th>
+<th style='background-color: #899EF0'>Summe</th>
+<th style='background-color: #899EF0'>Lieferant</th>
+<th style='background-color: #899EF0'>Lieferantenname</th>
+<th style='background-color: #899EF0'>Name2</th>
+<th style='background-color: #899EF0'>IntKz</th>
+<th style='background-color: #899EF0'>PLZ Neu</th>
+<th style='background-color: #899EF0'>Ort</th>
+<th style='background-color: #899EF0'>s</th>
+<th style='background-color: #899EF0'>Paid amount</th>
+<th style='background-color: #899EF0'>Payment status</th>
+<th style='background-color: #899EF0'>Payment commission</th>
+<th style='background-color: #899EF0'>Payments with Rest</th>
+<th style='background-color: #899EF0'>Payments Dates</th>
+<th style='background-color: #FFFFFF'> </th>
+</tr>
+</thead>
+                          <tbody><tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300048</td>
+<td style='background-color: #FFF300'>2023-01-16</td>
+<td style='background-color: #FFF300'>V000029</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>-7.9</td>
+<td style='background-color: #FFF300'>K005231</td>
+<td style='background-color: #FFF300'>TOP TANK s.r.o.</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CZ</td>
+<td style='background-color: #FFF300'>150 00</td>
+<td style='background-color: #FFF300'>Smichov Praha</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300069</td>
+<td style='background-color: #FFF300'>2023-01-19</td>
+<td style='background-color: #FFF300'>V000029</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>-22.4</td>
+<td style='background-color: #FFF300'>K005956</td>
+<td style='background-color: #FFF300'>NAMA IN, d.o.o.</td>
+<td style='background-color: #FFF300'>Registration number: 8770034000</td>
+<td style='background-color: #FFF300'>SL</td>
+<td style='background-color: #FFF300'>1000</td>
+<td style='background-color: #FFF300'>Ljubljana</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300178</td>
+<td style='background-color: #FFF300'>2023-02-08</td>
+<td style='background-color: #FFF300'>V000029</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>-95.93</td>
+<td style='background-color: #FFF300'>K006042</td>
+<td style='background-color: #FFF300'>Frampton SALLY</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>GB</td>
+<td style='background-color: #FFF300'>PO12 4EF</td>
+<td style='background-color: #FFF300'>Gosport</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300192</td>
+<td style='background-color: #FFF300'>2023-02-10</td>
+<td style='background-color: #FFF300'>V000029</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>-58.52</td>
+<td style='background-color: #FFF300'>K000863</td>
+<td style='background-color: #FFF300'>Joanna Kasyk</td>
+<td style='background-color: #FFF300'>Global Art Industry</td>
+<td style='background-color: #FFF300'>CZ</td>
+<td style='background-color: #FFF300'>251 66</td>
+<td style='background-color: #FFF300'>Hrusice</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300297</td>
+<td style='background-color: #FFF300'>2023-02-28</td>
+<td style='background-color: #FFF300'>V000029</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>-387</td>
+<td style='background-color: #FFF300'>K004410</td>
+<td style='background-color: #FFF300'>Timeless LLC</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>ARM</td>
+<td style='background-color: #FFF300'>0001</td>
+<td style='background-color: #FFF300'>Yerevan</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300325</td>
+<td style='background-color: #FFF300'>2023-03-06</td>
+<td style='background-color: #FFF300'>V000029</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>-260.7</td>
+<td style='background-color: #FFF300'>K004410</td>
+<td style='background-color: #FFF300'>Timeless LLC</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>ARM</td>
+<td style='background-color: #FFF300'>0001</td>
+<td style='background-color: #FFF300'>Yerevan</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300331</td>
+<td style='background-color: #FFF300'>2023-03-06</td>
+<td style='background-color: #FFF300'>V000029</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>-30.34</td>
+<td style='background-color: #FFF300'>K000863</td>
+<td style='background-color: #FFF300'>Joanna Kasyk</td>
+<td style='background-color: #FFF300'>Global Art Industry</td>
+<td style='background-color: #FFF300'>CZ</td>
+<td style='background-color: #FFF300'>251 66</td>
+<td style='background-color: #FFF300'>Hrusice</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300337</td>
+<td style='background-color: #FFF300'>2023-03-07</td>
+<td style='background-color: #FFF300'>V000029</td>
+<td style='background-color: #FFF300'>10</td>
+<td style='background-color: #FFF300'>-10.624</td>
+<td style='background-color: #FFF300'>-106.24</td>
+<td style='background-color: #FFF300'>K004976</td>
+<td style='background-color: #FFF300'>Shanyrak Centre</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>KZ</td>
+<td style='background-color: #FFF300'>030000</td>
+<td style='background-color: #FFF300'>Actobe, region Actubinsk</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300626</td>
+<td style='background-color: #00FF00'>2023-04-24</td>
+<td style='background-color: #00FF00'>V000029</td>
+<td style='background-color: #00FF00'>0</td>
+<td style='background-color: #00FF00'>0</td>
+<td style='background-color: #00FF00'>3927.7</td>
+<td style='background-color: #00FF00'>K000863</td>
+<td style='background-color: #00FF00'>Joanna Kasyk</td>
+<td style='background-color: #00FF00'>Global Art Industry</td>
+<td style='background-color: #00FF00'>CZ</td>
+<td style='background-color: #00FF00'>251 66</td>
+<td style='background-color: #00FF00'>Hrusice</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1927.7</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>04.09.2023,  1927.7</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300667</td>
+<td style='background-color: #FFF300'>2023-04-28</td>
+<td style='background-color: #FFF300'>V000029</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>-43.89</td>
+<td style='background-color: #FFF300'>K000863</td>
+<td style='background-color: #FFF300'>Joanna Kasyk</td>
+<td style='background-color: #FFF300'>Global Art Industry</td>
+<td style='background-color: #FFF300'>CZ</td>
+<td style='background-color: #FFF300'>251 66</td>
+<td style='background-color: #FFF300'>Hrusice</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300670</td>
+<td style='background-color: #00FF00'>2023-04-28</td>
+<td style='background-color: #00FF00'>V000029</td>
+<td style='background-color: #00FF00'>0</td>
+<td style='background-color: #00FF00'>0</td>
+<td style='background-color: #00FF00'>380.87</td>
+<td style='background-color: #00FF00'>K000863</td>
+<td style='background-color: #00FF00'>Joanna Kasyk</td>
+<td style='background-color: #00FF00'>Global Art Industry</td>
+<td style='background-color: #00FF00'>CZ</td>
+<td style='background-color: #00FF00'>251 66</td>
+<td style='background-color: #00FF00'>Hrusice</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>380.9</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>04.09.2023,  380.9</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300747</td>
+<td style='background-color: #00FF00'>2023-05-11</td>
+<td style='background-color: #00FF00'>V000029</td>
+<td style='background-color: #00FF00'>0</td>
+<td style='background-color: #00FF00'>0</td>
+<td style='background-color: #00FF00'>84</td>
+<td style='background-color: #00FF00'>K000863</td>
+<td style='background-color: #00FF00'>Joanna Kasyk</td>
+<td style='background-color: #00FF00'>Global Art Industry</td>
+<td style='background-color: #00FF00'>CZ</td>
+<td style='background-color: #00FF00'>251 66</td>
+<td style='background-color: #00FF00'>Hrusice</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>84</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>04.09.2023,  84.0</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300789</td>
+<td style='background-color: #FFF300'>2023-05-17</td>
+<td style='background-color: #FFF300'>V000029</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>-453.6</td>
+<td style='background-color: #FFF300'>K004410</td>
+<td style='background-color: #FFF300'>Timeless LLC</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>ARM</td>
+<td style='background-color: #FFF300'>0001</td>
+<td style='background-color: #FFF300'>Yerevan</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300864</td>
+<td style='background-color: #00FF00'>2023-05-30</td>
+<td style='background-color: #00FF00'>V000029</td>
+<td style='background-color: #00FF00'>0</td>
+<td style='background-color: #00FF00'>0</td>
+<td style='background-color: #00FF00'>639.03</td>
+<td style='background-color: #00FF00'>K000863</td>
+<td style='background-color: #00FF00'>Joanna Kasyk</td>
+<td style='background-color: #00FF00'>Global Art Industry</td>
+<td style='background-color: #00FF00'>CZ</td>
+<td style='background-color: #00FF00'>251 66</td>
+<td style='background-color: #00FF00'>Hrusice</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>639</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>04.09.2023,  639.0</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300866</td>
+<td style='background-color: #FFF300'>2023-05-30</td>
+<td style='background-color: #FFF300'>V000029</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>-208.2</td>
+<td style='background-color: #FFF300'>K004410</td>
+<td style='background-color: #FFF300'>Timeless LLC</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>ARM</td>
+<td style='background-color: #FFF300'>0001</td>
+<td style='background-color: #FFF300'>Yerevan</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300933</td>
+<td style='background-color: #00FF00'>2023-06-05</td>
+<td style='background-color: #00FF00'>V000029</td>
+<td style='background-color: #00FF00'>0</td>
+<td style='background-color: #00FF00'>0</td>
+<td style='background-color: #00FF00'>564.97</td>
+<td style='background-color: #00FF00'>K000863</td>
+<td style='background-color: #00FF00'>Joanna Kasyk</td>
+<td style='background-color: #00FF00'>Global Art Industry</td>
+<td style='background-color: #00FF00'>CZ</td>
+<td style='background-color: #00FF00'>251 66</td>
+<td style='background-color: #00FF00'>Hrusice</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>565</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>04.09.2023,  565.0</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301018</td>
+<td style='background-color: #FFF300'>2023-06-15</td>
+<td style='background-color: #FFF300'>V000029</td>
+<td style='background-color: #FFF300'>10</td>
+<td style='background-color: #FFF300'>-122.25</td>
+<td style='background-color: #FFF300'>-1222.5</td>
+<td style='background-color: #FFF300'>K004976</td>
+<td style='background-color: #FFF300'>Shanyrak Centre</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>KZ</td>
+<td style='background-color: #FFF300'>030000</td>
+<td style='background-color: #FFF300'>Actobe, region Actubinsk</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301064</td>
+<td style='background-color: #00FF00'>2023-06-21</td>
+<td style='background-color: #00FF00'>V000029</td>
+<td style='background-color: #00FF00'>0</td>
+<td style='background-color: #00FF00'>0</td>
+<td style='background-color: #00FF00'>444.36</td>
+<td style='background-color: #00FF00'>K000863</td>
+<td style='background-color: #00FF00'>Joanna Kasyk</td>
+<td style='background-color: #00FF00'>Global Art Industry</td>
+<td style='background-color: #00FF00'>CZ</td>
+<td style='background-color: #00FF00'>251 66</td>
+<td style='background-color: #00FF00'>Hrusice</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>444.4</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>14.09.2023,  444.4</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301106</td>
+<td style='background-color: #00FF00'>2023-06-27</td>
+<td style='background-color: #00FF00'>V000029</td>
+<td style='background-color: #00FF00'>0</td>
+<td style='background-color: #00FF00'>0</td>
+<td style='background-color: #00FF00'>260.26</td>
+<td style='background-color: #00FF00'>K000863</td>
+<td style='background-color: #00FF00'>Joanna Kasyk</td>
+<td style='background-color: #00FF00'>Global Art Industry</td>
+<td style='background-color: #00FF00'>CZ</td>
+<td style='background-color: #00FF00'>251 66</td>
+<td style='background-color: #00FF00'>Hrusice</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>260.3</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>14.09.2023,  260.3</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301107</td>
+<td style='background-color: #FFF300'>2023-06-27</td>
+<td style='background-color: #FFF300'>V000029</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>-290.7</td>
+<td style='background-color: #FFF300'>K004444</td>
+<td style='background-color: #FFF300'>Timeless LLC</td>
+<td style='background-color: #FFF300'>Mr. Valerian Beraia</td>
+<td style='background-color: #FFF300'>GE</td>
+<td style='background-color: #FFF300'>0108</td>
+<td style='background-color: #FFF300'>Tbilisi</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301219</td>
+<td style='background-color: #00FF00'>2023-07-13</td>
+<td style='background-color: #00FF00'>V000029</td>
+<td style='background-color: #00FF00'>0</td>
+<td style='background-color: #00FF00'>0</td>
+<td style='background-color: #00FF00'>97.06</td>
+<td style='background-color: #00FF00'>K004225</td>
+<td style='background-color: #00FF00'>Wilson Suzanne</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>US</td>
+<td style='background-color: #00FF00'>60935</td>
+<td style='background-color: #00FF00'>Essex</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>97.1</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>08.09.2023,  86.0</td>
+<td style='background-color: #FFFFFF'>30.09.2023,  11.1</td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301241</td>
+<td style='background-color: #FFF300'>2023-07-17</td>
+<td style='background-color: #FFF300'>V000029</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>-158.101204</td>
+<td style='background-color: #FFF300'>K006042</td>
+<td style='background-color: #FFF300'>Longmore Elaine</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>GB</td>
+<td style='background-color: #FFF300'>SY38XT</td>
+<td style='background-color: #FFF300'>Shrewsbury</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301242</td>
+<td style='background-color: #FFF300'>2023-07-17</td>
+<td style='background-color: #FFF300'>V000029</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>-154.57944</td>
+<td style='background-color: #FFF300'>K006042</td>
+<td style='background-color: #FFF300'>Longmore Elaine</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>GB</td>
+<td style='background-color: #FFF300'>SY38XT</td>
+<td style='background-color: #FFF300'>Shreswbury</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301283</td>
+<td style='background-color: #00FF00'>2023-07-25</td>
+<td style='background-color: #00FF00'>V000029</td>
+<td style='background-color: #00FF00'>0</td>
+<td style='background-color: #00FF00'>0</td>
+<td style='background-color: #00FF00'>265.28</td>
+<td style='background-color: #00FF00'>K006205</td>
+<td style='background-color: #00FF00'>Oreficeria Orologeria GRECO</td>
+<td style='background-color: #00FF00'>di Greco Prakasch Marco</td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>88100</td>
+<td style='background-color: #00FF00'>Catanzaro (CZ)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>265.3</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>25.09.2023,  265.3</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301445</td>
+<td style='background-color: #00FF00'>2023-08-23</td>
+<td style='background-color: #00FF00'>V000029</td>
+<td style='background-color: #00FF00'>0</td>
+<td style='background-color: #00FF00'>0</td>
+<td style='background-color: #00FF00'>2456.59</td>
+<td style='background-color: #00FF00'>K001710</td>
+<td style='background-color: #00FF00'>Duni-P International Trading Ltd.Co</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>TW</td>
+<td style='background-color: #00FF00'>110</td>
+<td style='background-color: #00FF00'>TAIPEI CITY, R.O.C.</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>193.5</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>30.09.2023,  193.5</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301519</td>
+<td style='background-color: #FFF300'>2023-09-07</td>
+<td style='background-color: #FFF300'>V000029</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>-43.84</td>
+<td style='background-color: #FFF300'>K001710</td>
+<td style='background-color: #FFF300'>Duni-P International Trading Ltd.Co</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>TW</td>
+<td style='background-color: #FFF300'>110</td>
+<td style='background-color: #FFF300'>TAIPEI CITY, R.O.C.</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301524</td>
+<td style='background-color: #FFF300'>2023-09-08</td>
+<td style='background-color: #FFF300'>V000029</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>-129.02</td>
+<td style='background-color: #FFF300'>K005750</td>
+<td style='background-color: #FFF300'>TAURUS LLC</td>
+<td style='background-color: #FFF300'>Javkhlan Bat-Orgil</td>
+<td style='background-color: #FFF300'>MN</td>
+<td style='background-color: #FFF300'>17030-0040</td>
+<td style='background-color: #FFF300'>Ulaanbaatar</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301556</td>
+<td style='background-color: #00FF00'>2023-09-14</td>
+<td style='background-color: #00FF00'>V000029</td>
+<td style='background-color: #00FF00'>10</td>
+<td style='background-color: #00FF00'>111.903</td>
+<td style='background-color: #00FF00'>1119.03</td>
+<td style='background-color: #00FF00'>K004976</td>
+<td style='background-color: #00FF00'>Shanyrak Centre</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>KZ</td>
+<td style='background-color: #00FF00'>030000</td>
+<td style='background-color: #00FF00'>Actobe, region Actubinsk</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1119</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #FFFFFF'>111.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>18.09.2023,  1119.0</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301572</td>
+<td style='background-color: #00FF00'>2023-09-19</td>
+<td style='background-color: #00FF00'>V000029</td>
+<td style='background-color: #00FF00'>0</td>
+<td style='background-color: #00FF00'>0</td>
+<td style='background-color: #00FF00'>1059.08</td>
+<td style='background-color: #00FF00'>K001710</td>
+<td style='background-color: #00FF00'>Duni-P International Trading Ltd.Co</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>TW</td>
+<td style='background-color: #00FF00'>110</td>
+<td style='background-color: #00FF00'>TAIPEI CITY, R.O.C.</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>60.9</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>30.09.2023,  60.9</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301663</td>
+<td style='background-color: #FFF300'>2023-09-28</td>
+<td style='background-color: #FFF300'>V000029</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>-95.34</td>
+<td style='background-color: #FFF300'>K000863</td>
+<td style='background-color: #FFF300'>Joanna Kasyk</td>
+<td style='background-color: #FFF300'>Global Art Industry</td>
+<td style='background-color: #FFF300'>CZ</td>
+<td style='background-color: #FFF300'>251 66</td>
+<td style='background-color: #FFF300'>Hrusice</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301668</td>
+<td style='background-color: #FFF300'>2023-09-28</td>
+<td style='background-color: #FFF300'>V000029</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>-158.68</td>
+<td style='background-color: #FFF300'>K006042</td>
+<td style='background-color: #FFF300'>Dunkley Cathy</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>GB</td>
+<td style='background-color: #FFF300'>W1U 4BS</td>
+<td style='background-color: #FFF300'>London</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301686</td>
+<td style='background-color: #FFF300'>2023-09-30</td>
+<td style='background-color: #FFF300'>V000029</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>-99.6</td>
+<td style='background-color: #FFF300'>K004410</td>
+<td style='background-color: #FFF300'>Timeless LLC</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>ARM</td>
+<td style='background-color: #FFF300'>0001</td>
+<td style='background-color: #FFF300'>Yerevan</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>All paid amount</td>
+<td style='background-color: #90EE90'>6037.1</td>
+<td style='background-color: #FFFFFF'>All comissions</td>
+<td style='background-color: #90EE90'>111.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+ </tbody>
+                    </table>
+                    {% endblock %}

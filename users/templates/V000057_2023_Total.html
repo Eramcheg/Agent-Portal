@@ -1,50 +1,50 @@
 {%extends 'base.html'%}
-                        {% block content %}
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<!--<link rel="stylesheet" type="text/css" href="normas.css">-->
-<style>
-    body{
-        background-color: #d6e1f8;
-         
-    }
-    th, td {
-        border: 1px solid #ccc;
-        
-        text-align: center;
-    }
-
-    table {
-   
-        border-collapse: collapse !important; /* optional: collapse the table borders */
-    }
-
-    table tr {
-        background-color: #8BC34A !important; /* Set background color of all rows */
-    }
-
-    table tr:hover td {
-        background-color: #2196F3 !important; /* Set background color of cells when hovered */
-    }
-
-</style>
-                 <table border="1" class="dataframe" style="width:100%;">
-                             <thead>
-                                 <tr style="text-align: right;">
-<th style='background-color: #B0CBF0'>RK</th>
-<th style='background-color: #B0CBF0'>GF-Nr</th>
-<th style='background-color: #B0CBF0'>Datum</th>
-<th style='background-color: #B0CBF0'>Vertreter</th>
-<th style='background-color: #B0CBF0'>ProvProz</th>
-<th style='background-color: #B0CBF0'>Provision</th>
-<th style='background-color: #B0CBF0'>Summe</th>
-<th style='background-color: #B0CBF0'>Lieferant</th>
-<th style='background-color: #B0CBF0'>Lieferantenname</th>
-<th style='background-color: #B0CBF0'>Name2</th>
-<th style='background-color: #B0CBF0'>IntKz</th>
-<th style='background-color: #B0CBF0'>PLZ Neu</th>
-<th style='background-color: #B0CBF0'>Ort</th>
-<th style='background-color: #FFFFFF'> </th>
+                            {% block content %}     
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--<link rel="stylesheet" type="text/css" href="normas.css">-->
+    <style>
+        body{
+            background-color: #d6e1f8;
+    
+        }
+        th, td {
+            border: 1px solid #ccc;
+    
+            text-align: center;
+        }
+    
+        table {
+    
+            border-collapse: collapse !important; /* optional: collapse the table borders */
+        }
+    
+        table tr {
+            background-color: #8BC34A !important; /* Set background color of all rows */
+        }
+    
+        table tr:hover td {
+            background-color: #2196F3 !important; /* Set background color of cells when hovered */
+        }
+    
+    </style>
+                     <table border="1" class="dataframe" style="width:100%;">
+                                 <thead>
+                                     <tr style="text-align: right;">
+<th style='background-color: #899EF0'>RK</th>
+<th style='background-color: #899EF0'>GF-Nr</th>
+<th style='background-color: #899EF0'>Datum</th>
+<th style='background-color: #899EF0'>Vertreter</th>
+<th style='background-color: #899EF0'>ProvProz</th>
+<th style='background-color: #899EF0'>Provision</th>
+<th style='background-color: #899EF0'>Summe</th>
+<th style='background-color: #899EF0'>Lieferant</th>
+<th style='background-color: #899EF0'>Lieferantenname</th>
+<th style='background-color: #899EF0'>Name2</th>
+<th style='background-color: #899EF0'>IntKz</th>
+<th style='background-color: #899EF0'>PLZ Neu</th>
+<th style='background-color: #899EF0'>Ort</th>
+<th style='background-color: #899EF0'>s</th>
 <th style='background-color: #899EF0'>Paid amount</th>
 <th style='background-color: #899EF0'>Payment status</th>
 <th style='background-color: #899EF0'>Payment commission</th>
@@ -53,1327 +53,7 @@
 <th style='background-color: #FFFFFF'> </th>
 </tr>
 </thead>
-                      <tbody><tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200021</td>
-<td style='background-color: #92D050'>2022-01-10 00:00:00</td>
-<td style='background-color: #92D050'>V000057</td>
-<td style='background-color: #92D050'>5</td>
-<td style='background-color: #92D050'>0.075</td>
-<td style='background-color: #92D050'>1.5</td>
-<td style='background-color: #92D050'>K003280</td>
-<td style='background-color: #92D050'>NILSI EOOD</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>BG</td>
-<td style='background-color: #92D050'>7500</td>
-<td style='background-color: #92D050'>Silistra (BG)</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200065</td>
-<td style='background-color: #92D050'>2022-01-14 00:00:00</td>
-<td style='background-color: #92D050'>V000057</td>
-<td style='background-color: #92D050'>5</td>
-<td style='background-color: #92D050'>3.43</td>
-<td style='background-color: #92D050'>68.6</td>
-<td style='background-color: #92D050'>K003280</td>
-<td style='background-color: #92D050'>NILSI EOOD</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>BG</td>
-<td style='background-color: #92D050'>7500</td>
-<td style='background-color: #92D050'>Silistra (BG)</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200080</td>
-<td style='background-color: #92D050'>2022-01-17 00:00:00</td>
-<td style='background-color: #92D050'>V000057</td>
-<td style='background-color: #92D050'>5</td>
-<td style='background-color: #92D050'>24.23</td>
-<td style='background-color: #92D050'>484.6</td>
-<td style='background-color: #92D050'>K003280</td>
-<td style='background-color: #92D050'>NILSI EOOD</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>BG</td>
-<td style='background-color: #92D050'>7500</td>
-<td style='background-color: #92D050'>Silistra (BG)</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200096</td>
-<td style='background-color: #92D050'>2022-01-18 00:00:00</td>
-<td style='background-color: #92D050'>V000057</td>
-<td style='background-color: #92D050'>5</td>
-<td style='background-color: #92D050'>1182.2875</td>
-<td style='background-color: #92D050'>23645.75</td>
-<td style='background-color: #92D050'>K002943</td>
-<td style='background-color: #92D050'>D.D. & O Sh. P. K.</td>
-<td style='background-color: #92D050'>Business Nr. 70688689</td>
-<td style='background-color: #92D050'>KOS</td>
-<td style='background-color: #92D050'>10000</td>
-<td style='background-color: #92D050'>Prishtina - Republic of Kosovo</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200097</td>
-<td style='background-color: #92D050'>2022-01-18 00:00:00</td>
-<td style='background-color: #92D050'>V000057</td>
-<td style='background-color: #92D050'>5</td>
-<td style='background-color: #92D050'>477.469</td>
-<td style='background-color: #92D050'>9549.38</td>
-<td style='background-color: #92D050'>K002943</td>
-<td style='background-color: #92D050'>D.D. & O Sh. P. K.</td>
-<td style='background-color: #92D050'>Business Nr. 70688689</td>
-<td style='background-color: #92D050'>KOS</td>
-<td style='background-color: #92D050'>10000</td>
-<td style='background-color: #92D050'>Prishtina - Republic of Kosovo</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200098</td>
-<td style='background-color: #92D050'>2022-01-18 00:00:00</td>
-<td style='background-color: #92D050'>V000057</td>
-<td style='background-color: #92D050'>5</td>
-<td style='background-color: #92D050'>495.479</td>
-<td style='background-color: #92D050'>9909.58</td>
-<td style='background-color: #92D050'>K002943</td>
-<td style='background-color: #92D050'>D.D. & O Sh. P. K.</td>
-<td style='background-color: #92D050'>Business Nr. 70688689</td>
-<td style='background-color: #92D050'>KOS</td>
-<td style='background-color: #92D050'>10000</td>
-<td style='background-color: #92D050'>Prishtina - Republic of Kosovo</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200099</td>
-<td style='background-color: #92D050'>2022-01-18 00:00:00</td>
-<td style='background-color: #92D050'>V000057</td>
-<td style='background-color: #92D050'>5</td>
-<td style='background-color: #92D050'>119.985</td>
-<td style='background-color: #92D050'>2399.7</td>
-<td style='background-color: #92D050'>K002943</td>
-<td style='background-color: #92D050'>D.D. & O Sh. P. K.</td>
-<td style='background-color: #92D050'>Business Nr. 70688689</td>
-<td style='background-color: #92D050'>KOS</td>
-<td style='background-color: #92D050'>10000</td>
-<td style='background-color: #92D050'>Prishtina - Republic of Kosovo</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200255</td>
-<td style='background-color: #92D050'>2022-02-04 00:00:00</td>
-<td style='background-color: #92D050'>V000057</td>
-<td style='background-color: #92D050'>5</td>
-<td style='background-color: #92D050'>3</td>
-<td style='background-color: #92D050'>60</td>
-<td style='background-color: #92D050'>K002943</td>
-<td style='background-color: #92D050'>D.D. & O Sh. P. K.</td>
-<td style='background-color: #92D050'>Business Nr. 70688689</td>
-<td style='background-color: #92D050'>KOS</td>
-<td style='background-color: #92D050'>10000</td>
-<td style='background-color: #92D050'>Prishtina - Republic of Kosovo</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200275</td>
-<td style='background-color: #92D050'>2022-02-08 00:00:00</td>
-<td style='background-color: #92D050'>V000057</td>
-<td style='background-color: #92D050'>5</td>
-<td style='background-color: #92D050'>49.205</td>
-<td style='background-color: #92D050'>984.1</td>
-<td style='background-color: #92D050'>K003280</td>
-<td style='background-color: #92D050'>NILSI EOOD</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>BG</td>
-<td style='background-color: #92D050'>7500</td>
-<td style='background-color: #92D050'>Silistra (BG)</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200318</td>
-<td style='background-color: #92D050'>2022-02-10 00:00:00</td>
-<td style='background-color: #92D050'>V000057</td>
-<td style='background-color: #92D050'>5</td>
-<td style='background-color: #92D050'>174.0455</td>
-<td style='background-color: #92D050'>3480.91</td>
-<td style='background-color: #92D050'>K005953</td>
-<td style='background-color: #92D050'>Korporacija D.D&O</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>MK</td>
-<td style='background-color: #92D050'>1000</td>
-<td style='background-color: #92D050'>Skopje, North Macedonia</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200456</td>
-<td style='background-color: #92D050'>2022-03-04 00:00:00</td>
-<td style='background-color: #92D050'>V000057</td>
-<td style='background-color: #92D050'>8</td>
-<td style='background-color: #92D050'>2570.6496</td>
-<td style='background-color: #92D050'>32133.12</td>
-<td style='background-color: #92D050'>K002798</td>
-<td style='background-color: #92D050'>Crystal Time d.o.o</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>SRB</td>
-<td style='background-color: #92D050'>11070</td>
-<td style='background-color: #92D050'>Belgrade</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200478</td>
-<td style='background-color: #92D050'>2022-03-09 00:00:00</td>
-<td style='background-color: #92D050'>V000057</td>
-<td style='background-color: #92D050'>5</td>
-<td style='background-color: #92D050'>5.13</td>
-<td style='background-color: #92D050'>102.6</td>
-<td style='background-color: #92D050'>K003280</td>
-<td style='background-color: #92D050'>NILSI EOOD</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>BG</td>
-<td style='background-color: #92D050'>7500</td>
-<td style='background-color: #92D050'>Silistra (BG)</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'>RE-4200624</td>
-<td style='background-color: #FFF300'>2022-03-29 00:00:00</td>
-<td style='background-color: #FFF300'>V000057</td>
-<td style='background-color: #FFF300'>5</td>
-<td style='background-color: #FFF300'>-27.768</td>
-<td style='background-color: #FFF300'>-555.36</td>
-<td style='background-color: #FFF300'>K002943</td>
-<td style='background-color: #FFF300'>D.D. & O Sh. P. K.</td>
-<td style='background-color: #FFF300'>Business Nr. 70688689</td>
-<td style='background-color: #FFF300'>KOS</td>
-<td style='background-color: #FFF300'>10000</td>
-<td style='background-color: #FFF300'>Prishtina - Republic of Kosovo</td>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'>CREDIT NOTE</td>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200642</td>
-<td style='background-color: #92D050'>2022-03-30 00:00:00</td>
-<td style='background-color: #92D050'>V000057</td>
-<td style='background-color: #92D050'>5</td>
-<td style='background-color: #92D050'>283.6245</td>
-<td style='background-color: #92D050'>5672.49</td>
-<td style='background-color: #92D050'>K002943</td>
-<td style='background-color: #92D050'>D.D. & O Sh. P. K.</td>
-<td style='background-color: #92D050'>Business Nr. 70688689</td>
-<td style='background-color: #92D050'>KOS</td>
-<td style='background-color: #92D050'>10000</td>
-<td style='background-color: #92D050'>Prishtina - Republic of Kosovo</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200643</td>
-<td style='background-color: #92D050'>2022-03-30 00:00:00</td>
-<td style='background-color: #92D050'>V000057</td>
-<td style='background-color: #92D050'>5</td>
-<td style='background-color: #92D050'>315.7145</td>
-<td style='background-color: #92D050'>6314.29</td>
-<td style='background-color: #92D050'>K002943</td>
-<td style='background-color: #92D050'>D.D. & O Sh. P. K.</td>
-<td style='background-color: #92D050'>Business Nr. 70688689</td>
-<td style='background-color: #92D050'>KOS</td>
-<td style='background-color: #92D050'>10000</td>
-<td style='background-color: #92D050'>Prishtina - Republic of Kosovo</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200644</td>
-<td style='background-color: #92D050'>2022-03-30 00:00:00</td>
-<td style='background-color: #92D050'>V000057</td>
-<td style='background-color: #92D050'>5</td>
-<td style='background-color: #92D050'>621.4195</td>
-<td style='background-color: #92D050'>12428.39</td>
-<td style='background-color: #92D050'>K002943</td>
-<td style='background-color: #92D050'>D.D. & O Sh. P. K.</td>
-<td style='background-color: #92D050'>Business Nr. 70688689</td>
-<td style='background-color: #92D050'>KOS</td>
-<td style='background-color: #92D050'>10000</td>
-<td style='background-color: #92D050'>Prishtina - Republic of Kosovo</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200726</td>
-<td style='background-color: #92D050'>2022-04-07 00:00:00</td>
-<td style='background-color: #92D050'>V000057</td>
-<td style='background-color: #92D050'>5</td>
-<td style='background-color: #92D050'>55.38</td>
-<td style='background-color: #92D050'>1107.6</td>
-<td style='background-color: #92D050'>K003280</td>
-<td style='background-color: #92D050'>NILSI EOOD</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>BG</td>
-<td style='background-color: #92D050'>7500</td>
-<td style='background-color: #92D050'>Silistra (BG)</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200761</td>
-<td style='background-color: #92D050'>2022-04-13 00:00:00</td>
-<td style='background-color: #92D050'>V000057</td>
-<td style='background-color: #92D050'>5</td>
-<td style='background-color: #92D050'>22.1</td>
-<td style='background-color: #92D050'>442</td>
-<td style='background-color: #92D050'>K003280</td>
-<td style='background-color: #92D050'>NILSI EOOD</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>BG</td>
-<td style='background-color: #92D050'>7500</td>
-<td style='background-color: #92D050'>Silistra (BG)</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200792</td>
-<td style='background-color: #92D050'>2022-04-14 00:00:00</td>
-<td style='background-color: #92D050'>V000057</td>
-<td style='background-color: #92D050'>5</td>
-<td style='background-color: #92D050'>44.065</td>
-<td style='background-color: #92D050'>881.3</td>
-<td style='background-color: #92D050'>K004016</td>
-<td style='background-color: #92D050'>Klaus Kalke</td>
-<td style='background-color: #92D050'>Village Gallery</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>1030</td>
-<td style='background-color: #92D050'>Wien</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'>RE-4200875</td>
-<td style='background-color: #FFF300'>2022-04-27 00:00:00</td>
-<td style='background-color: #FFF300'>V000057</td>
-<td style='background-color: #FFF300'>8</td>
-<td style='background-color: #FFF300'>-156.5912</td>
-<td style='background-color: #FFF300'>-1957.39</td>
-<td style='background-color: #FFF300'>K002798</td>
-<td style='background-color: #FFF300'>Crystal Time d.o.o</td>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'>SRB</td>
-<td style='background-color: #FFF300'>11070</td>
-<td style='background-color: #FFF300'>Belgrade</td>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'>CREDIT NOTE</td>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201010</td>
-<td style='background-color: #92D050'>2022-05-16 00:00:00</td>
-<td style='background-color: #92D050'>V000057</td>
-<td style='background-color: #92D050'>5</td>
-<td style='background-color: #92D050'>40.125</td>
-<td style='background-color: #92D050'>802.5</td>
-<td style='background-color: #92D050'>K004016</td>
-<td style='background-color: #92D050'>Klaus Kalke</td>
-<td style='background-color: #92D050'>Village Gallery</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>1030</td>
-<td style='background-color: #92D050'>Wien</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201023</td>
-<td style='background-color: #92D050'>2022-05-18 00:00:00</td>
-<td style='background-color: #92D050'>V000057</td>
-<td style='background-color: #92D050'>5</td>
-<td style='background-color: #92D050'>19.205</td>
-<td style='background-color: #92D050'>384.1</td>
-<td style='background-color: #92D050'>K003280</td>
-<td style='background-color: #92D050'>NILSI EOOD</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>BG</td>
-<td style='background-color: #92D050'>7500</td>
-<td style='background-color: #92D050'>Silistra (BG)</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201040</td>
-<td style='background-color: #92D050'>2022-05-20 00:00:00</td>
-<td style='background-color: #92D050'>V000057</td>
-<td style='background-color: #92D050'>8</td>
-<td style='background-color: #92D050'>1490.2472</td>
-<td style='background-color: #92D050'>18628.09</td>
-<td style='background-color: #92D050'>K002798</td>
-<td style='background-color: #92D050'>Crystal Time d.o.o</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>SRB</td>
-<td style='background-color: #92D050'>11070</td>
-<td style='background-color: #92D050'>Belgrade</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'>RE-4201049</td>
-<td style='background-color: #FFF300'>2022-05-23 00:00:00</td>
-<td style='background-color: #FFF300'>V000057</td>
-<td style='background-color: #FFF300'>5</td>
-<td style='background-color: #FFF300'>-1.5</td>
-<td style='background-color: #FFF300'>-30</td>
-<td style='background-color: #FFF300'>K004016</td>
-<td style='background-color: #FFF300'>Klaus Kalke</td>
-<td style='background-color: #FFF300'>Village Gallery</td>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'>1030</td>
-<td style='background-color: #FFF300'>Wien</td>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'>CREDIT NOTE</td>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201091</td>
-<td style='background-color: #92D050'>2022-05-25 00:00:00</td>
-<td style='background-color: #92D050'>V000057</td>
-<td style='background-color: #92D050'>5</td>
-<td style='background-color: #92D050'>22.85</td>
-<td style='background-color: #92D050'>457</td>
-<td style='background-color: #92D050'>K004016</td>
-<td style='background-color: #92D050'>Klaus Kalke</td>
-<td style='background-color: #92D050'>Village Gallery</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>1030</td>
-<td style='background-color: #92D050'>Wien</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201145</td>
-<td style='background-color: #92D050'>2022-06-02 00:00:00</td>
-<td style='background-color: #92D050'>V000057</td>
-<td style='background-color: #92D050'>5</td>
-<td style='background-color: #92D050'>291.944</td>
-<td style='background-color: #92D050'>5838.88</td>
-<td style='background-color: #92D050'>K002943</td>
-<td style='background-color: #92D050'>D.D. & O Sh. P. K.</td>
-<td style='background-color: #92D050'>Business Nr. 70688689</td>
-<td style='background-color: #92D050'>KOS</td>
-<td style='background-color: #92D050'>10000</td>
-<td style='background-color: #92D050'>Prishtina - Republic of Kosovo</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201146</td>
-<td style='background-color: #92D050'>2022-06-02 00:00:00</td>
-<td style='background-color: #92D050'>V000057</td>
-<td style='background-color: #92D050'>5</td>
-<td style='background-color: #92D050'>613.2675</td>
-<td style='background-color: #92D050'>12265.35</td>
-<td style='background-color: #92D050'>K002943</td>
-<td style='background-color: #92D050'>D.D. & O Sh. P. K.</td>
-<td style='background-color: #92D050'>Business Nr. 70688689</td>
-<td style='background-color: #92D050'>KOS</td>
-<td style='background-color: #92D050'>10000</td>
-<td style='background-color: #92D050'>Prishtina - Republic of Kosovo</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201147</td>
-<td style='background-color: #92D050'>2022-06-02 00:00:00</td>
-<td style='background-color: #92D050'>V000057</td>
-<td style='background-color: #92D050'>5</td>
-<td style='background-color: #92D050'>306.229</td>
-<td style='background-color: #92D050'>6124.58</td>
-<td style='background-color: #92D050'>K002943</td>
-<td style='background-color: #92D050'>D.D. & O Sh. P. K.</td>
-<td style='background-color: #92D050'>Business Nr. 70688689</td>
-<td style='background-color: #92D050'>KOS</td>
-<td style='background-color: #92D050'>10000</td>
-<td style='background-color: #92D050'>Prishtina - Republic of Kosovo</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201215</td>
-<td style='background-color: #92D050'>2022-06-09 00:00:00</td>
-<td style='background-color: #92D050'>V000057</td>
-<td style='background-color: #92D050'>5</td>
-<td style='background-color: #92D050'>32.395</td>
-<td style='background-color: #92D050'>647.9</td>
-<td style='background-color: #92D050'>K003280</td>
-<td style='background-color: #92D050'>NILSI EOOD</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>BG</td>
-<td style='background-color: #92D050'>7500</td>
-<td style='background-color: #92D050'>Silistra (BG)</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201254</td>
-<td style='background-color: #92D050'>2022-06-14 00:00:00</td>
-<td style='background-color: #92D050'>V000057</td>
-<td style='background-color: #92D050'>5</td>
-<td style='background-color: #92D050'>37.87</td>
-<td style='background-color: #92D050'>757.4</td>
-<td style='background-color: #92D050'>K004016</td>
-<td style='background-color: #92D050'>Klaus Kalke</td>
-<td style='background-color: #92D050'>Village Gallery</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>1030</td>
-<td style='background-color: #92D050'>Wien</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201258</td>
-<td style='background-color: #92D050'>2022-06-14 00:00:00</td>
-<td style='background-color: #92D050'>V000057</td>
-<td style='background-color: #92D050'>5</td>
-<td style='background-color: #92D050'>452.8435</td>
-<td style='background-color: #92D050'>9056.87</td>
-<td style='background-color: #92D050'>K005953</td>
-<td style='background-color: #92D050'>Korporacija D.D&O</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>MK</td>
-<td style='background-color: #92D050'>1000</td>
-<td style='background-color: #92D050'>Skopje, North Macedonia</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'>RE-4201321</td>
-<td style='background-color: #FFF300'>2022-06-21 00:00:00</td>
-<td style='background-color: #FFF300'>V000057</td>
-<td style='background-color: #FFF300'>5</td>
-<td style='background-color: #FFF300'>-8.55</td>
-<td style='background-color: #FFF300'>-171</td>
-<td style='background-color: #FFF300'>K003280</td>
-<td style='background-color: #FFF300'>NILSI EOOD</td>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'>BG</td>
-<td style='background-color: #FFF300'>7500</td>
-<td style='background-color: #FFF300'>Silistra (BG)</td>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'>CREDIT NOTE</td>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201325</td>
-<td style='background-color: #92D050'>2022-06-22 00:00:00</td>
-<td style='background-color: #92D050'>V000057</td>
-<td style='background-color: #92D050'>5</td>
-<td style='background-color: #92D050'>5.12</td>
-<td style='background-color: #92D050'>102.4</td>
-<td style='background-color: #92D050'>K003280</td>
-<td style='background-color: #92D050'>NILSI EOOD</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>BG</td>
-<td style='background-color: #92D050'>7500</td>
-<td style='background-color: #92D050'>Silistra (BG)</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201409</td>
-<td style='background-color: #92D050'>2022-07-01 00:00:00</td>
-<td style='background-color: #92D050'>V000057</td>
-<td style='background-color: #92D050'>8</td>
-<td style='background-color: #92D050'>622.0232</td>
-<td style='background-color: #92D050'>7775.29</td>
-<td style='background-color: #92D050'>K003192</td>
-<td style='background-color: #92D050'>Crystal Time d.o.o</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>BOS</td>
-<td style='background-color: #92D050'>89230</td>
-<td style='background-color: #92D050'>Bileca, Bosnia Herzegowina</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201524</td>
-<td style='background-color: #92D050'>2022-07-19 00:00:00</td>
-<td style='background-color: #92D050'>V000057</td>
-<td style='background-color: #92D050'>5</td>
-<td style='background-color: #92D050'>22.775</td>
-<td style='background-color: #92D050'>455.5</td>
-<td style='background-color: #92D050'>K004016</td>
-<td style='background-color: #92D050'>Klaus Kalke</td>
-<td style='background-color: #92D050'>Village Gallery</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>1030</td>
-<td style='background-color: #92D050'>Wien</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201543</td>
-<td style='background-color: #92D050'>2022-07-20 00:00:00</td>
-<td style='background-color: #92D050'>V000057</td>
-<td style='background-color: #92D050'>5</td>
-<td style='background-color: #92D050'>210.9325</td>
-<td style='background-color: #92D050'>4218.65</td>
-<td style='background-color: #92D050'>K002943</td>
-<td style='background-color: #92D050'>D.D. & O Sh. P. K.</td>
-<td style='background-color: #92D050'>Business Nr. 70688689</td>
-<td style='background-color: #92D050'>KOS</td>
-<td style='background-color: #92D050'>10000</td>
-<td style='background-color: #92D050'>Prishtina - Republic of Kosovo</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201544</td>
-<td style='background-color: #92D050'>2022-07-20 00:00:00</td>
-<td style='background-color: #92D050'>V000057</td>
-<td style='background-color: #92D050'>5</td>
-<td style='background-color: #92D050'>82.6</td>
-<td style='background-color: #92D050'>1652</td>
-<td style='background-color: #92D050'>K002943</td>
-<td style='background-color: #92D050'>D.D. & O Sh. P. K.</td>
-<td style='background-color: #92D050'>Business Nr. 70688689</td>
-<td style='background-color: #92D050'>KOS</td>
-<td style='background-color: #92D050'>10000</td>
-<td style='background-color: #92D050'>Prishtina - Republic of Kosovo</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201545</td>
-<td style='background-color: #92D050'>2022-07-20 00:00:00</td>
-<td style='background-color: #92D050'>V000057</td>
-<td style='background-color: #92D050'>5</td>
-<td style='background-color: #92D050'>92.3805</td>
-<td style='background-color: #92D050'>1847.61</td>
-<td style='background-color: #92D050'>K002943</td>
-<td style='background-color: #92D050'>D.D. & O Sh. P. K.</td>
-<td style='background-color: #92D050'>Business Nr. 70688689</td>
-<td style='background-color: #92D050'>KOS</td>
-<td style='background-color: #92D050'>10000</td>
-<td style='background-color: #92D050'>Prishtina - Republic of Kosovo</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201610</td>
-<td style='background-color: #92D050'>2022-07-29 00:00:00</td>
-<td style='background-color: #92D050'>V000057</td>
-<td style='background-color: #92D050'>5</td>
-<td style='background-color: #92D050'>59.02</td>
-<td style='background-color: #92D050'>1180.4</td>
-<td style='background-color: #92D050'>K003280</td>
-<td style='background-color: #92D050'>NILSI EOOD</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>BG</td>
-<td style='background-color: #92D050'>7500</td>
-<td style='background-color: #92D050'>Silistra (BG)</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201721</td>
-<td style='background-color: #92D050'>2022-08-09 00:00:00</td>
-<td style='background-color: #92D050'>V000057</td>
-<td style='background-color: #92D050'>5</td>
-<td style='background-color: #92D050'>31.62</td>
-<td style='background-color: #92D050'>632.4</td>
-<td style='background-color: #92D050'>K004016</td>
-<td style='background-color: #92D050'>Klaus Kalke</td>
-<td style='background-color: #92D050'>Village Gallery</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>1030</td>
-<td style='background-color: #92D050'>Wien</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201821</td>
-<td style='background-color: #92D050'>2022-08-29 00:00:00</td>
-<td style='background-color: #92D050'>V000057</td>
-<td style='background-color: #92D050'>5</td>
-<td style='background-color: #92D050'>42.545</td>
-<td style='background-color: #92D050'>850.9</td>
-<td style='background-color: #92D050'>K003280</td>
-<td style='background-color: #92D050'>NILSI EOOD</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>BG</td>
-<td style='background-color: #92D050'>7500</td>
-<td style='background-color: #92D050'>Silistra (BG)</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201874</td>
-<td style='background-color: #92D050'>2022-08-31 00:00:00</td>
-<td style='background-color: #92D050'>V000057</td>
-<td style='background-color: #92D050'>5</td>
-<td style='background-color: #92D050'>299.4</td>
-<td style='background-color: #92D050'>5988</td>
-<td style='background-color: #92D050'>K002943</td>
-<td style='background-color: #92D050'>D.D. & O Sh. P. K.</td>
-<td style='background-color: #92D050'>Business Nr. 70688689</td>
-<td style='background-color: #92D050'>KOS</td>
-<td style='background-color: #92D050'>10000</td>
-<td style='background-color: #92D050'>Prishtina - Republic of Kosovo</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201905</td>
-<td style='background-color: #92D050'>2022-09-06 00:00:00</td>
-<td style='background-color: #92D050'>V000057</td>
-<td style='background-color: #92D050'>5</td>
-<td style='background-color: #92D050'>65.905</td>
-<td style='background-color: #92D050'>1318.1</td>
-<td style='background-color: #92D050'>K004016</td>
-<td style='background-color: #92D050'>Klaus Kalke</td>
-<td style='background-color: #92D050'>Village Gallery</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>1030</td>
-<td style='background-color: #92D050'>Wien</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>RE-4202090</td>
-<td style='background-color: #00FF00'>2022-10-06 00:00:00</td>
-<td style='background-color: #00FF00'>V000057</td>
-<td style='background-color: #00FF00'>5</td>
-<td style='background-color: #00FF00'>84.23</td>
-<td style='background-color: #00FF00'>1684.6</td>
-<td style='background-color: #00FF00'>K003280</td>
-<td style='background-color: #00FF00'>NILSI EOOD</td>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>BG</td>
-<td style='background-color: #00FF00'>7500</td>
-<td style='background-color: #00FF00'>Silistra (BG)</td>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>84.6</td>
-<td style='background-color: #00FF00'>PARTIALLY PAID</td>
-<td style='background-color: #00FF00'>4.2</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>20.02.2023,  84.6</td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4202099</td>
-<td style='background-color: #92D050'>2022-10-07 00:00:00</td>
-<td style='background-color: #92D050'>V000057</td>
-<td style='background-color: #92D050'>5</td>
-<td style='background-color: #92D050'>47.605</td>
-<td style='background-color: #92D050'>952.1</td>
-<td style='background-color: #92D050'>K004016</td>
-<td style='background-color: #92D050'>Klaus Kalke</td>
-<td style='background-color: #92D050'>Village Gallery</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>1030</td>
-<td style='background-color: #92D050'>Wien</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>RE-4202138</td>
-<td style='background-color: #00FF00'>2022-10-17 00:00:00</td>
-<td style='background-color: #00FF00'>V000057</td>
-<td style='background-color: #00FF00'>5</td>
-<td style='background-color: #00FF00'>13.3</td>
-<td style='background-color: #00FF00'>266</td>
-<td style='background-color: #00FF00'>K003280</td>
-<td style='background-color: #00FF00'>NILSI EOOD</td>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>BG</td>
-<td style='background-color: #00FF00'>7500</td>
-<td style='background-color: #00FF00'>Silistra (BG)</td>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>266</td>
-<td style='background-color: #00FF00'>PAID</td>
-<td style='background-color: #00FF00'>13.3</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>20.02.2023,  266.0</td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4202224</td>
-<td style='background-color: #92D050'>2022-10-27 00:00:00</td>
-<td style='background-color: #92D050'>V000057</td>
-<td style='background-color: #92D050'>5</td>
-<td style='background-color: #92D050'>18.515</td>
-<td style='background-color: #92D050'>370.3</td>
-<td style='background-color: #92D050'>K004016</td>
-<td style='background-color: #92D050'>Klaus Kalke</td>
-<td style='background-color: #92D050'>Village Gallery</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>1030</td>
-<td style='background-color: #92D050'>Wien</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'>RE-4202261</td>
-<td style='background-color: #FFF300'>2022-11-03 00:00:00</td>
-<td style='background-color: #FFF300'>V000057</td>
-<td style='background-color: #FFF300'>5</td>
-<td style='background-color: #FFF300'>-4.66</td>
-<td style='background-color: #FFF300'>-93.2</td>
-<td style='background-color: #FFF300'>K004016</td>
-<td style='background-color: #FFF300'>Klaus Kalke</td>
-<td style='background-color: #FFF300'>Village Gallery</td>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'>1030</td>
-<td style='background-color: #FFF300'>Wien</td>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'>CREDIT NOTE</td>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>RE-4202288</td>
-<td style='background-color: #00FF00'>2022-11-07 00:00:00</td>
-<td style='background-color: #00FF00'>V000057</td>
-<td style='background-color: #00FF00'>5</td>
-<td style='background-color: #00FF00'>24.565</td>
-<td style='background-color: #00FF00'>491.3</td>
-<td style='background-color: #00FF00'>K003280</td>
-<td style='background-color: #00FF00'>NILSI EOOD</td>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>BG</td>
-<td style='background-color: #00FF00'>7500</td>
-<td style='background-color: #00FF00'>Silistra (BG)</td>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>491.3</td>
-<td style='background-color: #00FF00'>PAID</td>
-<td style='background-color: #00FF00'>24.6</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>20.02.2023,  491.3</td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4202306</td>
-<td style='background-color: #92D050'>2022-11-08 00:00:00</td>
-<td style='background-color: #92D050'>V000057</td>
-<td style='background-color: #92D050'>8</td>
-<td style='background-color: #92D050'>538.748</td>
-<td style='background-color: #92D050'>6734.35</td>
-<td style='background-color: #92D050'>K003192</td>
-<td style='background-color: #92D050'>Crystal Time d.o.o</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>BOS</td>
-<td style='background-color: #92D050'>89230</td>
-<td style='background-color: #92D050'>Bileca, Bosnia Herzegowina</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4202353</td>
-<td style='background-color: #92D050'>2022-11-16 00:00:00</td>
-<td style='background-color: #92D050'>V000057</td>
-<td style='background-color: #92D050'>5</td>
-<td style='background-color: #92D050'>13.915</td>
-<td style='background-color: #92D050'>278.3</td>
-<td style='background-color: #92D050'>K004016</td>
-<td style='background-color: #92D050'>Klaus Kalke</td>
-<td style='background-color: #92D050'>Village Gallery</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>1030</td>
-<td style='background-color: #92D050'>Wien</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>RE-4202363</td>
-<td style='background-color: #00FF00'>2022-11-17 00:00:00</td>
-<td style='background-color: #00FF00'>V000057</td>
-<td style='background-color: #00FF00'>5</td>
-<td style='background-color: #00FF00'>707.032</td>
-<td style='background-color: #00FF00'>14140.64</td>
-<td style='background-color: #00FF00'>K005953</td>
-<td style='background-color: #00FF00'>Korporacija D.D&O</td>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>MK</td>
-<td style='background-color: #00FF00'>1000</td>
-<td style='background-color: #00FF00'>Skopje, North Macedonia</td>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>7140.64</td>
-<td style='background-color: #00FF00'>PARTIALLY PAID</td>
-<td style='background-color: #00FF00'>357</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>24.02.2023,  7140.6</td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4202458</td>
-<td style='background-color: #92D050'>2022-11-30 00:00:00</td>
-<td style='background-color: #92D050'>V000057</td>
-<td style='background-color: #92D050'>8</td>
-<td style='background-color: #92D050'>2189.764</td>
-<td style='background-color: #92D050'>27372.05</td>
-<td style='background-color: #92D050'>K002798</td>
-<td style='background-color: #92D050'>Crystal Time d.o.o</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>SRB</td>
-<td style='background-color: #92D050'>11070</td>
-<td style='background-color: #92D050'>Belgrade</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4202526</td>
-<td style='background-color: #92D050'>2022-12-07 00:00:00</td>
-<td style='background-color: #92D050'>V000057</td>
-<td style='background-color: #92D050'>8</td>
-<td style='background-color: #92D050'>108.16</td>
-<td style='background-color: #92D050'>1352</td>
-<td style='background-color: #92D050'>K002798</td>
-<td style='background-color: #92D050'>Crystal Time d.o.o</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>SRB</td>
-<td style='background-color: #92D050'>11070</td>
-<td style='background-color: #92D050'>Belgrade</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>RE-4202568</td>
-<td style='background-color: #00FF00'>2022-12-13 00:00:00</td>
-<td style='background-color: #00FF00'>V000057</td>
-<td style='background-color: #00FF00'>5</td>
-<td style='background-color: #00FF00'>92.356</td>
-<td style='background-color: #00FF00'>1847.12</td>
-<td style='background-color: #00FF00'>K002943</td>
-<td style='background-color: #00FF00'>D.D. & O Sh. P. K.</td>
-<td style='background-color: #00FF00'>Business Nr. 70688689</td>
-<td style='background-color: #00FF00'>KOS</td>
-<td style='background-color: #00FF00'>10000</td>
-<td style='background-color: #00FF00'>Prishtina - Republic of Kosovo</td>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>1847.12</td>
-<td style='background-color: #00FF00'>PAID</td>
-<td style='background-color: #00FF00'>92.4</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>18.01.2023,  1847.1</td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>RE-4202569</td>
-<td style='background-color: #00FF00'>2022-12-13 00:00:00</td>
-<td style='background-color: #00FF00'>V000057</td>
-<td style='background-color: #00FF00'>5</td>
-<td style='background-color: #00FF00'>98.1225</td>
-<td style='background-color: #00FF00'>1962.45</td>
-<td style='background-color: #00FF00'>K002943</td>
-<td style='background-color: #00FF00'>D.D. & O Sh. P. K.</td>
-<td style='background-color: #00FF00'>Business Nr. 70688689</td>
-<td style='background-color: #00FF00'>KOS</td>
-<td style='background-color: #00FF00'>10000</td>
-<td style='background-color: #00FF00'>Prishtina - Republic of Kosovo</td>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>1962.45</td>
-<td style='background-color: #00FF00'>PAID</td>
-<td style='background-color: #00FF00'>98.1</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>18.01.2023,  1962.5</td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>RE-4202570</td>
-<td style='background-color: #00FF00'>2022-12-13 00:00:00</td>
-<td style='background-color: #00FF00'>V000057</td>
-<td style='background-color: #00FF00'>5</td>
-<td style='background-color: #00FF00'>248.226</td>
-<td style='background-color: #00FF00'>4964.52</td>
-<td style='background-color: #00FF00'>K002943</td>
-<td style='background-color: #00FF00'>D.D. & O Sh. P. K.</td>
-<td style='background-color: #00FF00'>Business Nr. 70688689</td>
-<td style='background-color: #00FF00'>KOS</td>
-<td style='background-color: #00FF00'>10000</td>
-<td style='background-color: #00FF00'>Prishtina - Republic of Kosovo</td>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>4964.52</td>
-<td style='background-color: #00FF00'>PAID</td>
-<td style='background-color: #00FF00'>248.2</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>18.01.2023,  4964.5</td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4202604</td>
-<td style='background-color: #92D050'>2022-12-15 00:00:00</td>
-<td style='background-color: #92D050'>V000057</td>
-<td style='background-color: #92D050'>5</td>
-<td style='background-color: #92D050'>55.04</td>
-<td style='background-color: #92D050'>1100.8</td>
-<td style='background-color: #92D050'>K004016</td>
-<td style='background-color: #92D050'>Klaus Kalke</td>
-<td style='background-color: #92D050'>Village Gallery</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>1030</td>
-<td style='background-color: #92D050'>Wien</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'>RE-4202611</td>
-<td style='background-color: #FFF300'>2022-12-15 00:00:00</td>
-<td style='background-color: #FFF300'>V000057</td>
-<td style='background-color: #FFF300'>5</td>
-<td style='background-color: #FFF300'>-10.67</td>
-<td style='background-color: #FFF300'>-213.4</td>
-<td style='background-color: #FFF300'>K003280</td>
-<td style='background-color: #FFF300'>NILSI EOOD</td>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'>BG</td>
-<td style='background-color: #FFF300'>7500</td>
-<td style='background-color: #FFF300'>Silistra (BG)</td>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'>CREDIT NOTE</td>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>RE-4202614</td>
-<td style='background-color: #00FF00'>2022-12-16 00:00:00</td>
-<td style='background-color: #00FF00'>V000057</td>
-<td style='background-color: #00FF00'>5</td>
-<td style='background-color: #00FF00'>8.125</td>
-<td style='background-color: #00FF00'>162.5</td>
-<td style='background-color: #00FF00'>K003280</td>
-<td style='background-color: #00FF00'>NILSI EOOD</td>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>BG</td>
-<td style='background-color: #00FF00'>7500</td>
-<td style='background-color: #00FF00'>Silistra (BG)</td>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>162.5</td>
-<td style='background-color: #00FF00'>PAID</td>
-<td style='background-color: #00FF00'>8.1</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>20.02.2023,  162.5</td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
+                          <tbody><tr>
 <td style='background-color: #00FF00'> </td>
 <td style='background-color: #00FF00'>RE-4300111</td>
 <td style='background-color: #00FF00'>2023-01-27 00:00:00</td>
@@ -1390,7 +70,7 @@
 <td style='background-color: #00FF00'> </td>
 <td style='background-color: #00FF00'>443</td>
 <td style='background-color: #00FF00'>PAID</td>
-<td style='background-color: #00FF00'>22.2</td>
+<td style='background-color: #FFFFFF'>22.2</td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'>18.04.2023,  300.0</td>
 <td style='background-color: #FFFFFF'>20.04.2023,  143.0</td>
@@ -1410,10 +90,10 @@
 <td style='background-color: #00FF00'>11070</td>
 <td style='background-color: #00FF00'>Belgrade</td>
 <td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>13062</td>
+<td style='background-color: #00FF00'>26123.37</td>
 <td style='background-color: #00FF00'>PAID</td>
-<td style='background-color: #00FF00'>2089.87</td>
-<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>2089.9</td>
+<td style='background-color: #FFFFFF'>05.04.2023,  0</td>
 <td style='background-color: #FFFFFF'>30.01.2023,  13062.0</td>
 <td style='background-color: #FFFFFF'>05.04.2023,  13061.4</td>
 </tr>
@@ -1434,7 +114,7 @@
 <td style='background-color: #00FF00'> </td>
 <td style='background-color: #00FF00'>7443.75</td>
 <td style='background-color: #00FF00'>PAID</td>
-<td style='background-color: #00FF00'>372.2</td>
+<td style='background-color: #FFFFFF'>372.2</td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'>28.02.2023,  7443.3</td>
 <td style='background-color: #FFFFFF'>28.02.2023,  0.4</td>
@@ -1456,8 +136,8 @@
 <td style='background-color: #00FF00'> </td>
 <td style='background-color: #00FF00'>20776.28</td>
 <td style='background-color: #00FF00'>PAID</td>
-<td style='background-color: #00FF00'>1038.8</td>
-<td style='background-color: #FFAB83'>28.02.2023,  0</td>
+<td style='background-color: #FFFFFF'>1038.8</td>
+<td style='background-color: #FFFFFF'>28.02.2023,  0</td>
 <td style='background-color: #FFFFFF'>28.02.2023,  20775.1</td>
 <td style='background-color: #FFFFFF'>28.02.2023,  1.2</td>
 </tr>
@@ -1478,7 +158,7 @@
 <td style='background-color: #00FF00'> </td>
 <td style='background-color: #00FF00'>7129.39</td>
 <td style='background-color: #00FF00'>PAID</td>
-<td style='background-color: #00FF00'>356.5</td>
+<td style='background-color: #FFFFFF'>356.5</td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'>28.02.2023,  7129.0</td>
 <td style='background-color: #FFFFFF'>28.02.2023,  0.4</td>
@@ -1500,7 +180,7 @@
 <td style='background-color: #00FF00'> </td>
 <td style='background-color: #00FF00'>5900.76</td>
 <td style='background-color: #00FF00'>PAID</td>
-<td style='background-color: #00FF00'>472.1</td>
+<td style='background-color: #FFFFFF'>472.1</td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'>17.02.2023,  5900.8</td>
 <td style='background-color: #FFFFFF'> </td>
@@ -1522,7 +202,7 @@
 <td style='background-color: #00FF00'> </td>
 <td style='background-color: #00FF00'>1848.2</td>
 <td style='background-color: #00FF00'>PAID</td>
-<td style='background-color: #00FF00'>92.4</td>
+<td style='background-color: #FFFFFF'>92.4</td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'>20.04.2023,  1848.2</td>
 <td style='background-color: #FFFFFF'> </td>
@@ -1544,8 +224,8 @@
 <td style='background-color: #00FF00'> </td>
 <td style='background-color: #00FF00'>962.5</td>
 <td style='background-color: #00FF00'>PAID</td>
-<td style='background-color: #00FF00'>48.1</td>
-<td style='background-color: #FFAB83'>09.03.2023,  192</td>
+<td style='background-color: #FFFFFF'>48.1</td>
+<td style='background-color: #FFFFFF'>09.03.2023,  192</td>
 <td style='background-color: #FFFFFF'>09.03.2023,  1120.3</td>
 <td style='background-color: #FFFFFF'>09.03.2023,  34.6</td>
 </tr>
@@ -1566,8 +246,8 @@
 <td style='background-color: #00FF00'> </td>
 <td style='background-color: #00FF00'>680.3</td>
 <td style='background-color: #00FF00'>PAID</td>
-<td style='background-color: #00FF00'>34</td>
-<td style='background-color: #FFAB83'>27.03.2023,  136</td>
+<td style='background-color: #FFFFFF'>34</td>
+<td style='background-color: #FFFFFF'>27.03.2023,  136</td>
 <td style='background-color: #FFFFFF'>27.03.2023,  791.9</td>
 <td style='background-color: #FFFFFF'>27.03.2023,  24.5</td>
 </tr>
@@ -1588,8 +268,8 @@
 <td style='background-color: #00FF00'> </td>
 <td style='background-color: #00FF00'>469.1</td>
 <td style='background-color: #00FF00'>PAID</td>
-<td style='background-color: #00FF00'>23.5</td>
-<td style='background-color: #FFAB83'>13.04.2023,  94</td>
+<td style='background-color: #FFFFFF'>23.5</td>
+<td style='background-color: #FFFFFF'>13.04.2023,  94</td>
 <td style='background-color: #FFFFFF'>13.04.2023,  546.0</td>
 <td style='background-color: #FFFFFF'>13.04.2023,  16.9</td>
 </tr>
@@ -1610,10 +290,1066 @@
 <td style='background-color: #00FF00'> </td>
 <td style='background-color: #00FF00'>731.5</td>
 <td style='background-color: #00FF00'>PAID</td>
-<td style='background-color: #00FF00'>36.6</td>
-<td style='background-color: #FFAB83'>28.04.2023,  146</td>
+<td style='background-color: #FFFFFF'>36.6</td>
+<td style='background-color: #FFFFFF'>28.04.2023,  146</td>
 <td style='background-color: #FFFFFF'>28.04.2023,  851.5</td>
 <td style='background-color: #FFFFFF'>28.04.2023,  26.3</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300651</td>
+<td style='background-color: #00FF00'>2023-04-27 00:00:00</td>
+<td style='background-color: #00FF00'>V000057</td>
+<td style='background-color: #00FF00'>5</td>
+<td style='background-color: #00FF00'>35.96</td>
+<td style='background-color: #00FF00'>719.2</td>
+<td style='background-color: #00FF00'>K003280</td>
+<td style='background-color: #00FF00'>NILSI EOOD</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>BG</td>
+<td style='background-color: #00FF00'>7500</td>
+<td style='background-color: #00FF00'>Silistra (BG)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>719.2</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>36</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>10.05.2023,  400.0</td>
+<td style='background-color: #FFFFFF'>31.05.2023,  319.2</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300664</td>
+<td style='background-color: #00FF00'>2023-04-28 00:00:00</td>
+<td style='background-color: #00FF00'>V000057</td>
+<td style='background-color: #00FF00'>5</td>
+<td style='background-color: #00FF00'>22.19</td>
+<td style='background-color: #00FF00'>443.8</td>
+<td style='background-color: #00FF00'>K004016</td>
+<td style='background-color: #00FF00'>Klaus Kalke</td>
+<td style='background-color: #00FF00'>Village Gallery</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1030</td>
+<td style='background-color: #00FF00'>Wien</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>443.8</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>22.2</td>
+<td style='background-color: #FFFFFF'>09.05.2023,  89</td>
+<td style='background-color: #FFFFFF'>09.05.2023,  516.6</td>
+<td style='background-color: #FFFFFF'>09.05.2023,  16.0</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300683</td>
+<td style='background-color: #00FF00'>2023-04-30 00:00:00</td>
+<td style='background-color: #00FF00'>V000057</td>
+<td style='background-color: #00FF00'>8</td>
+<td style='background-color: #00FF00'>287.4064</td>
+<td style='background-color: #00FF00'>3592.58</td>
+<td style='background-color: #00FF00'>K003192</td>
+<td style='background-color: #00FF00'>Crystal Time d.o.o</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>BOS</td>
+<td style='background-color: #00FF00'>89230</td>
+<td style='background-color: #00FF00'>Bileca, Bosnia Herzegowina</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>3592.58</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>287.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>05.05.2023,  3592.6</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300684</td>
+<td style='background-color: #00FF00'>2023-04-30 00:00:00</td>
+<td style='background-color: #00FF00'>V000057</td>
+<td style='background-color: #00FF00'>5</td>
+<td style='background-color: #00FF00'>59.1745</td>
+<td style='background-color: #00FF00'>1183.49</td>
+<td style='background-color: #00FF00'>K002943</td>
+<td style='background-color: #00FF00'>D.D. & O Sh. P. K.</td>
+<td style='background-color: #00FF00'>Business Nr. 70688689</td>
+<td style='background-color: #00FF00'>KOS</td>
+<td style='background-color: #00FF00'>10000</td>
+<td style='background-color: #00FF00'>Prishtina - Republic of Kosovo</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1183.49</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>59.2</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>01.08.2023,  1183.5</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300685</td>
+<td style='background-color: #00FF00'>2023-04-30 00:00:00</td>
+<td style='background-color: #00FF00'>V000057</td>
+<td style='background-color: #00FF00'>5</td>
+<td style='background-color: #00FF00'>68.881</td>
+<td style='background-color: #00FF00'>1377.62</td>
+<td style='background-color: #00FF00'>K002943</td>
+<td style='background-color: #00FF00'>D.D. & O Sh. P. K.</td>
+<td style='background-color: #00FF00'>Business Nr. 70688689</td>
+<td style='background-color: #00FF00'>KOS</td>
+<td style='background-color: #00FF00'>10000</td>
+<td style='background-color: #00FF00'>Prishtina - Republic of Kosovo</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1377.62</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>68.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>01.08.2023,  1377.6</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300686</td>
+<td style='background-color: #00FF00'>2023-04-30 00:00:00</td>
+<td style='background-color: #00FF00'>V000057</td>
+<td style='background-color: #00FF00'>5</td>
+<td style='background-color: #00FF00'>415.976</td>
+<td style='background-color: #00FF00'>8319.52</td>
+<td style='background-color: #00FF00'>K002943</td>
+<td style='background-color: #00FF00'>D.D. & O Sh. P. K.</td>
+<td style='background-color: #00FF00'>Business Nr. 70688689</td>
+<td style='background-color: #00FF00'>KOS</td>
+<td style='background-color: #00FF00'>10000</td>
+<td style='background-color: #00FF00'>Prishtina - Republic of Kosovo</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>8319.52</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>416</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>01.08.2023,  8319.5</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300728</td>
+<td style='background-color: #00FF00'>2023-05-10 00:00:00</td>
+<td style='background-color: #00FF00'>V000057</td>
+<td style='background-color: #00FF00'>5</td>
+<td style='background-color: #00FF00'>32.07</td>
+<td style='background-color: #00FF00'>641.4</td>
+<td style='background-color: #00FF00'>K003280</td>
+<td style='background-color: #00FF00'>NILSI EOOD</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>BG</td>
+<td style='background-color: #00FF00'>7500</td>
+<td style='background-color: #00FF00'>Silistra (BG)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>641.4</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>32.1</td>
+<td style='background-color: #FFFFFF'>21.06.2023,  0</td>
+<td style='background-color: #FFFFFF'>31.05.2023,  180.8</td>
+<td style='background-color: #FFFFFF'>21.06.2023,  460.6</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300769</td>
+<td style='background-color: #00FF00'>2023-05-12 00:00:00</td>
+<td style='background-color: #00FF00'>V000057</td>
+<td style='background-color: #00FF00'>5</td>
+<td style='background-color: #00FF00'>23.405</td>
+<td style='background-color: #00FF00'>468.1</td>
+<td style='background-color: #00FF00'>K004016</td>
+<td style='background-color: #00FF00'>Klaus Kalke</td>
+<td style='background-color: #00FF00'>Village Gallery</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1030</td>
+<td style='background-color: #00FF00'>Wien</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>468.1</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>23.4</td>
+<td style='background-color: #FFFFFF'>02.06.2023,  94</td>
+<td style='background-color: #FFFFFF'>02.06.2023,  544.9</td>
+<td style='background-color: #FFFFFF'>02.06.2023,  16.9</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300786</td>
+<td style='background-color: #00FF00'>2023-05-16 00:00:00</td>
+<td style='background-color: #00FF00'>V000057</td>
+<td style='background-color: #00FF00'>5</td>
+<td style='background-color: #00FF00'>23.15</td>
+<td style='background-color: #00FF00'>463</td>
+<td style='background-color: #00FF00'>K004016</td>
+<td style='background-color: #00FF00'>Klaus Kalke</td>
+<td style='background-color: #00FF00'>Village Gallery</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1030</td>
+<td style='background-color: #00FF00'>Wien</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>463</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>23.2</td>
+<td style='background-color: #FFFFFF'>02.06.2023,  93</td>
+<td style='background-color: #FFFFFF'>02.06.2023,  538.9</td>
+<td style='background-color: #FFFFFF'>02.06.2023,  16.7</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300851</td>
+<td style='background-color: #00FF00'>2023-05-25 00:00:00</td>
+<td style='background-color: #00FF00'>V000057</td>
+<td style='background-color: #00FF00'>5</td>
+<td style='background-color: #00FF00'>67.787</td>
+<td style='background-color: #00FF00'>1355.74</td>
+<td style='background-color: #00FF00'>K002943</td>
+<td style='background-color: #00FF00'>D.D. & O Sh. P. K.</td>
+<td style='background-color: #00FF00'>Business Nr. 70688689</td>
+<td style='background-color: #00FF00'>KOS</td>
+<td style='background-color: #00FF00'>10000</td>
+<td style='background-color: #00FF00'>Prishtina - Republic of Kosovo</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1355.74</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>67.8</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>01.08.2023,  1355.7</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300852</td>
+<td style='background-color: #00FF00'>2023-05-25 00:00:00</td>
+<td style='background-color: #00FF00'>V000057</td>
+<td style='background-color: #00FF00'>5</td>
+<td style='background-color: #00FF00'>21.7045</td>
+<td style='background-color: #00FF00'>434.09</td>
+<td style='background-color: #00FF00'>K002943</td>
+<td style='background-color: #00FF00'>D.D. & O Sh. P. K.</td>
+<td style='background-color: #00FF00'>Business Nr. 70688689</td>
+<td style='background-color: #00FF00'>KOS</td>
+<td style='background-color: #00FF00'>10000</td>
+<td style='background-color: #00FF00'>Prishtina - Republic of Kosovo</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>434.09</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>21.7</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>01.08.2023,  434.1</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300853</td>
+<td style='background-color: #00FF00'>2023-05-25 00:00:00</td>
+<td style='background-color: #00FF00'>V000057</td>
+<td style='background-color: #00FF00'>5</td>
+<td style='background-color: #00FF00'>9.9655</td>
+<td style='background-color: #00FF00'>199.31</td>
+<td style='background-color: #00FF00'>K002943</td>
+<td style='background-color: #00FF00'>D.D. & O Sh. P. K.</td>
+<td style='background-color: #00FF00'>Business Nr. 70688689</td>
+<td style='background-color: #00FF00'>KOS</td>
+<td style='background-color: #00FF00'>10000</td>
+<td style='background-color: #00FF00'>Prishtina - Republic of Kosovo</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>199.31</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>10</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>01.08.2023,  199.3</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300855</td>
+<td style='background-color: #00FF00'>2023-05-25 00:00:00</td>
+<td style='background-color: #00FF00'>V000057</td>
+<td style='background-color: #00FF00'>5</td>
+<td style='background-color: #00FF00'>217.65</td>
+<td style='background-color: #00FF00'>4353</td>
+<td style='background-color: #00FF00'>K002943</td>
+<td style='background-color: #00FF00'>D.D. & O Sh. P. K.</td>
+<td style='background-color: #00FF00'>Business Nr. 70688689</td>
+<td style='background-color: #00FF00'>KOS</td>
+<td style='background-color: #00FF00'>10000</td>
+<td style='background-color: #00FF00'>Prishtina - Republic of Kosovo</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>4353</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>217.7</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>01.08.2023,  4353.0</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>RE-4300910</td>
+<td style='background-color: #FFFFFF'>2023-05-31 00:00:00</td>
+<td style='background-color: #FFFFFF'>V000057</td>
+<td style='background-color: #FFFFFF'>5</td>
+<td style='background-color: #FFFFFF'>44</td>
+<td style='background-color: #FFFFFF'>880</td>
+<td style='background-color: #FFFFFF'>K002943</td>
+<td style='background-color: #FFFFFF'>D.D. & O Sh. P. K.</td>
+<td style='background-color: #FFFFFF'>Business Nr. 70688689</td>
+<td style='background-color: #FFFFFF'>KOS</td>
+<td style='background-color: #FFFFFF'>10000</td>
+<td style='background-color: #FFFFFF'>Prishtina - Republic of Kosovo</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300928</td>
+<td style='background-color: #00FF00'>2023-06-05 00:00:00</td>
+<td style='background-color: #00FF00'>V000057</td>
+<td style='background-color: #00FF00'>5</td>
+<td style='background-color: #00FF00'>58.42</td>
+<td style='background-color: #00FF00'>1168.4</td>
+<td style='background-color: #00FF00'>K003280</td>
+<td style='background-color: #00FF00'>NILSI EOOD</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>BG</td>
+<td style='background-color: #00FF00'>7500</td>
+<td style='background-color: #00FF00'>Silistra (BG)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>639.4</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #FFFFFF'>32</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>21.06.2023,  139.4</td>
+<td style='background-color: #FFFFFF'>13.07.2023,  500.0</td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300947</td>
+<td style='background-color: #FFF300'>2023-06-06 00:00:00</td>
+<td style='background-color: #FFF300'>V000057</td>
+<td style='background-color: #FFF300'>5</td>
+<td style='background-color: #FFF300'>-1.045</td>
+<td style='background-color: #FFF300'>-20.9</td>
+<td style='background-color: #FFF300'>K003280</td>
+<td style='background-color: #FFF300'>NILSI EOOD</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>BG</td>
+<td style='background-color: #FFF300'>7500</td>
+<td style='background-color: #FFF300'>Silistra (BG)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300969</td>
+<td style='background-color: #00FF00'>2023-06-09 00:00:00</td>
+<td style='background-color: #00FF00'>V000057</td>
+<td style='background-color: #00FF00'>5</td>
+<td style='background-color: #00FF00'>43.38</td>
+<td style='background-color: #00FF00'>867.6</td>
+<td style='background-color: #00FF00'>K004016</td>
+<td style='background-color: #00FF00'>Klaus Kalke</td>
+<td style='background-color: #00FF00'>Village Gallery</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1030</td>
+<td style='background-color: #00FF00'>Wien</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>867.6</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>43.4</td>
+<td style='background-color: #FFFFFF'>20.06.2023,  174</td>
+<td style='background-color: #FFFFFF'>20.06.2023,  1009.9</td>
+<td style='background-color: #FFFFFF'>20.06.2023,  31.2</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300978</td>
+<td style='background-color: #00FF00'>2023-06-12 00:00:00</td>
+<td style='background-color: #00FF00'>V000057</td>
+<td style='background-color: #00FF00'>5</td>
+<td style='background-color: #00FF00'>14.015</td>
+<td style='background-color: #00FF00'>280.3</td>
+<td style='background-color: #00FF00'>K004016</td>
+<td style='background-color: #00FF00'>Klaus Kalke</td>
+<td style='background-color: #00FF00'>Village Gallery</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1030</td>
+<td style='background-color: #00FF00'>Wien</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>280.3</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>14</td>
+<td style='background-color: #FFFFFF'>23.06.2023,  56</td>
+<td style='background-color: #FFFFFF'>23.06.2023,  326.3</td>
+<td style='background-color: #FFFFFF'>23.06.2023,  10.1</td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301014</td>
+<td style='background-color: #FFF300'>2023-06-15 00:00:00</td>
+<td style='background-color: #FFF300'>V000057</td>
+<td style='background-color: #FFF300'>5</td>
+<td style='background-color: #FFF300'>-7.865</td>
+<td style='background-color: #FFF300'>-157.3</td>
+<td style='background-color: #FFF300'>K003280</td>
+<td style='background-color: #FFF300'>NILSI EOOD</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>BG</td>
+<td style='background-color: #FFF300'>7500</td>
+<td style='background-color: #FFF300'>Silistra (BG)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>RE-4301015</td>
+<td style='background-color: #FFFFFF'>2023-06-15 00:00:00</td>
+<td style='background-color: #FFFFFF'>V000057</td>
+<td style='background-color: #FFFFFF'>5</td>
+<td style='background-color: #FFFFFF'>6.94</td>
+<td style='background-color: #FFFFFF'>138.8</td>
+<td style='background-color: #FFFFFF'>K003280</td>
+<td style='background-color: #FFFFFF'>NILSI EOOD</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>BG</td>
+<td style='background-color: #FFFFFF'>7500</td>
+<td style='background-color: #FFFFFF'>Silistra (BG)</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'>UNPAID</td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>RE-4301086</td>
+<td style='background-color: #FFFFFF'>2023-06-26 00:00:00</td>
+<td style='background-color: #FFFFFF'>V000057</td>
+<td style='background-color: #FFFFFF'>5</td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'>K003280</td>
+<td style='background-color: #FFFFFF'>NILSI EOOD</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>BG</td>
+<td style='background-color: #FFFFFF'>7500</td>
+<td style='background-color: #FFFFFF'>Silistra (BG)</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301171</td>
+<td style='background-color: #00FF00'>2023-07-05 00:00:00</td>
+<td style='background-color: #00FF00'>V000057</td>
+<td style='background-color: #00FF00'>5</td>
+<td style='background-color: #00FF00'>33.835</td>
+<td style='background-color: #00FF00'>676.7</td>
+<td style='background-color: #00FF00'>K004016</td>
+<td style='background-color: #00FF00'>Klaus Kalke</td>
+<td style='background-color: #00FF00'>Village Gallery</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1030</td>
+<td style='background-color: #00FF00'>Wien</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>676.7</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>33.8</td>
+<td style='background-color: #FFFFFF'>19.07.2023,  135</td>
+<td style='background-color: #FFFFFF'>19.07.2023,  787.7</td>
+<td style='background-color: #FFFFFF'>19.07.2023,  24.4</td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>RE-4301175</td>
+<td style='background-color: #FFFFFF'>2023-07-05 00:00:00</td>
+<td style='background-color: #FFFFFF'>V000057</td>
+<td style='background-color: #FFFFFF'>5</td>
+<td style='background-color: #FFFFFF'>28.36</td>
+<td style='background-color: #FFFFFF'>567.2</td>
+<td style='background-color: #FFFFFF'>K003280</td>
+<td style='background-color: #FFFFFF'>NILSI EOOD</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>BG</td>
+<td style='background-color: #FFFFFF'>7500</td>
+<td style='background-color: #FFFFFF'>Silistra (BG)</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'>UNPAID</td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301215</td>
+<td style='background-color: #FFF300'>2023-07-12 00:00:00</td>
+<td style='background-color: #FFF300'>V000057</td>
+<td style='background-color: #FFF300'>5</td>
+<td style='background-color: #FFF300'>-1.375</td>
+<td style='background-color: #FFF300'>-27.5</td>
+<td style='background-color: #FFF300'>K003280</td>
+<td style='background-color: #FFF300'>NILSI EOOD</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>BG</td>
+<td style='background-color: #FFF300'>7500</td>
+<td style='background-color: #FFF300'>Silistra (BG)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301266</td>
+<td style='background-color: #00FF00'>2023-07-21 00:00:00</td>
+<td style='background-color: #00FF00'>V000057</td>
+<td style='background-color: #00FF00'>8</td>
+<td style='background-color: #00FF00'>2920.796</td>
+<td style='background-color: #00FF00'>36509.95</td>
+<td style='background-color: #00FF00'>K002798</td>
+<td style='background-color: #00FF00'>Crystal Time d.o.o</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>SRB</td>
+<td style='background-color: #00FF00'>11070</td>
+<td style='background-color: #00FF00'>Belgrade</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>36509.95</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>2920.8</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>24.07.2023,  36509.9</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301274</td>
+<td style='background-color: #00FF00'>2023-07-24 00:00:00</td>
+<td style='background-color: #00FF00'>V000057</td>
+<td style='background-color: #00FF00'>5</td>
+<td style='background-color: #00FF00'>19.595</td>
+<td style='background-color: #00FF00'>391.9</td>
+<td style='background-color: #00FF00'>K004016</td>
+<td style='background-color: #00FF00'>Klaus Kalke</td>
+<td style='background-color: #00FF00'>Village Gallery</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1030</td>
+<td style='background-color: #00FF00'>Wien</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>391.9</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>19.6</td>
+<td style='background-color: #FFFFFF'>04.08.2023,  78</td>
+<td style='background-color: #FFFFFF'>04.08.2023,  456.2</td>
+<td style='background-color: #FFFFFF'>04.08.2023,  14.1</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301277</td>
+<td style='background-color: #00FF00'>2023-07-25 00:00:00</td>
+<td style='background-color: #00FF00'>V000057</td>
+<td style='background-color: #00FF00'>5</td>
+<td style='background-color: #00FF00'>592.1045</td>
+<td style='background-color: #00FF00'>11842.09</td>
+<td style='background-color: #00FF00'>K002943</td>
+<td style='background-color: #00FF00'>D.D. & O Sh. P. K.</td>
+<td style='background-color: #00FF00'>Business Nr. 70688689</td>
+<td style='background-color: #00FF00'>KOS</td>
+<td style='background-color: #00FF00'>10000</td>
+<td style='background-color: #00FF00'>Prishtina - Republic of Kosovo</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>11842.09</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>592.1</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>13.09.2023,  11842.1</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301278</td>
+<td style='background-color: #00FF00'>2023-07-25 00:00:00</td>
+<td style='background-color: #00FF00'>V000057</td>
+<td style='background-color: #00FF00'>5</td>
+<td style='background-color: #00FF00'>172.4035</td>
+<td style='background-color: #00FF00'>3448.07</td>
+<td style='background-color: #00FF00'>K002943</td>
+<td style='background-color: #00FF00'>D.D. & O Sh. P. K.</td>
+<td style='background-color: #00FF00'>Business Nr. 70688689</td>
+<td style='background-color: #00FF00'>KOS</td>
+<td style='background-color: #00FF00'>10000</td>
+<td style='background-color: #00FF00'>Prishtina - Republic of Kosovo</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>3448.07</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>172.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>13.09.2023,  3448.1</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301287</td>
+<td style='background-color: #00FF00'>2023-07-26 00:00:00</td>
+<td style='background-color: #00FF00'>V000057</td>
+<td style='background-color: #00FF00'>5</td>
+<td style='background-color: #00FF00'>20</td>
+<td style='background-color: #00FF00'>400</td>
+<td style='background-color: #00FF00'>K002943</td>
+<td style='background-color: #00FF00'>D.D. & O Sh. P. K.</td>
+<td style='background-color: #00FF00'>Business Nr. 70688689</td>
+<td style='background-color: #00FF00'>KOS</td>
+<td style='background-color: #00FF00'>10000</td>
+<td style='background-color: #00FF00'>Prishtina - Republic of Kosovo</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>400</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>20</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>13.09.2023,  400.0</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301296</td>
+<td style='background-color: #00FF00'>2023-07-27 00:00:00</td>
+<td style='background-color: #00FF00'>V000057</td>
+<td style='background-color: #00FF00'>5</td>
+<td style='background-color: #00FF00'>23.185</td>
+<td style='background-color: #00FF00'>463.7</td>
+<td style='background-color: #00FF00'>K004016</td>
+<td style='background-color: #00FF00'>Klaus Kalke</td>
+<td style='background-color: #00FF00'>Village Gallery</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1030</td>
+<td style='background-color: #00FF00'>Wien</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>463.7</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>23.2</td>
+<td style='background-color: #FFFFFF'>09.08.2023,  93</td>
+<td style='background-color: #FFFFFF'>09.08.2023,  539.8</td>
+<td style='background-color: #FFFFFF'>09.08.2023,  16.7</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301333</td>
+<td style='background-color: #00FF00'>2023-07-31 00:00:00</td>
+<td style='background-color: #00FF00'>V000057</td>
+<td style='background-color: #00FF00'>5</td>
+<td style='background-color: #00FF00'>36.455</td>
+<td style='background-color: #00FF00'>729.1</td>
+<td style='background-color: #00FF00'>K003280</td>
+<td style='background-color: #00FF00'>NILSI EOOD</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>BG</td>
+<td style='background-color: #00FF00'>7500</td>
+<td style='background-color: #00FF00'>Silistra (BG)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>729.1</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>36.5</td>
+<td style='background-color: #FFFFFF'>17.08.2023,  29</td>
+<td style='background-color: #FFFFFF'>17.08.2023,  758.4</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>RE-4301353</td>
+<td style='background-color: #FFFFFF'>2023-07-31 00:00:00</td>
+<td style='background-color: #FFFFFF'>V000057</td>
+<td style='background-color: #FFFFFF'>5</td>
+<td style='background-color: #FFFFFF'>314.4315</td>
+<td style='background-color: #FFFFFF'>6288.63</td>
+<td style='background-color: #FFFFFF'>K002943</td>
+<td style='background-color: #FFFFFF'>D.D. & O Sh. P. K.</td>
+<td style='background-color: #FFFFFF'>Business Nr. 70688689</td>
+<td style='background-color: #FFFFFF'>KOS</td>
+<td style='background-color: #FFFFFF'>10000</td>
+<td style='background-color: #FFFFFF'>Prishtina - Republic of Kosovo</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>RE-4301354</td>
+<td style='background-color: #FFFFFF'>2023-07-31 00:00:00</td>
+<td style='background-color: #FFFFFF'>V000057</td>
+<td style='background-color: #FFFFFF'>5</td>
+<td style='background-color: #FFFFFF'>101.682</td>
+<td style='background-color: #FFFFFF'>2033.64</td>
+<td style='background-color: #FFFFFF'>K002943</td>
+<td style='background-color: #FFFFFF'>D.D. & O Sh. P. K.</td>
+<td style='background-color: #FFFFFF'>Business Nr. 70688689</td>
+<td style='background-color: #FFFFFF'>KOS</td>
+<td style='background-color: #FFFFFF'>10000</td>
+<td style='background-color: #FFFFFF'>Prishtina - Republic of Kosovo</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>RE-4301355</td>
+<td style='background-color: #FFFFFF'>2023-07-31 00:00:00</td>
+<td style='background-color: #FFFFFF'>V000057</td>
+<td style='background-color: #FFFFFF'>5</td>
+<td style='background-color: #FFFFFF'>96.1285</td>
+<td style='background-color: #FFFFFF'>1922.57</td>
+<td style='background-color: #FFFFFF'>K002943</td>
+<td style='background-color: #FFFFFF'>D.D. & O Sh. P. K.</td>
+<td style='background-color: #FFFFFF'>Business Nr. 70688689</td>
+<td style='background-color: #FFFFFF'>KOS</td>
+<td style='background-color: #FFFFFF'>10000</td>
+<td style='background-color: #FFFFFF'>Prishtina - Republic of Kosovo</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301366</td>
+<td style='background-color: #00FF00'>2023-08-07 00:00:00</td>
+<td style='background-color: #00FF00'>V000057</td>
+<td style='background-color: #00FF00'>5</td>
+<td style='background-color: #00FF00'>21.885</td>
+<td style='background-color: #00FF00'>437.7</td>
+<td style='background-color: #00FF00'>K004016</td>
+<td style='background-color: #00FF00'>Klaus Kalke</td>
+<td style='background-color: #00FF00'>Village Gallery</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1030</td>
+<td style='background-color: #00FF00'>Wien</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>437.7</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>21.9</td>
+<td style='background-color: #FFFFFF'>16.08.2023,  88</td>
+<td style='background-color: #FFFFFF'>16.08.2023,  509.5</td>
+<td style='background-color: #FFFFFF'>16.08.2023,  15.8</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301431</td>
+<td style='background-color: #00FF00'>2023-08-22 00:00:00</td>
+<td style='background-color: #00FF00'>V000057</td>
+<td style='background-color: #00FF00'>5</td>
+<td style='background-color: #00FF00'>41.055</td>
+<td style='background-color: #00FF00'>821.1</td>
+<td style='background-color: #00FF00'>K003280</td>
+<td style='background-color: #00FF00'>NILSI EOOD</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>BG</td>
+<td style='background-color: #00FF00'>7500</td>
+<td style='background-color: #00FF00'>Silistra (BG)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>317.4</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #FFFFFF'>15.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>18.09.2023,  317.4</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>RE-4301439</td>
+<td style='background-color: #FFFFFF'>2023-08-23 00:00:00</td>
+<td style='background-color: #FFFFFF'>V000057</td>
+<td style='background-color: #FFFFFF'>5</td>
+<td style='background-color: #FFFFFF'>5.82</td>
+<td style='background-color: #FFFFFF'>116.4</td>
+<td style='background-color: #FFFFFF'>K002943</td>
+<td style='background-color: #FFFFFF'>D.D. & O Sh. P. K.</td>
+<td style='background-color: #FFFFFF'>Business Nr. 70688689</td>
+<td style='background-color: #FFFFFF'>KOS</td>
+<td style='background-color: #FFFFFF'>10000</td>
+<td style='background-color: #FFFFFF'>Prishtina - Republic of Kosovo</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>RE-4301442</td>
+<td style='background-color: #FFFFFF'>2023-08-23 00:00:00</td>
+<td style='background-color: #FFFFFF'>V000057</td>
+<td style='background-color: #FFFFFF'>5</td>
+<td style='background-color: #FFFFFF'>17.5</td>
+<td style='background-color: #FFFFFF'>350</td>
+<td style='background-color: #FFFFFF'>K002943</td>
+<td style='background-color: #FFFFFF'>D.D. & O Sh. P. K.</td>
+<td style='background-color: #FFFFFF'>Business Nr. 70688689</td>
+<td style='background-color: #FFFFFF'>KOS</td>
+<td style='background-color: #FFFFFF'>10000</td>
+<td style='background-color: #FFFFFF'>Prishtina - Republic of Kosovo</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301467</td>
+<td style='background-color: #00FF00'>2023-08-29 00:00:00</td>
+<td style='background-color: #00FF00'>V000057</td>
+<td style='background-color: #00FF00'>5</td>
+<td style='background-color: #00FF00'>80.195</td>
+<td style='background-color: #00FF00'>1603.9</td>
+<td style='background-color: #00FF00'>K004016</td>
+<td style='background-color: #00FF00'>Klaus Kalke</td>
+<td style='background-color: #00FF00'>Village Gallery</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1030</td>
+<td style='background-color: #00FF00'>Wien</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1603.9</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>80.2</td>
+<td style='background-color: #FFFFFF'>14.09.2023,  321</td>
+<td style='background-color: #FFFFFF'>14.09.2023,  1866.9</td>
+<td style='background-color: #FFFFFF'>14.09.2023,  57.7</td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301520</td>
+<td style='background-color: #FFF300'>2023-09-07 00:00:00</td>
+<td style='background-color: #FFF300'>V000057</td>
+<td style='background-color: #FFF300'>5</td>
+<td style='background-color: #FFF300'>-25.185</td>
+<td style='background-color: #FFF300'>-503.7</td>
+<td style='background-color: #FFF300'>K003280</td>
+<td style='background-color: #FFF300'>NILSI EOOD</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>BG</td>
+<td style='background-color: #FFF300'>7500</td>
+<td style='background-color: #FFF300'>Silistra (BG)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>RE-4301544</td>
+<td style='background-color: #FFFFFF'>2023-09-13 00:00:00</td>
+<td style='background-color: #FFFFFF'>V000057</td>
+<td style='background-color: #FFFFFF'>5</td>
+<td style='background-color: #FFFFFF'>26.385</td>
+<td style='background-color: #FFFFFF'>527.7</td>
+<td style='background-color: #FFFFFF'>K003280</td>
+<td style='background-color: #FFFFFF'>NILSI EOOD</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>BG</td>
+<td style='background-color: #FFFFFF'>7500</td>
+<td style='background-color: #FFFFFF'>Silistra (BG)</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301577</td>
+<td style='background-color: #FFF300'>2023-09-19 00:00:00</td>
+<td style='background-color: #FFF300'>V000057</td>
+<td style='background-color: #FFF300'>5</td>
+<td style='background-color: #FFF300'>-164.5755</td>
+<td style='background-color: #FFF300'>-3291.51</td>
+<td style='background-color: #FFF300'>K002943</td>
+<td style='background-color: #FFF300'>D.D. & O Sh. P. K.</td>
+<td style='background-color: #FFF300'>Business Nr. 70688689</td>
+<td style='background-color: #FFF300'>KOS</td>
+<td style='background-color: #FFF300'>10000</td>
+<td style='background-color: #FFF300'>Prishtina - Republic of Kosovo</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>RE-4301587</td>
+<td style='background-color: #FFFFFF'>2023-09-21 00:00:00</td>
+<td style='background-color: #FFFFFF'>V000057</td>
+<td style='background-color: #FFFFFF'>5</td>
+<td style='background-color: #FFFFFF'>50.215</td>
+<td style='background-color: #FFFFFF'>1004.3</td>
+<td style='background-color: #FFFFFF'>K004016</td>
+<td style='background-color: #FFFFFF'>Klaus Kalke</td>
+<td style='background-color: #FFFFFF'>Village Gallery</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>1030</td>
+<td style='background-color: #FFFFFF'>Wien</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'>UNPAID</td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>RE-4301590</td>
+<td style='background-color: #FFFFFF'>2023-09-21 00:00:00</td>
+<td style='background-color: #FFFFFF'>V000057</td>
+<td style='background-color: #FFFFFF'>5</td>
+<td style='background-color: #FFFFFF'>36.96</td>
+<td style='background-color: #FFFFFF'>739.2</td>
+<td style='background-color: #FFFFFF'>K003280</td>
+<td style='background-color: #FFFFFF'>NILSI EOOD</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>BG</td>
+<td style='background-color: #FFFFFF'>7500</td>
+<td style='background-color: #FFFFFF'>Silistra (BG)</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301601</td>
+<td style='background-color: #00FF00'>2023-09-25 00:00:00</td>
+<td style='background-color: #00FF00'>V000057</td>
+<td style='background-color: #00FF00'>8</td>
+<td style='background-color: #00FF00'>424.0888</td>
+<td style='background-color: #00FF00'>5301.11</td>
+<td style='background-color: #00FF00'>K003192</td>
+<td style='background-color: #00FF00'>Crystal Time d.o.o</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>BOS</td>
+<td style='background-color: #00FF00'>89230</td>
+<td style='background-color: #00FF00'>Bileca, Bosnia Herzegowina</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>5301.11</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>424.1</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>25.09.2023,  5301.1</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301605</td>
+<td style='background-color: #00FF00'>2023-09-26 00:00:00</td>
+<td style='background-color: #00FF00'>V000057</td>
+<td style='background-color: #00FF00'>8</td>
+<td style='background-color: #00FF00'>33.7424</td>
+<td style='background-color: #00FF00'>421.78</td>
+<td style='background-color: #00FF00'>K003192</td>
+<td style='background-color: #00FF00'>Crystal Time d.o.o</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>BOS</td>
+<td style='background-color: #00FF00'>89230</td>
+<td style='background-color: #00FF00'>Bileca, Bosnia Herzegowina</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>421.78</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>33.7</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>26.09.2023,  421.8</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>RE-4301672</td>
+<td style='background-color: #FFFFFF'>2023-09-28 00:00:00</td>
+<td style='background-color: #FFFFFF'>V000057</td>
+<td style='background-color: #FFFFFF'>5</td>
+<td style='background-color: #FFFFFF'>213</td>
+<td style='background-color: #FFFFFF'>4260</td>
+<td style='background-color: #FFFFFF'>K002943</td>
+<td style='background-color: #FFFFFF'>D.D. & O Sh. P. K.</td>
+<td style='background-color: #FFFFFF'>Business Nr. 70688689</td>
+<td style='background-color: #FFFFFF'>KOS</td>
+<td style='background-color: #FFFFFF'>10000</td>
+<td style='background-color: #FFFFFF'>Prishtina - Republic of Kosovo</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>RE-4301674</td>
+<td style='background-color: #FFFFFF'>2023-09-29 00:00:00</td>
+<td style='background-color: #FFFFFF'>V000057</td>
+<td style='background-color: #FFFFFF'>5</td>
+<td style='background-color: #FFFFFF'>103.93</td>
+<td style='background-color: #FFFFFF'>2078.6</td>
+<td style='background-color: #FFFFFF'>K002943</td>
+<td style='background-color: #FFFFFF'>D.D. & O Sh. P. K.</td>
+<td style='background-color: #FFFFFF'>Business Nr. 70688689</td>
+<td style='background-color: #FFFFFF'>KOS</td>
+<td style='background-color: #FFFFFF'>10000</td>
+<td style='background-color: #FFFFFF'>Prishtina - Republic of Kosovo</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
 </tr>
 <tr>
 <td style='background-color: #FFFFFF'> </td>
@@ -1621,8 +1357,6 @@
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>All requested: </td>
-<td style='background-color: #FFF300'>367899.9</td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
@@ -1630,13 +1364,15 @@
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #68BF9D'>76365.91</td>
 <td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #68BF9D'>5432.17</td>
+<td style='background-color: #FFFFFF'>All paid amount</td>
+<td style='background-color: #90EE90'>160389.2</td>
+<td style='background-color: #FFFFFF'>All comissions</td>
+<td style='background-color: #90EE90'>10354.95</td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
 </tr>
  </tbody>
-                </table>
-                {% endblock %}
+                    </table>
+                    {% endblock %}

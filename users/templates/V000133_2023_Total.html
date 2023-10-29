@@ -1,1049 +1,60 @@
 {%extends 'base.html'%}
-                        {% block content %}
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<!--<link rel="stylesheet" type="text/css" href="normas.css">-->
-<style>
-    body{
-        background-color: #d6e1f8;
-         
-    }
-    th, td {
-        border: 1px solid #ccc;
-        
-        text-align: center;
-    }
-
-    table {
-   
-        border-collapse: collapse !important; /* optional: collapse the table borders */
-    }
-
-    table tr {
-        background-color: #8BC34A !important; /* Set background color of all rows */
-    }
-
-    table tr:hover td {
-        background-color: #2196F3 !important; /* Set background color of cells when hovered */
-    }
-
-</style>
-                 <table border="1" class="dataframe" style="width:100%;">
-                             <thead>
-                                 <tr style="text-align: right;">
-<th style='background-color: #B0CBF0'>RK</th>
-<th style='background-color: #B0CBF0'>GF-Nr</th>
-<th style='background-color: #B0CBF0'>Datum</th>
-<th style='background-color: #B0CBF0'>Vertreter</th>
-<th style='background-color: #B0CBF0'>ProvProz</th>
-<th style='background-color: #B0CBF0'>Provision</th>
-<th style='background-color: #B0CBF0'>Summe</th>
-<th style='background-color: #B0CBF0'>Lieferant</th>
-<th style='background-color: #B0CBF0'>Lieferantenname</th>
-<th style='background-color: #B0CBF0'>Name2</th>
-<th style='background-color: #B0CBF0'>IntKz</th>
-<th style='background-color: #B0CBF0'>PLZ Neu</th>
-<th style='background-color: #B0CBF0'>Ort</th>
-<th style='background-color: #FFFFFF'> </th>
+                            {% block content %}     
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--<link rel="stylesheet" type="text/css" href="normas.css">-->
+    <style>
+        body{
+            background-color: #d6e1f8;
+    
+        }
+        th, td {
+            border: 1px solid #ccc;
+    
+            text-align: center;
+        }
+    
+        table {
+    
+            border-collapse: collapse !important; /* optional: collapse the table borders */
+        }
+    
+        table tr {
+            background-color: #8BC34A !important; /* Set background color of all rows */
+        }
+    
+        table tr:hover td {
+            background-color: #2196F3 !important; /* Set background color of cells when hovered */
+        }
+    
+    </style>
+                     <table border="1" class="dataframe" style="width:100%;">
+                                 <thead>
+                                     <tr style="text-align: right;">
+<th style='background-color: #899EF0'>RK</th>
+<th style='background-color: #899EF0'>GF-Nr</th>
+<th style='background-color: #899EF0'>Datum</th>
+<th style='background-color: #899EF0'>Vertreter</th>
+<th style='background-color: #899EF0'>ProvProz</th>
+<th style='background-color: #899EF0'>Provision</th>
+<th style='background-color: #899EF0'>Summe</th>
+<th style='background-color: #899EF0'>Lieferant</th>
+<th style='background-color: #899EF0'>Lieferantenname</th>
+<th style='background-color: #899EF0'>Name2</th>
+<th style='background-color: #899EF0'>IntKz</th>
+<th style='background-color: #899EF0'>PLZ Neu</th>
+<th style='background-color: #899EF0'>Ort</th>
+<th style='background-color: #899EF0'>s</th>
 <th style='background-color: #899EF0'>Paid amount</th>
 <th style='background-color: #899EF0'>Payment status</th>
 <th style='background-color: #899EF0'>Payment commission</th>
 <th style='background-color: #899EF0'>Payments with Rest</th>
 <th style='background-color: #899EF0'>Payments Dates</th>
 <th style='background-color: #FFFFFF'> </th>
+<th style='background-color: #FFFFFF'> </th>
 </tr>
 </thead>
-                      <tbody><tr>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'>RE-4200050</td>
-<td style='background-color: #FFF300'>2022-01-11 00:00:00</td>
-<td style='background-color: #FFF300'>V000133</td>
-<td style='background-color: #FFF300'>13</td>
-<td style='background-color: #FFF300'>-111.4672</td>
-<td style='background-color: #FFF300'>-857.44</td>
-<td style='background-color: #FFF300'>K006005</td>
-<td style='background-color: #FFF300'>GOLD MINE VASWANI S.L.</td>
-<td style='background-color: #FFF300'>Prakash Vaswani</td>
-<td style='background-color: #FFF300'>ES</td>
-<td style='background-color: #FFF300'>35100</td>
-<td style='background-color: #FFF300'>Gran Canaria</td>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'>CREDIT NOTE</td>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200150</td>
-<td style='background-color: #92D050'>2022-01-25 00:00:00</td>
-<td style='background-color: #92D050'>V000133</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>130.052</td>
-<td style='background-color: #92D050'>1000.4</td>
-<td style='background-color: #92D050'>K004471</td>
-<td style='background-color: #92D050'>Raj Choolani Melvani</td>
-<td style='background-color: #92D050'>"Sofie"</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>35138</td>
-<td style='background-color: #92D050'>Taurito, Mogan. Gran Canaria</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200193</td>
-<td style='background-color: #92D050'>2022-01-27 00:00:00</td>
-<td style='background-color: #92D050'>V000133</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>131.2155</td>
-<td style='background-color: #92D050'>1009.35</td>
-<td style='background-color: #92D050'>K006036</td>
-<td style='background-color: #92D050'>Rosa Maria Vargas Perez</td>
-<td style='background-color: #92D050'>42173781S</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>38700</td>
-<td style='background-color: #92D050'>Santa Cruz de La Palma</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200233</td>
-<td style='background-color: #92D050'>2022-02-01 00:00:00</td>
-<td style='background-color: #92D050'>V000133</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>294.6463</td>
-<td style='background-color: #92D050'>2266.51</td>
-<td style='background-color: #92D050'>K001788</td>
-<td style='background-color: #92D050'>Amaya Irizar Lazpiur</td>
-<td style='background-color: #92D050'>ES15379300M - Tel 639594587</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>38650</td>
-<td style='background-color: #92D050'>Los Cristianos, Tenerife</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200349</td>
-<td style='background-color: #92D050'>2022-02-14 00:00:00</td>
-<td style='background-color: #92D050'>V000133</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>256.4237</td>
-<td style='background-color: #92D050'>1972.49</td>
-<td style='background-color: #92D050'>K006005</td>
-<td style='background-color: #92D050'>GOLD MINE VASWANI S.L.</td>
-<td style='background-color: #92D050'>Prakash Vaswani</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>35100</td>
-<td style='background-color: #92D050'>Gran Canaria</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200405</td>
-<td style='background-color: #92D050'>2022-02-22 00:00:00</td>
-<td style='background-color: #92D050'>V000133</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>135.8968</td>
-<td style='background-color: #92D050'>1045.36</td>
-<td style='background-color: #92D050'>K001788</td>
-<td style='background-color: #92D050'>Amaya Irizar Lazpiur</td>
-<td style='background-color: #92D050'>ES15379300M</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>38650</td>
-<td style='background-color: #92D050'>Los Cristianos, Tenerife</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200430</td>
-<td style='background-color: #92D050'>2022-02-28 00:00:00</td>
-<td style='background-color: #92D050'>V000133</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>120.523</td>
-<td style='background-color: #92D050'>927.1</td>
-<td style='background-color: #92D050'>K004160</td>
-<td style='background-color: #92D050'>Saagar Vatnani Vatnani "MIDAS"</td>
-<td style='background-color: #92D050'>42212048-X</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>35130</td>
-<td style='background-color: #92D050'>Puerto Rico, Gran Canaria</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200434</td>
-<td style='background-color: #92D050'>2022-02-28 00:00:00</td>
-<td style='background-color: #92D050'>V000133</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>132.1645</td>
-<td style='background-color: #92D050'>1016.65</td>
-<td style='background-color: #92D050'>K005145</td>
-<td style='background-color: #92D050'>Jürgen Franz Budinger</td>
-<td style='background-color: #92D050'>Hotel Gloria Palace Amadores</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>35139</td>
-<td style='background-color: #92D050'>Mogan, Gran Canaria, Las Palmas</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200451</td>
-<td style='background-color: #92D050'>2022-03-03 00:00:00</td>
-<td style='background-color: #92D050'>V000133</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>175.8211</td>
-<td style='background-color: #92D050'>1352.47</td>
-<td style='background-color: #92D050'>K005795</td>
-<td style='background-color: #92D050'>Jagsidh Thakur Chugani Chugani</td>
-<td style='background-color: #92D050'>SHYNE</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>35660</td>
-<td style='background-color: #92D050'>La Oliva, Fuerteventura</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200476</td>
-<td style='background-color: #92D050'>2022-03-09 00:00:00</td>
-<td style='background-color: #92D050'>V000133</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>193.154</td>
-<td style='background-color: #92D050'>1485.8</td>
-<td style='background-color: #92D050'>K004530</td>
-<td style='background-color: #92D050'>REKHA TIKAMDAS, S.L.</td>
-<td style='background-color: #92D050'>CIF. B76194166</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>35100</td>
-<td style='background-color: #92D050'>Maspalomas, Gran Canaria.</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200531</td>
-<td style='background-color: #92D050'>2022-03-17 00:00:00</td>
-<td style='background-color: #92D050'>V000133</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>303.5383</td>
-<td style='background-color: #92D050'>2334.91</td>
-<td style='background-color: #92D050'>K002551</td>
-<td style='background-color: #92D050'>Manoj Lellani Lellani</td>
-<td style='background-color: #92D050'>"INFINITY"</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>35626</td>
-<td style='background-color: #92D050'>Jandia, Fuerteventura.</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200576</td>
-<td style='background-color: #92D050'>2022-03-22 00:00:00</td>
-<td style='background-color: #92D050'>V000133</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>306.319</td>
-<td style='background-color: #92D050'>2356.3</td>
-<td style='background-color: #92D050'>K001788</td>
-<td style='background-color: #92D050'>Amaya Irizar Lazpiur</td>
-<td style='background-color: #92D050'>ES15379300M</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>38650</td>
-<td style='background-color: #92D050'>Los Cristianos, Tenerife</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200601</td>
-<td style='background-color: #92D050'>2022-03-25 00:00:00</td>
-<td style='background-color: #92D050'>V000133</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>92.976</td>
-<td style='background-color: #92D050'>715.2</td>
-<td style='background-color: #92D050'>K002428</td>
-<td style='background-color: #92D050'>Lokesh Sabhnani Sabhnani</td>
-<td style='background-color: #92D050'>"Joyeria Sun Rise"</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>35130</td>
-<td style='background-color: #92D050'>Puerto Rico, Gran Canaria.</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200724</td>
-<td style='background-color: #92D050'>2022-04-07 00:00:00</td>
-<td style='background-color: #92D050'>V000133</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>135.135</td>
-<td style='background-color: #92D050'>1039.5</td>
-<td style='background-color: #92D050'>K006036</td>
-<td style='background-color: #92D050'>Rosa Maria Vargas Perez</td>
-<td style='background-color: #92D050'>42173781S</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>38700</td>
-<td style='background-color: #92D050'>Santa Cruz de La Palma</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'>RE-4200808</td>
-<td style='background-color: #FFF300'>2022-04-19 00:00:00</td>
-<td style='background-color: #FFF300'>V000133</td>
-<td style='background-color: #FFF300'>13</td>
-<td style='background-color: #FFF300'>-10.153</td>
-<td style='background-color: #FFF300'>-78.1</td>
-<td style='background-color: #FFF300'>K002551</td>
-<td style='background-color: #FFF300'>Manoj Lellani Lellani</td>
-<td style='background-color: #FFF300'>"INFINITY"</td>
-<td style='background-color: #FFF300'>ES</td>
-<td style='background-color: #FFF300'>35626</td>
-<td style='background-color: #FFF300'>Jandia, Fuerteventura.</td>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'>CREDIT NOTE</td>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200945</td>
-<td style='background-color: #92D050'>2022-05-09 00:00:00</td>
-<td style='background-color: #92D050'>V000133</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>145.899</td>
-<td style='background-color: #92D050'>1122.3</td>
-<td style='background-color: #92D050'>K004471</td>
-<td style='background-color: #92D050'>Raj Choolani Melvani</td>
-<td style='background-color: #92D050'>"Sofie"</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>35138</td>
-<td style='background-color: #92D050'>Taurito, Mogan. Gran Canaria</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201092</td>
-<td style='background-color: #92D050'>2022-05-25 00:00:00</td>
-<td style='background-color: #92D050'>V000133</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>215.6804</td>
-<td style='background-color: #92D050'>1659.08</td>
-<td style='background-color: #92D050'>K006109</td>
-<td style='background-color: #92D050'>Jiya Prakash Joukani Dewani</td>
-<td style='background-color: #92D050'>Hotel Abora Continental local 2</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>35100</td>
-<td style='background-color: #92D050'>Playa del Ingles / Gran Canaria</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201177</td>
-<td style='background-color: #92D050'>2022-06-07 00:00:00</td>
-<td style='background-color: #92D050'>V000133</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>108.537</td>
-<td style='background-color: #92D050'>834.9</td>
-<td style='background-color: #92D050'>K004471</td>
-<td style='background-color: #92D050'>Raj Choolani Melvani</td>
-<td style='background-color: #92D050'>"Sofie"</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>35138</td>
-<td style='background-color: #92D050'>Taurito, Mogan. Gran Canaria</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201257</td>
-<td style='background-color: #92D050'>2022-06-14 00:00:00</td>
-<td style='background-color: #92D050'>V000133</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>255.983</td>
-<td style='background-color: #92D050'>1969.1</td>
-<td style='background-color: #92D050'>K002551</td>
-<td style='background-color: #92D050'>Manoj Lellani Lellani</td>
-<td style='background-color: #92D050'>"INFINITY"</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>35626</td>
-<td style='background-color: #92D050'>Jandia, Fuerteventura.</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'>RE-4201271</td>
-<td style='background-color: #FFF300'>2022-06-15 00:00:00</td>
-<td style='background-color: #FFF300'>V000133</td>
-<td style='background-color: #FFF300'>13</td>
-<td style='background-color: #FFF300'>-12.675</td>
-<td style='background-color: #FFF300'>-97.5</td>
-<td style='background-color: #FFF300'>K002551</td>
-<td style='background-color: #FFF300'>Manoj Lellani Lellani</td>
-<td style='background-color: #FFF300'>"INFINITY"</td>
-<td style='background-color: #FFF300'>ES</td>
-<td style='background-color: #FFF300'>35626</td>
-<td style='background-color: #FFF300'>Jandia, Fuerteventura.</td>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'>CREDIT NOTE</td>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201320</td>
-<td style='background-color: #92D050'>2022-06-21 00:00:00</td>
-<td style='background-color: #92D050'>V000133</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>113.776</td>
-<td style='background-color: #92D050'>875.2</td>
-<td style='background-color: #92D050'>K001788</td>
-<td style='background-color: #92D050'>Amaya Irizar Lazpiur</td>
-<td style='background-color: #92D050'>ES15379300M</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>38650</td>
-<td style='background-color: #92D050'>Los Cristianos, Tenerife</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201341</td>
-<td style='background-color: #92D050'>2022-06-24 00:00:00</td>
-<td style='background-color: #92D050'>V000133</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>197.964</td>
-<td style='background-color: #92D050'>1522.8</td>
-<td style='background-color: #92D050'>K003662</td>
-<td style='background-color: #92D050'>MRM Import Co.S.L.</td>
-<td style='background-color: #92D050'>B38225709</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>38108</td>
-<td style='background-color: #92D050'>St. Cruz, Tenerife.</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201418</td>
-<td style='background-color: #92D050'>2022-07-05 00:00:00</td>
-<td style='background-color: #92D050'>V000133</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>147.9075</td>
-<td style='background-color: #92D050'>1137.75</td>
-<td style='background-color: #92D050'>K006109</td>
-<td style='background-color: #92D050'>Jiya Prakash Joukani Dewani</td>
-<td style='background-color: #92D050'>Hotel Abora Continental local 2</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>35100</td>
-<td style='background-color: #92D050'>Playa del Ingles / Gran Canaria</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201537</td>
-<td style='background-color: #92D050'>2022-07-20 00:00:00</td>
-<td style='background-color: #92D050'>V000133</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>143.0832</td>
-<td style='background-color: #92D050'>1100.64</td>
-<td style='background-color: #92D050'>K002551</td>
-<td style='background-color: #92D050'>Manoj Lellani Lellani</td>
-<td style='background-color: #92D050'>"INFINITY"</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>35626</td>
-<td style='background-color: #92D050'>Jandia, Fuerteventura.</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201597</td>
-<td style='background-color: #92D050'>2022-07-27 00:00:00</td>
-<td style='background-color: #92D050'>V000133</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>247.715</td>
-<td style='background-color: #92D050'>1905.5</td>
-<td style='background-color: #92D050'>K004160</td>
-<td style='background-color: #92D050'>Saagar Vatnani Vatnani "MIDAS"</td>
-<td style='background-color: #92D050'>42212048-X</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>35130</td>
-<td style='background-color: #92D050'>Puerto Rico, Gran Canaria</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'>RE-4201603</td>
-<td style='background-color: #FFF300'>2022-07-28 00:00:00</td>
-<td style='background-color: #FFF300'>V000133</td>
-<td style='background-color: #FFF300'>13</td>
-<td style='background-color: #FFF300'>-26.013</td>
-<td style='background-color: #FFF300'>-200.1</td>
-<td style='background-color: #FFF300'>K004160</td>
-<td style='background-color: #FFF300'>Saagar Vatnani Vatnani "MIDAS"</td>
-<td style='background-color: #FFF300'>42212048-X</td>
-<td style='background-color: #FFF300'>ES</td>
-<td style='background-color: #FFF300'>35130</td>
-<td style='background-color: #FFF300'>Puerto Rico, Gran Canaria</td>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'>CREDIT NOTE</td>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201693</td>
-<td style='background-color: #92D050'>2022-08-08 00:00:00</td>
-<td style='background-color: #92D050'>V000133</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>150.059</td>
-<td style='background-color: #92D050'>1154.3</td>
-<td style='background-color: #92D050'>K004471</td>
-<td style='background-color: #92D050'>Raj Choolani Melvani</td>
-<td style='background-color: #92D050'>"Sofie"</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>35138</td>
-<td style='background-color: #92D050'>Taurito, Mogan. Gran Canaria</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201757</td>
-<td style='background-color: #92D050'>2022-08-17 00:00:00</td>
-<td style='background-color: #92D050'>V000133</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>86.7529</td>
-<td style='background-color: #92D050'>667.33</td>
-<td style='background-color: #92D050'>K006005</td>
-<td style='background-color: #92D050'>GOLD MINE VASWANI S.L.</td>
-<td style='background-color: #92D050'>Prakash Vaswani</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>35100</td>
-<td style='background-color: #92D050'>Gran Canaria</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201769</td>
-<td style='background-color: #92D050'>2022-08-19 00:00:00</td>
-<td style='background-color: #92D050'>V000133</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>140.855</td>
-<td style='background-color: #92D050'>1083.5</td>
-<td style='background-color: #92D050'>K005145</td>
-<td style='background-color: #92D050'>Jürgen Franz Budinger</td>
-<td style='background-color: #92D050'>Hotel Gloria Palace Amadores</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>35139</td>
-<td style='background-color: #92D050'>Mogan, Gran Canaria, Las Palmas</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201771</td>
-<td style='background-color: #92D050'>2022-08-19 00:00:00</td>
-<td style='background-color: #92D050'>V000133</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>191.1104</td>
-<td style='background-color: #92D050'>1470.08</td>
-<td style='background-color: #92D050'>K003865</td>
-<td style='background-color: #92D050'>BHARAT PUNJABI</td>
-<td style='background-color: #92D050'>NIF 42278702-X</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>35150</td>
-<td style='background-color: #92D050'>Puerto Rico, Gran Canaria</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>RE-4201986</td>
-<td style='background-color: #00FF00'>2022-09-22 00:00:00</td>
-<td style='background-color: #00FF00'>V000133</td>
-<td style='background-color: #00FF00'>13</td>
-<td style='background-color: #00FF00'>214.604</td>
-<td style='background-color: #00FF00'>1650.8</td>
-<td style='background-color: #00FF00'>K002551</td>
-<td style='background-color: #00FF00'>Manoj Lellani Lellani</td>
-<td style='background-color: #00FF00'>"INFINITY"</td>
-<td style='background-color: #00FF00'>ES</td>
-<td style='background-color: #00FF00'>35626</td>
-<td style='background-color: #00FF00'>Jandia, Fuerteventura.</td>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>825.4</td>
-<td style='background-color: #00FF00'>PARTIALLY PAID</td>
-<td style='background-color: #00FF00'>107.3</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>02.01.2023,  825.4</td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201997</td>
-<td style='background-color: #92D050'>2022-09-26 00:00:00</td>
-<td style='background-color: #92D050'>V000133</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>234.0481</td>
-<td style='background-color: #92D050'>1800.37</td>
-<td style='background-color: #92D050'>K006036</td>
-<td style='background-color: #92D050'>Rosa Maria Vargas Perez</td>
-<td style='background-color: #92D050'>42173781S</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>38700</td>
-<td style='background-color: #92D050'>Santa Cruz de La Palma</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4202011</td>
-<td style='background-color: #92D050'>2022-09-26 00:00:00</td>
-<td style='background-color: #92D050'>V000133</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>119.8314</td>
-<td style='background-color: #92D050'>921.78</td>
-<td style='background-color: #92D050'>K004471</td>
-<td style='background-color: #92D050'>Raj Choolani Melvani</td>
-<td style='background-color: #92D050'>"Sofie"</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>35138</td>
-<td style='background-color: #92D050'>Taurito, Mogan. Gran Canaria</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4202017</td>
-<td style='background-color: #92D050'>2022-09-27 00:00:00</td>
-<td style='background-color: #92D050'>V000133</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>103.337</td>
-<td style='background-color: #92D050'>794.9</td>
-<td style='background-color: #92D050'>K006164</td>
-<td style='background-color: #92D050'>Temptation - Suryacan Imports S.L.U</td>
-<td style='background-color: #92D050'>Hotel Abora Continental</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>35100</td>
-<td style='background-color: #92D050'>Playa del Ingles</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>RE-4202164</td>
-<td style='background-color: #00FF00'>2022-10-20 00:00:00</td>
-<td style='background-color: #00FF00'>V000133</td>
-<td style='background-color: #00FF00'>13</td>
-<td style='background-color: #00FF00'>276.5074</td>
-<td style='background-color: #00FF00'>2126.98</td>
-<td style='background-color: #00FF00'>K002844</td>
-<td style='background-color: #00FF00'>ORAFE JOYEROS S.L.</td>
-<td style='background-color: #00FF00'>"Joyería Ferreiro"</td>
-<td style='background-color: #00FF00'>ES</td>
-<td style='background-color: #00FF00'>38700</td>
-<td style='background-color: #00FF00'>Santa Cruz de la Palma, Canarias</td>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>1417.99</td>
-<td style='background-color: #00FF00'>PARTIALLY PAID</td>
-<td style='background-color: #00FF00'>184.3</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>02.01.2023,  709.0</td>
-<td style='background-color: #FFFFFF'>31.01.2023,  709.0</td>
-</tr>
-<tr>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>RE-4202267</td>
-<td style='background-color: #00FF00'>2022-11-03 00:00:00</td>
-<td style='background-color: #00FF00'>V000133</td>
-<td style='background-color: #00FF00'>13</td>
-<td style='background-color: #00FF00'>175.695</td>
-<td style='background-color: #00FF00'>1351.5</td>
-<td style='background-color: #00FF00'>K005145</td>
-<td style='background-color: #00FF00'>Jürgen Franz Budinger</td>
-<td style='background-color: #00FF00'>Hotel Gloria Palace Amadores</td>
-<td style='background-color: #00FF00'>ES</td>
-<td style='background-color: #00FF00'>35139</td>
-<td style='background-color: #00FF00'>Mogan, Gran Canaria, Las Palmas</td>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>675.75</td>
-<td style='background-color: #00FF00'>PARTIALLY PAID</td>
-<td style='background-color: #00FF00'>87.8</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>16.01.2023,  675.8</td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>RE-4202297</td>
-<td style='background-color: #00FF00'>2022-11-08 00:00:00</td>
-<td style='background-color: #00FF00'>V000133</td>
-<td style='background-color: #00FF00'>13</td>
-<td style='background-color: #00FF00'>130.845</td>
-<td style='background-color: #00FF00'>1006.5</td>
-<td style='background-color: #00FF00'>K004530</td>
-<td style='background-color: #00FF00'>REKHA TIKAMDAS, S.L.</td>
-<td style='background-color: #00FF00'>CIF. B76194166</td>
-<td style='background-color: #00FF00'>ES</td>
-<td style='background-color: #00FF00'>35100</td>
-<td style='background-color: #00FF00'>Maspalomas, Gran Canaria.</td>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>1006.5</td>
-<td style='background-color: #00FF00'>PAID</td>
-<td style='background-color: #00FF00'>130.8</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>16.01.2023,  1006.5</td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>RE-4202341</td>
-<td style='background-color: #00FF00'>2022-11-16 00:00:00</td>
-<td style='background-color: #00FF00'>V000133</td>
-<td style='background-color: #00FF00'>13</td>
-<td style='background-color: #00FF00'>155.883</td>
-<td style='background-color: #00FF00'>1199.1</td>
-<td style='background-color: #00FF00'>K006164</td>
-<td style='background-color: #00FF00'>Temptation - Suryacan Imports S.L.U</td>
-<td style='background-color: #00FF00'>Hotel Abora Continental</td>
-<td style='background-color: #00FF00'>ES</td>
-<td style='background-color: #00FF00'>35100</td>
-<td style='background-color: #00FF00'>Playa del Ingles</td>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>1199.1</td>
-<td style='background-color: #00FF00'>PAID</td>
-<td style='background-color: #00FF00'>155.9</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>31.01.2023,  1199.1</td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>RE-4202344</td>
-<td style='background-color: #00FF00'>2022-11-16 00:00:00</td>
-<td style='background-color: #00FF00'>V000133</td>
-<td style='background-color: #00FF00'>13</td>
-<td style='background-color: #00FF00'>180.973</td>
-<td style='background-color: #00FF00'>1392.1</td>
-<td style='background-color: #00FF00'>K004471</td>
-<td style='background-color: #00FF00'>Raj Choolani Melvani</td>
-<td style='background-color: #00FF00'>"Sofie"</td>
-<td style='background-color: #00FF00'>ES</td>
-<td style='background-color: #00FF00'>35138</td>
-<td style='background-color: #00FF00'>Taurito, Mogan. Gran Canaria</td>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>1392.1</td>
-<td style='background-color: #00FF00'>PAID</td>
-<td style='background-color: #00FF00'>181</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>31.01.2023,  1392.1</td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>RE-4202511</td>
-<td style='background-color: #00FF00'>2022-12-06 00:00:00</td>
-<td style='background-color: #00FF00'>V000133</td>
-<td style='background-color: #00FF00'>13</td>
-<td style='background-color: #00FF00'>253.448</td>
-<td style='background-color: #00FF00'>1949.6</td>
-<td style='background-color: #00FF00'>K002551</td>
-<td style='background-color: #00FF00'>Manoj Lellani Lellani</td>
-<td style='background-color: #00FF00'>"INFINITY"</td>
-<td style='background-color: #00FF00'>ES</td>
-<td style='background-color: #00FF00'>35626</td>
-<td style='background-color: #00FF00'>Jandia, Fuerteventura.</td>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>1949.6</td>
-<td style='background-color: #00FF00'>PAID</td>
-<td style='background-color: #00FF00'>253.4</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>14.02.2023,  974.8</td>
-<td style='background-color: #FFFFFF'>15.03.2023,  974.8</td>
-</tr>
-<tr>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>RE-4202529</td>
-<td style='background-color: #00FF00'>2022-12-09 00:00:00</td>
-<td style='background-color: #00FF00'>V000133</td>
-<td style='background-color: #00FF00'>13</td>
-<td style='background-color: #00FF00'>152.7175</td>
-<td style='background-color: #00FF00'>1174.75</td>
-<td style='background-color: #00FF00'>K003865</td>
-<td style='background-color: #00FF00'>BHARAT PUNJABI</td>
-<td style='background-color: #00FF00'>NIF 42278702-X</td>
-<td style='background-color: #00FF00'>ES</td>
-<td style='background-color: #00FF00'>35150</td>
-<td style='background-color: #00FF00'>Puerto Rico, Gran Canaria</td>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>1174.75</td>
-<td style='background-color: #00FF00'>PAID</td>
-<td style='background-color: #00FF00'>152.7</td>
-<td style='background-color: #FFAB83'>15.03.2023,  0</td>
-<td style='background-color: #FFFFFF'>14.02.2023,  587.4</td>
-<td style='background-color: #FFFFFF'>15.03.2023,  587.4</td>
-</tr>
-<tr>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>RE-4202558</td>
-<td style='background-color: #00FF00'>2022-12-12 00:00:00</td>
-<td style='background-color: #00FF00'>V000133</td>
-<td style='background-color: #00FF00'>13</td>
-<td style='background-color: #00FF00'>84.994</td>
-<td style='background-color: #00FF00'>653.8</td>
-<td style='background-color: #00FF00'>K003662</td>
-<td style='background-color: #00FF00'>MRM Import Co.S.L.</td>
-<td style='background-color: #00FF00'>B38225709</td>
-<td style='background-color: #00FF00'>ES</td>
-<td style='background-color: #00FF00'>38108</td>
-<td style='background-color: #00FF00'>St. Cruz, Tenerife.</td>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>653.8</td>
-<td style='background-color: #00FF00'>PAID</td>
-<td style='background-color: #00FF00'>85</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>14.02.2023,  326.9</td>
-<td style='background-color: #FFFFFF'>15.03.2023,  326.9</td>
-</tr>
-<tr>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>RE-4202559</td>
-<td style='background-color: #00FF00'>2022-12-12 00:00:00</td>
-<td style='background-color: #00FF00'>V000133</td>
-<td style='background-color: #00FF00'>13</td>
-<td style='background-color: #00FF00'>96.239</td>
-<td style='background-color: #00FF00'>740.3</td>
-<td style='background-color: #00FF00'>K003662</td>
-<td style='background-color: #00FF00'>MRM Import Co.S.L.</td>
-<td style='background-color: #00FF00'>B38225709</td>
-<td style='background-color: #00FF00'>ES</td>
-<td style='background-color: #00FF00'>38108</td>
-<td style='background-color: #00FF00'>St. Cruz, Tenerife.</td>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>740.3</td>
-<td style='background-color: #00FF00'>PAID</td>
-<td style='background-color: #00FF00'>96.2</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>14.02.2023,  370.1</td>
-<td style='background-color: #FFFFFF'>15.03.2023,  370.1</td>
-</tr>
-<tr>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>RE-4202638</td>
-<td style='background-color: #00FF00'>2022-12-19 00:00:00</td>
-<td style='background-color: #00FF00'>V000133</td>
-<td style='background-color: #00FF00'>13</td>
-<td style='background-color: #00FF00'>134.654</td>
-<td style='background-color: #00FF00'>1035.8</td>
-<td style='background-color: #00FF00'>K006005</td>
-<td style='background-color: #00FF00'>GOLD MINE VASWANI S.L.</td>
-<td style='background-color: #00FF00'>Prakash Vaswani</td>
-<td style='background-color: #00FF00'>ES</td>
-<td style='background-color: #00FF00'>35100</td>
-<td style='background-color: #00FF00'>Gran Canaria</td>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>1035.8</td>
-<td style='background-color: #00FF00'>PAID</td>
-<td style='background-color: #00FF00'>134.7</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>31.01.2023,  517.9</td>
-<td style='background-color: #FFFFFF'>28.02.2023,  517.9</td>
-</tr>
-<tr>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>RE-4202686</td>
-<td style='background-color: #00FF00'>2022-12-22 00:00:00</td>
-<td style='background-color: #00FF00'>V000133</td>
-<td style='background-color: #00FF00'>13</td>
-<td style='background-color: #00FF00'>107.575</td>
-<td style='background-color: #00FF00'>827.5</td>
-<td style='background-color: #00FF00'>K002551</td>
-<td style='background-color: #00FF00'>Manoj Lellani Lellani</td>
-<td style='background-color: #00FF00'>"INFINITY"</td>
-<td style='background-color: #00FF00'>ES</td>
-<td style='background-color: #00FF00'>35626</td>
-<td style='background-color: #00FF00'>Jandia, Fuerteventura.</td>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>827.5</td>
-<td style='background-color: #00FF00'>PAID</td>
-<td style='background-color: #00FF00'>107.6</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>15.03.2023,  413.8</td>
-<td style='background-color: #FFFFFF'>30.03.2023,  413.8</td>
-</tr>
-<tr>
+                          <tbody><tr>
 <td style='background-color: #00FF00'> </td>
 <td style='background-color: #00FF00'>RE-4300017</td>
 <td style='background-color: #00FF00'>2023-01-10 00:00:00</td>
@@ -1060,9 +71,10 @@
 <td style='background-color: #00FF00'> </td>
 <td style='background-color: #00FF00'>1044.9</td>
 <td style='background-color: #00FF00'>PAID</td>
-<td style='background-color: #00FF00'>135.8</td>
+<td style='background-color: #FFFFFF'>135.8</td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'>15.03.2023,  1044.9</td>
+<td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
 </tr>
 <tr>
@@ -1082,10 +94,11 @@
 <td style='background-color: #00FF00'> </td>
 <td style='background-color: #00FF00'>1506.5</td>
 <td style='background-color: #00FF00'>PAID</td>
-<td style='background-color: #00FF00'>195.8</td>
+<td style='background-color: #FFFFFF'>195.8</td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'>30.03.2023,  753.2</td>
 <td style='background-color: #FFFFFF'>15.03.2023,  753.2</td>
+<td style='background-color: #FFFFFF'> </td>
 </tr>
 <tr>
 <td style='background-color: #00FF00'> </td>
@@ -1104,10 +117,11 @@
 <td style='background-color: #00FF00'> </td>
 <td style='background-color: #00FF00'>1369.5</td>
 <td style='background-color: #00FF00'>PAID</td>
-<td style='background-color: #00FF00'>178</td>
+<td style='background-color: #FFFFFF'>178</td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'>14.02.2023,  684.8</td>
 <td style='background-color: #FFFFFF'>15.03.2023,  684.8</td>
+<td style='background-color: #FFFFFF'> </td>
 </tr>
 <tr>
 <td style='background-color: #00FF00'> </td>
@@ -1124,12 +138,13 @@
 <td style='background-color: #00FF00'>35626</td>
 <td style='background-color: #00FF00'>Jandia, Fuerteventura.</td>
 <td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>719.77</td>
-<td style='background-color: #00FF00'>PARTIALLY PAID</td>
-<td style='background-color: #00FF00'>93.6</td>
+<td style='background-color: #00FF00'>2159.3</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>280.7</td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'>30.03.2023,  719.8</td>
-<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>02.05.2023,  719.8</td>
+<td style='background-color: #FFFFFF'>31.05.2023,  719.8</td>
 </tr>
 <tr>
 <td style='background-color: #00FF00'> </td>
@@ -1148,9 +163,10 @@
 <td style='background-color: #00FF00'> </td>
 <td style='background-color: #00FF00'>1270.3</td>
 <td style='background-color: #00FF00'>PAID</td>
-<td style='background-color: #00FF00'>165.1</td>
+<td style='background-color: #FFFFFF'>165.1</td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'>15.03.2023,  1270.3</td>
+<td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
 </tr>
 <tr>
@@ -1168,11 +184,58 @@
 <td style='background-color: #00FF00'>38650</td>
 <td style='background-color: #00FF00'>Los Cristianos -Tenerife</td>
 <td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>874.45</td>
-<td style='background-color: #00FF00'>PARTIALLY PAID</td>
-<td style='background-color: #00FF00'>113.7</td>
+<td style='background-color: #00FF00'>1748.9</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>227.4</td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'>30.03.2023,  874.5</td>
+<td style='background-color: #FFFFFF'>02.05.2023,  874.5</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300304</td>
+<td style='background-color: #00FF00'>2023-02-28 00:00:00</td>
+<td style='background-color: #00FF00'>V000133</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>148.4808</td>
+<td style='background-color: #00FF00'>1142.16</td>
+<td style='background-color: #00FF00'>K003662</td>
+<td style='background-color: #00FF00'>MRM Import Co.S.L.</td>
+<td style='background-color: #00FF00'>B38225709</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>38108</td>
+<td style='background-color: #00FF00'>St. Cruz, Tenerife.</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1142.16</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>148.5</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>02.05.2023,  571.1</td>
+<td style='background-color: #FFFFFF'>31.05.2023,  571.1</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300500</td>
+<td style='background-color: #00FF00'>2023-03-31 00:00:00</td>
+<td style='background-color: #00FF00'>V000133</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>288.184</td>
+<td style='background-color: #00FF00'>2216.8</td>
+<td style='background-color: #00FF00'>K006158</td>
+<td style='background-color: #00FF00'>Tiffany De Tomi</td>
+<td style='background-color: #00FF00'>Arona Gran Hotel</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>38650</td>
+<td style='background-color: #00FF00'>Los Cristianos -Tenerife</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>2216.8</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>288.2</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>02.05.2023,  1108.4</td>
+<td style='background-color: #FFFFFF'>31.05.2023,  1108.4</td>
 <td style='background-color: #FFFFFF'> </td>
 </tr>
 <tr>
@@ -1190,9 +253,171 @@
 <td style='background-color: #FFF300'>35130</td>
 <td style='background-color: #FFF300'>Puerto Rico, Gran Canaria</td>
 <td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'>-35</td>
+<td style='background-color: #FFF300'> </td>
 <td style='background-color: #FFF300'>CREDIT NOTE</td>
-<td style='background-color: #FFF300'>-4.55</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300653</td>
+<td style='background-color: #00FF00'>2023-04-27 00:00:00</td>
+<td style='background-color: #00FF00'>V000133</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>288.951</td>
+<td style='background-color: #00FF00'>2222.7</td>
+<td style='background-color: #00FF00'>K004160</td>
+<td style='background-color: #00FF00'>Saagar Vatnani Vatnani "MIDAS"</td>
+<td style='background-color: #00FF00'>42212048-X</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>35130</td>
+<td style='background-color: #00FF00'>Puerto Rico, Gran Canaria</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>2222.7</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>289</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.05.2023,  740.9</td>
+<td style='background-color: #FFFFFF'>30.06.2023,  740.9</td>
+<td style='background-color: #FFFFFF'>31.07.2023,  740.9</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300793</td>
+<td style='background-color: #00FF00'>2023-05-26 00:00:00</td>
+<td style='background-color: #00FF00'>V000133</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>528.8855</td>
+<td style='background-color: #00FF00'>4068.35</td>
+<td style='background-color: #00FF00'>K002551</td>
+<td style='background-color: #00FF00'>Manoj Lellani Lellani</td>
+<td style='background-color: #00FF00'>"INFINITY"</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>35626</td>
+<td style='background-color: #00FF00'>Jandia, Fuerteventura.</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>2712.24</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #FFFFFF'>352.6</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.07.2023,  1356.1</td>
+<td style='background-color: #FFFFFF'>31.08.2023,  1356.1</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300906</td>
+<td style='background-color: #00FF00'>2023-05-31 00:00:00</td>
+<td style='background-color: #00FF00'>V000133</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>163.982</td>
+<td style='background-color: #00FF00'>1261.4</td>
+<td style='background-color: #00FF00'>K006005</td>
+<td style='background-color: #00FF00'>GOLD MINE VASWANI S.L.</td>
+<td style='background-color: #00FF00'>Prakash Vaswani</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>35100</td>
+<td style='background-color: #00FF00'>Gran Canaria</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1261.4</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>164</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>30.06.2023,  630.7</td>
+<td style='background-color: #FFFFFF'>31.07.2023,  630.7</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301165</td>
+<td style='background-color: #00FF00'>2023-07-04 00:00:00</td>
+<td style='background-color: #00FF00'>V000133</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>128.648</td>
+<td style='background-color: #00FF00'>989.6</td>
+<td style='background-color: #00FF00'>K004160</td>
+<td style='background-color: #00FF00'>Saagar Vatnani Vatnani "MIDAS"</td>
+<td style='background-color: #00FF00'>42212048-X</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>35130</td>
+<td style='background-color: #00FF00'>Puerto Rico, Gran Canaria</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>989.6</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>128.6</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>15.09.2023,  989.6</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301186</td>
+<td style='background-color: #FFF300'>2023-07-10 00:00:00</td>
+<td style='background-color: #FFF300'>V000133</td>
+<td style='background-color: #FFF300'>13</td>
+<td style='background-color: #FFF300'>-0.481</td>
+<td style='background-color: #FFF300'>-3.7</td>
+<td style='background-color: #FFF300'>K002551</td>
+<td style='background-color: #FFF300'>Manoj Lellani Lellani</td>
+<td style='background-color: #FFF300'>"INFINITY"</td>
+<td style='background-color: #FFF300'>ES</td>
+<td style='background-color: #FFF300'>35626</td>
+<td style='background-color: #FFF300'>Jandia, Fuerteventura.</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301246</td>
+<td style='background-color: #00FF00'>2023-07-18 00:00:00</td>
+<td style='background-color: #00FF00'>V000133</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>177.06</td>
+<td style='background-color: #00FF00'>1362</td>
+<td style='background-color: #00FF00'>K006158</td>
+<td style='background-color: #00FF00'>Tiffany De Tomi</td>
+<td style='background-color: #00FF00'>Arona Gran Hotel</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>38650</td>
+<td style='background-color: #00FF00'>Los Cristianos -Tenerife</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>681</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #FFFFFF'>88.5</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.08.2023,  681.0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>RE-4301331</td>
+<td style='background-color: #FFFFFF'>2023-07-31 00:00:00</td>
+<td style='background-color: #FFFFFF'>V000133</td>
+<td style='background-color: #FFFFFF'>13</td>
+<td style='background-color: #FFFFFF'>107.6426</td>
+<td style='background-color: #FFFFFF'>828.02</td>
+<td style='background-color: #FFFFFF'>K003865</td>
+<td style='background-color: #FFFFFF'>BHARAT PUNJABI</td>
+<td style='background-color: #FFFFFF'>NIF 42278702-X</td>
+<td style='background-color: #FFFFFF'>ES</td>
+<td style='background-color: #FFFFFF'>35150</td>
+<td style='background-color: #FFFFFF'>Puerto Rico, Gran Canaria</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'>UNPAID</td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
@@ -1203,8 +428,6 @@
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>All requested: </td>
-<td style='background-color: #FFF300'>71754.5</td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
@@ -1212,13 +435,16 @@
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #68BF9D'>19649.01</td>
 <td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #68BF9D'>2554.2</td>
+<td style='background-color: #FFFFFF'>All paid amount</td>
+<td style='background-color: #90EE90'>20325.5</td>
+<td style='background-color: #FFFFFF'>All comissions</td>
+<td style='background-color: #90EE90'>2642.32</td>
+<td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
 </tr>
  </tbody>
-                </table>
-                {% endblock %}
+                    </table>
+                    {% endblock %}

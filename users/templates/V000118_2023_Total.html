@@ -1,50 +1,50 @@
 {%extends 'base.html'%}
-                        {% block content %}
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<!--<link rel="stylesheet" type="text/css" href="normas.css">-->
-<style>
-    body{
-        background-color: #d6e1f8;
-         
-    }
-    th, td {
-        border: 1px solid #ccc;
-        
-        text-align: center;
-    }
-
-    table {
-   
-        border-collapse: collapse !important; /* optional: collapse the table borders */
-    }
-
-    table tr {
-        background-color: #8BC34A !important; /* Set background color of all rows */
-    }
-
-    table tr:hover td {
-        background-color: #2196F3 !important; /* Set background color of cells when hovered */
-    }
-
-</style>
-                 <table border="1" class="dataframe" style="width:100%;">
-                             <thead>
-                                 <tr style="text-align: right;">
-<th style='background-color: #B0CBF0'>RK</th>
-<th style='background-color: #B0CBF0'>GF-Nr</th>
-<th style='background-color: #B0CBF0'>Datum</th>
-<th style='background-color: #B0CBF0'>Vertreter</th>
-<th style='background-color: #B0CBF0'>ProvProz</th>
-<th style='background-color: #B0CBF0'>Provision</th>
-<th style='background-color: #B0CBF0'>Summe</th>
-<th style='background-color: #B0CBF0'>Lieferant</th>
-<th style='background-color: #B0CBF0'>Lieferantenname</th>
-<th style='background-color: #B0CBF0'>Name2</th>
-<th style='background-color: #B0CBF0'>IntKz</th>
-<th style='background-color: #B0CBF0'>PLZ Neu</th>
-<th style='background-color: #B0CBF0'>Ort</th>
-<th style='background-color: #FFFFFF'> </th>
+                            {% block content %}     
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--<link rel="stylesheet" type="text/css" href="normas.css">-->
+    <style>
+        body{
+            background-color: #d6e1f8;
+    
+        }
+        th, td {
+            border: 1px solid #ccc;
+    
+            text-align: center;
+        }
+    
+        table {
+    
+            border-collapse: collapse !important; /* optional: collapse the table borders */
+        }
+    
+        table tr {
+            background-color: #8BC34A !important; /* Set background color of all rows */
+        }
+    
+        table tr:hover td {
+            background-color: #2196F3 !important; /* Set background color of cells when hovered */
+        }
+    
+    </style>
+                     <table border="1" class="dataframe" style="width:100%;">
+                                 <thead>
+                                     <tr style="text-align: right;">
+<th style='background-color: #899EF0'>RK</th>
+<th style='background-color: #899EF0'>GF-Nr</th>
+<th style='background-color: #899EF0'>Datum</th>
+<th style='background-color: #899EF0'>Vertreter</th>
+<th style='background-color: #899EF0'>ProvProz</th>
+<th style='background-color: #899EF0'>Provision</th>
+<th style='background-color: #899EF0'>Summe</th>
+<th style='background-color: #899EF0'>Lieferant</th>
+<th style='background-color: #899EF0'>Lieferantenname</th>
+<th style='background-color: #899EF0'>Name2</th>
+<th style='background-color: #899EF0'>IntKz</th>
+<th style='background-color: #899EF0'>PLZ Neu</th>
+<th style='background-color: #899EF0'>Ort</th>
+<th style='background-color: #899EF0'>s</th>
 <th style='background-color: #899EF0'>Paid amount</th>
 <th style='background-color: #899EF0'>Payment status</th>
 <th style='background-color: #899EF0'>Payment commission</th>
@@ -53,249 +53,7 @@
 <th style='background-color: #FFFFFF'> </th>
 </tr>
 </thead>
-                      <tbody><tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200334</td>
-<td style='background-color: #92D050'>2022-02-14 00:00:00</td>
-<td style='background-color: #92D050'>V000118</td>
-<td style='background-color: #92D050'>15</td>
-<td style='background-color: #92D050'>756.288732</td>
-<td style='background-color: #92D050'>5041.92488</td>
-<td style='background-color: #92D050'>K003777</td>
-<td style='background-color: #92D050'>Almacenes Siman S.A. de C.V.</td>
-<td style='background-color: #92D050'>N°de Reg. Fiscal: 0614-170266-001-3</td>
-<td style='background-color: #92D050'>ESA</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>San Salvador</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200335</td>
-<td style='background-color: #92D050'>2022-02-14 00:00:00</td>
-<td style='background-color: #92D050'>V000118</td>
-<td style='background-color: #92D050'>15</td>
-<td style='background-color: #92D050'>587.9861031</td>
-<td style='background-color: #92D050'>3919.907354</td>
-<td style='background-color: #92D050'>K003778</td>
-<td style='background-color: #92D050'>Almacenes SIMAN, S.A.</td>
-<td style='background-color: #92D050'>RTU:6091725</td>
-<td style='background-color: #92D050'>GT</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>Guatemala City</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200341</td>
-<td style='background-color: #92D050'>2022-02-14 00:00:00</td>
-<td style='background-color: #92D050'>V000118</td>
-<td style='background-color: #92D050'>15</td>
-<td style='background-color: #92D050'>57.03735</td>
-<td style='background-color: #92D050'>380.249</td>
-<td style='background-color: #92D050'>K003777</td>
-<td style='background-color: #92D050'>Almacenes Siman S.A. de C.V.</td>
-<td style='background-color: #92D050'>N°de Reg. Fiscal: 0614-170266-001-3</td>
-<td style='background-color: #92D050'>ESA</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>San Salvador</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200342</td>
-<td style='background-color: #92D050'>2022-02-14 00:00:00</td>
-<td style='background-color: #92D050'>V000118</td>
-<td style='background-color: #92D050'>15</td>
-<td style='background-color: #92D050'>46.42575</td>
-<td style='background-color: #92D050'>309.505</td>
-<td style='background-color: #92D050'>K003778</td>
-<td style='background-color: #92D050'>Almacenes SIMAN, S.A.</td>
-<td style='background-color: #92D050'>RTU:6091725</td>
-<td style='background-color: #92D050'>GT</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>Guatemala City</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200695</td>
-<td style='background-color: #92D050'>2022-04-05 00:00:00</td>
-<td style='background-color: #92D050'>V000118</td>
-<td style='background-color: #92D050'>15</td>
-<td style='background-color: #92D050'>1003.03586955</td>
-<td style='background-color: #92D050'>6686.905797</td>
-<td style='background-color: #92D050'>K003777</td>
-<td style='background-color: #92D050'>Almacenes Siman S.A. de C.V.</td>
-<td style='background-color: #92D050'>N°de Reg. Fiscal: 0614-170266-001-3</td>
-<td style='background-color: #92D050'>ESA</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>San Salvador</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4200701</td>
-<td style='background-color: #92D050'>2022-04-06 00:00:00</td>
-<td style='background-color: #92D050'>V000118</td>
-<td style='background-color: #92D050'>15</td>
-<td style='background-color: #92D050'>54.18765</td>
-<td style='background-color: #92D050'>361.251</td>
-<td style='background-color: #92D050'>K003777</td>
-<td style='background-color: #92D050'>Almacenes Siman S.A. de C.V.</td>
-<td style='background-color: #92D050'>N°de Reg. Fiscal: 0614-170266-001-3</td>
-<td style='background-color: #92D050'>ESA</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>San Salvador</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'>RE-4201188</td>
-<td style='background-color: #FFF300'>2022-06-08 00:00:00</td>
-<td style='background-color: #FFF300'>V000118</td>
-<td style='background-color: #FFF300'>15</td>
-<td style='background-color: #FFF300'>-2.326104</td>
-<td style='background-color: #FFF300'>-15.50736</td>
-<td style='background-color: #FFF300'>K003777</td>
-<td style='background-color: #FFF300'>Almacenes Siman S.A. de C.V.</td>
-<td style='background-color: #FFF300'>N°de Reg. Fiscal: 0614-170266-001-3</td>
-<td style='background-color: #FFF300'>ESA</td>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'>San Salvador</td>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'>CREDIT NOTE</td>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>RE-4202006</td>
-<td style='background-color: #00FF00'>2022-09-26 00:00:00</td>
-<td style='background-color: #00FF00'>V000118</td>
-<td style='background-color: #00FF00'>15</td>
-<td style='background-color: #00FF00'>1300.26</td>
-<td style='background-color: #00FF00'>8668.4</td>
-<td style='background-color: #00FF00'>K003777</td>
-<td style='background-color: #00FF00'>Almacenes Siman S.A. de C.V.</td>
-<td style='background-color: #00FF00'>N°de Reg. Fiscal: 0614-170266-001-3</td>
-<td style='background-color: #00FF00'>ESA</td>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>San Salvador</td>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>5123.71</td>
-<td style='background-color: #00FF00'>PAID</td>
-<td style='background-color: #00FF00'>768.6</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>01.02.2023,  5123.7</td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4202007</td>
-<td style='background-color: #92D050'>2022-09-26 00:00:00</td>
-<td style='background-color: #92D050'>V000118</td>
-<td style='background-color: #92D050'>15</td>
-<td style='background-color: #92D050'>940.3215</td>
-<td style='background-color: #92D050'>6268.81</td>
-<td style='background-color: #92D050'>K003778</td>
-<td style='background-color: #92D050'>Almacenes SIMAN, S.A.</td>
-<td style='background-color: #92D050'>RTU:6091725</td>
-<td style='background-color: #92D050'>GT</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>Guatemala City</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4202027</td>
-<td style='background-color: #92D050'>2022-09-28 00:00:00</td>
-<td style='background-color: #92D050'>V000118</td>
-<td style='background-color: #92D050'>15</td>
-<td style='background-color: #92D050'>67.5</td>
-<td style='background-color: #92D050'>450</td>
-<td style='background-color: #92D050'>K003777</td>
-<td style='background-color: #92D050'>Almacenes Siman S.A. de C.V.</td>
-<td style='background-color: #92D050'>N°de Reg. Fiscal: 0614-170266-001-3</td>
-<td style='background-color: #92D050'>ESA</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>San Salvador</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4202028</td>
-<td style='background-color: #92D050'>2022-09-28 00:00:00</td>
-<td style='background-color: #92D050'>V000118</td>
-<td style='background-color: #92D050'>15</td>
-<td style='background-color: #92D050'>55.5</td>
-<td style='background-color: #92D050'>370</td>
-<td style='background-color: #92D050'>K003778</td>
-<td style='background-color: #92D050'>Almacenes SIMAN, S.A.</td>
-<td style='background-color: #92D050'>RTU:6091725</td>
-<td style='background-color: #92D050'>GT</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>Guatemala City</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
+                          <tbody><tr>
 <td style='background-color: #00FF00'> </td>
 <td style='background-color: #00FF00'>RE-4300197</td>
 <td style='background-color: #00FF00'>2023-02-13 00:00:00</td>
@@ -312,7 +70,7 @@
 <td style='background-color: #00FF00'> </td>
 <td style='background-color: #00FF00'>385</td>
 <td style='background-color: #00FF00'>PAID</td>
-<td style='background-color: #00FF00'>57.8</td>
+<td style='background-color: #FFFFFF'>57.8</td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'>24.04.2023,  349.5</td>
 <td style='background-color: #FFFFFF'>24.04.2023,  35.5</td>
@@ -334,10 +92,362 @@
 <td style='background-color: #00FF00'> </td>
 <td style='background-color: #00FF00'>250</td>
 <td style='background-color: #00FF00'>PAID</td>
-<td style='background-color: #00FF00'>37.5</td>
+<td style='background-color: #FFFFFF'>37.5</td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'>28.04.2023,  216.2</td>
 <td style='background-color: #FFFFFF'>30.04.2023,  33.8</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300199</td>
+<td style='background-color: #00FF00'>2023-02-13 00:00:00</td>
+<td style='background-color: #00FF00'>V000118</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>33</td>
+<td style='background-color: #00FF00'>220</td>
+<td style='background-color: #00FF00'>K003779</td>
+<td style='background-color: #00FF00'>Almacenes SIMAN S.A.</td>
+<td style='background-color: #00FF00'>No. de Registro J031000001707</td>
+<td style='background-color: #00FF00'>NI</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>Sto. Domingo Managua</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>220</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>33</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>30.06.2023,  202.7</td>
+<td style='background-color: #FFFFFF'>30.06.2023,  17.3</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300200</td>
+<td style='background-color: #00FF00'>2023-02-13 00:00:00</td>
+<td style='background-color: #00FF00'>V000118</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>24</td>
+<td style='background-color: #00FF00'>160</td>
+<td style='background-color: #00FF00'>K003780</td>
+<td style='background-color: #00FF00'>Almacenes SIMAN S.A:</td>
+<td style='background-color: #00FF00'>No. de Registro: 3-101-479526-18</td>
+<td style='background-color: #00FF00'>CR</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>San José, Escazú</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>160</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>24</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>23.06.2023,  147.3</td>
+<td style='background-color: #FFFFFF'>23.06.2023,  12.7</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300201</td>
+<td style='background-color: #00FF00'>2023-02-13 00:00:00</td>
+<td style='background-color: #00FF00'>V000118</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>326.8725</td>
+<td style='background-color: #00FF00'>2179.15</td>
+<td style='background-color: #00FF00'>K003778</td>
+<td style='background-color: #00FF00'>Almacenes SIMAN, S.A.</td>
+<td style='background-color: #00FF00'>RTU:6091725</td>
+<td style='background-color: #00FF00'>GT</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>Guatemala City</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>2179.15</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>326.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>10.05.2023,  1989.0</td>
+<td style='background-color: #FFFFFF'>10.05.2023,  190.2</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300202</td>
+<td style='background-color: #00FF00'>2023-02-13 00:00:00</td>
+<td style='background-color: #00FF00'>V000118</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>1169.1405</td>
+<td style='background-color: #00FF00'>7794.27</td>
+<td style='background-color: #00FF00'>K003777</td>
+<td style='background-color: #00FF00'>Almacenes Siman S.A. de C.V.</td>
+<td style='background-color: #00FF00'>N°de Reg. Fiscal: 0614-170266-001-3</td>
+<td style='background-color: #00FF00'>ESA</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>San Salvador</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>7794.27</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>1169.1</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>19.05.2023,  7220.3</td>
+<td style='background-color: #FFFFFF'>19.05.2023,  574.0</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300203</td>
+<td style='background-color: #00FF00'>2023-02-13 00:00:00</td>
+<td style='background-color: #00FF00'>V000118</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>215.3715</td>
+<td style='background-color: #00FF00'>1435.81</td>
+<td style='background-color: #00FF00'>K003780</td>
+<td style='background-color: #00FF00'>Almacenes SIMAN S.A:</td>
+<td style='background-color: #00FF00'>No. de Registro: 3-101-479526-18</td>
+<td style='background-color: #00FF00'>CR</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>San José, Escazú</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1435.81</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>215.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>23.06.2023,  1322.0</td>
+<td style='background-color: #FFFFFF'>23.06.2023,  113.8</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300204</td>
+<td style='background-color: #00FF00'>2023-02-13 00:00:00</td>
+<td style='background-color: #00FF00'>V000118</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>334.602</td>
+<td style='background-color: #00FF00'>2230.68</td>
+<td style='background-color: #00FF00'>K003779</td>
+<td style='background-color: #00FF00'>Almacenes SIMAN S.A.</td>
+<td style='background-color: #00FF00'>No. de Registro J031000001707</td>
+<td style='background-color: #00FF00'>NI</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>Sto. Domingo Managua</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>2230.68</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>334.6</td>
+<td style='background-color: #FFFFFF'>30.06.2023,  0</td>
+<td style='background-color: #FFFFFF'>30.06.2023,  2055.2</td>
+<td style='background-color: #FFFFFF'>30.06.2023,  175.5</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300442</td>
+<td style='background-color: #00FF00'>2023-03-29 00:00:00</td>
+<td style='background-color: #00FF00'>V000118</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>60.768</td>
+<td style='background-color: #00FF00'>405.12</td>
+<td style='background-color: #00FF00'>K003779</td>
+<td style='background-color: #00FF00'>Almacenes SIMAN S.A.</td>
+<td style='background-color: #00FF00'>No. de Registro J031000001707</td>
+<td style='background-color: #00FF00'>NI</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>Sto. Domingo Managua</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>405.12</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>60.8</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>03.08.2023,  34.6</td>
+<td style='background-color: #FFFFFF'>03.08.2023,  370.6</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300453</td>
+<td style='background-color: #00FF00'>2023-03-30 00:00:00</td>
+<td style='background-color: #00FF00'>V000118</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>1764.6105</td>
+<td style='background-color: #00FF00'>11764.07</td>
+<td style='background-color: #00FF00'>K003777</td>
+<td style='background-color: #00FF00'>Almacenes Siman S.A. de C.V.</td>
+<td style='background-color: #00FF00'>N°de Reg. Fiscal: 0614-170266-001-3</td>
+<td style='background-color: #00FF00'>ESA</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>San Salvador</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>11764.07</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>1764.6</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>14.07.2023,  10484.0</td>
+<td style='background-color: #FFFFFF'>14.07.2023,  1280.1</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300454</td>
+<td style='background-color: #00FF00'>2023-03-30 00:00:00</td>
+<td style='background-color: #00FF00'>V000118</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>511.8975</td>
+<td style='background-color: #00FF00'>3412.65</td>
+<td style='background-color: #00FF00'>K003778</td>
+<td style='background-color: #00FF00'>Almacenes SIMAN, S.A.</td>
+<td style='background-color: #00FF00'>RTU:6091725</td>
+<td style='background-color: #00FF00'>GT</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>Guatemala City</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>3412.65</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #FFFFFF'>511.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>30.06.2023,  3144.1</td>
+<td style='background-color: #FFFFFF'>30.06.2023,  268.5</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300455</td>
+<td style='background-color: #00FF00'>2023-03-30 00:00:00</td>
+<td style='background-color: #00FF00'>V000118</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>41.1</td>
+<td style='background-color: #00FF00'>274</td>
+<td style='background-color: #00FF00'>K003778</td>
+<td style='background-color: #00FF00'>Almacenes SIMAN, S.A.</td>
+<td style='background-color: #00FF00'>RTU:6091725</td>
+<td style='background-color: #00FF00'>GT</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>Guatemala City</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>274</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>41.1</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>06.06.2023,  241.8</td>
+<td style='background-color: #FFFFFF'>30.06.2023,  32.2</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300457</td>
+<td style='background-color: #00FF00'>2023-03-30 00:00:00</td>
+<td style='background-color: #00FF00'>V000118</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>77.25</td>
+<td style='background-color: #00FF00'>515</td>
+<td style='background-color: #00FF00'>K003777</td>
+<td style='background-color: #00FF00'>Almacenes Siman S.A. de C.V.</td>
+<td style='background-color: #00FF00'>N°de Reg. Fiscal: 0614-170266-001-3</td>
+<td style='background-color: #00FF00'>ESA</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>San Salvador</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>515</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>77.2</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>23.06.2023,  474.2</td>
+<td style='background-color: #FFFFFF'>23.06.2023,  40.8</td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>RE-4300458</td>
+<td style='background-color: #FFFFFF'>2023-03-30 00:00:00</td>
+<td style='background-color: #FFFFFF'>V000118</td>
+<td style='background-color: #FFFFFF'>15</td>
+<td style='background-color: #FFFFFF'>16.8</td>
+<td style='background-color: #FFFFFF'>112</td>
+<td style='background-color: #FFFFFF'>K003779</td>
+<td style='background-color: #FFFFFF'>Almacenes SIMAN S.A.</td>
+<td style='background-color: #FFFFFF'>No. de Registro J031000001707</td>
+<td style='background-color: #FFFFFF'>NI</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>Sto. Domingo Managua</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'>UNPAID</td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>RE-4301680</td>
+<td style='background-color: #FFFFFF'>2023-09-29 00:00:00</td>
+<td style='background-color: #FFFFFF'>V000118</td>
+<td style='background-color: #FFFFFF'>15</td>
+<td style='background-color: #FFFFFF'>379.419</td>
+<td style='background-color: #FFFFFF'>2529.46</td>
+<td style='background-color: #FFFFFF'>K003777</td>
+<td style='background-color: #FFFFFF'>Almacenes Siman S.A. de C.V.</td>
+<td style='background-color: #FFFFFF'>N°de Reg. Fiscal: 0614-170266-001-3</td>
+<td style='background-color: #FFFFFF'>ESA</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>San Salvador</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>RE-4301681</td>
+<td style='background-color: #FFFFFF'>2023-09-29 00:00:00</td>
+<td style='background-color: #FFFFFF'>V000118</td>
+<td style='background-color: #FFFFFF'>15</td>
+<td style='background-color: #FFFFFF'>334.53</td>
+<td style='background-color: #FFFFFF'>2230.2</td>
+<td style='background-color: #FFFFFF'>K003778</td>
+<td style='background-color: #FFFFFF'>Almacenes SIMAN, S.A.</td>
+<td style='background-color: #FFFFFF'>RTU:6091725</td>
+<td style='background-color: #FFFFFF'>GT</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>Guatemala City</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>RE-4301682</td>
+<td style='background-color: #FFFFFF'>2023-09-29 00:00:00</td>
+<td style='background-color: #FFFFFF'>V000118</td>
+<td style='background-color: #FFFFFF'>15</td>
+<td style='background-color: #FFFFFF'>223.02</td>
+<td style='background-color: #FFFFFF'>1486.8</td>
+<td style='background-color: #FFFFFF'>K003780</td>
+<td style='background-color: #FFFFFF'>Almacenes SIMAN S.A:</td>
+<td style='background-color: #FFFFFF'>No. de Registro: 3-101-479526-18</td>
+<td style='background-color: #FFFFFF'>CR</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>San José, Escazú</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>RE-4301683</td>
+<td style='background-color: #FFFFFF'>2023-09-29 00:00:00</td>
+<td style='background-color: #FFFFFF'>V000118</td>
+<td style='background-color: #FFFFFF'>15</td>
+<td style='background-color: #FFFFFF'>111.51</td>
+<td style='background-color: #FFFFFF'>743.4</td>
+<td style='background-color: #FFFFFF'>K003779</td>
+<td style='background-color: #FFFFFF'>Almacenes SIMAN S.A.</td>
+<td style='background-color: #FFFFFF'>No. de Registro J031000001707</td>
+<td style='background-color: #FFFFFF'>NI</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>Sto. Domingo Managua</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
 </tr>
 <tr>
 <td style='background-color: #FFFFFF'> </td>
@@ -345,8 +455,6 @@
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>All requested: </td>
-<td style='background-color: #FFF300'>63579.2</td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
@@ -354,13 +462,15 @@
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #68BF9D'>5758.71</td>
 <td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #68BF9D'>863.9</td>
+<td style='background-color: #FFFFFF'>All paid amount</td>
+<td style='background-color: #90EE90'>31025.9</td>
+<td style='background-color: #FFFFFF'>All comissions</td>
+<td style='background-color: #90EE90'>4653.88</td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
 </tr>
  </tbody>
-                </table>
-                {% endblock %}
+                    </table>
+                    {% endblock %}

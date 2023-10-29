@@ -1,0 +1,1004 @@
+{%extends 'base.html'%}
+                            {% block content %}     
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--<link rel="stylesheet" type="text/css" href="normas.css">-->
+    <style>
+        body{
+            background-color: #d6e1f8;
+    
+        }
+        th, td {
+            border: 1px solid #ccc;
+    
+            text-align: center;
+        }
+    
+        table {
+    
+            border-collapse: collapse !important; /* optional: collapse the table borders */
+        }
+    
+        table tr {
+            background-color: #8BC34A !important; /* Set background color of all rows */
+        }
+    
+        table tr:hover td {
+            background-color: #2196F3 !important; /* Set background color of cells when hovered */
+        }
+    
+    </style>
+                     <table border="1" class="dataframe" style="width:100%;">
+                                 <thead>
+                                     <tr style="text-align: right;">
+<th style='background-color: #899EF0'>RK</th>
+<th style='background-color: #899EF0'>GF-Nr</th>
+<th style='background-color: #899EF0'>Datum</th>
+<th style='background-color: #899EF0'>Vertreter</th>
+<th style='background-color: #899EF0'>ProvProz</th>
+<th style='background-color: #899EF0'>Provision</th>
+<th style='background-color: #899EF0'>Summe</th>
+<th style='background-color: #899EF0'>Lieferant</th>
+<th style='background-color: #899EF0'>Lieferantenname</th>
+<th style='background-color: #899EF0'>Name2</th>
+<th style='background-color: #899EF0'>IntKz</th>
+<th style='background-color: #899EF0'>PLZ Neu</th>
+<th style='background-color: #899EF0'>Ort</th>
+<th style='background-color: #899EF0'>s</th>
+<th style='background-color: #899EF0'>Paid amount</th>
+<th style='background-color: #899EF0'>Payment status</th>
+<th style='background-color: #899EF0'>Payment commission</th>
+<th style='background-color: #899EF0'>Payments with Rest</th>
+<th style='background-color: #899EF0'>Payments Dates</th>
+<th style='background-color: #FFFFFF'> </th>
+</tr>
+</thead>
+                          <tbody><tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300006</td>
+<td style='background-color: #00FF00'>2023-01-09 00:00:00</td>
+<td style='background-color: #00FF00'>V000148</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>78.876</td>
+<td style='background-color: #00FF00'>563.4</td>
+<td style='background-color: #00FF00'>K005882</td>
+<td style='background-color: #00FF00'>Lauro e Rosanna SNC</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>40017</td>
+<td style='background-color: #00FF00'>San Giovanni in Persiceto (BO)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>563.4</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>78.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>28.02.2023,  281.7</td>
+<td style='background-color: #FFFFFF'>30.03.2023,  281.7</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300013</td>
+<td style='background-color: #00FF00'>2023-01-10 00:00:00</td>
+<td style='background-color: #00FF00'>V000148</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>2.1504</td>
+<td style='background-color: #00FF00'>15.36</td>
+<td style='background-color: #00FF00'>K005882</td>
+<td style='background-color: #00FF00'>Lauro e Rosanna SNC</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>40017</td>
+<td style='background-color: #00FF00'>San Giovanni in Persiceto (BO)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>15.36</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>2.2</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>28.02.2023,  15.4</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300025</td>
+<td style='background-color: #00FF00'>2023-01-11 00:00:00</td>
+<td style='background-color: #00FF00'>V000148</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>326.5262</td>
+<td style='background-color: #00FF00'>2332.33</td>
+<td style='background-color: #00FF00'>K005302</td>
+<td style='background-color: #00FF00'>Crystal Boutique Castello</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>42121</td>
+<td style='background-color: #00FF00'>Reggio Emilia</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>2332.33</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>326.5</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>17.01.2023,  2332.3</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300074</td>
+<td style='background-color: #00FF00'>2023-01-19 00:00:00</td>
+<td style='background-color: #00FF00'>V000148</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>148.7738</td>
+<td style='background-color: #00FF00'>1062.67</td>
+<td style='background-color: #00FF00'>K003549</td>
+<td style='background-color: #00FF00'>VASCO DONDI SRL</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>41100</td>
+<td style='background-color: #00FF00'>Modena (MO)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1062.67</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>148.8</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>28.02.2023,  1062.7</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300096</td>
+<td style='background-color: #00FF00'>2023-01-24 00:00:00</td>
+<td style='background-color: #00FF00'>V000148</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>51.345</td>
+<td style='background-color: #00FF00'>366.75</td>
+<td style='background-color: #00FF00'>K005882</td>
+<td style='background-color: #00FF00'>Lauro e Rosanna SNC</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>40017</td>
+<td style='background-color: #00FF00'>San Giovanni in Persiceto (BO)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>366.75</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>51.3</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>28.02.2023,  183.4</td>
+<td style='background-color: #FFFFFF'>30.03.2023,  183.4</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300126</td>
+<td style='background-color: #00FF00'>2023-01-30 00:00:00</td>
+<td style='background-color: #00FF00'>V000148</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>200.1454</td>
+<td style='background-color: #00FF00'>1429.61</td>
+<td style='background-color: #00FF00'>K005302</td>
+<td style='background-color: #00FF00'>Crystal Boutique Castello</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>42121</td>
+<td style='background-color: #00FF00'>Reggio Emilia</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1429.61</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>200.1</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>07.02.2023,  1429.6</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300208</td>
+<td style='background-color: #00FF00'>2023-02-14 00:00:00</td>
+<td style='background-color: #00FF00'>V000148</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>3.682</td>
+<td style='background-color: #00FF00'>26.3</td>
+<td style='background-color: #00FF00'>K005882</td>
+<td style='background-color: #00FF00'>Lauro e Rosanna SNC</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>40017</td>
+<td style='background-color: #00FF00'>San Giovanni in Persiceto (BO)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>26.3</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>3.7</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>30.03.2023,  26.3</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300266</td>
+<td style='background-color: #00FF00'>2023-02-23 00:00:00</td>
+<td style='background-color: #00FF00'>V000148</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>485.296</td>
+<td style='background-color: #00FF00'>3466.4</td>
+<td style='background-color: #00FF00'>K005302</td>
+<td style='background-color: #00FF00'>Crystal Boutique Castello</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>42121</td>
+<td style='background-color: #00FF00'>Reggio Emilia</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>3466.4</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>485.3</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>01.03.2023,  3466.4</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300341</td>
+<td style='background-color: #00FF00'>2023-03-08 00:00:00</td>
+<td style='background-color: #00FF00'>V000148</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>110.25</td>
+<td style='background-color: #00FF00'>787.5</td>
+<td style='background-color: #00FF00'>K003549</td>
+<td style='background-color: #00FF00'>VASCO DONDI SRL</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>41100</td>
+<td style='background-color: #00FF00'>Modena (MO)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>787.5</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>110.2</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>02.05.2023,  787.5</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300345</td>
+<td style='background-color: #00FF00'>2023-03-09 00:00:00</td>
+<td style='background-color: #00FF00'>V000148</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>23.0188</td>
+<td style='background-color: #00FF00'>164.42</td>
+<td style='background-color: #00FF00'>K005882</td>
+<td style='background-color: #00FF00'>Lauro e Rosanna SNC</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>40017</td>
+<td style='background-color: #00FF00'>San Giovanni in Persiceto (BO)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>164.42</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>23</td>
+<td style='background-color: #FFFFFF'>02.05.2023,  4</td>
+<td style='background-color: #FFFFFF'>02.05.2023,  168.7</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>RE-4300360</td>
+<td style='background-color: #FFFFFF'>2023-03-13 00:00:00</td>
+<td style='background-color: #FFFFFF'>V000148</td>
+<td style='background-color: #FFFFFF'>14</td>
+<td style='background-color: #FFFFFF'>471.926</td>
+<td style='background-color: #FFFFFF'>3370.9</td>
+<td style='background-color: #FFFFFF'>K006041</td>
+<td style='background-color: #FFFFFF'>Donatella di Franzoni Paola</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>IT</td>
+<td style='background-color: #FFFFFF'>42028</td>
+<td style='background-color: #FFFFFF'>POVIGLIO (RE)</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300404</td>
+<td style='background-color: #00FF00'>2023-03-21 00:00:00</td>
+<td style='background-color: #00FF00'>V000148</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>385.2786</td>
+<td style='background-color: #00FF00'>2751.99</td>
+<td style='background-color: #00FF00'>K005302</td>
+<td style='background-color: #00FF00'>Crystal Boutique Castello</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>42121</td>
+<td style='background-color: #00FF00'>Reggio Emilia</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>2751.99</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>385.3</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>22.02.2023,  2752.0</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300555</td>
+<td style='background-color: #00FF00'>2023-04-14 00:00:00</td>
+<td style='background-color: #00FF00'>V000148</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>2.31</td>
+<td style='background-color: #00FF00'>16.5</td>
+<td style='background-color: #00FF00'>K005882</td>
+<td style='background-color: #00FF00'>Lauro e Rosanna SNC</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>40017</td>
+<td style='background-color: #00FF00'>San Giovanni in Persiceto (BO)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>16.5</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>2.3</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.05.2023,  16.5</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300596</td>
+<td style='background-color: #00FF00'>2023-04-19 00:00:00</td>
+<td style='background-color: #00FF00'>V000148</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>20.006</td>
+<td style='background-color: #00FF00'>142.9</td>
+<td style='background-color: #00FF00'>K003549</td>
+<td style='background-color: #00FF00'>VASCO DONDI SRL</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>41100</td>
+<td style='background-color: #00FF00'>Modena (MO)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>142.9</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>20</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.05.2023,  142.9</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300645</td>
+<td style='background-color: #00FF00'>2023-04-26 00:00:00</td>
+<td style='background-color: #00FF00'>V000148</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>213.6442</td>
+<td style='background-color: #00FF00'>1526.03</td>
+<td style='background-color: #00FF00'>K005302</td>
+<td style='background-color: #00FF00'>Crystal Boutique Castello</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>42121</td>
+<td style='background-color: #00FF00'>Reggio Emilia</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1526.03</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>213.6</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>05.05.2023,  1526.0</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300668</td>
+<td style='background-color: #00FF00'>2023-04-28 00:00:00</td>
+<td style='background-color: #00FF00'>V000148</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>76.356</td>
+<td style='background-color: #00FF00'>545.4</td>
+<td style='background-color: #00FF00'>K004578</td>
+<td style='background-color: #00FF00'>Ardesia Snc Di Andrea Fiordaliso</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>29121</td>
+<td style='background-color: #00FF00'>Piacenza</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>545.4</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>76.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>04.07.2023,  545.4</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300703</td>
+<td style='background-color: #00FF00'>2023-05-05 00:00:00</td>
+<td style='background-color: #00FF00'>V000148</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>91.336</td>
+<td style='background-color: #00FF00'>652.4</td>
+<td style='background-color: #00FF00'>K005882</td>
+<td style='background-color: #00FF00'>Lauro e Rosanna SNC</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>40017</td>
+<td style='background-color: #00FF00'>San Giovanni in Persiceto (BO)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>652.4</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>91.3</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>30.06.2023,  326.2</td>
+<td style='background-color: #FFFFFF'>31.07.2023,  326.2</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300724</td>
+<td style='background-color: #00FF00'>2023-05-09 00:00:00</td>
+<td style='background-color: #00FF00'>V000148</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>66.5686</td>
+<td style='background-color: #00FF00'>475.49</td>
+<td style='background-color: #00FF00'>K003549</td>
+<td style='background-color: #00FF00'>VASCO DONDI SRL</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>41100</td>
+<td style='background-color: #00FF00'>Modena (MO)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>475.49</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>66.6</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>30.06.2023,  475.5</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300829</td>
+<td style='background-color: #00FF00'>2023-05-23 00:00:00</td>
+<td style='background-color: #00FF00'>V000148</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>178.941</td>
+<td style='background-color: #00FF00'>1278.15</td>
+<td style='background-color: #00FF00'>K005302</td>
+<td style='background-color: #00FF00'>Crystal Boutique Castello</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>42121</td>
+<td style='background-color: #00FF00'>Reggio Emilia</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1278.15</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>178.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>30.05.2023,  1278.2</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300893</td>
+<td style='background-color: #00FF00'>2023-05-31 00:00:00</td>
+<td style='background-color: #00FF00'>V000148</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>49.714</td>
+<td style='background-color: #00FF00'>355.1</td>
+<td style='background-color: #00FF00'>K003549</td>
+<td style='background-color: #00FF00'>VASCO DONDI SRL</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>41100</td>
+<td style='background-color: #00FF00'>Modena (MO)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>355.1</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>49.7</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>30.06.2023,  355.1</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300965</td>
+<td style='background-color: #00FF00'>2023-06-09 00:00:00</td>
+<td style='background-color: #00FF00'>V000148</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>14.042</td>
+<td style='background-color: #00FF00'>100.3</td>
+<td style='background-color: #00FF00'>K005882</td>
+<td style='background-color: #00FF00'>Lauro e Rosanna SNC</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>40017</td>
+<td style='background-color: #00FF00'>San Giovanni in Persiceto (BO)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>100.3</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>14</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.07.2023,  100.3</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301040</td>
+<td style='background-color: #00FF00'>2023-06-19 00:00:00</td>
+<td style='background-color: #00FF00'>V000148</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>77.84</td>
+<td style='background-color: #00FF00'>556</td>
+<td style='background-color: #00FF00'>K005882</td>
+<td style='background-color: #00FF00'>Lauro e Rosanna SNC</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>40017</td>
+<td style='background-color: #00FF00'>San Giovanni in Persiceto (BO)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>556</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>77.8</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.07.2023,  278.0</td>
+<td style='background-color: #FFFFFF'>31.08.2023,  278.0</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301043</td>
+<td style='background-color: #00FF00'>2023-06-19 00:00:00</td>
+<td style='background-color: #00FF00'>V000148</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>60.536</td>
+<td style='background-color: #00FF00'>432.4</td>
+<td style='background-color: #00FF00'>K003549</td>
+<td style='background-color: #00FF00'>VASCO DONDI SRL</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>41100</td>
+<td style='background-color: #00FF00'>Modena (MO)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>432.4</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>60.5</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.07.2023,  432.4</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>RE-4301073</td>
+<td style='background-color: #FFFFFF'>2023-06-23 00:00:00</td>
+<td style='background-color: #FFFFFF'>V000148</td>
+<td style='background-color: #FFFFFF'>14</td>
+<td style='background-color: #FFFFFF'>201.9934</td>
+<td style='background-color: #FFFFFF'>1442.81</td>
+<td style='background-color: #FFFFFF'>K005302</td>
+<td style='background-color: #FFFFFF'>Crystal Boutique Castello</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>IT</td>
+<td style='background-color: #FFFFFF'>42121</td>
+<td style='background-color: #FFFFFF'>Reggio Emilia</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'>UNPAID</td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301111</td>
+<td style='background-color: #00FF00'>2023-06-28 00:00:00</td>
+<td style='background-color: #00FF00'>V000148</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>25.858</td>
+<td style='background-color: #00FF00'>184.7</td>
+<td style='background-color: #00FF00'>K005882</td>
+<td style='background-color: #00FF00'>Lauro e Rosanna SNC</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>40017</td>
+<td style='background-color: #00FF00'>San Giovanni in Persiceto (BO)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>184.7</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>25.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.07.2023,  184.7</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301127</td>
+<td style='background-color: #00FF00'>2023-06-28 00:00:00</td>
+<td style='background-color: #00FF00'>V000148</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>136.15</td>
+<td style='background-color: #00FF00'>972.5</td>
+<td style='background-color: #00FF00'>K003549</td>
+<td style='background-color: #00FF00'>VASCO DONDI SRL</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>41100</td>
+<td style='background-color: #00FF00'>Modena (MO)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>972.5</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>136.2</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.07.2023,  972.5</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301167</td>
+<td style='background-color: #00FF00'>2023-07-04 00:00:00</td>
+<td style='background-color: #00FF00'>V000148</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>58.0062</td>
+<td style='background-color: #00FF00'>414.33</td>
+<td style='background-color: #00FF00'>K005302</td>
+<td style='background-color: #00FF00'>Crystal Boutique Castello</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>42121</td>
+<td style='background-color: #00FF00'>Reggio Emilia</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>414.33</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>58</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>11.07.2023,  414.3</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301248</td>
+<td style='background-color: #00FF00'>2023-07-18 00:00:00</td>
+<td style='background-color: #00FF00'>V000148</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>2.212</td>
+<td style='background-color: #00FF00'>15.8</td>
+<td style='background-color: #00FF00'>K005882</td>
+<td style='background-color: #00FF00'>Lauro e Rosanna SNC</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>40017</td>
+<td style='background-color: #00FF00'>San Giovanni in Persiceto (BO)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>15.8</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>2.2</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.08.2023,  15.8</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301263</td>
+<td style='background-color: #00FF00'>2023-07-20 00:00:00</td>
+<td style='background-color: #00FF00'>V000148</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>55.4568</td>
+<td style='background-color: #00FF00'>396.12</td>
+<td style='background-color: #00FF00'>K005882</td>
+<td style='background-color: #00FF00'>Lauro e Rosanna SNC</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>40017</td>
+<td style='background-color: #00FF00'>San Giovanni in Persiceto (BO)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>198.06</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #FFFFFF'>27.7</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.08.2023,  198.1</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301293</td>
+<td style='background-color: #00FF00'>2023-07-26 00:00:00</td>
+<td style='background-color: #00FF00'>V000148</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>627.9504</td>
+<td style='background-color: #00FF00'>4485.36</td>
+<td style='background-color: #00FF00'>K005302</td>
+<td style='background-color: #00FF00'>Crystal Boutique Castello</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>42121</td>
+<td style='background-color: #00FF00'>Reggio Emilia</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>4485.36</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>628</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>04.08.2023,  4485.4</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301390</td>
+<td style='background-color: #00FF00'>2023-08-10 00:00:00</td>
+<td style='background-color: #00FF00'>V000148</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>106.3174</td>
+<td style='background-color: #00FF00'>759.41</td>
+<td style='background-color: #00FF00'>K005302</td>
+<td style='background-color: #00FF00'>Crystal Boutique Castello</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>42121</td>
+<td style='background-color: #00FF00'>Reggio Emilia</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>34.72</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #FFFFFF'>4.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>21.08.2023,  34.7</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301392</td>
+<td style='background-color: #FFF300'>2023-08-11 00:00:00</td>
+<td style='background-color: #FFF300'>V000148</td>
+<td style='background-color: #FFF300'>14</td>
+<td style='background-color: #FFF300'>-101.4566</td>
+<td style='background-color: #FFF300'>-724.69</td>
+<td style='background-color: #FFF300'>K005302</td>
+<td style='background-color: #FFF300'>Crystal Boutique Castello</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>42121</td>
+<td style='background-color: #FFF300'>Reggio Emilia</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301396</td>
+<td style='background-color: #00FF00'>2023-08-16 00:00:00</td>
+<td style='background-color: #00FF00'>V000148</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>86.4486</td>
+<td style='background-color: #00FF00'>617.49</td>
+<td style='background-color: #00FF00'>K005302</td>
+<td style='background-color: #00FF00'>Crystal Boutique Castello</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>42121</td>
+<td style='background-color: #00FF00'>Reggio Emilia</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>617.49</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>86.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>29.08.2023,  617.5</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301423</td>
+<td style='background-color: #00FF00'>2023-08-18 00:00:00</td>
+<td style='background-color: #00FF00'>V000148</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>40.0736</td>
+<td style='background-color: #00FF00'>286.24</td>
+<td style='background-color: #00FF00'>K005302</td>
+<td style='background-color: #00FF00'>Crystal Boutique Castello</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>42121</td>
+<td style='background-color: #00FF00'>Reggio Emilia</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>286.24</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>40.1</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>29.08.2023,  286.2</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>RE-4301497</td>
+<td style='background-color: #FFFFFF'>2023-09-05 00:00:00</td>
+<td style='background-color: #FFFFFF'>V000148</td>
+<td style='background-color: #FFFFFF'>14</td>
+<td style='background-color: #FFFFFF'>14.798</td>
+<td style='background-color: #FFFFFF'>105.7</td>
+<td style='background-color: #FFFFFF'>K005882</td>
+<td style='background-color: #FFFFFF'>Lauro e Rosanna SNC</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>IT</td>
+<td style='background-color: #FFFFFF'>40017</td>
+<td style='background-color: #FFFFFF'>San Giovanni in Persiceto (BO)</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301499</td>
+<td style='background-color: #00FF00'>2023-09-05 00:00:00</td>
+<td style='background-color: #00FF00'>V000148</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>33.5034</td>
+<td style='background-color: #00FF00'>239.31</td>
+<td style='background-color: #00FF00'>K005302</td>
+<td style='background-color: #00FF00'>Crystal Boutique Castello</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>42121</td>
+<td style='background-color: #00FF00'>Reggio Emilia</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>239.31</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>33.5</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>12.09.2023,  239.3</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>RE-4301541</td>
+<td style='background-color: #FFFFFF'>2023-09-12 00:00:00</td>
+<td style='background-color: #FFFFFF'>V000148</td>
+<td style='background-color: #FFFFFF'>14</td>
+<td style='background-color: #FFFFFF'>5.082</td>
+<td style='background-color: #FFFFFF'>36.3</td>
+<td style='background-color: #FFFFFF'>K005882</td>
+<td style='background-color: #FFFFFF'>Lauro e Rosanna SNC</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>IT</td>
+<td style='background-color: #FFFFFF'>40017</td>
+<td style='background-color: #FFFFFF'>San Giovanni in Persiceto (BO)</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>RE-4301552</td>
+<td style='background-color: #FFFFFF'>2023-09-13 00:00:00</td>
+<td style='background-color: #FFFFFF'>V000148</td>
+<td style='background-color: #FFFFFF'>14</td>
+<td style='background-color: #FFFFFF'>107.926</td>
+<td style='background-color: #FFFFFF'>770.9</td>
+<td style='background-color: #FFFFFF'>K005302</td>
+<td style='background-color: #FFFFFF'>Crystal Boutique Castello</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>IT</td>
+<td style='background-color: #FFFFFF'>42121</td>
+<td style='background-color: #FFFFFF'>Reggio Emilia</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'>UNPAID</td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>RE-4301569</td>
+<td style='background-color: #FFFFFF'>2023-09-18 00:00:00</td>
+<td style='background-color: #FFFFFF'>V000148</td>
+<td style='background-color: #FFFFFF'>14</td>
+<td style='background-color: #FFFFFF'>114.786</td>
+<td style='background-color: #FFFFFF'>819.9</td>
+<td style='background-color: #FFFFFF'>K003549</td>
+<td style='background-color: #FFFFFF'>VASCO DONDI SRL</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>IT</td>
+<td style='background-color: #FFFFFF'>41100</td>
+<td style='background-color: #FFFFFF'>Modena (MO)</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301575</td>
+<td style='background-color: #FFF300'>2023-09-19 00:00:00</td>
+<td style='background-color: #FFF300'>V000148</td>
+<td style='background-color: #FFF300'>14</td>
+<td style='background-color: #FFF300'>-89.334</td>
+<td style='background-color: #FFF300'>-638.1</td>
+<td style='background-color: #FFF300'>K006041</td>
+<td style='background-color: #FFF300'>Donatella di Franzoni Paola</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>42028</td>
+<td style='background-color: #FFF300'>POVIGLIO (RE)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301586</td>
+<td style='background-color: #00FF00'>2023-09-21 00:00:00</td>
+<td style='background-color: #00FF00'>V000148</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>212.4234</td>
+<td style='background-color: #00FF00'>1517.31</td>
+<td style='background-color: #00FF00'>K005302</td>
+<td style='background-color: #00FF00'>Crystal Boutique Castello</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>42121</td>
+<td style='background-color: #00FF00'>Reggio Emilia</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1517.31</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>212.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>29.09.2023,  1517.3</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>RE-4301598</td>
+<td style='background-color: #FFFFFF'>2023-09-25 00:00:00</td>
+<td style='background-color: #FFFFFF'>V000148</td>
+<td style='background-color: #FFFFFF'>14</td>
+<td style='background-color: #FFFFFF'>49.084</td>
+<td style='background-color: #FFFFFF'>350.6</td>
+<td style='background-color: #FFFFFF'>K005882</td>
+<td style='background-color: #FFFFFF'>Lauro e Rosanna SNC</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>IT</td>
+<td style='background-color: #FFFFFF'>40017</td>
+<td style='background-color: #FFFFFF'>San Giovanni in Persiceto (BO)</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>All paid amount</td>
+<td style='background-color: #90EE90'>28013.6</td>
+<td style='background-color: #FFFFFF'>All comissions</td>
+<td style='background-color: #90EE90'>3921.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+ </tbody>
+                    </table>
+                    {% endblock %}

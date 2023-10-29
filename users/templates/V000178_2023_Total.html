@@ -1,394 +1,65 @@
 {%extends 'base.html'%}
-                        {% block content %}
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<!--<link rel="stylesheet" type="text/css" href="normas.css">-->
-<style>
-    body{
-        background-color: #d6e1f8;
-         
-    }
-    th, td {
-        border: 1px solid #ccc;
-        
-        text-align: center;
-    }
-
-    table {
-   
-        border-collapse: collapse !important; /* optional: collapse the table borders */
-    }
-
-    table tr {
-        background-color: #8BC34A !important; /* Set background color of all rows */
-    }
-
-    table tr:hover td {
-        background-color: #2196F3 !important; /* Set background color of cells when hovered */
-    }
-
-</style>
-                 <table border="1" class="dataframe" style="width:100%;">
-                             <thead>
-                                 <tr style="text-align: right;">
-<th style='background-color: #B0CBF0'>RK</th>
-<th style='background-color: #B0CBF0'>GF-Nr</th>
-<th style='background-color: #B0CBF0'>Datum</th>
-<th style='background-color: #B0CBF0'>Vertreter</th>
-<th style='background-color: #B0CBF0'>ProvProz</th>
-<th style='background-color: #B0CBF0'>Provision</th>
-<th style='background-color: #B0CBF0'>Summe</th>
-<th style='background-color: #B0CBF0'>Lieferant</th>
-<th style='background-color: #B0CBF0'>Lieferantenname</th>
-<th style='background-color: #B0CBF0'>Name2</th>
-<th style='background-color: #B0CBF0'>IntKz</th>
-<th style='background-color: #B0CBF0'>PLZ Neu</th>
-<th style='background-color: #B0CBF0'>Ort</th>
-<th style='background-color: #FFFFFF'> </th>
+                            {% block content %}     
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--<link rel="stylesheet" type="text/css" href="normas.css">-->
+    <style>
+        body{
+            background-color: #d6e1f8;
+    
+        }
+        th, td {
+            border: 1px solid #ccc;
+    
+            text-align: center;
+        }
+    
+        table {
+    
+            border-collapse: collapse !important; /* optional: collapse the table borders */
+        }
+    
+        table tr {
+            background-color: #8BC34A !important; /* Set background color of all rows */
+        }
+    
+        table tr:hover td {
+            background-color: #2196F3 !important; /* Set background color of cells when hovered */
+        }
+    
+    </style>
+                     <table border="1" class="dataframe" style="width:100%;">
+                                 <thead>
+                                     <tr style="text-align: right;">
+<th style='background-color: #899EF0'>RK</th>
+<th style='background-color: #899EF0'>GF-Nr</th>
+<th style='background-color: #899EF0'>Datum</th>
+<th style='background-color: #899EF0'>Vertreter</th>
+<th style='background-color: #899EF0'>ProvProz</th>
+<th style='background-color: #899EF0'>Provision</th>
+<th style='background-color: #899EF0'>Summe</th>
+<th style='background-color: #899EF0'>Lieferant</th>
+<th style='background-color: #899EF0'>Lieferantenname</th>
+<th style='background-color: #899EF0'>Name2</th>
+<th style='background-color: #899EF0'>IntKz</th>
+<th style='background-color: #899EF0'>PLZ Neu</th>
+<th style='background-color: #899EF0'>Ort</th>
+<th style='background-color: #899EF0'>s</th>
 <th style='background-color: #899EF0'>Paid amount</th>
 <th style='background-color: #899EF0'>Payment status</th>
 <th style='background-color: #899EF0'>Payment commission</th>
 <th style='background-color: #899EF0'>Payments with Rest</th>
 <th style='background-color: #899EF0'>Payments Dates</th>
+<th style='background-color: #FFFFFF'> </th>
+<th style='background-color: #FFFFFF'> </th>
+<th style='background-color: #FFFFFF'> </th>
+<th style='background-color: #FFFFFF'> </th>
+<th style='background-color: #FFFFFF'> </th>
+<th style='background-color: #FFFFFF'> </th>
+<th style='background-color: #FFFFFF'> </th>
 </tr>
 </thead>
-                      <tbody><tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201746</td>
-<td style='background-color: #92D050'>2022-08-16 00:00:00</td>
-<td style='background-color: #92D050'>V000178</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>53.495</td>
-<td style='background-color: #92D050'>411.5</td>
-<td style='background-color: #92D050'>K002411</td>
-<td style='background-color: #92D050'>José Angel Sancho</td>
-<td style='background-color: #92D050'>Tienda Status</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>07590</td>
-<td style='background-color: #92D050'>Cala Ratjada - Balears</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201767</td>
-<td style='background-color: #92D050'>2022-08-19 00:00:00</td>
-<td style='background-color: #92D050'>V000178</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>200.473</td>
-<td style='background-color: #92D050'>1542.1</td>
-<td style='background-color: #92D050'>K006152</td>
-<td style='background-color: #92D050'>Joyeria Golf</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>07160</td>
-<td style='background-color: #92D050'>Paguera, Islas Balears</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>RE-4201801</td>
-<td style='background-color: #00FF00'>2022-08-25 00:00:00</td>
-<td style='background-color: #00FF00'>V000178</td>
-<td style='background-color: #00FF00'>13</td>
-<td style='background-color: #00FF00'>8.242</td>
-<td style='background-color: #00FF00'>63.4</td>
-<td style='background-color: #00FF00'>K002012</td>
-<td style='background-color: #00FF00'>Maria Jose Sancenon Royo</td>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>ES</td>
-<td style='background-color: #00FF00'>07008</td>
-<td style='background-color: #00FF00'>Palma de Mallorca, Balears</td>
-<td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>63.4</td>
-<td style='background-color: #00FF00'>PAID</td>
-<td style='background-color: #00FF00'>8.2</td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>14.04.2023,  63.4</td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201810</td>
-<td style='background-color: #92D050'>2022-08-29 00:00:00</td>
-<td style='background-color: #92D050'>V000178</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>356.7707</td>
-<td style='background-color: #92D050'>2744.39</td>
-<td style='background-color: #92D050'>K002682</td>
-<td style='background-color: #92D050'>Adeljoa S.L.</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>07560</td>
-<td style='background-color: #92D050'>Cala Millor - Mallorca</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201811</td>
-<td style='background-color: #92D050'>2022-08-29 00:00:00</td>
-<td style='background-color: #92D050'>V000178</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>159.8805</td>
-<td style='background-color: #92D050'>1229.85</td>
-<td style='background-color: #92D050'>K002682</td>
-<td style='background-color: #92D050'>Adeljoa S.L.</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>07560</td>
-<td style='background-color: #92D050'>Cala Millor - Mallorca</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201819</td>
-<td style='background-color: #92D050'>2022-08-29 00:00:00</td>
-<td style='background-color: #92D050'>V000178</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>62.608</td>
-<td style='background-color: #92D050'>481.6</td>
-<td style='background-color: #92D050'>K002411</td>
-<td style='background-color: #92D050'>José Angel Sancho</td>
-<td style='background-color: #92D050'>Tienda Status</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>07590</td>
-<td style='background-color: #92D050'>Cala Ratjada - Balears</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201820</td>
-<td style='background-color: #92D050'>2022-08-29 00:00:00</td>
-<td style='background-color: #92D050'>V000178</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>80.808</td>
-<td style='background-color: #92D050'>621.6</td>
-<td style='background-color: #92D050'>K001829</td>
-<td style='background-color: #92D050'>Grupo Victoria de Joyerias, S.L.</td>
-<td style='background-color: #92D050'>Joyeria Victoria</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>07400</td>
-<td style='background-color: #92D050'>Bahia de Alcudia, Balears</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201822</td>
-<td style='background-color: #92D050'>2022-08-29 00:00:00</td>
-<td style='background-color: #92D050'>V000178</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>40.209</td>
-<td style='background-color: #92D050'>309.3</td>
-<td style='background-color: #92D050'>K005971</td>
-<td style='background-color: #92D050'>Josep Casellas Braup</td>
-<td style='background-color: #92D050'>Tienda Bai Bai</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>17600</td>
-<td style='background-color: #92D050'>Figueras</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201882</td>
-<td style='background-color: #92D050'>2022-09-01 00:00:00</td>
-<td style='background-color: #92D050'>V000178</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>149.864</td>
-<td style='background-color: #92D050'>1152.8</td>
-<td style='background-color: #92D050'>K002091</td>
-<td style='background-color: #92D050'>Deya Mira S.L</td>
-<td style='background-color: #92D050'>Tienda Coral</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>07610</td>
-<td style='background-color: #92D050'>Can Pastilla, Mallorca</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201928</td>
-<td style='background-color: #92D050'>2022-09-12 00:00:00</td>
-<td style='background-color: #92D050'>V000178</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>49.855</td>
-<td style='background-color: #92D050'>383.5</td>
-<td style='background-color: #92D050'>K002411</td>
-<td style='background-color: #92D050'>José Angel Sancho</td>
-<td style='background-color: #92D050'>Tienda Status</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>07590</td>
-<td style='background-color: #92D050'>Cala Ratjada - Balears</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4201984</td>
-<td style='background-color: #92D050'>2022-09-22 00:00:00</td>
-<td style='background-color: #92D050'>V000178</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>61.399</td>
-<td style='background-color: #92D050'>472.3</td>
-<td style='background-color: #92D050'>K002411</td>
-<td style='background-color: #92D050'>José Angel Sancho</td>
-<td style='background-color: #92D050'>Tienda Status</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>07590</td>
-<td style='background-color: #92D050'>Cala Ratjada - Balears</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4202082</td>
-<td style='background-color: #92D050'>2022-09-30 00:00:00</td>
-<td style='background-color: #92D050'>V000178</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>39.299</td>
-<td style='background-color: #92D050'>302.3</td>
-<td style='background-color: #92D050'>K002411</td>
-<td style='background-color: #92D050'>José Angel Sancho</td>
-<td style='background-color: #92D050'>Tienda Status</td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>07590</td>
-<td style='background-color: #92D050'>Cala Ratjada - Balears</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4202101</td>
-<td style='background-color: #92D050'>2022-09-30 00:00:00</td>
-<td style='background-color: #92D050'>V000178</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>70.681</td>
-<td style='background-color: #92D050'>543.7</td>
-<td style='background-color: #92D050'>K002088</td>
-<td style='background-color: #92D050'>Rustic Beach S.L</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>07560</td>
-<td style='background-color: #92D050'>Sa- Coma- Baleares</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'>RE-4202222</td>
-<td style='background-color: #FFF300'>2022-10-27 00:00:00</td>
-<td style='background-color: #FFF300'>V000178</td>
-<td style='background-color: #FFF300'>13</td>
-<td style='background-color: #FFF300'>-2.912</td>
-<td style='background-color: #FFF300'>-22.4</td>
-<td style='background-color: #FFF300'>K002686</td>
-<td style='background-color: #FFF300'>Miguel Cardona Alles</td>
-<td style='background-color: #FFF300'>JOYERIA GOYA</td>
-<td style='background-color: #FFF300'>ES</td>
-<td style='background-color: #FFF300'>07750</td>
-<td style='background-color: #FFF300'>Cala Galdana, Menorca</td>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'>CREDIT NOTE</td>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'>RE-4202362</td>
-<td style='background-color: #FFF300'>2022-11-17 00:00:00</td>
-<td style='background-color: #FFF300'>V000178</td>
-<td style='background-color: #FFF300'>13</td>
-<td style='background-color: #FFF300'>-28.6442</td>
-<td style='background-color: #FFF300'>-220.34</td>
-<td style='background-color: #FFF300'>K002682</td>
-<td style='background-color: #FFF300'>Adeljoa S.L.</td>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'>ES</td>
-<td style='background-color: #FFF300'>07560</td>
-<td style='background-color: #FFF300'>Cala Millor - Mallorca</td>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'>CREDIT NOTE</td>
-<td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>RE-4202381</td>
-<td style='background-color: #92D050'>2022-11-22 00:00:00</td>
-<td style='background-color: #92D050'>V000178</td>
-<td style='background-color: #92D050'>13</td>
-<td style='background-color: #92D050'>485.9348</td>
-<td style='background-color: #92D050'>3737.96</td>
-<td style='background-color: #92D050'>K002682</td>
-<td style='background-color: #92D050'>Adeljoa S.L.</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'>ES</td>
-<td style='background-color: #92D050'>07560</td>
-<td style='background-color: #92D050'>Cala Millor - Mallorca</td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #92D050'> </td>
-<td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'> </td>
-</tr>
-<tr>
+                          <tbody><tr>
 <td style='background-color: #00FF00'> </td>
 <td style='background-color: #00FF00'>RE-4300055</td>
 <td style='background-color: #00FF00'>2023-01-16 00:00:00</td>
@@ -405,9 +76,100 @@
 <td style='background-color: #00FF00'> </td>
 <td style='background-color: #00FF00'>2860.8</td>
 <td style='background-color: #00FF00'>PAID</td>
-<td style='background-color: #00FF00'>371.9</td>
-<td style='background-color: #FFAB83'>30.03.2023,  572</td>
+<td style='background-color: #FFFFFF'>371.9</td>
+<td style='background-color: #FFFFFF'>30.03.2023,  572</td>
 <td style='background-color: #FFFFFF'>30.03.2023,  3433.0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>RE-4300306</td>
+<td style='background-color: #FFFFFF'>2023-02-28 00:00:00</td>
+<td style='background-color: #FFFFFF'>V000178</td>
+<td style='background-color: #FFFFFF'>13</td>
+<td style='background-color: #FFFFFF'>2931.266</td>
+<td style='background-color: #FFFFFF'>22548.2</td>
+<td style='background-color: #FFFFFF'>K006220</td>
+<td style='background-color: #FFFFFF'>Fernando Morcillo Bauza</td>
+<td style='background-color: #FFFFFF'>Illestime C.B.</td>
+<td style='background-color: #FFFFFF'>ES</td>
+<td style='background-color: #FFFFFF'>07010</td>
+<td style='background-color: #FFFFFF'>Palma de Mallorca - Baleares</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>RE-4300307</td>
+<td style='background-color: #FFFFFF'>2023-02-28 00:00:00</td>
+<td style='background-color: #FFFFFF'>V000178</td>
+<td style='background-color: #FFFFFF'>13</td>
+<td style='background-color: #FFFFFF'>1984.957</td>
+<td style='background-color: #FFFFFF'>15268.9</td>
+<td style='background-color: #FFFFFF'>K006220</td>
+<td style='background-color: #FFFFFF'>Fernando Morcillo Bauza</td>
+<td style='background-color: #FFFFFF'>Illestime C.B.</td>
+<td style='background-color: #FFFFFF'>ES</td>
+<td style='background-color: #FFFFFF'>07010</td>
+<td style='background-color: #FFFFFF'>Palma de Mallorca - Baleares</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>RE-4300308</td>
+<td style='background-color: #FFFFFF'>2023-02-28 00:00:00</td>
+<td style='background-color: #FFFFFF'>V000178</td>
+<td style='background-color: #FFFFFF'>13</td>
+<td style='background-color: #FFFFFF'>232.0643</td>
+<td style='background-color: #FFFFFF'>1785.11</td>
+<td style='background-color: #FFFFFF'>K006220</td>
+<td style='background-color: #FFFFFF'>Fernando Morcillo Bauza</td>
+<td style='background-color: #FFFFFF'>Illestime C.B.</td>
+<td style='background-color: #FFFFFF'>ES</td>
+<td style='background-color: #FFFFFF'>07010</td>
+<td style='background-color: #FFFFFF'>Palma de Mallorca - Baleares</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
 </tr>
 <tr>
 <td style='background-color: #00FF00'> </td>
@@ -424,11 +186,102 @@
 <td style='background-color: #00FF00'>07008</td>
 <td style='background-color: #00FF00'>Palma de Mallorca, Balears</td>
 <td style='background-color: #00FF00'> </td>
-<td style='background-color: #00FF00'>2958.71</td>
-<td style='background-color: #00FF00'>PARTIALLY PAID</td>
-<td style='background-color: #00FF00'>384.6</td>
-<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #00FF00'>5917.42</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>769.3</td>
+<td style='background-color: #FFFFFF'>31.05.2023,  4931</td>
 <td style='background-color: #FFFFFF'>14.04.2023,  2958.7</td>
+<td style='background-color: #FFFFFF'>15.05.2023,  1972.5</td>
+<td style='background-color: #FFFFFF'>31.05.2023,  0.2</td>
+<td style='background-color: #FFFFFF'>31.05.2023,  5917.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300437</td>
+<td style='background-color: #00FF00'>2023-03-29 00:00:00</td>
+<td style='background-color: #00FF00'>V000178</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>149.37</td>
+<td style='background-color: #00FF00'>1149</td>
+<td style='background-color: #00FF00'>K002686</td>
+<td style='background-color: #00FF00'>Miguel Cardona Alles</td>
+<td style='background-color: #00FF00'>JOYERIA GOYA</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07750</td>
+<td style='background-color: #00FF00'>Cala Galdana, Menorca</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1149</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>149.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>02.05.2023,  1149.0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300441</td>
+<td style='background-color: #00FF00'>2023-03-29 00:00:00</td>
+<td style='background-color: #00FF00'>V000178</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>395.538</td>
+<td style='background-color: #00FF00'>3042.6</td>
+<td style='background-color: #00FF00'>K002091</td>
+<td style='background-color: #00FF00'>Deya Mira S.L</td>
+<td style='background-color: #00FF00'>Tienda Coral</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07610</td>
+<td style='background-color: #00FF00'>Can Pastilla, Mallorca</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>3042.6</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>395.5</td>
+<td style='background-color: #FFFFFF'>30.06.2023,  0</td>
+<td style='background-color: #FFFFFF'>02.05.2023,  1014.2</td>
+<td style='background-color: #FFFFFF'>31.05.2023,  1014.2</td>
+<td style='background-color: #FFFFFF'>30.06.2023,  1014.2</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>RE-4300480</td>
+<td style='background-color: #FFFFFF'>2023-03-31 00:00:00</td>
+<td style='background-color: #FFFFFF'>V000178</td>
+<td style='background-color: #FFFFFF'>13</td>
+<td style='background-color: #FFFFFF'>111.332</td>
+<td style='background-color: #FFFFFF'>856.4</td>
+<td style='background-color: #FFFFFF'>K002093</td>
+<td style='background-color: #FFFFFF'>Pilar Yela Forteza</td>
+<td style='background-color: #FFFFFF'>Tienda "YELA"</td>
+<td style='background-color: #FFFFFF'>ES</td>
+<td style='background-color: #FFFFFF'>07610</td>
+<td style='background-color: #FFFFFF'>Can Pastilla / Baleares</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'>UNPAID</td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
 </tr>
 <tr>
 <td style='background-color: #FFF300'> </td>
@@ -447,7 +300,266 @@
 <td style='background-color: #FFF300'> </td>
 <td style='background-color: #FFF300'> </td>
 <td style='background-color: #FFF300'>CREDIT NOTE</td>
-<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300513</td>
+<td style='background-color: #00FF00'>2023-04-06 00:00:00</td>
+<td style='background-color: #00FF00'>V000178</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>303.446</td>
+<td style='background-color: #00FF00'>2334.2</td>
+<td style='background-color: #00FF00'>K004762</td>
+<td style='background-color: #00FF00'>JOIERIA MARIA FUSTER S.L.</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07002</td>
+<td style='background-color: #00FF00'>PALMA DE MALLORCA</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>2334.2</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>303.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>15.05.2023,  778.1</td>
+<td style='background-color: #FFFFFF'>15.06.2023,  778.1</td>
+<td style='background-color: #FFFFFF'>14.07.2023,  778.1</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300515</td>
+<td style='background-color: #00FF00'>2023-04-06 00:00:00</td>
+<td style='background-color: #00FF00'>V000178</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>202.761</td>
+<td style='background-color: #00FF00'>1559.7</td>
+<td style='background-color: #00FF00'>K002094</td>
+<td style='background-color: #00FF00'>Catalina Yela Forteza</td>
+<td style='background-color: #00FF00'>Tienda "1973"</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07181</td>
+<td style='background-color: #00FF00'>Palmanova -Calvia - Balears</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1559.7</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>202.8</td>
+<td style='background-color: #FFFFFF'>14.07.2023,  312</td>
+<td style='background-color: #FFFFFF'>15.05.2023,  623.9</td>
+<td style='background-color: #FFFFFF'>15.06.2023,  623.9</td>
+<td style='background-color: #FFFFFF'>14.07.2023,  623.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>RE-4300542</td>
+<td style='background-color: #FFFFFF'>2023-04-12 00:00:00</td>
+<td style='background-color: #FFFFFF'>V000178</td>
+<td style='background-color: #FFFFFF'>13</td>
+<td style='background-color: #FFFFFF'>98.28</td>
+<td style='background-color: #FFFFFF'>756</td>
+<td style='background-color: #FFFFFF'>K003752</td>
+<td style='background-color: #FFFFFF'>Inversiones Pascual S.L.</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>ES</td>
+<td style='background-color: #FFFFFF'>07400</td>
+<td style='background-color: #FFFFFF'>Pto. de Alcudia, Mallorca</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'>UNPAID</td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300595</td>
+<td style='background-color: #00FF00'>2023-04-12 00:00:00</td>
+<td style='background-color: #00FF00'>V000178</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>158.002</td>
+<td style='background-color: #00FF00'>1215.4</td>
+<td style='background-color: #00FF00'>K006235</td>
+<td style='background-color: #00FF00'>Ali Bentaleb el Mousati</td>
+<td style='background-color: #00FF00'>Joyeria Onix</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07689</td>
+<td style='background-color: #00FF00'>Cala de Mallorca</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1215.4</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>158</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>27.07.2023,  607.7</td>
+<td style='background-color: #FFFFFF'>14.08.2023,  607.7</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300550</td>
+<td style='background-color: #00FF00'>2023-04-14 00:00:00</td>
+<td style='background-color: #00FF00'>V000178</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>267.215</td>
+<td style='background-color: #00FF00'>2055.5</td>
+<td style='background-color: #00FF00'>K002853</td>
+<td style='background-color: #00FF00'>Jaime e Hijas S.C.</td>
+<td style='background-color: #00FF00'>Joyeria Universal</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07560</td>
+<td style='background-color: #00FF00'>Cala Millor, Baleares</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>2055.5</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>267.2</td>
+<td style='background-color: #FFFFFF'>31.05.2023,  411</td>
+<td style='background-color: #FFFFFF'>15.05.2023,  822.2</td>
+<td style='background-color: #FFFFFF'>31.05.2023,  0.1</td>
+<td style='background-color: #FFFFFF'>30.06.2023,  822.2</td>
+<td style='background-color: #FFFFFF'>31.05.2023,  822.2</td>
+<td style='background-color: #FFFFFF'>15.06.2023,  822.2</td>
+<td style='background-color: #FFFFFF'>30.06.2023,  1.5</td>
+<td style='background-color: #FFFFFF'>30.06.2023,  822.2</td>
+<td style='background-color: #FFFFFF'>14.07.2023,  822.2</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300551</td>
+<td style='background-color: #00FF00'>2023-04-14 00:00:00</td>
+<td style='background-color: #00FF00'>V000178</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>303.992</td>
+<td style='background-color: #00FF00'>2338.4</td>
+<td style='background-color: #00FF00'>K006152</td>
+<td style='background-color: #00FF00'>Joyeria Golf</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07160</td>
+<td style='background-color: #00FF00'>Paguera, Islas Balears</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>2338.4</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>304</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>15.05.2023,  779.5</td>
+<td style='background-color: #FFFFFF'>15.06.2023,  779.5</td>
+<td style='background-color: #FFFFFF'>14.07.2023,  779.5</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300641</td>
+<td style='background-color: #00FF00'>2023-04-20 00:00:00</td>
+<td style='background-color: #00FF00'>V000178</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>371.904</td>
+<td style='background-color: #00FF00'>2860.8</td>
+<td style='background-color: #00FF00'>K002093</td>
+<td style='background-color: #00FF00'>Pilar Yela Forteza</td>
+<td style='background-color: #00FF00'>Tienda "YELA"</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07610</td>
+<td style='background-color: #00FF00'>Can Pastilla / Baleares</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>2860.8</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>371.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>02.05.2023,  2860.8</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300642</td>
+<td style='background-color: #00FF00'>2023-04-20 00:00:00</td>
+<td style='background-color: #00FF00'>V000178</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>111.332</td>
+<td style='background-color: #00FF00'>856.4</td>
+<td style='background-color: #00FF00'>K002093</td>
+<td style='background-color: #00FF00'>Pilar Yela Forteza</td>
+<td style='background-color: #00FF00'>Tienda "YELA"</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07610</td>
+<td style='background-color: #00FF00'>Can Pastilla / Baleares</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>856.4</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>111.3</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>02.05.2023,  856.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300630</td>
+<td style='background-color: #00FF00'>2023-04-25 00:00:00</td>
+<td style='background-color: #00FF00'>V000178</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>161.837</td>
+<td style='background-color: #00FF00'>1244.9</td>
+<td style='background-color: #00FF00'>K006239</td>
+<td style='background-color: #00FF00'>Joyeria Pomar</td>
+<td style='background-color: #00FF00'>Elena Pomar Palerm</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07800</td>
+<td style='background-color: #00FF00'>Ibiza</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1244.9</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>161.8</td>
+<td style='background-color: #FFFFFF'>30.06.2023,  0</td>
+<td style='background-color: #FFFFFF'>31.05.2023,  415.0</td>
+<td style='background-color: #FFFFFF'>15.06.2023,  415.0</td>
+<td style='background-color: #FFFFFF'>30.06.2023,  415.0</td>
+<td style='background-color: #FFFFFF'>31.07.2023,  415.0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
 </tr>
@@ -466,9 +578,16 @@
 <td style='background-color: #FFF300'>07610</td>
 <td style='background-color: #FFF300'>Can Pastilla / Baleares</td>
 <td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'>-2860.8</td>
+<td style='background-color: #FFF300'> </td>
 <td style='background-color: #FFF300'>CREDIT NOTE</td>
-<td style='background-color: #FFF300'>-371.904</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
 </tr>
@@ -487,9 +606,1556 @@
 <td style='background-color: #FFF300'>07610</td>
 <td style='background-color: #FFF300'>Can Pastilla / Baleares</td>
 <td style='background-color: #FFF300'> </td>
-<td style='background-color: #FFF300'>-856.4</td>
+<td style='background-color: #FFF300'> </td>
 <td style='background-color: #FFF300'>CREDIT NOTE</td>
-<td style='background-color: #FFF300'>-111.332</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300643</td>
+<td style='background-color: #FFF300'>2023-05-01 00:00:00</td>
+<td style='background-color: #FFF300'>V000178</td>
+<td style='background-color: #FFF300'>13</td>
+<td style='background-color: #FFF300'>-87.802</td>
+<td style='background-color: #FFF300'>-675.4</td>
+<td style='background-color: #FFF300'>K002012</td>
+<td style='background-color: #FFF300'>Maria Jose Sancenon Royo</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>ES</td>
+<td style='background-color: #FFF300'>07008</td>
+<td style='background-color: #FFF300'>Palma de Mallorca, Balears</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300744</td>
+<td style='background-color: #00FF00'>2023-05-01 00:00:00</td>
+<td style='background-color: #00FF00'>V000178</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>314.704</td>
+<td style='background-color: #00FF00'>2420.8</td>
+<td style='background-color: #00FF00'>K006237</td>
+<td style='background-color: #00FF00'>Grupo Rosior S.L.</td>
+<td style='background-color: #00FF00'>ROSIOR</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07560</td>
+<td style='background-color: #00FF00'>Sa Coma</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>2420.8</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>314.7</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>15.06.2023,  1210.4</td>
+<td style='background-color: #FFFFFF'>14.07.2023,  1210.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300732</td>
+<td style='background-color: #00FF00'>2023-05-10 00:00:00</td>
+<td style='background-color: #00FF00'>V000178</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>136.227</td>
+<td style='background-color: #00FF00'>1047.9</td>
+<td style='background-color: #00FF00'>K002411</td>
+<td style='background-color: #00FF00'>José Angel Sancho</td>
+<td style='background-color: #00FF00'>Tienda Status</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07590</td>
+<td style='background-color: #00FF00'>Cala Ratjada - Balears</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1047.9</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>136.2</td>
+<td style='background-color: #FFFFFF'>14.07.2023,  210</td>
+<td style='background-color: #FFFFFF'>14.07.2023,  1257.5</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300733</td>
+<td style='background-color: #00FF00'>2023-05-10 00:00:00</td>
+<td style='background-color: #00FF00'>V000178</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>197.561</td>
+<td style='background-color: #00FF00'>1519.7</td>
+<td style='background-color: #00FF00'>K002175</td>
+<td style='background-color: #00FF00'>Egos D'or S.L</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07660</td>
+<td style='background-color: #00FF00'>Cala D'Or - Balears</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1519.7</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>197.6</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>25.07.2023,  506.6</td>
+<td style='background-color: #FFFFFF'>25.07.2023,  506.6</td>
+<td style='background-color: #FFFFFF'>14.08.2023,  506.6</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300750</td>
+<td style='background-color: #00FF00'>2023-05-11 00:00:00</td>
+<td style='background-color: #00FF00'>V000178</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>84.825</td>
+<td style='background-color: #00FF00'>652.5</td>
+<td style='background-color: #00FF00'>K006237</td>
+<td style='background-color: #00FF00'>Grupo Rosior S.L.</td>
+<td style='background-color: #00FF00'>ROSIOR</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07560</td>
+<td style='background-color: #00FF00'>Sa Coma</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>652.5</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>84.8</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>15.06.2023,  326.2</td>
+<td style='background-color: #FFFFFF'>14.07.2023,  326.2</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300774</td>
+<td style='background-color: #00FF00'>2023-05-15 00:00:00</td>
+<td style='background-color: #00FF00'>V000178</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>189.2306</td>
+<td style='background-color: #00FF00'>1455.62</td>
+<td style='background-color: #00FF00'>K004050</td>
+<td style='background-color: #00FF00'>Tienda Aigo Blava</td>
+<td style='background-color: #00FF00'>Sebastian Salva Socias</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07600</td>
+<td style='background-color: #00FF00'>EL ARENAL - MALLORCA</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1455.62</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>189.2</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>15.06.2023,  485.2</td>
+<td style='background-color: #FFFFFF'>14.07.2023,  485.2</td>
+<td style='background-color: #FFFFFF'>14.08.2023,  485.2</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300785</td>
+<td style='background-color: #00FF00'>2023-05-15 00:00:00</td>
+<td style='background-color: #00FF00'>V000178</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>260.143</td>
+<td style='background-color: #00FF00'>2001.1</td>
+<td style='background-color: #00FF00'>K004461</td>
+<td style='background-color: #00FF00'>DETALLS I PRESENTS S.L</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07400</td>
+<td style='background-color: #00FF00'>Pto. de Alcudia</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>2001.1</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>260.1</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>15.06.2023,  667.0</td>
+<td style='background-color: #FFFFFF'>14.07.2023,  667.0</td>
+<td style='background-color: #FFFFFF'>14.08.2023,  667.0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300787</td>
+<td style='background-color: #00FF00'>2023-05-16 00:00:00</td>
+<td style='background-color: #00FF00'>V000178</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>431.2048</td>
+<td style='background-color: #00FF00'>3316.96</td>
+<td style='background-color: #00FF00'>K002682</td>
+<td style='background-color: #00FF00'>Adeljoa S.L.</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07560</td>
+<td style='background-color: #00FF00'>Cala Millor - Mallorca</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>3316.96</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>431.2</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.05.2023,  3317.0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300797</td>
+<td style='background-color: #00FF00'>2023-05-16 00:00:00</td>
+<td style='background-color: #00FF00'>V000178</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>271.544</td>
+<td style='background-color: #00FF00'>2088.8</td>
+<td style='background-color: #00FF00'>K002012</td>
+<td style='background-color: #00FF00'>Maria Jose Sancenon Royo</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07008</td>
+<td style='background-color: #00FF00'>Palma de Mallorca, Balears</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>2088.8</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>271.5</td>
+<td style='background-color: #FFFFFF'>30.06.2023,  0</td>
+<td style='background-color: #FFFFFF'>15.06.2023,  2088.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300830</td>
+<td style='background-color: #00FF00'>2023-05-23 00:00:00</td>
+<td style='background-color: #00FF00'>V000178</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>72.592</td>
+<td style='background-color: #00FF00'>558.4</td>
+<td style='background-color: #00FF00'>K002411</td>
+<td style='background-color: #00FF00'>José Angel Sancho</td>
+<td style='background-color: #00FF00'>Tienda Status</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07590</td>
+<td style='background-color: #00FF00'>Cala Ratjada - Balears</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>558.4</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>72.6</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>30.06.2023,  558.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300844</td>
+<td style='background-color: #FFF300'>2023-05-24 00:00:00</td>
+<td style='background-color: #FFF300'>V000178</td>
+<td style='background-color: #FFF300'>13</td>
+<td style='background-color: #FFF300'>-136.227</td>
+<td style='background-color: #FFF300'>-1047.9</td>
+<td style='background-color: #FFF300'>K002411</td>
+<td style='background-color: #FFF300'>José Angel Sancho</td>
+<td style='background-color: #FFF300'>Tienda Status</td>
+<td style='background-color: #FFF300'>ES</td>
+<td style='background-color: #FFF300'>07590</td>
+<td style='background-color: #FFF300'>Cala Ratjada - Balears</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300845</td>
+<td style='background-color: #00FF00'>2023-05-24 00:00:00</td>
+<td style='background-color: #00FF00'>V000178</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>136.227</td>
+<td style='background-color: #00FF00'>1047.9</td>
+<td style='background-color: #00FF00'>K002411</td>
+<td style='background-color: #00FF00'>José Angel Sancho</td>
+<td style='background-color: #00FF00'>Tienda Status</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07590</td>
+<td style='background-color: #00FF00'>Cala Ratjada - Balears</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1047.9</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>136.2</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>30.06.2023,  1047.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300876</td>
+<td style='background-color: #00FF00'>2023-05-31 00:00:00</td>
+<td style='background-color: #00FF00'>V000178</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>75.959</td>
+<td style='background-color: #00FF00'>584.3</td>
+<td style='background-color: #00FF00'>K006237</td>
+<td style='background-color: #00FF00'>Grupo Rosior S.L.</td>
+<td style='background-color: #00FF00'>ROSIOR</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07560</td>
+<td style='background-color: #00FF00'>Sa Coma</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>584.3</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>76</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>30.06.2023,  292.1</td>
+<td style='background-color: #FFFFFF'>31.07.2023,  292.1</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300888</td>
+<td style='background-color: #00FF00'>2023-05-31 00:00:00</td>
+<td style='background-color: #00FF00'>V000178</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>119.886</td>
+<td style='background-color: #00FF00'>922.2</td>
+<td style='background-color: #00FF00'>K001829</td>
+<td style='background-color: #00FF00'>Grupo Victoria de Joyerias, S.L.</td>
+<td style='background-color: #00FF00'>Joyeria Victoria</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07400</td>
+<td style='background-color: #00FF00'>Bahia de Alcudia, Balears</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>922.2</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>119.9</td>
+<td style='background-color: #FFFFFF'>31.07.2023,  830</td>
+<td style='background-color: #FFFFFF'>31.03.2023,  876.1</td>
+<td style='background-color: #FFFFFF'>31.03.2023,  0.5</td>
+<td style='background-color: #FFFFFF'>31.07.2023,  876.1</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300908</td>
+<td style='background-color: #00FF00'>2023-05-31 00:00:00</td>
+<td style='background-color: #00FF00'>V000178</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>70.083</td>
+<td style='background-color: #00FF00'>539.1</td>
+<td style='background-color: #00FF00'>K002091</td>
+<td style='background-color: #00FF00'>Deya Mira S.L</td>
+<td style='background-color: #00FF00'>Tienda Coral</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07610</td>
+<td style='background-color: #00FF00'>Can Pastilla, Mallorca</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>539.1</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>70.1</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>30.06.2023,  539.1</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300951</td>
+<td style='background-color: #00FF00'>2023-06-07 00:00:00</td>
+<td style='background-color: #00FF00'>V000178</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>96.07</td>
+<td style='background-color: #00FF00'>739</td>
+<td style='background-color: #00FF00'>K002411</td>
+<td style='background-color: #00FF00'>José Angel Sancho</td>
+<td style='background-color: #00FF00'>Tienda Status</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07590</td>
+<td style='background-color: #00FF00'>Cala Ratjada - Balears</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>739</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>96.1</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>14.07.2023,  739.0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300963</td>
+<td style='background-color: #00FF00'>2023-06-09 00:00:00</td>
+<td style='background-color: #00FF00'>V000178</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>100.984</td>
+<td style='background-color: #00FF00'>776.8</td>
+<td style='background-color: #00FF00'>K006237</td>
+<td style='background-color: #00FF00'>Grupo Rosior S.L.</td>
+<td style='background-color: #00FF00'>ROSIOR</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07560</td>
+<td style='background-color: #00FF00'>Sa Coma</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>776.8</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>101</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>14.07.2023,  776.8</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300964</td>
+<td style='background-color: #00FF00'>2023-06-09 00:00:00</td>
+<td style='background-color: #00FF00'>V000178</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>98.358</td>
+<td style='background-color: #00FF00'>756.6</td>
+<td style='background-color: #00FF00'>K002088</td>
+<td style='background-color: #00FF00'>Rustic Beach S.L</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07560</td>
+<td style='background-color: #00FF00'>Sa- Coma- Baleares</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>756.6</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>98.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>14.08.2023,  756.6</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4300970</td>
+<td style='background-color: #00FF00'>2023-06-09 00:00:00</td>
+<td style='background-color: #00FF00'>V000178</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>86.021</td>
+<td style='background-color: #00FF00'>661.7</td>
+<td style='background-color: #00FF00'>K006235</td>
+<td style='background-color: #00FF00'>Ali Bentaleb el Mousati</td>
+<td style='background-color: #00FF00'>Joyeria Onix</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07689</td>
+<td style='background-color: #00FF00'>Cala de Mallorca</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>661.7</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>86</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>14.07.2023,  661.7</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300987</td>
+<td style='background-color: #FFF300'>2023-06-12 00:00:00</td>
+<td style='background-color: #FFF300'>V000178</td>
+<td style='background-color: #FFF300'>13</td>
+<td style='background-color: #FFF300'>-8.8907</td>
+<td style='background-color: #FFF300'>-68.39</td>
+<td style='background-color: #FFF300'>K002682</td>
+<td style='background-color: #FFF300'>Adeljoa S.L.</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>ES</td>
+<td style='background-color: #FFF300'>07560</td>
+<td style='background-color: #FFF300'>Cala Millor - Mallorca</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300999</td>
+<td style='background-color: #FFF300'>2023-06-13 00:00:00</td>
+<td style='background-color: #FFF300'>V000178</td>
+<td style='background-color: #FFF300'>13</td>
+<td style='background-color: #FFF300'>-8.242</td>
+<td style='background-color: #FFF300'>-63.4</td>
+<td style='background-color: #FFF300'>K002012</td>
+<td style='background-color: #FFF300'>Maria Jose Sancenon Royo</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>ES</td>
+<td style='background-color: #FFF300'>07008</td>
+<td style='background-color: #FFF300'>Palma de Mallorca, Balears</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301001</td>
+<td style='background-color: #00FF00'>2023-06-13 00:00:00</td>
+<td style='background-color: #00FF00'>V000178</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>263.575</td>
+<td style='background-color: #00FF00'>2027.5</td>
+<td style='background-color: #00FF00'>K006241</td>
+<td style='background-color: #00FF00'>Joyeria Mar</td>
+<td style='background-color: #00FF00'>Guillem Riera Caldentey</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07559</td>
+<td style='background-color: #00FF00'>Cala Bona</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>2027.5</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>263.6</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>14.07.2023,  675.8</td>
+<td style='background-color: #FFFFFF'>14.08.2023,  675.8</td>
+<td style='background-color: #FFFFFF'>15.09.2023,  675.8</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301003</td>
+<td style='background-color: #00FF00'>2023-06-14 00:00:00</td>
+<td style='background-color: #00FF00'>V000178</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>84.708</td>
+<td style='background-color: #00FF00'>651.6</td>
+<td style='background-color: #00FF00'>K002686</td>
+<td style='background-color: #00FF00'>Miguel Cardona Alles</td>
+<td style='background-color: #00FF00'>JOYERIA GOYA</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07750</td>
+<td style='background-color: #00FF00'>Cala Galdana, Menorca</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>651.6</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>84.7</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>14.07.2023,  651.6</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301005</td>
+<td style='background-color: #00FF00'>2023-06-14 00:00:00</td>
+<td style='background-color: #00FF00'>V000178</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>66.586</td>
+<td style='background-color: #00FF00'>512.2</td>
+<td style='background-color: #00FF00'>K006241</td>
+<td style='background-color: #00FF00'>Joyeria Mar</td>
+<td style='background-color: #00FF00'>Guillem Riera Caldentey</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07559</td>
+<td style='background-color: #00FF00'>Cala Bona</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>512.2</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>66.6</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>14.07.2023,  512.2</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301052</td>
+<td style='background-color: #00FF00'>2023-06-20 00:00:00</td>
+<td style='background-color: #00FF00'>V000178</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>60.957</td>
+<td style='background-color: #00FF00'>468.9</td>
+<td style='background-color: #00FF00'>K004461</td>
+<td style='background-color: #00FF00'>DETALLS I PRESENTS S.L</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07400</td>
+<td style='background-color: #00FF00'>Pto. de Alcudia</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>468.9</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>61</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.07.2023,  234.4</td>
+<td style='background-color: #FFFFFF'>31.08.2023,  234.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301096</td>
+<td style='background-color: #00FF00'>2023-06-27 00:00:00</td>
+<td style='background-color: #00FF00'>V000178</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>135.798</td>
+<td style='background-color: #00FF00'>1044.6</td>
+<td style='background-color: #00FF00'>K002411</td>
+<td style='background-color: #00FF00'>José Angel Sancho</td>
+<td style='background-color: #00FF00'>Tienda Status</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07590</td>
+<td style='background-color: #00FF00'>Cala Ratjada - Balears</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1044.6</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>135.8</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.07.2023,  1044.6</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301103</td>
+<td style='background-color: #00FF00'>2023-06-27 00:00:00</td>
+<td style='background-color: #00FF00'>V000178</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>74.152</td>
+<td style='background-color: #00FF00'>570.4</td>
+<td style='background-color: #00FF00'>K006237</td>
+<td style='background-color: #00FF00'>Grupo Rosior S.L.</td>
+<td style='background-color: #00FF00'>ROSIOR</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07560</td>
+<td style='background-color: #00FF00'>Sa Coma</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>570.4</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>74.2</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.07.2023,  570.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301188</td>
+<td style='background-color: #00FF00'>2023-07-10 00:00:00</td>
+<td style='background-color: #00FF00'>V000178</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>72.449</td>
+<td style='background-color: #00FF00'>557.3</td>
+<td style='background-color: #00FF00'>K002853</td>
+<td style='background-color: #00FF00'>Jaime e Hijas S.C.</td>
+<td style='background-color: #00FF00'>Joyeria Universal</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07560</td>
+<td style='background-color: #00FF00'>Cala Millor, Baleares</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>557.3</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>72.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>14.08.2023,  557.3</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301205</td>
+<td style='background-color: #00FF00'>2023-07-11 00:00:00</td>
+<td style='background-color: #00FF00'>V000178</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>84.903</td>
+<td style='background-color: #00FF00'>653.1</td>
+<td style='background-color: #00FF00'>K002088</td>
+<td style='background-color: #00FF00'>Rustic Beach S.L</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07560</td>
+<td style='background-color: #00FF00'>Sa- Coma- Baleares</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>653.1</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>84.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>14.08.2023,  653.1</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301209</td>
+<td style='background-color: #00FF00'>2023-07-12 00:00:00</td>
+<td style='background-color: #00FF00'>V000178</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>85.826</td>
+<td style='background-color: #00FF00'>660.2</td>
+<td style='background-color: #00FF00'>K006237</td>
+<td style='background-color: #00FF00'>Grupo Rosior S.L.</td>
+<td style='background-color: #00FF00'>ROSIOR</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07560</td>
+<td style='background-color: #00FF00'>Sa Coma</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>660.2</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>85.8</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>14.08.2023,  660.2</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301223</td>
+<td style='background-color: #00FF00'>2023-07-13 00:00:00</td>
+<td style='background-color: #00FF00'>V000178</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>328.5503</td>
+<td style='background-color: #00FF00'>2527.31</td>
+<td style='background-color: #00FF00'>K002682</td>
+<td style='background-color: #00FF00'>Adeljoa S.L.</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07560</td>
+<td style='background-color: #00FF00'>Cala Millor - Mallorca</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>2527.31</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>328.6</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>18.07.2023,  2527.3</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301230</td>
+<td style='background-color: #FFF300'>2023-07-14 00:00:00</td>
+<td style='background-color: #FFF300'>V000178</td>
+<td style='background-color: #FFF300'>13</td>
+<td style='background-color: #FFF300'>-98.28</td>
+<td style='background-color: #FFF300'>-756</td>
+<td style='background-color: #FFF300'>K003752</td>
+<td style='background-color: #FFF300'>Inversiones Pascual S.L.</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>ES</td>
+<td style='background-color: #FFF300'>07400</td>
+<td style='background-color: #FFF300'>Pto. de Alcudia, Mallorca</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301231</td>
+<td style='background-color: #00FF00'>2023-07-14 00:00:00</td>
+<td style='background-color: #00FF00'>V000178</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>98.28</td>
+<td style='background-color: #00FF00'>756</td>
+<td style='background-color: #00FF00'>K003752</td>
+<td style='background-color: #00FF00'>Inversiones Pascual S.L.</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07400</td>
+<td style='background-color: #00FF00'>Pto. de Alcudia, Mallorca</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>756</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>98.3</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>14.09.2023,  756.0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301236</td>
+<td style='background-color: #00FF00'>2023-07-17 00:00:00</td>
+<td style='background-color: #00FF00'>V000178</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>149.331</td>
+<td style='background-color: #00FF00'>1148.7</td>
+<td style='background-color: #00FF00'>K002853</td>
+<td style='background-color: #00FF00'>Jaime e Hijas S.C.</td>
+<td style='background-color: #00FF00'>Joyeria Universal</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07560</td>
+<td style='background-color: #00FF00'>Cala Millor, Baleares</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1148.7</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>149.3</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.08.2023,  1148.7</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>RE-4301245</td>
+<td style='background-color: #FFFFFF'>2023-07-18 00:00:00</td>
+<td style='background-color: #FFFFFF'>V000178</td>
+<td style='background-color: #FFFFFF'>13</td>
+<td style='background-color: #FFFFFF'>42.042</td>
+<td style='background-color: #FFFFFF'>323.4</td>
+<td style='background-color: #FFFFFF'>K005900</td>
+<td style='background-color: #FFFFFF'>José Ángel Sancho Redondo</td>
+<td style='background-color: #FFFFFF'>Top de Gala</td>
+<td style='background-color: #FFFFFF'>ES</td>
+<td style='background-color: #FFFFFF'>07590</td>
+<td style='background-color: #FFFFFF'>Cala Rajada</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'>UNPAID</td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301268</td>
+<td style='background-color: #00FF00'>2023-07-21 00:00:00</td>
+<td style='background-color: #00FF00'>V000178</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>144.43</td>
+<td style='background-color: #00FF00'>1111</td>
+<td style='background-color: #00FF00'>K002682</td>
+<td style='background-color: #00FF00'>Adeljoa S.L.</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07560</td>
+<td style='background-color: #00FF00'>Cala Millor - Mallorca</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1111</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>144.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>14.08.2023,  1111.0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301290</td>
+<td style='background-color: #FFF300'>2023-07-26 00:00:00</td>
+<td style='background-color: #FFF300'>V000178</td>
+<td style='background-color: #FFF300'>13</td>
+<td style='background-color: #FFF300'>-42.042</td>
+<td style='background-color: #FFF300'>-323.4</td>
+<td style='background-color: #FFF300'>K005900</td>
+<td style='background-color: #FFF300'>José Ángel Sancho Redondo</td>
+<td style='background-color: #FFF300'>Top de Gala</td>
+<td style='background-color: #FFF300'>ES</td>
+<td style='background-color: #FFF300'>07590</td>
+<td style='background-color: #FFF300'>Cala Rajada</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>RE-4301291</td>
+<td style='background-color: #FFFFFF'>2023-07-26 00:00:00</td>
+<td style='background-color: #FFFFFF'>V000178</td>
+<td style='background-color: #FFFFFF'>13</td>
+<td style='background-color: #FFFFFF'>42.042</td>
+<td style='background-color: #FFFFFF'>323.4</td>
+<td style='background-color: #FFFFFF'>K005900</td>
+<td style='background-color: #FFFFFF'>José Ángel Sancho Redondo</td>
+<td style='background-color: #FFFFFF'>Top de Gala</td>
+<td style='background-color: #FFFFFF'>ES</td>
+<td style='background-color: #FFFFFF'>07590</td>
+<td style='background-color: #FFFFFF'>Cala Rajada</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'>UNPAID</td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301304</td>
+<td style='background-color: #00FF00'>2023-07-28 00:00:00</td>
+<td style='background-color: #00FF00'>V000178</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>98.826</td>
+<td style='background-color: #00FF00'>760.2</td>
+<td style='background-color: #00FF00'>K006237</td>
+<td style='background-color: #00FF00'>Grupo Rosior S.L.</td>
+<td style='background-color: #00FF00'>ROSIOR</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07560</td>
+<td style='background-color: #00FF00'>Sa Coma</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>760.2</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>98.8</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.08.2023,  760.2</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>RE-4301324</td>
+<td style='background-color: #FFFFFF'>2023-07-31 00:00:00</td>
+<td style='background-color: #FFFFFF'>V000178</td>
+<td style='background-color: #FFFFFF'>13</td>
+<td style='background-color: #FFFFFF'>33.67</td>
+<td style='background-color: #FFFFFF'>259</td>
+<td style='background-color: #FFFFFF'>K001829</td>
+<td style='background-color: #FFFFFF'>Grupo Victoria de Joyerias, S.L.</td>
+<td style='background-color: #FFFFFF'>Joyeria Victoria</td>
+<td style='background-color: #FFFFFF'>ES</td>
+<td style='background-color: #FFFFFF'>07400</td>
+<td style='background-color: #FFFFFF'>Bahia de Alcudia, Balears</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301343</td>
+<td style='background-color: #00FF00'>2023-07-31 00:00:00</td>
+<td style='background-color: #00FF00'>V000178</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>65.169</td>
+<td style='background-color: #00FF00'>501.3</td>
+<td style='background-color: #00FF00'>K004461</td>
+<td style='background-color: #00FF00'>DETALLS I PRESENTS S.L</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07400</td>
+<td style='background-color: #00FF00'>Pto. de Alcudia</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>250.65</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #FFFFFF'>32.6</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>15.09.2023,  250.7</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301379</td>
+<td style='background-color: #00FF00'>2023-08-09 00:00:00</td>
+<td style='background-color: #00FF00'>V000178</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>110.9888</td>
+<td style='background-color: #00FF00'>853.76</td>
+<td style='background-color: #00FF00'>K002682</td>
+<td style='background-color: #00FF00'>Adeljoa S.L.</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07560</td>
+<td style='background-color: #00FF00'>Cala Millor - Mallorca</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>853.76</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>111</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.08.2023,  853.8</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301383</td>
+<td style='background-color: #00FF00'>2023-08-10 00:00:00</td>
+<td style='background-color: #00FF00'>V000178</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>48.594</td>
+<td style='background-color: #00FF00'>373.8</td>
+<td style='background-color: #00FF00'>K004461</td>
+<td style='background-color: #00FF00'>DETALLS I PRESENTS S.L</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07400</td>
+<td style='background-color: #00FF00'>Pto. de Alcudia</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>186.9</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #FFFFFF'>24.3</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>15.09.2023,  186.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301385</td>
+<td style='background-color: #00FF00'>2023-08-10 00:00:00</td>
+<td style='background-color: #00FF00'>V000178</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>45.084</td>
+<td style='background-color: #00FF00'>346.8</td>
+<td style='background-color: #00FF00'>K002411</td>
+<td style='background-color: #00FF00'>José Angel Sancho</td>
+<td style='background-color: #00FF00'>Tienda Status</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07590</td>
+<td style='background-color: #00FF00'>Cala Ratjada - Balears</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>346.8</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>45.1</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>15.09.2023,  346.8</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301388</td>
+<td style='background-color: #00FF00'>2023-08-10 00:00:00</td>
+<td style='background-color: #00FF00'>V000178</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>68.133</td>
+<td style='background-color: #00FF00'>524.1</td>
+<td style='background-color: #00FF00'>K006241</td>
+<td style='background-color: #00FF00'>Joyeria Mar</td>
+<td style='background-color: #00FF00'>Guillem Riera Caldentey</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07559</td>
+<td style='background-color: #00FF00'>Cala Bona</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>524.1</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>68.1</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>15.09.2023,  524.1</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>RE-4301406</td>
+<td style='background-color: #FFFFFF'>2023-08-16 00:00:00</td>
+<td style='background-color: #FFFFFF'>V000178</td>
+<td style='background-color: #FFFFFF'>13</td>
+<td style='background-color: #FFFFFF'>56.576</td>
+<td style='background-color: #FFFFFF'>435.2</td>
+<td style='background-color: #FFFFFF'>K006237</td>
+<td style='background-color: #FFFFFF'>Grupo Rosior S.L.</td>
+<td style='background-color: #FFFFFF'>ROSIOR</td>
+<td style='background-color: #FFFFFF'>ES</td>
+<td style='background-color: #FFFFFF'>07560</td>
+<td style='background-color: #FFFFFF'>Sa Coma</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'>UNPAID</td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>RE-4301466</td>
+<td style='background-color: #FFFFFF'>2023-08-29 00:00:00</td>
+<td style='background-color: #FFFFFF'>V000178</td>
+<td style='background-color: #FFFFFF'>13</td>
+<td style='background-color: #FFFFFF'>85.462</td>
+<td style='background-color: #FFFFFF'>657.4</td>
+<td style='background-color: #FFFFFF'>K002411</td>
+<td style='background-color: #FFFFFF'>José Angel Sancho</td>
+<td style='background-color: #FFFFFF'>Tienda Status</td>
+<td style='background-color: #FFFFFF'>ES</td>
+<td style='background-color: #FFFFFF'>07590</td>
+<td style='background-color: #FFFFFF'>Cala Ratjada - Balears</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'>UNPAID</td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>RE-4301471</td>
+<td style='background-color: #FFFFFF'>2023-08-30 00:00:00</td>
+<td style='background-color: #FFFFFF'>V000178</td>
+<td style='background-color: #FFFFFF'>13</td>
+<td style='background-color: #FFFFFF'>84.669</td>
+<td style='background-color: #FFFFFF'>651.3</td>
+<td style='background-color: #FFFFFF'>K002088</td>
+<td style='background-color: #FFFFFF'>Rustic Beach S.L</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>ES</td>
+<td style='background-color: #FFFFFF'>07560</td>
+<td style='background-color: #FFFFFF'>Sa- Coma- Baleares</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'>UNPAID</td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301476</td>
+<td style='background-color: #00FF00'>2023-08-31 00:00:00</td>
+<td style='background-color: #00FF00'>V000178</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>124.3866</td>
+<td style='background-color: #00FF00'>956.82</td>
+<td style='background-color: #00FF00'>K002682</td>
+<td style='background-color: #00FF00'>Adeljoa S.L.</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>07560</td>
+<td style='background-color: #00FF00'>Cala Millor - Mallorca</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>956.82</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>124.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>15.09.2023,  956.8</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301506</td>
+<td style='background-color: #FFF300'>2023-09-06 00:00:00</td>
+<td style='background-color: #FFF300'>V000178</td>
+<td style='background-color: #FFF300'>13</td>
+<td style='background-color: #FFF300'>-12.415</td>
+<td style='background-color: #FFF300'>-95.5</td>
+<td style='background-color: #FFF300'>K002411</td>
+<td style='background-color: #FFF300'>José Angel Sancho</td>
+<td style='background-color: #FFF300'>Tienda Status</td>
+<td style='background-color: #FFF300'>ES</td>
+<td style='background-color: #FFF300'>07590</td>
+<td style='background-color: #FFF300'>Cala Ratjada - Balears</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301507</td>
+<td style='background-color: #FFF300'>2023-09-06 00:00:00</td>
+<td style='background-color: #FFF300'>V000178</td>
+<td style='background-color: #FFF300'>13</td>
+<td style='background-color: #FFF300'>-14.248</td>
+<td style='background-color: #FFF300'>-109.6</td>
+<td style='background-color: #FFF300'>K002411</td>
+<td style='background-color: #FFF300'>José Angel Sancho</td>
+<td style='background-color: #FFF300'>Tienda Status</td>
+<td style='background-color: #FFF300'>ES</td>
+<td style='background-color: #FFF300'>07590</td>
+<td style='background-color: #FFF300'>Cala Ratjada - Balears</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>RE-4301508</td>
+<td style='background-color: #FFFFFF'>2023-09-06 00:00:00</td>
+<td style='background-color: #FFFFFF'>V000178</td>
+<td style='background-color: #FFFFFF'>13</td>
+<td style='background-color: #FFFFFF'>60.398</td>
+<td style='background-color: #FFFFFF'>464.6</td>
+<td style='background-color: #FFFFFF'>K006237</td>
+<td style='background-color: #FFFFFF'>Grupo Rosior S.L.</td>
+<td style='background-color: #FFFFFF'>ROSIOR</td>
+<td style='background-color: #FFFFFF'>ES</td>
+<td style='background-color: #FFFFFF'>07560</td>
+<td style='background-color: #FFFFFF'>Sa Coma</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301550</td>
+<td style='background-color: #FFF300'>2023-09-13 00:00:00</td>
+<td style='background-color: #FFF300'>V000178</td>
+<td style='background-color: #FFF300'>13</td>
+<td style='background-color: #FFF300'>-59.6427</td>
+<td style='background-color: #FFF300'>-458.79</td>
+<td style='background-color: #FFF300'>K002682</td>
+<td style='background-color: #FFF300'>Adeljoa S.L.</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>ES</td>
+<td style='background-color: #FFF300'>07560</td>
+<td style='background-color: #FFF300'>Cala Millor - Mallorca</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>RE-4301551</td>
+<td style='background-color: #FFFFFF'>2023-09-13 00:00:00</td>
+<td style='background-color: #FFFFFF'>V000178</td>
+<td style='background-color: #FFFFFF'>13</td>
+<td style='background-color: #FFFFFF'>120.0433</td>
+<td style='background-color: #FFFFFF'>923.41</td>
+<td style='background-color: #FFFFFF'>K002682</td>
+<td style='background-color: #FFFFFF'>Adeljoa S.L.</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>ES</td>
+<td style='background-color: #FFFFFF'>07560</td>
+<td style='background-color: #FFFFFF'>Cala Millor - Mallorca</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'>UNPAID</td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>RE-4301567</td>
+<td style='background-color: #FFFFFF'>2023-09-18 00:00:00</td>
+<td style='background-color: #FFFFFF'>V000178</td>
+<td style='background-color: #FFFFFF'>13</td>
+<td style='background-color: #FFFFFF'>60.203</td>
+<td style='background-color: #FFFFFF'>463.1</td>
+<td style='background-color: #FFFFFF'>K002411</td>
+<td style='background-color: #FFFFFF'>José Angel Sancho</td>
+<td style='background-color: #FFFFFF'>Tienda Status</td>
+<td style='background-color: #FFFFFF'>ES</td>
+<td style='background-color: #FFFFFF'>07590</td>
+<td style='background-color: #FFFFFF'>Cala Ratjada - Balears</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
 </tr>
@@ -499,8 +2165,6 @@
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #FFFFFF'>All requested: </td>
-<td style='background-color: #FFF300'>70858.2</td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
@@ -508,12 +2172,21 @@
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #68BF9D'>2165.71</td>
 <td style='background-color: #FFFFFF'> </td>
-<td style='background-color: #68BF9D'>281.46</td>
+<td style='background-color: #FFFFFF'>All paid amount</td>
+<td style='background-color: #90EE90'>67976.6</td>
+<td style='background-color: #FFFFFF'>All comissions</td>
+<td style='background-color: #90EE90'>8836.96</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
 <td style='background-color: #FFFFFF'> </td>
 </tr>
  </tbody>
-                </table>
-                {% endblock %}
+                    </table>
+                    {% endblock %}
