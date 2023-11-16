@@ -1,0 +1,388 @@
+{%extends 'base.html'%}
+                            {% block content %}     
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--<link rel="stylesheet" type="text/css" href="normas.css">-->
+    <style>
+        body{
+            background-color: #d6e1f8;
+
+        }
+        th, td {
+            border: 1px solid #ccc;
+
+            text-align: center;
+        }
+
+        table {
+
+            border-collapse: collapse !important; /* optional: collapse the table borders */
+        }
+
+        table tr {
+            background-color: #8BC34A !important; /* Set background color of all rows */
+        }
+
+        table tr:hover td {
+            background-color: #2196F3 !important; /* Set background color of cells when hovered */
+        }
+
+    </style>
+                     <table border="1" class="dataframe" style="width:100%;">
+                                 <thead>
+                                     <tr style="text-align: right;">
+<th style='background-color: #899EF0'>RK</th>
+<th style='background-color: #899EF0'>GF-Nr</th>
+<th style='background-color: #899EF0'>Datum</th>
+<th style='background-color: #899EF0'>Vertreter</th>
+<th style='background-color: #899EF0'>ProvProz</th>
+<th style='background-color: #899EF0'>Provision</th>
+<th style='background-color: #899EF0'>Summe</th>
+<th style='background-color: #899EF0'>Lieferant</th>
+<th style='background-color: #899EF0'>Lieferantenname</th>
+<th style='background-color: #899EF0'>Name2</th>
+<th style='background-color: #899EF0'>IntKz</th>
+<th style='background-color: #899EF0'>PLZ Neu</th>
+<th style='background-color: #899EF0'>Ort</th>
+<th style='background-color: #899EF0'>s</th>
+<th style='background-color: #899EF0'>Paid amount</th>
+<th style='background-color: #899EF0'>Payment status</th>
+<th style='background-color: #899EF0'>Payment commission</th>
+<th style='background-color: #899EF0'>Payments with Rest</th>
+<th style='background-color: #899EF0'>Payments Dates</th>
+<th style='background-color: #FFFFFF'> </th>
+</tr>
+</thead>
+                          <tbody><tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300030</td>
+<td style='background-color: #FFF300'>2023-01-11</td>
+<td style='background-color: #FFF300'>V000122</td>
+<td style='background-color: #FFF300'>14</td>
+<td style='background-color: #FFF300'>-4.732</td>
+<td style='background-color: #FFF300'>-33.8</td>
+<td style='background-color: #FFF300'>K005890</td>
+<td style='background-color: #FFF300'>SYRTIS SRL</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>00071</td>
+<td style='background-color: #FFF300'>Pomezia, Roma</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300109</td>
+<td style='background-color: #FFF300'>2023-01-26</td>
+<td style='background-color: #FFF300'>V000122</td>
+<td style='background-color: #FFF300'>14</td>
+<td style='background-color: #FFF300'>-4.718</td>
+<td style='background-color: #FFF300'>-33.7</td>
+<td style='background-color: #FFF300'>K005890</td>
+<td style='background-color: #FFF300'>SYRTIS SRL</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>00071</td>
+<td style='background-color: #FFF300'>Pomezia, Roma</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300167</td>
+<td style='background-color: #FFF300'>2023-02-07</td>
+<td style='background-color: #FFF300'>V000122</td>
+<td style='background-color: #FFF300'>14</td>
+<td style='background-color: #FFF300'>-1078.945</td>
+<td style='background-color: #FFF300'>-7706.75</td>
+<td style='background-color: #FFF300'>K004960</td>
+<td style='background-color: #FFF300'>MACRO CONSULTING SRL</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>03014</td>
+<td style='background-color: #FFF300'>Fiuggi (FR)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300189</td>
+<td style='background-color: #FFF300'>2023-02-10</td>
+<td style='background-color: #FFF300'>V000122</td>
+<td style='background-color: #FFF300'>14</td>
+<td style='background-color: #FFF300'>-2.562</td>
+<td style='background-color: #FFF300'>-18.3</td>
+<td style='background-color: #FFF300'>K005890</td>
+<td style='background-color: #FFF300'>SYRTIS SRL</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>00071</td>
+<td style='background-color: #FFF300'>Pomezia, Roma</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300275</td>
+<td style='background-color: #FFF300'>2023-02-27</td>
+<td style='background-color: #FFF300'>V000122</td>
+<td style='background-color: #FFF300'>14</td>
+<td style='background-color: #FFF300'>-3.5</td>
+<td style='background-color: #FFF300'>-25</td>
+<td style='background-color: #FFF300'>K005890</td>
+<td style='background-color: #FFF300'>SYRTIS SRL</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>00071</td>
+<td style='background-color: #FFF300'>Pomezia, Roma</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300328</td>
+<td style='background-color: #FFF300'>2023-03-06</td>
+<td style='background-color: #FFF300'>V000122</td>
+<td style='background-color: #FFF300'>14</td>
+<td style='background-color: #FFF300'>-12.992</td>
+<td style='background-color: #FFF300'>-92.8</td>
+<td style='background-color: #FFF300'>K005890</td>
+<td style='background-color: #FFF300'>SYRTIS SRL</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>00071</td>
+<td style='background-color: #FFF300'>Pomezia, Roma</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300530</td>
+<td style='background-color: #FFF300'>2023-04-11</td>
+<td style='background-color: #FFF300'>V000122</td>
+<td style='background-color: #FFF300'>14</td>
+<td style='background-color: #FFF300'>-32.872</td>
+<td style='background-color: #FFF300'>-234.8</td>
+<td style='background-color: #FFF300'>K005890</td>
+<td style='background-color: #FFF300'>SYRTIS SRL</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>00071</td>
+<td style='background-color: #FFF300'>Pomezia, Roma</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300632</td>
+<td style='background-color: #FFF300'>2023-04-25</td>
+<td style='background-color: #FFF300'>V000122</td>
+<td style='background-color: #FFF300'>14</td>
+<td style='background-color: #FFF300'>-220.1668</td>
+<td style='background-color: #FFF300'>-1572.62</td>
+<td style='background-color: #FFF300'>K005890</td>
+<td style='background-color: #FFF300'>SYRTIS SRL</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>00071</td>
+<td style='background-color: #FFF300'>Pomezia, Roma</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300914</td>
+<td style='background-color: #FFF300'>2023-05-31</td>
+<td style='background-color: #FFF300'>V000122</td>
+<td style='background-color: #FFF300'>14</td>
+<td style='background-color: #FFF300'>-7.42</td>
+<td style='background-color: #FFF300'>-53</td>
+<td style='background-color: #FFF300'>K005890</td>
+<td style='background-color: #FFF300'>SYRTIS SRL</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>00071</td>
+<td style='background-color: #FFF300'>Pomezia, Roma</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301146</td>
+<td style='background-color: #FFF300'>2023-06-30</td>
+<td style='background-color: #FFF300'>V000122</td>
+<td style='background-color: #FFF300'>14</td>
+<td style='background-color: #FFF300'>-12.712</td>
+<td style='background-color: #FFF300'>-90.8</td>
+<td style='background-color: #FFF300'>K005890</td>
+<td style='background-color: #FFF300'>SYRTIS SRL</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>00071</td>
+<td style='background-color: #FFF300'>Pomezia, Roma</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301229</td>
+<td style='background-color: #00FF00'>2023-07-14</td>
+<td style='background-color: #00FF00'>V000122</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>172.186</td>
+<td style='background-color: #00FF00'>1229.9</td>
+<td style='background-color: #00FF00'>K004687</td>
+<td style='background-color: #00FF00'>Lo Sfizio di Rizzo Patrizia</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>03047</td>
+<td style='background-color: #00FF00'>San Giorgio a Liri (FR)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>615</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #FFFFFF'>86.1</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>02.10.2023,  307.5</td>
+<td style='background-color: #FFFFFF'>30.10.2023,  307.5</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301479</td>
+<td style='background-color: #00FF00'>2023-08-31</td>
+<td style='background-color: #00FF00'>V000122</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>53.41</td>
+<td style='background-color: #00FF00'>381.5</td>
+<td style='background-color: #00FF00'>K002294</td>
+<td style='background-color: #00FF00'>Piras Laura</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>00137</td>
+<td style='background-color: #00FF00'>Roma</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>381.5</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>53.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>02.10.2023,  381.5</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301516</td>
+<td style='background-color: #FFF300'>2023-09-07</td>
+<td style='background-color: #FFF300'>V000122</td>
+<td style='background-color: #FFF300'>14</td>
+<td style='background-color: #FFF300'>-1189.3112</td>
+<td style='background-color: #FFF300'>-8495.08</td>
+<td style='background-color: #FFF300'>K005886</td>
+<td style='background-color: #FFF300'>Sea s.r.l.s.</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>00053</td>
+<td style='background-color: #FFF300'>Civitavecchia (RM)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301618</td>
+<td style='background-color: #00FF00'>2023-09-26</td>
+<td style='background-color: #00FF00'>V000122</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>44.282</td>
+<td style='background-color: #00FF00'>316.3</td>
+<td style='background-color: #00FF00'>K002294</td>
+<td style='background-color: #00FF00'>Piras Laura</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>00137</td>
+<td style='background-color: #00FF00'>Roma</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>316.3</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>44.3</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>30.10.2023,  316.3</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>All paid amount</td>
+<td style='background-color: #90EE90'>1312.8</td>
+<td style='background-color: #FFFFFF'>All comissions</td>
+<td style='background-color: #90EE90'>183.79</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+ </tbody>
+                    </table>
+                    {% endblock %}

@@ -1,0 +1,388 @@
+{%extends 'base.html'%}
+                            {% block content %}     
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--<link rel="stylesheet" type="text/css" href="normas.css">-->
+    <style>
+        body{
+            background-color: #d6e1f8;
+
+        }
+        th, td {
+            border: 1px solid #ccc;
+
+            text-align: center;
+        }
+
+        table {
+
+            border-collapse: collapse !important; /* optional: collapse the table borders */
+        }
+
+        table tr {
+            background-color: #8BC34A !important; /* Set background color of all rows */
+        }
+
+        table tr:hover td {
+            background-color: #2196F3 !important; /* Set background color of cells when hovered */
+        }
+
+    </style>
+                     <table border="1" class="dataframe" style="width:100%;">
+                                 <thead>
+                                     <tr style="text-align: right;">
+<th style='background-color: #899EF0'>RK</th>
+<th style='background-color: #899EF0'>GF-Nr</th>
+<th style='background-color: #899EF0'>Datum</th>
+<th style='background-color: #899EF0'>Vertreter</th>
+<th style='background-color: #899EF0'>ProvProz</th>
+<th style='background-color: #899EF0'>Provision</th>
+<th style='background-color: #899EF0'>Summe</th>
+<th style='background-color: #899EF0'>Lieferant</th>
+<th style='background-color: #899EF0'>Lieferantenname</th>
+<th style='background-color: #899EF0'>Name2</th>
+<th style='background-color: #899EF0'>IntKz</th>
+<th style='background-color: #899EF0'>PLZ Neu</th>
+<th style='background-color: #899EF0'>Ort</th>
+<th style='background-color: #899EF0'>s</th>
+<th style='background-color: #899EF0'>Paid amount</th>
+<th style='background-color: #899EF0'>Payment status</th>
+<th style='background-color: #899EF0'>Payment commission</th>
+<th style='background-color: #899EF0'>Payments with Rest</th>
+<th style='background-color: #899EF0'>Payments Dates</th>
+<th style='background-color: #FFFFFF'> </th>
+</tr>
+</thead>
+                          <tbody><tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301076</td>
+<td style='background-color: #00FF00'>2023-06-23</td>
+<td style='background-color: #00FF00'>V000186</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>131.278</td>
+<td style='background-color: #00FF00'>937.7</td>
+<td style='background-color: #00FF00'>K000363</td>
+<td style='background-color: #00FF00'>Il Jolly SAS</td>
+<td style='background-color: #00FF00'>di Finotti Paola E C.</td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>10040</td>
+<td style='background-color: #00FF00'>Leini' (TO)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>312.6</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #FFFFFF'>43.8</td>
+<td style='background-color: #FFFFFF'>11.10.2023,  0</td>
+<td style='background-color: #FFFFFF'>11.10.2023,  312.6</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301114</td>
+<td style='background-color: #00FF00'>2023-06-28</td>
+<td style='background-color: #00FF00'>V000186</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>9.618</td>
+<td style='background-color: #00FF00'>68.7</td>
+<td style='background-color: #00FF00'>K001148</td>
+<td style='background-color: #00FF00'>Tamburini di Tamburini Marco</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>17020</td>
+<td style='background-color: #00FF00'>Andora (SV)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>23.3</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #FFFFFF'>3.3</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.10.2023,  23.3</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301114</td>
+<td style='background-color: #00FF00'>2023-06-28</td>
+<td style='background-color: #00FF00'>V000186</td>
+<td style='background-color: #00FF00'>0</td>
+<td style='background-color: #00FF00'>0</td>
+<td style='background-color: #00FF00'>68.7</td>
+<td style='background-color: #00FF00'>K001148</td>
+<td style='background-color: #00FF00'>Tamburini di Tamburini Marco</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>17020</td>
+<td style='background-color: #00FF00'>Andora (SV)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>23.3</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'>31.10.2023,  69</td>
+<td style='background-color: #FFFFFF'>31.10.2023,  23.3</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301225</td>
+<td style='background-color: #FFF300'>2023-07-13</td>
+<td style='background-color: #FFF300'>V000186</td>
+<td style='background-color: #FFF300'>14</td>
+<td style='background-color: #FFF300'>-73.178</td>
+<td style='background-color: #FFF300'>-522.7</td>
+<td style='background-color: #FFF300'>K000342</td>
+<td style='background-color: #FFF300'>Ambrosino Collezioni Casa</td>
+<td style='background-color: #FFF300'>di Ambrosino Roberto</td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>12020</td>
+<td style='background-color: #FFF300'>Villafalletto (CN)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301269</td>
+<td style='background-color: #FFF300'>2023-07-21</td>
+<td style='background-color: #FFF300'>V000186</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>-115.2</td>
+<td style='background-color: #FFF300'>K004412</td>
+<td style='background-color: #FFF300'>RAFFO CRISTINA</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>15076</td>
+<td style='background-color: #FFF300'>Ovada (AL)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301372</td>
+<td style='background-color: #00FF00'>2023-08-08</td>
+<td style='background-color: #00FF00'>V000186</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>102.928</td>
+<td style='background-color: #00FF00'>735.2</td>
+<td style='background-color: #00FF00'>K001148</td>
+<td style='background-color: #00FF00'>Tamburini di Tamburini Marco</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>17020</td>
+<td style='background-color: #00FF00'>Andora (SV)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>735.2</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>102.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>02.10.2023,  713.0</td>
+<td style='background-color: #FFFFFF'>02.10.2023,  22.2</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301372</td>
+<td style='background-color: #00FF00'>2023-08-08</td>
+<td style='background-color: #00FF00'>V000186</td>
+<td style='background-color: #00FF00'>0</td>
+<td style='background-color: #00FF00'>0</td>
+<td style='background-color: #00FF00'>735.2</td>
+<td style='background-color: #00FF00'>K001148</td>
+<td style='background-color: #00FF00'>Tamburini di Tamburini Marco</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>17020</td>
+<td style='background-color: #00FF00'>Andora (SV)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>735.2</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'>02.10.2023,  735</td>
+<td style='background-color: #FFFFFF'>02.10.2023,  713.0</td>
+<td style='background-color: #FFFFFF'>02.10.2023,  22.2</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301374</td>
+<td style='background-color: #00FF00'>2023-08-08</td>
+<td style='background-color: #00FF00'>V000186</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>54.3844</td>
+<td style='background-color: #00FF00'>388.46</td>
+<td style='background-color: #00FF00'>K002536</td>
+<td style='background-color: #00FF00'>Odello Massa</td>
+<td style='background-color: #00FF00'>di Massa Maria Lucia</td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>12073</td>
+<td style='background-color: #00FF00'>Ceva (CN)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>388.5</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>54.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>02.10.2023,  388.5</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301458</td>
+<td style='background-color: #00FF00'>2023-08-24</td>
+<td style='background-color: #00FF00'>V000186</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>106.386</td>
+<td style='background-color: #00FF00'>759.9</td>
+<td style='background-color: #00FF00'>K001148</td>
+<td style='background-color: #00FF00'>Tamburini di Tamburini Marco</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>17020</td>
+<td style='background-color: #00FF00'>Andora (SV)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>759.9</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>106.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>02.10.2023,  737.1</td>
+<td style='background-color: #FFFFFF'>02.10.2023,  22.8</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301458</td>
+<td style='background-color: #00FF00'>2023-08-24</td>
+<td style='background-color: #00FF00'>V000186</td>
+<td style='background-color: #00FF00'>0</td>
+<td style='background-color: #00FF00'>0</td>
+<td style='background-color: #00FF00'>759.9</td>
+<td style='background-color: #00FF00'>K001148</td>
+<td style='background-color: #00FF00'>Tamburini di Tamburini Marco</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>17020</td>
+<td style='background-color: #00FF00'>Andora (SV)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>759.9</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'>02.10.2023,  760</td>
+<td style='background-color: #FFFFFF'>02.10.2023,  737.1</td>
+<td style='background-color: #FFFFFF'>02.10.2023,  22.8</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301495</td>
+<td style='background-color: #00FF00'>2023-09-05</td>
+<td style='background-color: #00FF00'>V000186</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>75.502</td>
+<td style='background-color: #00FF00'>539.3</td>
+<td style='background-color: #00FF00'>K001148</td>
+<td style='background-color: #00FF00'>Tamburini di Tamburini Marco</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>17020</td>
+<td style='background-color: #00FF00'>Andora (SV)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>539.3</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>75.5</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.10.2023,  523.0</td>
+<td style='background-color: #FFFFFF'>31.10.2023,  16.3</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301495</td>
+<td style='background-color: #00FF00'>2023-09-05</td>
+<td style='background-color: #00FF00'>V000186</td>
+<td style='background-color: #00FF00'>0</td>
+<td style='background-color: #00FF00'>0</td>
+<td style='background-color: #00FF00'>539.3</td>
+<td style='background-color: #00FF00'>K001148</td>
+<td style='background-color: #00FF00'>Tamburini di Tamburini Marco</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>17020</td>
+<td style='background-color: #00FF00'>Andora (SV)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>539.3</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'>31.10.2023,  539</td>
+<td style='background-color: #FFFFFF'>31.10.2023,  523.0</td>
+<td style='background-color: #FFFFFF'>31.10.2023,  16.3</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301617</td>
+<td style='background-color: #00FF00'>2023-09-26</td>
+<td style='background-color: #00FF00'>V000186</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>103.5818</td>
+<td style='background-color: #00FF00'>739.87</td>
+<td style='background-color: #00FF00'>K001148</td>
+<td style='background-color: #00FF00'>Tamburini di Tamburini Marco</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>17020</td>
+<td style='background-color: #00FF00'>Andora (SV)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>739.9000000000001</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>103.6</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.10.2023,  717.7</td>
+<td style='background-color: #FFFFFF'>31.10.2023,  22.2</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301617</td>
+<td style='background-color: #00FF00'>2023-09-26</td>
+<td style='background-color: #00FF00'>V000186</td>
+<td style='background-color: #00FF00'>0</td>
+<td style='background-color: #00FF00'>0</td>
+<td style='background-color: #00FF00'>739.87</td>
+<td style='background-color: #00FF00'>K001148</td>
+<td style='background-color: #00FF00'>Tamburini di Tamburini Marco</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>17020</td>
+<td style='background-color: #00FF00'>Andora (SV)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>739.9000000000001</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>0</td>
+<td style='background-color: #FFFFFF'>31.10.2023,  740</td>
+<td style='background-color: #FFFFFF'>31.10.2023,  717.7</td>
+<td style='background-color: #FFFFFF'>31.10.2023,  22.2</td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>All paid amount</td>
+<td style='background-color: #90EE90'>3453.3</td>
+<td style='background-color: #FFFFFF'>All comissions</td>
+<td style='background-color: #90EE90'>489.82</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+ </tbody>
+                    </table>
+                    {% endblock %}
