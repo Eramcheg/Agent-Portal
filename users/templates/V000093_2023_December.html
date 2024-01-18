@@ -1,0 +1,267 @@
+{%extends 'base.html'%}
+                            {% block content %}     
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--<link rel="stylesheet" type="text/css" href="normas.css">-->
+    <style>
+        body{
+            background-color: #d6e1f8;
+
+        }
+        th, td {
+            border: 1px solid #ccc;
+
+            text-align: center;
+        }
+
+        table {
+
+            border-collapse: collapse !important; /* optional: collapse the table borders */
+        }
+
+        table tr {
+            background-color: #8BC34A !important; /* Set background color of all rows */
+        }
+
+        table tr:hover td {
+            background-color: #2196F3 !important; /* Set background color of cells when hovered */
+        }
+
+    </style>
+                     <table border="1" class="dataframe" style="width:100%;">
+                                 <thead>
+                                     <tr style="text-align: right;">
+<th style='background-color: #899EF0'>RK</th>
+<th style='background-color: #899EF0'>GF-Nr</th>
+<th style='background-color: #899EF0'>Datum</th>
+<th style='background-color: #899EF0'>Vertreter</th>
+<th style='background-color: #899EF0'>ProvProz</th>
+<th style='background-color: #899EF0'>Provision</th>
+<th style='background-color: #899EF0'>Summe</th>
+<th style='background-color: #899EF0'>Lieferant</th>
+<th style='background-color: #899EF0'>Lieferantenname</th>
+<th style='background-color: #899EF0'>Name2</th>
+<th style='background-color: #899EF0'>IntKz</th>
+<th style='background-color: #899EF0'>PLZ Neu</th>
+<th style='background-color: #899EF0'>Ort</th>
+<th style='background-color: #899EF0'>s</th>
+<th style='background-color: #899EF0'>Paid amount</th>
+<th style='background-color: #899EF0'>Payment status</th>
+<th style='background-color: #899EF0'>Payment commission</th>
+<th style='background-color: #899EF0'>Payments with Rest</th>
+<th style='background-color: #899EF0'>Payments Dates</th>
+</tr>
+</thead>
+                          <tbody><tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301000</td>
+<td style='background-color: #FFF300'>2023-06-13</td>
+<td style='background-color: #FFF300'>V000093</td>
+<td style='background-color: #FFF300'>13</td>
+<td style='background-color: #FFF300'>-712.231</td>
+<td style='background-color: #FFF300'>-5478.7</td>
+<td style='background-color: #FFF300'>K003186</td>
+<td style='background-color: #FFF300'>Joyeria Armaan</td>
+<td style='background-color: #FFF300'>Sunil C y Sunil C Sadhwani S.C</td>
+<td style='background-color: #FFF300'>ES</td>
+<td style='background-color: #FFF300'>29640</td>
+<td style='background-color: #FFF300'>Fuengirola, Malaga</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301218</td>
+<td style='background-color: #FFF300'>2023-07-12</td>
+<td style='background-color: #FFF300'>V000093</td>
+<td style='background-color: #FFF300'>13</td>
+<td style='background-color: #FFF300'>-30.9881</td>
+<td style='background-color: #FFF300'>-238.37</td>
+<td style='background-color: #FFF300'>K003186</td>
+<td style='background-color: #FFF300'>Joyeria Armaan</td>
+<td style='background-color: #FFF300'>Sunil C y Sunil C Sadhwani S.C</td>
+<td style='background-color: #FFF300'>ES</td>
+<td style='background-color: #FFF300'>29640</td>
+<td style='background-color: #FFF300'>Fuengirola, Malaga</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301441</td>
+<td style='background-color: #00FF00'>2023-08-23</td>
+<td style='background-color: #00FF00'>V000093</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>151.8205</td>
+<td style='background-color: #00FF00'>1167.85</td>
+<td style='background-color: #00FF00'>K003186</td>
+<td style='background-color: #00FF00'>Joyeria Armaan</td>
+<td style='background-color: #00FF00'>Sunil C y Sunil C Sadhwani S.C</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>29640</td>
+<td style='background-color: #00FF00'>Fuengirola, Malaga</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>583.9</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #FFFFFF'>75.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>29.12.2023,  583.9</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301592</td>
+<td style='background-color: #00FF00'>2023-09-22</td>
+<td style='background-color: #00FF00'>V000093</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>378.911</td>
+<td style='background-color: #00FF00'>2914.7</td>
+<td style='background-color: #00FF00'>K003186</td>
+<td style='background-color: #00FF00'>Joyeria Armaan</td>
+<td style='background-color: #00FF00'>Sunil C y Sunil C Sadhwani S.C</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>29640</td>
+<td style='background-color: #00FF00'>Fuengirola, Malaga</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1457.3</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #FFFFFF'>189.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>29.12.2023,  1457.3</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301752</td>
+<td style='background-color: #00FF00'>2023-10-12</td>
+<td style='background-color: #00FF00'>V000093</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>163.046</td>
+<td style='background-color: #00FF00'>1254.2</td>
+<td style='background-color: #00FF00'>K002313</td>
+<td style='background-color: #00FF00'>"SELECTION"</td>
+<td style='background-color: #00FF00'>Maria Luisa Correal Delgado</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>29620</td>
+<td style='background-color: #00FF00'>La Carihuela - Torremolinos - Malaga</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>627.1</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #FFFFFF'>81.5</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>15.12.2023,  627.1</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301889</td>
+<td style='background-color: #00FF00'>2023-11-06</td>
+<td style='background-color: #00FF00'>V000093</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>29.731</td>
+<td style='background-color: #00FF00'>228.7</td>
+<td style='background-color: #00FF00'>K005149</td>
+<td style='background-color: #00FF00'>ALVAREZ JOYEROS S.C</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>29670</td>
+<td style='background-color: #00FF00'>SAN PEDRO DE ALCANTARA MALAGA</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>228.7</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>29.7</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>15.12.2023,  228.7</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301994</td>
+<td style='background-color: #00FF00'>2023-11-21</td>
+<td style='background-color: #00FF00'>V000093</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>226.239</td>
+<td style='background-color: #00FF00'>1740.3</td>
+<td style='background-color: #00FF00'>K002313</td>
+<td style='background-color: #00FF00'>"SELECTION"</td>
+<td style='background-color: #00FF00'>Maria Luisa Correal Delgado</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>29620</td>
+<td style='background-color: #00FF00'>La Carihuela - Torremolinos - Malaga</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>870.1</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #FFFFFF'>113.1</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>29.12.2023,  870.1</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4302012</td>
+<td style='background-color: #00FF00'>2023-11-23</td>
+<td style='background-color: #00FF00'>V000093</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>21.684</td>
+<td style='background-color: #00FF00'>166.8</td>
+<td style='background-color: #00FF00'>K005149</td>
+<td style='background-color: #00FF00'>ALVAREZ JOYEROS S.C</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>29670</td>
+<td style='background-color: #00FF00'>SAN PEDRO DE ALCANTARA MALAGA</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>166.8</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>21.7</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>29.12.2023,  166.8</td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4302224</td>
+<td style='background-color: #FFF300'>2023-12-29</td>
+<td style='background-color: #FFF300'>V000093</td>
+<td style='background-color: #FFF300'>13</td>
+<td style='background-color: #FFF300'>-5.0882</td>
+<td style='background-color: #FFF300'>-39.14</td>
+<td style='background-color: #FFF300'>K003186</td>
+<td style='background-color: #FFF300'>Joyeria Armaan</td>
+<td style='background-color: #FFF300'>Sunil C y Sunil C Sadhwani S.C</td>
+<td style='background-color: #FFF300'>ES</td>
+<td style='background-color: #FFF300'>29640</td>
+<td style='background-color: #FFF300'>Fuengirola, Malaga</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>All paid amount</td>
+<td style='background-color: #90EE90'>3933.9</td>
+<td style='background-color: #FFFFFF'>All comissions</td>
+<td style='background-color: #90EE90'>511.41</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+ </tbody>
+                    </table>
+                    {% endblock %}
