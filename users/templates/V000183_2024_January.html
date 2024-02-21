@@ -1,0 +1,141 @@
+{%extends 'base.html'%}
+                            {% block content %}     
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--<link rel="stylesheet" type="text/css" href="normas.css">-->
+    <style>
+        body{
+            background-color: #d6e1f8;
+
+        }
+        th, td {
+            border: 1px solid #ccc;
+
+            text-align: center;
+        }
+
+        table {
+
+            border-collapse: collapse !important; /* optional: collapse the table borders */
+        }
+
+        table tr {
+            background-color: #8BC34A !important; /* Set background color of all rows */
+        }
+
+        table tr:hover td {
+            background-color: #2196F3 !important; /* Set background color of cells when hovered */
+        }
+
+    </style>
+                     <table border="1" class="dataframe" style="width:100%;">
+                                 <thead>
+                                     <tr style="text-align: right;">
+<th style='background-color: #899EF0'>RK</th>
+<th style='background-color: #899EF0'>GF-Nr</th>
+<th style='background-color: #899EF0'>Datum</th>
+<th style='background-color: #899EF0'>Vertreter</th>
+<th style='background-color: #899EF0'>ProvProz</th>
+<th style='background-color: #899EF0'>Provision</th>
+<th style='background-color: #899EF0'>Summe</th>
+<th style='background-color: #899EF0'>Lieferant</th>
+<th style='background-color: #899EF0'>Lieferantenname</th>
+<th style='background-color: #899EF0'>Name2</th>
+<th style='background-color: #899EF0'>IntKz</th>
+<th style='background-color: #899EF0'>PLZ Neu</th>
+<th style='background-color: #899EF0'>Ort</th>
+<th style='background-color: #899EF0'>s</th>
+<th style='background-color: #899EF0'>Paid amount</th>
+<th style='background-color: #899EF0'>Payment status</th>
+<th style='background-color: #899EF0'>Payment commission</th>
+<th style='background-color: #899EF0'>Payments with Rest</th>
+<th style='background-color: #899EF0'>Payments Dates</th>
+</tr>
+</thead>
+                          <tbody><tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300873</td>
+<td style='background-color: #FFF300'>2023-05-30</td>
+<td style='background-color: #FFF300'>V000183</td>
+<td style='background-color: #FFF300'>10</td>
+<td style='background-color: #FFF300'>-1.8</td>
+<td style='background-color: #FFF300'>-18</td>
+<td style='background-color: #FFF300'>K005170</td>
+<td style='background-color: #FFF300'>PLATAS</td>
+<td style='background-color: #FFF300'>Natalia Pazos Martínez</td>
+<td style='background-color: #FFF300'>ES</td>
+<td style='background-color: #FFF300'>15402</td>
+<td style='background-color: #FFF300'>Ferrol, La Coruña</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301911</td>
+<td style='background-color: #00FF00'>2023-11-08</td>
+<td style='background-color: #00FF00'>V000183</td>
+<td style='background-color: #00FF00'>10</td>
+<td style='background-color: #00FF00'>30.52</td>
+<td style='background-color: #00FF00'>305.2</td>
+<td style='background-color: #00FF00'>K003419</td>
+<td style='background-color: #00FF00'>JC Orfebres</td>
+<td style='background-color: #00FF00'>Jotace Orfebres, SL</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>15701</td>
+<td style='background-color: #00FF00'>Santiago de Compostela</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>305.2</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>30.5</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>15.01.2024,  305.2</td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4302153</td>
+<td style='background-color: #FFF300'>2023-12-13</td>
+<td style='background-color: #FFF300'>V000183</td>
+<td style='background-color: #FFF300'>13</td>
+<td style='background-color: #FFF300'>-4.667</td>
+<td style='background-color: #FFF300'>-35.9</td>
+<td style='background-color: #FFF300'>K005477</td>
+<td style='background-color: #FFF300'>Paolo Lena Fernandez</td>
+<td style='background-color: #FFF300'>Per Lei Plata</td>
+<td style='background-color: #FFF300'>ES</td>
+<td style='background-color: #FFF300'>15630</td>
+<td style='background-color: #FFF300'>MINO</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>All paid amount</td>
+<td style='background-color: #90EE90'>305.2</td>
+<td style='background-color: #FFFFFF'>All comissions</td>
+<td style='background-color: #90EE90'>30.52</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+ </tbody>
+                    </table>
+                    {% endblock %}
