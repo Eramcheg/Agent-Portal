@@ -304,7 +304,239 @@ Décembre
 
 
 </div>
+<br>
+<br>
+<div style="display: flex; width: 100%; height: 90px">
+     <button class="dropbtn2023" >2024</button>
 
+
+{% if user.username == "V000161" or user.username == "V000158" or user.username == "V000155" or user.username == "V000147" or user.username == "V000142" or user.username == "V000122" or user.username == "V000157" or user.username == "V000030" or user.username == "V000096" or user.username == "V000136" or user.username == "V000184" or user.username == "V000186" %}
+            <span><a href="{% if language == '' or language == 'en'  %} {% url 'year_en' %}?name=2024_Total {% elif language == 'es' %} {% url 'year_es' %}?name=2024_Total {% elif language == 'it' %} {% url 'year_it' %}?name=2024_Total {% elif language == 'de' %} {% url 'year_de' %}?name=2024_Total {% elif language == 'fr' %} {% url 'year_fr' %}?name=2024_Total {% endif %}" class="aaa">{% if language == '' or language == 'en'  %} Total {% elif language == 'es' %} Total {% elif language == 'it' %} Totale {% elif language == 'de' %} Gesamt {% elif language == 'fr' %} Total {% endif %}</a>
+        <a href="{% url 'download' %}?name=2024_Total" class="download"><i class="fa fa-download"></i></a>
+        </span>
+        <span><a href="{% if language == '' or language == 'en'  %} {% url 'year_en' %}?name=2024_First {% elif language == 'es' %} {% url 'year_es' %}?name=2024_First {% elif language == 'it' %} {% url 'year_it' %}?name=2024_First {% elif language == 'de' %} {% url 'year_de' %}?name=2024_First {% elif language == 'fr' %} {% url 'year_fr' %}?name=2024_First{% endif %}" class="aaa">{% if language == '' or language == 'en' %} First quarter
+{% elif language == 'es' %}Primer trimestre
+{% elif language == 'it' %}Primo trimestre
+{% elif language == 'de' %}Erstes Quartal
+{% elif language == 'fr' %}Premier trimestre
+{% endif %}</a>
+    <a href="{% url 'download' %}?name=2024_First" class="download"><i class="fa fa-download"></i></a>
+        </span>
+    <span><a href="{% if language == '' or language == 'en'  %} {% url 'year_en' %}?name=2024_Second {% elif language == 'es' %} {% url 'year_es' %}?name=2024_Second {% elif language == 'it' %} {% url 'year_it' %}?name=2024_Second {% elif language == 'de' %} {% url 'year_de' %}?name=2024_Second {% elif language == 'fr' %} {% url 'year_fr' %}?name=2024_Second {% endif %}" class="aaa">{% if language == '' or language == 'en' %}
+Second quarter
+{% elif language == 'es' %}
+Segundo trimestre
+{% elif language == 'it' %}
+Secondo trimestre
+{% elif language == 'de' %}
+Zweites Quartal
+{% elif language == 'fr' %}
+Deuxième trimestre
+{% endif %}</a>
+    <a href="{% url 'download' %}?name=2024_Second" class="download"><i class="fa fa-download"></i></a>
+        </span>
+            <span>
+    <a href="{% if language == '' or language == 'en'  %} {% url 'year_en' %}?name=2024_Third {% elif language == 'es' %} {% url 'year_es' %}?name=2024_Third {% elif language == 'it' %} {% url 'year_it' %}?name=2024_Third {% elif language == 'de' %} {% url 'year_de' %}?name=2024_Third {% elif language == 'fr' %} {% url 'year_fr' %}?name=2024_Third{% endif %}" class="aaa">{% if language == '' or language == 'en' %}
+Third quarter
+{% elif language == 'es' %}
+Tercer trimestre
+{% elif language == 'it' %}
+Terzo trimestre
+{% elif language == 'de' %}
+Drittes Quartal
+{% elif language == 'fr' %}
+Troisième trimestre
+{% endif %}</a>
+            <a href="{% url 'download' %}?name=2024_Third" class="download"><i class="fa fa-download"></i></a>
+        </span>
+    <span>
+    <a href="{% if language == '' or language == 'en'  %} {% url 'year_en' %}?name=2024_Fourth {% elif language == 'es' %} {% url 'year_es' %}?name=2024_Fourth {% elif language == 'it' %} {% url 'year_it' %}?name=2024_Fourth {% elif language == 'de' %} {% url 'year_de' %}?name=2024_Fourth {% elif language == 'fr' %} {% url 'year_fr' %}?name=2024_Fourth {% endif %}" class="aaa">{% if language == '' or language == 'en' %}
+Fourth quarter
+{% elif language == 'es' %}
+Cuarto trimestre
+{% elif language == 'it' %}
+Quarto trimestre
+{% elif language == 'de' %}
+Viertes Quartal
+{% elif language == 'fr' %}
+Quatrième trimestre
+{% endif %}</a>
+            <a href="{% url 'download' %}?name=2024_Fourth" class="download"><i class="fa fa-download"></i></a>
+        </span>
+
+
+        {% else %}
+
+
+        <span><a href="{% if language == '' or language == 'en'  %} {% url 'year_en' %}?name=2024_Total {% elif language == 'es' %} {% url 'year_es' %}?name=2024_Total {% elif language == 'it' %} {% url 'year_it' %}?name=2024_Total {% elif language == 'de' %} {% url 'year_de' %}?name=2024_Total {% elif language == 'fr' %} {% url 'year_fr' %}?name=2024_Total {% endif %}" class="aaa">{% if language == '' or language == 'en'  %} Total {% elif language == 'es' %} Total {% elif language == 'it' %} Totale {% elif language == 'de' %} Gesamt {% elif language == 'fr' %} Total {% endif %}</a>
+        <a href="{% url 'download' %}?name=2024_Total" class="download"><i class="fa fa-download"></i></a>
+        </span>
+            <span><a href="{% if language == '' or language == 'en'  %} {% url 'year_en' %}?name=2024_January {% elif language == 'es' %} {% url 'year_es' %}?name=2024_January {% elif language == 'it' %} {% url 'year_it' %}?name=2024_January {% elif language == 'de' %} {% url 'year_de' %}?name=2024_January {% elif language == 'fr' %} {% url 'year_fr' %}?name=2024_January{% endif %}" class="aaa">{% if language == '' or language == 'en' %}January
+{% elif language == 'es' %}Enero
+{% elif language == 'it' %}Gennaio
+{% elif language == 'de' %}Januar
+{% elif language == 'fr' %}Janvier
+{% endif %}</a>
+            <a href="{% url 'download' %}?name=2024_January" class="download"><i class="fa fa-download"></i></a>
+        </span>
+    <span><a href="{% if language == '' or language == 'en'  %} {% url 'year_en' %}?name=2024_February {% elif language == 'es' %} {% url 'year_es' %}?name=2024_February {% elif language == 'it' %} {% url 'year_it' %}?name=2024_February {% elif language == 'de' %} {% url 'year_de' %}?name=2024_February {% elif language == 'fr' %} {% url 'year_fr' %}?name=2024_February{% endif %}" class="aaa">{% if language == '' or language == 'en' %}
+February
+{% elif language == 'es' %}
+Febrero
+{% elif language == 'it' %}
+Febbraio
+{% elif language == 'de' %}
+Februar
+{% elif language == 'fr' %}
+Février
+{% endif %}</a>
+    <a href="{% url 'download' %}?name=2024_February" class="download"><i class="fa fa-download"></i></a>
+        </span>
+            <span>
+    <a href="{% if language == '' or language == 'en'  %} {% url 'year_en' %}?name=2024_March {% elif language == 'es' %} {% url 'year_es' %}?name=2024_March {% elif language == 'it' %} {% url 'year_it' %}?name=2024_March {% elif language == 'de' %} {% url 'year_de' %}?name=2024_March {% elif language == 'fr' %} {% url 'year_fr' %}?name=2024_March{% endif %}" class="aaa">{% if language == '' or language == 'en' %}
+March
+{% elif language == 'es' %}
+Marzo
+{% elif language == 'it' %}
+Marzo
+{% elif language == 'de' %}
+März
+{% elif language == 'fr' %}
+Mars
+{% endif %}</a>
+            <a href="{% url 'download' %}?name=2024_March" class="download"><i class="fa fa-download"></i></a>
+        </span>
+            <span>
+    <a href="{% if language == '' or language == 'en'  %} {% url 'year_en' %}?name=2024_April {% elif language == 'es' %} {% url 'year_es' %}?name=2024_April {% elif language == 'it' %} {% url 'year_it' %}?name=2024_April {% elif language == 'de' %} {% url 'year_de' %}?name=2024_April {% elif language == 'fr' %} {% url 'year_fr' %}?name=2024_April{% endif %}" class="aaa">{% if language == '' or language == 'en' %}
+April
+{% elif language == 'es' %}
+Abril
+{% elif language == 'it' %}
+Aprile
+{% elif language == 'de' %}
+April
+{% elif language == 'fr' %}
+Avril
+{% endif %}
+</a>
+            <a href="{% url 'download' %}?name=2024_April" class="download"><i class="fa fa-download"></i></a>
+        </span>
+            <span>
+    <a href="{% if language == '' or language == 'en'  %} {% url 'year_en' %}?name=2024_May {% elif language == 'es' %} {% url 'year_es' %}?name=2024_May {% elif language == 'it' %} {% url 'year_it' %}?name=2024_May {% elif language == 'de' %} {% url 'year_de' %}?name=2024_May {% elif language == 'fr' %} {% url 'year_fr' %}?name=2024_May{% endif %}" class="aaa">{% if language == '' or language == 'en' %}
+May
+{% elif language == 'es' %}
+Mayo
+{% elif language == 'it' %}
+Maggio
+{% elif language == 'de' %}
+Mai
+{% elif language == 'fr' %}
+Mai
+{% endif %}</a>
+            <a href="{% url 'download' %}?name=2024_May" class="download"><i class="fa fa-download"></i></a>
+        </span>
+            <span>
+    <a href="{% if language == '' or language == 'en'  %} {% url 'year_en' %}?name=2024_June {% elif language == 'es' %} {% url 'year_es' %}?name=2024_June {% elif language == 'it' %} {% url 'year_it' %}?name=2024_June {% elif language == 'de' %} {% url 'year_de' %}?name=2024_June {% elif language == 'fr' %} {% url 'year_fr' %}?name=2024_June{% endif %}" class="aaa">{% if language == '' or language == 'en' %}
+June
+{% elif language == 'es' %}
+Junio
+{% elif language == 'it' %}
+Giugno
+{% elif language == 'de' %}
+Juni
+{% elif language == 'fr' %}
+Juin
+{% endif %}</a>
+            <a href="{% url 'download' %}?name=2024_June" class="download"><i class="fa fa-download"></i></a>
+        </span>
+            <span>
+    <a href="{% if language == '' or language == 'en'  %} {% url 'year_en' %}?name=2024_July {% elif language == 'es' %} {% url 'year_es' %}?name=2024_July {% elif language == 'it' %} {% url 'year_it' %}?name=2024_July {% elif language == 'de' %} {% url 'year_de' %}?name=2024_July {% elif language == 'fr' %} {% url 'year_fr' %}?name=2024_July{% endif %}" class="aaa">{% if language == '' or language == 'en' %}
+July
+{% elif language == 'es' %}
+Julio
+{% elif language == 'it' %}
+Luglio
+{% elif language == 'de' %}
+Juli
+{% elif language == 'fr' %}
+Juillet
+{% endif %}</a>
+            <a href="{% url 'download' %}?name=2024_July" class="download"><i class="fa fa-download"></i></a>
+        </span>
+            <span>
+    <a href="{% if language == '' or language == 'en'  %} {% url 'year_en' %}?name=2024_August {% elif language == 'es' %} {% url 'year_es' %}?name=2024_August {% elif language == 'it' %} {% url 'year_it' %}?name=2024_August {% elif language == 'de' %} {% url 'year_de' %}?name=2024_August {% elif language == 'fr' %} {% url 'year_fr' %}?name=2024_August{% endif %}" class="aaa">{% if language == '' or language == 'en' %}
+August
+{% elif language == 'es' %}
+Agosto
+{% elif language == 'it' %}
+Agosto
+{% elif language == 'de' %}
+August
+{% elif language == 'fr' %}
+Août
+{% endif %}</a>
+            <a href="{% url 'download' %}?name=2024_August" class="download"><i class="fa fa-download"></i></a>
+        </span>
+            <span>
+    <a href="{% if language == '' or language == 'en'  %} {% url 'year_en' %}?name=2024_September {% elif language == 'es' %} {% url 'year_es' %}?name=2024_September {% elif language == 'it' %} {% url 'year_it' %}?name=2024_September {% elif language == 'de' %} {% url 'year_de' %}?name=2024_September {% elif language == 'fr' %} {% url 'year_fr' %}?name=2024_September{% endif %}" class="aaa">{% if language == '' or language == 'en' %}
+September
+{% elif language == 'es' %}
+Septiembre
+{% elif language == 'it' %}
+Settembre
+{% elif language == 'de' %}
+September
+{% elif language == 'fr' %}
+Septembre
+{% endif %}</a>
+            <a href="{% url 'download' %}?name=2024_September" class="download"><i class="fa fa-download"></i></a>
+        </span>
+            <span>
+    <a href="{% if language == '' or language == 'en'  %} {% url 'year_en' %}?name=2024_October {% elif language == 'es' %} {% url 'year_es' %}?name=2024_October {% elif language == 'it' %} {% url 'year_it' %}?name=2024_October {% elif language == 'de' %} {% url 'year_de' %}?name=2024_October {% elif language == 'fr' %} {% url 'year_fr' %}?name=2024_October{% endif %}" class="aaa">{% if language == '' or language == 'en' %}
+October
+{% elif language == 'es' %}
+Octubre
+{% elif language == 'it' %}
+Ottobre
+{% elif language == 'de' %}
+Oktober
+{% elif language == 'fr' %}
+Octobre
+{% endif %}</a>
+            <a href="{% url 'download' %}?name=2024_October" class="download"><i class="fa fa-download"></i></a>
+        </span>
+            <span>
+    <a href="{% if language == '' or language == 'en'  %} {% url 'year_en' %}?name=2024_November {% elif language == 'es' %} {% url 'year_es' %}?name=2024_November {% elif language == 'it' %} {% url 'year_it' %}?name=2024_November {% elif language == 'de' %} {% url 'year_de' %}?name=2024_November {% elif language == 'fr' %} {% url 'year_fr' %}?name=2024_November{% endif %}" class="aaa">{% if language == '' or language == 'en' %}
+November
+{% elif language == 'es' %}
+Noviembre
+{% elif language == 'it' %}
+Novembre
+{% elif language == 'de' %}
+November
+{% elif language == 'fr' %}
+Novembre
+{% endif %}</a>
+            <a href="{% url 'download' %}?name=2024_November" class="download"><i class="fa fa-download"></i></a>
+        </span>
+            <span>
+    <a href="{% if language == '' or language == 'en'  %} {% url 'year_en' %}?name=2024_December {% elif language == 'es' %} {% url 'year_es' %}?name=2024_December {% elif language == 'it' %} {% url 'year_it' %}?name=2024_December {% elif language == 'de' %} {% url 'year_de' %}?name=2024_December {% elif language == 'fr' %} {% url 'year_fr' %}?name=2024_December{% endif %}" class="aaa">{% if language == '' or language == 'en' %}
+December
+{% elif language == 'es' %}
+Diciembre
+{% elif language == 'it' %}
+Dicembre
+{% elif language == 'de' %}
+Dezember
+{%elif language == 'fr' %}
+Décembre
+{% endif %}</a>
+            <a href="{% url 'download' %}?name=2024_December" class="download"><i class="fa fa-download"></i></a>
+        </span>
+{% endif %}
+
+
+</div>
 
 
 
