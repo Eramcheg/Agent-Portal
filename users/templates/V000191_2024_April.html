@@ -1,0 +1,146 @@
+{%extends 'base.html'%}
+                            {% block content %}     
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--<link rel="stylesheet" type="text/css" href="normas.css">-->
+    <style>
+        body{
+            background-color: #d6e1f8;
+
+        }
+        th, td {
+            border: 1px solid #ccc;
+
+            text-align: center;
+        }
+
+        table {
+
+            border-collapse: collapse !important; /* optional: collapse the table borders */
+        }
+
+        table tr {
+            background-color: #8BC34A !important; /* Set background color of all rows */
+        }
+
+        table tr:hover td {
+            background-color: #2196F3 !important; /* Set background color of cells when hovered */
+        }
+
+    </style>
+                     <table border="1" class="dataframe" style="width:100%;">
+                                 <thead>
+                                     <tr style="text-align: right;">
+<th style='background-color: #899EF0'>RK</th>
+<th style='background-color: #899EF0'>GF-Nr</th>
+<th style='background-color: #899EF0'>Datum</th>
+<th style='background-color: #899EF0'>Vertreter</th>
+<th style='background-color: #899EF0'>ProvProz</th>
+<th style='background-color: #899EF0'>Provision</th>
+<th style='background-color: #899EF0'>Summe</th>
+<th style='background-color: #899EF0'>Lieferant</th>
+<th style='background-color: #899EF0'>Lieferantenname</th>
+<th style='background-color: #899EF0'>Name2</th>
+<th style='background-color: #899EF0'>IntKz</th>
+<th style='background-color: #899EF0'>PLZ Neu</th>
+<th style='background-color: #899EF0'>Ort</th>
+<th style='background-color: #899EF0'>s</th>
+<th style='background-color: #899EF0'>Paid amount</th>
+<th style='background-color: #899EF0'>Payment status</th>
+<th style='background-color: #899EF0'>Payment commission</th>
+<th style='background-color: #899EF0'>Payments with Rest</th>
+<th style='background-color: #899EF0'>Payments Dates</th>
+<th style='background-color: #FFFFFF'> </th>
+</tr>
+</thead>
+                          <tbody><tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4400304</td>
+<td style='background-color: #00FF00'>2024-02-27</td>
+<td style='background-color: #00FF00'>V000191</td>
+<td style='background-color: #00FF00'>12</td>
+<td style='background-color: #00FF00'>91.344</td>
+<td style='background-color: #00FF00'>761.2</td>
+<td style='background-color: #00FF00'>K004675</td>
+<td style='background-color: #00FF00'>Roberts Jewelry</td>
+<td style='background-color: #00FF00'>Lisa Michaud</td>
+<td style='background-color: #00FF00'>US</td>
+<td style='background-color: #00FF00'>04756</td>
+<td style='background-color: #00FF00'>Madawaska, ME</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>761.2</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>91.3</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>05.04.2024,  702.5</td>
+<td style='background-color: #FFFFFF'>05.04.2024,  58.7</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4400342</td>
+<td style='background-color: #00FF00'>2024-03-05</td>
+<td style='background-color: #00FF00'>V000191</td>
+<td style='background-color: #00FF00'>12</td>
+<td style='background-color: #00FF00'>87.504</td>
+<td style='background-color: #00FF00'>729.2</td>
+<td style='background-color: #00FF00'>K004675</td>
+<td style='background-color: #00FF00'>Roberts Jewelry</td>
+<td style='background-color: #00FF00'>Lisa Michaud</td>
+<td style='background-color: #00FF00'>US</td>
+<td style='background-color: #00FF00'>04756</td>
+<td style='background-color: #00FF00'>Madawaska, ME</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>729.2</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>87.5</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>05.04.2024,  673.0</td>
+<td style='background-color: #FFFFFF'>05.04.2024,  56.2</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4400376</td>
+<td style='background-color: #00FF00'>2024-03-11</td>
+<td style='background-color: #00FF00'>V000191</td>
+<td style='background-color: #00FF00'>12</td>
+<td style='background-color: #00FF00'>94.128</td>
+<td style='background-color: #00FF00'>784.4</td>
+<td style='background-color: #00FF00'>K004675</td>
+<td style='background-color: #00FF00'>Roberts Jewelry</td>
+<td style='background-color: #00FF00'>Lisa Michaud</td>
+<td style='background-color: #00FF00'>US</td>
+<td style='background-color: #00FF00'>04756</td>
+<td style='background-color: #00FF00'>Madawaska, ME</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>784.5</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>94.1</td>
+<td style='background-color: #FFFFFF'>05.04.2024,  0</td>
+<td style='background-color: #FFFFFF'>05.04.2024,  724.0</td>
+<td style='background-color: #FFFFFF'>05.04.2024,  60.5</td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>All paid amount</td>
+<td style='background-color: #90EE90'>2274.9</td>
+<td style='background-color: #FFFFFF'>All comissions</td>
+<td style='background-color: #90EE90'>272.99</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+ </tbody>
+                    </table>
+                    {% endblock %}

@@ -1,0 +1,432 @@
+{%extends 'base.html'%}
+                            {% block content %}     
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--<link rel="stylesheet" type="text/css" href="normas.css">-->
+    <style>
+        body{
+            background-color: #d6e1f8;
+
+        }
+        th, td {
+            border: 1px solid #ccc;
+
+            text-align: center;
+        }
+
+        table {
+
+            border-collapse: collapse !important; /* optional: collapse the table borders */
+        }
+
+        table tr {
+            background-color: #8BC34A !important; /* Set background color of all rows */
+        }
+
+        table tr:hover td {
+            background-color: #2196F3 !important; /* Set background color of cells when hovered */
+        }
+
+    </style>
+                     <table border="1" class="dataframe" style="width:100%;">
+                                 <thead>
+                                     <tr style="text-align: right;">
+<th style='background-color: #899EF0'>RK</th>
+<th style='background-color: #899EF0'>GF-Nr</th>
+<th style='background-color: #899EF0'>Datum</th>
+<th style='background-color: #899EF0'>Vertreter</th>
+<th style='background-color: #899EF0'>ProvProz</th>
+<th style='background-color: #899EF0'>Provision</th>
+<th style='background-color: #899EF0'>Summe</th>
+<th style='background-color: #899EF0'>Lieferant</th>
+<th style='background-color: #899EF0'>Lieferantenname</th>
+<th style='background-color: #899EF0'>Name2</th>
+<th style='background-color: #899EF0'>IntKz</th>
+<th style='background-color: #899EF0'>PLZ Neu</th>
+<th style='background-color: #899EF0'>Ort</th>
+<th style='background-color: #899EF0'>s</th>
+<th style='background-color: #899EF0'>Paid amount</th>
+<th style='background-color: #899EF0'>Payment status</th>
+<th style='background-color: #899EF0'>Payment commission</th>
+<th style='background-color: #899EF0'>Payments with Rest</th>
+<th style='background-color: #899EF0'>Payments Dates</th>
+<th style='background-color: #FFFFFF'> </th>
+</tr>
+</thead>
+                          <tbody><tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300264</td>
+<td style='background-color: #FFF300'>2023-02-23</td>
+<td style='background-color: #FFF300'>V000096</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-237.585</td>
+<td style='background-color: #FFF300'>-1583.9</td>
+<td style='background-color: #FFF300'>K006093</td>
+<td style='background-color: #FFF300'>FIORE SRLS</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>07041</td>
+<td style='background-color: #FFF300'>ALGHERO(SS)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300270</td>
+<td style='background-color: #FFF300'>2023-02-27</td>
+<td style='background-color: #FFF300'>V000096</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-36</td>
+<td style='background-color: #FFF300'>-240</td>
+<td style='background-color: #FFF300'>K005986</td>
+<td style='background-color: #FFF300'>MERCURIO SRLS</td>
+<td style='background-color: #FFF300'>Oro In  - C/o  Centro Comm.le</td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>09028</td>
+<td style='background-color: #FFF300'>Sestu ( Ca)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300271</td>
+<td style='background-color: #FFF300'>2023-02-27</td>
+<td style='background-color: #FFF300'>V000096</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-120.54</td>
+<td style='background-color: #FFF300'>-803.6</td>
+<td style='background-color: #FFF300'>K005986</td>
+<td style='background-color: #FFF300'>MERCURIO SRLS</td>
+<td style='background-color: #FFF300'>Oro In  - C/o  Centro Comm.le</td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>09028</td>
+<td style='background-color: #FFF300'>Sestu ( Ca)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301008</td>
+<td style='background-color: #FFF300'>2023-06-14</td>
+<td style='background-color: #FFF300'>V000096</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-92.88</td>
+<td style='background-color: #FFF300'>-619.2</td>
+<td style='background-color: #FFF300'>K005986</td>
+<td style='background-color: #FFF300'>MERCURIO SRLS</td>
+<td style='background-color: #FFF300'>Oro In  - C/o  Centro Comm.le</td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>09028</td>
+<td style='background-color: #FFF300'>Sestu ( Ca)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301048</td>
+<td style='background-color: #FFF300'>2023-06-19</td>
+<td style='background-color: #FFF300'>V000096</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-4.32</td>
+<td style='background-color: #FFF300'>-28.8</td>
+<td style='background-color: #FFF300'>K005986</td>
+<td style='background-color: #FFF300'>MERCURIO SRLS</td>
+<td style='background-color: #FFF300'>Oro In  - C/o  Centro Comm.le</td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>09028</td>
+<td style='background-color: #FFF300'>Sestu ( Ca)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301065</td>
+<td style='background-color: #FFF300'>2023-06-22</td>
+<td style='background-color: #FFF300'>V000096</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-12.99</td>
+<td style='background-color: #FFF300'>-86.6</td>
+<td style='background-color: #FFF300'>K005986</td>
+<td style='background-color: #FFF300'>MERCURIO SRLS</td>
+<td style='background-color: #FFF300'>Oro In  - C/o  Centro Comm.le</td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>09028</td>
+<td style='background-color: #FFF300'>Sestu ( Ca)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301784</td>
+<td style='background-color: #FFF300'>2023-10-17</td>
+<td style='background-color: #FFF300'>V000096</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-3.69</td>
+<td style='background-color: #FFF300'>-24.6</td>
+<td style='background-color: #FFF300'>K002716</td>
+<td style='background-color: #FFF300'>Proposte</td>
+<td style='background-color: #FFF300'>di Simone Fiorito Srl</td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>09013</td>
+<td style='background-color: #FFF300'>Carbonia (SU)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4302098</td>
+<td style='background-color: #FFF300'>2023-12-05</td>
+<td style='background-color: #FFF300'>V000096</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-17.97</td>
+<td style='background-color: #FFF300'>-119.8</td>
+<td style='background-color: #FFF300'>K004082</td>
+<td style='background-color: #FFF300'>Regalux di Casu Luigi</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>07100</td>
+<td style='background-color: #FFF300'>Sassari (SS)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4400100</td>
+<td style='background-color: #FFF300'>2024-01-23</td>
+<td style='background-color: #FFF300'>V000096</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-2.535</td>
+<td style='background-color: #FFF300'>-16.9</td>
+<td style='background-color: #FFF300'>K006121</td>
+<td style='background-color: #FFF300'>IAF SRL</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>09013</td>
+<td style='background-color: #FFF300'>CARBONIA (SUD SARDEGNA)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4400125</td>
+<td style='background-color: #00FF00'>2024-01-29</td>
+<td style='background-color: #00FF00'>V000096</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>198.702</td>
+<td style='background-color: #00FF00'>1419.3</td>
+<td style='background-color: #00FF00'>K004541</td>
+<td style='background-color: #00FF00'>LE MAGIE SRL</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>08015</td>
+<td style='background-color: #00FF00'>Macomer (NU)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1419.2</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #FFFFFF'>198.7</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>02.04.2024,  709.6</td>
+<td style='background-color: #FFFFFF'>29.04.2024,  709.6</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4400256</td>
+<td style='background-color: #00FF00'>2024-02-14</td>
+<td style='background-color: #00FF00'>V000096</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>56.415</td>
+<td style='background-color: #00FF00'>376.1</td>
+<td style='background-color: #00FF00'>K004082</td>
+<td style='background-color: #00FF00'>Regalux di Casu Luigi</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>07100</td>
+<td style='background-color: #00FF00'>Sassari (SS)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>376.1</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>56.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>02.04.2024,  376.1</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4400360</td>
+<td style='background-color: #00FF00'>2024-03-07</td>
+<td style='background-color: #00FF00'>V000096</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>210.48</td>
+<td style='background-color: #00FF00'>1403.2</td>
+<td style='background-color: #00FF00'>K006090</td>
+<td style='background-color: #00FF00'>CATALANO SRLS</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>07046</td>
+<td style='background-color: #00FF00'>PORTO TORRES (SS)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>701.6</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #FFFFFF'>105.2</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>29.04.2024,  701.6</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4400481</td>
+<td style='background-color: #FFF300'>2024-03-25</td>
+<td style='background-color: #FFF300'>V000096</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-4.815</td>
+<td style='background-color: #FFF300'>-32.1</td>
+<td style='background-color: #FFF300'>K006090</td>
+<td style='background-color: #FFF300'>CATALANO SRLS</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>07046</td>
+<td style='background-color: #FFF300'>PORTO TORRES (SS)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4400482</td>
+<td style='background-color: #FFF300'>2024-03-25</td>
+<td style='background-color: #FFF300'>V000096</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-3.495</td>
+<td style='background-color: #FFF300'>-23.3</td>
+<td style='background-color: #FFF300'>K006093</td>
+<td style='background-color: #FFF300'>FIORE SRLS</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>07041</td>
+<td style='background-color: #FFF300'>ALGHERO(SS)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4400506</td>
+<td style='background-color: #FFF300'>2024-03-27</td>
+<td style='background-color: #FFF300'>V000096</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-6</td>
+<td style='background-color: #FFF300'>-40</td>
+<td style='background-color: #FFF300'>K005986</td>
+<td style='background-color: #FFF300'>MERCURIO SRLS</td>
+<td style='background-color: #FFF300'>Oro In  - C/o  Centro Comm.le</td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>09028</td>
+<td style='background-color: #FFF300'>Sestu ( Ca)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4400527</td>
+<td style='background-color: #FFF300'>2024-04-02</td>
+<td style='background-color: #FFF300'>V000096</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-4.815</td>
+<td style='background-color: #FFF300'>-32.1</td>
+<td style='background-color: #FFF300'>K003097</td>
+<td style='background-color: #FFF300'>Prendas di Ghisu Francesco</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>08013</td>
+<td style='background-color: #FFF300'>Bosa (OR)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>All paid amount</td>
+<td style='background-color: #90EE90'>2496.9</td>
+<td style='background-color: #FFFFFF'>All comissions</td>
+<td style='background-color: #90EE90'>360.34</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+ </tbody>
+                    </table>
+                    {% endblock %}
