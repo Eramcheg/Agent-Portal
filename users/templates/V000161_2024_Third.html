@@ -1,0 +1,520 @@
+{%extends 'base.html'%}
+                            {% block content %}     
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--<link rel="stylesheet" type="text/css" href="normas.css">-->
+    <style>
+        body{
+            background-color: #d6e1f8;
+
+        }
+        th, td {
+            border: 1px solid #ccc;
+
+            text-align: center;
+        }
+
+        table {
+
+            border-collapse: collapse !important; /* optional: collapse the table borders */
+        }
+
+        table tr {
+            background-color: #8BC34A !important; /* Set background color of all rows */
+        }
+
+        table tr:hover td {
+            background-color: #2196F3 !important; /* Set background color of cells when hovered */
+        }
+
+    </style>
+                     <table border="1" class="dataframe" style="width:100%;">
+                                 <thead>
+                                     <tr style="text-align: right;">
+<th style='background-color: #899EF0'>RK</th>
+<th style='background-color: #899EF0'>GF-Nr</th>
+<th style='background-color: #899EF0'>Datum</th>
+<th style='background-color: #899EF0'>Vertreter</th>
+<th style='background-color: #899EF0'>ProvProz</th>
+<th style='background-color: #899EF0'>Provision</th>
+<th style='background-color: #899EF0'>Summe</th>
+<th style='background-color: #899EF0'>Lieferant</th>
+<th style='background-color: #899EF0'>Lieferantenname</th>
+<th style='background-color: #899EF0'>Name2</th>
+<th style='background-color: #899EF0'>IntKz</th>
+<th style='background-color: #899EF0'>PLZ Neu</th>
+<th style='background-color: #899EF0'>Ort</th>
+<th style='background-color: #899EF0'>s</th>
+<th style='background-color: #899EF0'>Paid amount</th>
+<th style='background-color: #899EF0'>Payment status</th>
+<th style='background-color: #899EF0'>Payment commission</th>
+<th style='background-color: #899EF0'>Payments with Rest</th>
+<th style='background-color: #899EF0'>Payments Dates</th>
+<th style='background-color: #FFFFFF'> </th>
+</tr>
+</thead>
+                          <tbody><tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300205</td>
+<td style='background-color: #FFF300'>2023-02-14</td>
+<td style='background-color: #FFF300'>V000161</td>
+<td style='background-color: #FFF300'>14</td>
+<td style='background-color: #FFF300'>-51.198</td>
+<td style='background-color: #FFF300'>-365.7</td>
+<td style='background-color: #FFF300'>K006175</td>
+<td style='background-color: #FFF300'>ROSSO CORALLO</td>
+<td style='background-color: #FFF300'>DI VOLPE ROSSELLA</td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>84043</td>
+<td style='background-color: #FFF300'>AGROPOLI (NA)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300597</td>
+<td style='background-color: #FFF300'>2023-04-19</td>
+<td style='background-color: #FFF300'>V000161</td>
+<td style='background-color: #FFF300'>7</td>
+<td style='background-color: #FFF300'>-14.0238</td>
+<td style='background-color: #FFF300'>-200.34</td>
+<td style='background-color: #FFF300'>K005989</td>
+<td style='background-color: #FFF300'>PISA SRLS</td>
+<td style='background-color: #FFF300'>Oliver Weber Collection</td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>80021</td>
+<td style='background-color: #FFF300'>Afragola (NA)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300634</td>
+<td style='background-color: #FFF300'>2023-04-25</td>
+<td style='background-color: #FFF300'>V000161</td>
+<td style='background-color: #FFF300'>7</td>
+<td style='background-color: #FFF300'>-149.1175</td>
+<td style='background-color: #FFF300'>-2130.25</td>
+<td style='background-color: #FFF300'>K005989</td>
+<td style='background-color: #FFF300'>PISA SRLS</td>
+<td style='background-color: #FFF300'>Oliver Weber Collection</td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>80021</td>
+<td style='background-color: #FFF300'>Afragola (NA)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300739</td>
+<td style='background-color: #FFF300'>2023-05-11</td>
+<td style='background-color: #FFF300'>V000161</td>
+<td style='background-color: #FFF300'>7</td>
+<td style='background-color: #FFF300'>-1.0269</td>
+<td style='background-color: #FFF300'>-14.67</td>
+<td style='background-color: #FFF300'>K005989</td>
+<td style='background-color: #FFF300'>PISA SRLS</td>
+<td style='background-color: #FFF300'>Oliver Weber Collection</td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>80021</td>
+<td style='background-color: #FFF300'>Afragola (NA)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301063</td>
+<td style='background-color: #FFF300'>2023-06-21</td>
+<td style='background-color: #FFF300'>V000161</td>
+<td style='background-color: #FFF300'>14</td>
+<td style='background-color: #FFF300'>-70.672</td>
+<td style='background-color: #FFF300'>-504.8</td>
+<td style='background-color: #FFF300'>K006227</td>
+<td style='background-color: #FFF300'>Giuseppe Fasolino</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>84083</td>
+<td style='background-color: #FFF300'>Castel San Giorgio (SA)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301145</td>
+<td style='background-color: #FFF300'>2023-06-30</td>
+<td style='background-color: #FFF300'>V000161</td>
+<td style='background-color: #FFF300'>14</td>
+<td style='background-color: #FFF300'>-187.1338</td>
+<td style='background-color: #FFF300'>-1336.67</td>
+<td style='background-color: #FFF300'>K005243</td>
+<td style='background-color: #FFF300'>SIR.MA Gioielli Srl</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>80040</td>
+<td style='background-color: #FFF300'>Ascea Marina (SA)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301201</td>
+<td style='background-color: #FFF300'>2023-07-11</td>
+<td style='background-color: #FFF300'>V000161</td>
+<td style='background-color: #FFF300'>10</td>
+<td style='background-color: #FFF300'>-150.24</td>
+<td style='background-color: #FFF300'>-1502.4</td>
+<td style='background-color: #FFF300'>K006168</td>
+<td style='background-color: #FFF300'>RUGGISERVICE  srls</td>
+<td style='background-color: #FFF300'>CC IL CARRO</td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>86036</td>
+<td style='background-color: #FFF300'>Mirabella Eclano (AV)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301285</td>
+<td style='background-color: #FFF300'>2023-07-26</td>
+<td style='background-color: #FFF300'>V000161</td>
+<td style='background-color: #FFF300'>14</td>
+<td style='background-color: #FFF300'>-51.198</td>
+<td style='background-color: #FFF300'>-365.7</td>
+<td style='background-color: #FFF300'>K006175</td>
+<td style='background-color: #FFF300'>ROSSO CORALLO</td>
+<td style='background-color: #FFF300'>DI VOLPE ROSSELLA</td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>84043</td>
+<td style='background-color: #FFF300'>AGROPOLI (NA)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301380</td>
+<td style='background-color: #FFF300'>2023-08-09</td>
+<td style='background-color: #FFF300'>V000161</td>
+<td style='background-color: #FFF300'>7</td>
+<td style='background-color: #FFF300'>-717.976</td>
+<td style='background-color: #FFF300'>-10256.8</td>
+<td style='background-color: #FFF300'>K005989</td>
+<td style='background-color: #FFF300'>PISA SRLS</td>
+<td style='background-color: #FFF300'>Oliver Weber Collection</td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>80021</td>
+<td style='background-color: #FFF300'>Afragola (NA)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4302024</td>
+<td style='background-color: #FFF300'>2023-11-24</td>
+<td style='background-color: #FFF300'>V000161</td>
+<td style='background-color: #FFF300'>14</td>
+<td style='background-color: #FFF300'>-3.15</td>
+<td style='background-color: #FFF300'>-22.5</td>
+<td style='background-color: #FFF300'>K003987</td>
+<td style='background-color: #FFF300'>LE CADEAU di Antonietta Napolitano</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>80035</td>
+<td style='background-color: #FFF300'>NOLA - NAPOLI</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4302163</td>
+<td style='background-color: #FFF300'>2023-12-14</td>
+<td style='background-color: #FFF300'>V000161</td>
+<td style='background-color: #FFF300'>10</td>
+<td style='background-color: #FFF300'>-6.17</td>
+<td style='background-color: #FFF300'>-61.7</td>
+<td style='background-color: #FFF300'>K006168</td>
+<td style='background-color: #FFF300'>RUGGISERVICE  srls</td>
+<td style='background-color: #FFF300'>CC IL CARRO</td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>86036</td>
+<td style='background-color: #FFF300'>Mirabella Eclano (AV)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4302193</td>
+<td style='background-color: #FFF300'>2023-12-18</td>
+<td style='background-color: #FFF300'>V000161</td>
+<td style='background-color: #FFF300'>7</td>
+<td style='background-color: #FFF300'>-201.572</td>
+<td style='background-color: #FFF300'>-2879.6</td>
+<td style='background-color: #FFF300'>K005989</td>
+<td style='background-color: #FFF300'>PISA SRLS</td>
+<td style='background-color: #FFF300'>Oliver Weber Collection</td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>80021</td>
+<td style='background-color: #FFF300'>Afragola (NA)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4302205</td>
+<td style='background-color: #FFF300'>2023-12-22</td>
+<td style='background-color: #FFF300'>V000161</td>
+<td style='background-color: #FFF300'>7</td>
+<td style='background-color: #FFF300'>-112.35</td>
+<td style='background-color: #FFF300'>-1605</td>
+<td style='background-color: #FFF300'>K005989</td>
+<td style='background-color: #FFF300'>PISA SRLS</td>
+<td style='background-color: #FFF300'>Oliver Weber Collection</td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>80021</td>
+<td style='background-color: #FFF300'>Afragola (NA)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4400319</td>
+<td style='background-color: #00FF00'>2024-02-29</td>
+<td style='background-color: #00FF00'>V000161</td>
+<td style='background-color: #00FF00'>10</td>
+<td style='background-color: #00FF00'>480.706</td>
+<td style='background-color: #00FF00'>4807.06</td>
+<td style='background-color: #00FF00'>K006168</td>
+<td style='background-color: #00FF00'>RUGGISERVICE  srls</td>
+<td style='background-color: #00FF00'>CC IL CARRO</td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>86036</td>
+<td style='background-color: #00FF00'>Mirabella Eclano (AV)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1201.8</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #FFFFFF'>120.2</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>01.07.2024,  1201.8</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4400322</td>
+<td style='background-color: #00FF00'>2024-02-29</td>
+<td style='background-color: #00FF00'>V000161</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>175.9016</td>
+<td style='background-color: #00FF00'>1256.44</td>
+<td style='background-color: #00FF00'>K005243</td>
+<td style='background-color: #00FF00'>SIR.MA Gioielli Srl</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>80040</td>
+<td style='background-color: #00FF00'>Ascea Marina (SA)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>656.4</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #FFFFFF'>91.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>04.07.2024,  237.6</td>
+<td style='background-color: #FFFFFF'>04.07.2024,  418.8</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4400515</td>
+<td style='background-color: #00FF00'>2024-03-28</td>
+<td style='background-color: #00FF00'>V000161</td>
+<td style='background-color: #00FF00'>10</td>
+<td style='background-color: #00FF00'>152.768</td>
+<td style='background-color: #00FF00'>1527.68</td>
+<td style='background-color: #00FF00'>K006168</td>
+<td style='background-color: #00FF00'>RUGGISERVICE  srls</td>
+<td style='background-color: #00FF00'>CC IL CARRO</td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>86036</td>
+<td style='background-color: #00FF00'>Mirabella Eclano (AV)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>509.2</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #FFFFFF'>50.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>01.07.2024,  509.2</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4400516</td>
+<td style='background-color: #FFF300'>2024-03-28</td>
+<td style='background-color: #FFF300'>V000161</td>
+<td style='background-color: #FFF300'>10</td>
+<td style='background-color: #FFF300'>-45.84</td>
+<td style='background-color: #FFF300'>-458.4</td>
+<td style='background-color: #FFF300'>K006168</td>
+<td style='background-color: #FFF300'>RUGGISERVICE  srls</td>
+<td style='background-color: #FFF300'>CC IL CARRO</td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>86036</td>
+<td style='background-color: #FFF300'>Mirabella Eclano (AV)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4400580</td>
+<td style='background-color: #00FF00'>2024-04-11</td>
+<td style='background-color: #00FF00'>V000161</td>
+<td style='background-color: #00FF00'>14</td>
+<td style='background-color: #00FF00'>127.0892</td>
+<td style='background-color: #00FF00'>907.78</td>
+<td style='background-color: #00FF00'>K002603</td>
+<td style='background-color: #00FF00'>Emozioni</td>
+<td style='background-color: #00FF00'>di d´Alessandro Anna</td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>84086</td>
+<td style='background-color: #00FF00'>Roccapiemonte (SA)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>302.6</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #FFFFFF'>42.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>01.07.2024,  302.6</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4400780</td>
+<td style='background-color: #FFF300'>2024-05-24</td>
+<td style='background-color: #FFF300'>V000161</td>
+<td style='background-color: #FFF300'>10</td>
+<td style='background-color: #FFF300'>-45.189</td>
+<td style='background-color: #FFF300'>-451.89</td>
+<td style='background-color: #FFF300'>K006168</td>
+<td style='background-color: #FFF300'>RUGGISERVICE  srls</td>
+<td style='background-color: #FFF300'>CC IL CARRO</td>
+<td style='background-color: #FFF300'>IT</td>
+<td style='background-color: #FFF300'>86036</td>
+<td style='background-color: #FFF300'>Mirabella Eclano (AV)</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4400887</td>
+<td style='background-color: #00FF00'>2024-06-19</td>
+<td style='background-color: #00FF00'>V000161</td>
+<td style='background-color: #00FF00'>10</td>
+<td style='background-color: #00FF00'>8.729</td>
+<td style='background-color: #00FF00'>87.29</td>
+<td style='background-color: #00FF00'>K006168</td>
+<td style='background-color: #00FF00'>RUGGISERVICE  srls</td>
+<td style='background-color: #00FF00'>CC IL CARRO</td>
+<td style='background-color: #00FF00'>IT</td>
+<td style='background-color: #00FF00'>86036</td>
+<td style='background-color: #00FF00'>Mirabella Eclano (AV)</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>87.3</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>8.7</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.07.2024,  87.3</td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>All paid amount</td>
+<td style='background-color: #90EE90'>2757.3</td>
+<td style='background-color: #FFFFFF'>All comissions</td>
+<td style='background-color: #90EE90'>314.09</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+ </tbody>
+                    </table>
+                    {% endblock %}

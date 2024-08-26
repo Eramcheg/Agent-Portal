@@ -1,0 +1,1212 @@
+{%extends 'base.html'%}
+                            {% block content %}     
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--<link rel="stylesheet" type="text/css" href="normas.css">-->
+    <style>
+        body{
+            background-color: #d6e1f8;
+
+        }
+        th, td {
+            border: 1px solid #ccc;
+
+            text-align: center;
+        }
+
+        table {
+
+            border-collapse: collapse !important; /* optional: collapse the table borders */
+        }
+
+        table tr {
+            background-color: #8BC34A !important; /* Set background color of all rows */
+        }
+
+        table tr:hover td {
+            background-color: #2196F3 !important; /* Set background color of cells when hovered */
+        }
+
+    </style>
+                     <table border="1" class="dataframe" style="width:100%;">
+                                 <thead>
+                                     <tr style="text-align: right;">
+<th style='background-color: #899EF0'>RK</th>
+<th style='background-color: #899EF0'>GF-Nr</th>
+<th style='background-color: #899EF0'>Datum</th>
+<th style='background-color: #899EF0'>Vertreter</th>
+<th style='background-color: #899EF0'>ProvProz</th>
+<th style='background-color: #899EF0'>Provision</th>
+<th style='background-color: #899EF0'>Summe</th>
+<th style='background-color: #899EF0'>Lieferant</th>
+<th style='background-color: #899EF0'>Lieferantenname</th>
+<th style='background-color: #899EF0'>Name2</th>
+<th style='background-color: #899EF0'>IntKz</th>
+<th style='background-color: #899EF0'>PLZ Neu</th>
+<th style='background-color: #899EF0'>Ort</th>
+<th style='background-color: #899EF0'>s</th>
+<th style='background-color: #899EF0'>Paid amount</th>
+<th style='background-color: #899EF0'>Payment status</th>
+<th style='background-color: #899EF0'>Payment commission</th>
+<th style='background-color: #899EF0'>Payments with Rest</th>
+<th style='background-color: #899EF0'>Payments Dates</th>
+</tr>
+</thead>
+                          <tbody><tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300114</td>
+<td style='background-color: #FFF300'>2023-01-27</td>
+<td style='background-color: #FFF300'>V000104</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-117.57</td>
+<td style='background-color: #FFF300'>-783.8</td>
+<td style='background-color: #FFF300'>K004123</td>
+<td style='background-color: #FFF300'>Grekas Daniel - LI-LO ACCESSORIES</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>GR</td>
+<td style='background-color: #FFF300'>16675</td>
+<td style='background-color: #FFF300'>GLYFADA</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300505</td>
+<td style='background-color: #FFF300'>2023-04-05</td>
+<td style='background-color: #FFF300'>V000104</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-1152.405</td>
+<td style='background-color: #FFF300'>-7682.7</td>
+<td style='background-color: #FFF300'>K004146</td>
+<td style='background-color: #FFF300'>AEGEAN AIRLINES SA</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>GR</td>
+<td style='background-color: #FFF300'>145 64</td>
+<td style='background-color: #FFF300'>Kifisia</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300529</td>
+<td style='background-color: #FFF300'>2023-04-11</td>
+<td style='background-color: #FFF300'>V000104</td>
+<td style='background-color: #FFF300'>10</td>
+<td style='background-color: #FFF300'>-1.89</td>
+<td style='background-color: #FFF300'>-18.9</td>
+<td style='background-color: #FFF300'>K005020</td>
+<td style='background-color: #FFF300'>DUTY FREE SHOPS SINGLE MEMBER S.A</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>GR</td>
+<td style='background-color: #FFF300'>14565</td>
+<td style='background-color: #FFF300'>Agios Stefanos, Attika</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300544</td>
+<td style='background-color: #FFF300'>2023-04-12</td>
+<td style='background-color: #FFF300'>V000104</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-1775.25</td>
+<td style='background-color: #FFF300'>-11835</td>
+<td style='background-color: #FFF300'>K004146</td>
+<td style='background-color: #FFF300'>AEGEAN AIRLINES SA</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>GR</td>
+<td style='background-color: #FFF300'>145 64</td>
+<td style='background-color: #FFF300'>Kifisia</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300557</td>
+<td style='background-color: #FFF300'>2023-04-14</td>
+<td style='background-color: #FFF300'>V000104</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-25.98</td>
+<td style='background-color: #FFF300'>-173.2</td>
+<td style='background-color: #FFF300'>K006160</td>
+<td style='background-color: #FFF300'>VOULKIDIS CHRISTOS</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>GR</td>
+<td style='background-color: #FFF300'>68100</td>
+<td style='background-color: #FFF300'>ALEXANDROUPOLIS</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300821</td>
+<td style='background-color: #FFF300'>2023-05-22</td>
+<td style='background-color: #FFF300'>V000104</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-1.815</td>
+<td style='background-color: #FFF300'>-12.1</td>
+<td style='background-color: #FFF300'>K004072</td>
+<td style='background-color: #FFF300'>MINOAN LINES S.A.</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>GR</td>
+<td style='background-color: #FFF300'>71202</td>
+<td style='background-color: #FFF300'>Heraklio, CRETE</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300955</td>
+<td style='background-color: #FFF300'>2023-06-07</td>
+<td style='background-color: #FFF300'>V000104</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-16.02</td>
+<td style='background-color: #FFF300'>-106.8</td>
+<td style='background-color: #FFF300'>K006160</td>
+<td style='background-color: #FFF300'>VOULKIDIS CHRISTOS</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>GR</td>
+<td style='background-color: #FFF300'>68100</td>
+<td style='background-color: #FFF300'>ALEXANDROUPOLIS</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301067</td>
+<td style='background-color: #FFF300'>2023-06-22</td>
+<td style='background-color: #FFF300'>V000104</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-680.25</td>
+<td style='background-color: #FFF300'>-4535</td>
+<td style='background-color: #FFF300'>K004146</td>
+<td style='background-color: #FFF300'>AEGEAN AIRLINES SA</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>GR</td>
+<td style='background-color: #FFF300'>145 64</td>
+<td style='background-color: #FFF300'>Kifisia</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301115</td>
+<td style='background-color: #FFF300'>2023-06-28</td>
+<td style='background-color: #FFF300'>V000104</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-2.82</td>
+<td style='background-color: #FFF300'>-18.8</td>
+<td style='background-color: #FFF300'>K004072</td>
+<td style='background-color: #FFF300'>MINOAN LINES S.A.</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>GR</td>
+<td style='background-color: #FFF300'>71202</td>
+<td style='background-color: #FFF300'>Heraklio, CRETE</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301142</td>
+<td style='background-color: #FFF300'>2023-06-30</td>
+<td style='background-color: #FFF300'>V000104</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-523.512</td>
+<td style='background-color: #FFF300'>-3490.08</td>
+<td style='background-color: #FFF300'>K006230</td>
+<td style='background-color: #FFF300'>QUALITY RIVER CATERING I LTD</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>ZY</td>
+<td style='background-color: #FFF300'>3305</td>
+<td style='background-color: #FFF300'>Limassol</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301148</td>
+<td style='background-color: #FFF300'>2023-06-30</td>
+<td style='background-color: #FFF300'>V000104</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-5.445</td>
+<td style='background-color: #FFF300'>-36.3</td>
+<td style='background-color: #FFF300'>K003270</td>
+<td style='background-color: #FFF300'>Androulidaki Dimitra</td>
+<td style='background-color: #FFF300'>(+30) 6932 379628</td>
+<td style='background-color: #FFF300'>GR</td>
+<td style='background-color: #FFF300'>74100</td>
+<td style='background-color: #FFF300'>RETHYMNO, CRETA</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301308</td>
+<td style='background-color: #FFF300'>2023-07-28</td>
+<td style='background-color: #FFF300'>V000104</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-2731.5</td>
+<td style='background-color: #FFF300'>-18210</td>
+<td style='background-color: #FFF300'>K004146</td>
+<td style='background-color: #FFF300'>AEGEAN AIRLINES SA</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>GR</td>
+<td style='background-color: #FFF300'>145 64</td>
+<td style='background-color: #FFF300'>Kifisia</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301310</td>
+<td style='background-color: #FFF300'>2023-07-28</td>
+<td style='background-color: #FFF300'>V000104</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-90</td>
+<td style='background-color: #FFF300'>-600</td>
+<td style='background-color: #FFF300'>K004146</td>
+<td style='background-color: #FFF300'>AEGEAN AIRLINES SA</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>GR</td>
+<td style='background-color: #FFF300'>145 64</td>
+<td style='background-color: #FFF300'>Kifisia</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301375</td>
+<td style='background-color: #FFF300'>2023-08-08</td>
+<td style='background-color: #FFF300'>V000104</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-110.925</td>
+<td style='background-color: #FFF300'>-739.5</td>
+<td style='background-color: #FFF300'>K003563</td>
+<td style='background-color: #FFF300'>Garufalia Charalambaki</td>
+<td style='background-color: #FFF300'>+30 22210 86560</td>
+<td style='background-color: #FFF300'>GR</td>
+<td style='background-color: #FFF300'>34100</td>
+<td style='background-color: #FFF300'>Kalkida</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301530</td>
+<td style='background-color: #00FF00'>2023-09-11</td>
+<td style='background-color: #00FF00'>V000104</td>
+<td style='background-color: #00FF00'>10</td>
+<td style='background-color: #00FF00'>97.685</td>
+<td style='background-color: #00FF00'>976.85</td>
+<td style='background-color: #00FF00'>K005020</td>
+<td style='background-color: #00FF00'>DUTY FREE SHOPS SINGLE MEMBER S.A</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>GR</td>
+<td style='background-color: #00FF00'>14565</td>
+<td style='background-color: #00FF00'>Agios Stefanos, Attika</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>469</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #FFFFFF'>46.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>30.07.2024,  469.0</td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301558</td>
+<td style='background-color: #FFF300'>2023-09-14</td>
+<td style='background-color: #FFF300'>V000104</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-3.81</td>
+<td style='background-color: #FFF300'>-25.4</td>
+<td style='background-color: #FFF300'>K003563</td>
+<td style='background-color: #FFF300'>Garufalia Charalambaki</td>
+<td style='background-color: #FFF300'>+30 22210 86560</td>
+<td style='background-color: #FFF300'>GR</td>
+<td style='background-color: #FFF300'>34100</td>
+<td style='background-color: #FFF300'>Kalkida</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301560</td>
+<td style='background-color: #00FF00'>2023-09-15</td>
+<td style='background-color: #00FF00'>V000104</td>
+<td style='background-color: #00FF00'>10</td>
+<td style='background-color: #00FF00'>28.07</td>
+<td style='background-color: #00FF00'>280.7</td>
+<td style='background-color: #00FF00'>K005020</td>
+<td style='background-color: #00FF00'>DUTY FREE SHOPS SINGLE MEMBER S.A</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>GR</td>
+<td style='background-color: #00FF00'>14565</td>
+<td style='background-color: #00FF00'>Agios Stefanos, Attika</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>280.7</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>28.1</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>30.07.2024,  280.7</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301561</td>
+<td style='background-color: #00FF00'>2023-09-15</td>
+<td style='background-color: #00FF00'>V000104</td>
+<td style='background-color: #00FF00'>10</td>
+<td style='background-color: #00FF00'>70.14</td>
+<td style='background-color: #00FF00'>701.4</td>
+<td style='background-color: #00FF00'>K005020</td>
+<td style='background-color: #00FF00'>DUTY FREE SHOPS SINGLE MEMBER S.A</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>GR</td>
+<td style='background-color: #00FF00'>14565</td>
+<td style='background-color: #00FF00'>Agios Stefanos, Attika</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>701.4</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>70.1</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>30.07.2024,  701.4</td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301573</td>
+<td style='background-color: #FFF300'>2023-09-19</td>
+<td style='background-color: #FFF300'>V000104</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-6.27</td>
+<td style='background-color: #FFF300'>-41.8</td>
+<td style='background-color: #FFF300'>K004072</td>
+<td style='background-color: #FFF300'>MINOAN LINES S.A.</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>GR</td>
+<td style='background-color: #FFF300'>71202</td>
+<td style='background-color: #FFF300'>Heraklio, CRETE</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301666</td>
+<td style='background-color: #00FF00'>2023-09-28</td>
+<td style='background-color: #00FF00'>V000104</td>
+<td style='background-color: #00FF00'>10</td>
+<td style='background-color: #00FF00'>80.57</td>
+<td style='background-color: #00FF00'>805.7</td>
+<td style='background-color: #00FF00'>K005020</td>
+<td style='background-color: #00FF00'>DUTY FREE SHOPS SINGLE MEMBER S.A</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>GR</td>
+<td style='background-color: #00FF00'>14565</td>
+<td style='background-color: #00FF00'>Agios Stefanos, Attika</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>805.7</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>80.6</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>30.07.2024,  805.7</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301700</td>
+<td style='background-color: #00FF00'>2023-10-03</td>
+<td style='background-color: #00FF00'>V000104</td>
+<td style='background-color: #00FF00'>10</td>
+<td style='background-color: #00FF00'>157.08</td>
+<td style='background-color: #00FF00'>1570.8</td>
+<td style='background-color: #00FF00'>K005020</td>
+<td style='background-color: #00FF00'>DUTY FREE SHOPS SINGLE MEMBER S.A</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>GR</td>
+<td style='background-color: #00FF00'>14565</td>
+<td style='background-color: #00FF00'>Agios Stefanos, Attika</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1570.8</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>157.1</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>30.07.2024,  1570.8</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301715</td>
+<td style='background-color: #00FF00'>2023-10-06</td>
+<td style='background-color: #00FF00'>V000104</td>
+<td style='background-color: #00FF00'>10</td>
+<td style='background-color: #00FF00'>55.02</td>
+<td style='background-color: #00FF00'>550.2</td>
+<td style='background-color: #00FF00'>K005020</td>
+<td style='background-color: #00FF00'>DUTY FREE SHOPS SINGLE MEMBER S.A</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>GR</td>
+<td style='background-color: #00FF00'>14565</td>
+<td style='background-color: #00FF00'>Agios Stefanos, Attika</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>550.2</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>55</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>30.07.2024,  550.2</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301755</td>
+<td style='background-color: #00FF00'>2023-10-12</td>
+<td style='background-color: #00FF00'>V000104</td>
+<td style='background-color: #00FF00'>10</td>
+<td style='background-color: #00FF00'>82.495</td>
+<td style='background-color: #00FF00'>824.95</td>
+<td style='background-color: #00FF00'>K005020</td>
+<td style='background-color: #00FF00'>DUTY FREE SHOPS SINGLE MEMBER S.A</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>GR</td>
+<td style='background-color: #00FF00'>14565</td>
+<td style='background-color: #00FF00'>Agios Stefanos, Attika</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>825</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>82.5</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>30.07.2024,  825.0</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301761</td>
+<td style='background-color: #00FF00'>2023-10-13</td>
+<td style='background-color: #00FF00'>V000104</td>
+<td style='background-color: #00FF00'>10</td>
+<td style='background-color: #00FF00'>264.215</td>
+<td style='background-color: #00FF00'>2642.15</td>
+<td style='background-color: #00FF00'>K005020</td>
+<td style='background-color: #00FF00'>DUTY FREE SHOPS SINGLE MEMBER S.A</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>GR</td>
+<td style='background-color: #00FF00'>14565</td>
+<td style='background-color: #00FF00'>Agios Stefanos, Attika</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>2642.2</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>264.2</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>30.07.2024,  2642.2</td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301772</td>
+<td style='background-color: #FFF300'>2023-10-16</td>
+<td style='background-color: #FFF300'>V000104</td>
+<td style='background-color: #FFF300'>10</td>
+<td style='background-color: #FFF300'>-1.015</td>
+<td style='background-color: #FFF300'>-10.15</td>
+<td style='background-color: #FFF300'>K005020</td>
+<td style='background-color: #FFF300'>DUTY FREE SHOPS SINGLE MEMBER S.A</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>GR</td>
+<td style='background-color: #FFF300'>14565</td>
+<td style='background-color: #FFF300'>Agios Stefanos, Attika</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4301808</td>
+<td style='background-color: #00FF00'>2023-10-19</td>
+<td style='background-color: #00FF00'>V000104</td>
+<td style='background-color: #00FF00'>10</td>
+<td style='background-color: #00FF00'>39.235</td>
+<td style='background-color: #00FF00'>392.35</td>
+<td style='background-color: #00FF00'>K005020</td>
+<td style='background-color: #00FF00'>DUTY FREE SHOPS SINGLE MEMBER S.A</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>GR</td>
+<td style='background-color: #00FF00'>14565</td>
+<td style='background-color: #00FF00'>Agios Stefanos, Attika</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>308.4</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #FFFFFF'>30.8</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>30.07.2024,  308.4</td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4302091</td>
+<td style='background-color: #FFF300'>2023-12-04</td>
+<td style='background-color: #FFF300'>V000104</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-27.375</td>
+<td style='background-color: #FFF300'>-182.5</td>
+<td style='background-color: #FFF300'>K006079</td>
+<td style='background-color: #FFF300'>KARAGOUNI DIMITRA</td>
+<td style='background-color: #FFF300'>DK JEWELS</td>
+<td style='background-color: #FFF300'>GR</td>
+<td style='background-color: #FFF300'>14231</td>
+<td style='background-color: #FFF300'>NEA IONIA</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4302106</td>
+<td style='background-color: #FFF300'>2023-12-05</td>
+<td style='background-color: #FFF300'>V000104</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-150.795</td>
+<td style='background-color: #FFF300'>-1005.3</td>
+<td style='background-color: #FFF300'>K004123</td>
+<td style='background-color: #FFF300'>Grekas Daniel - LI-LO ACCESSORIES</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>GR</td>
+<td style='background-color: #FFF300'>16675</td>
+<td style='background-color: #FFF300'>GLYFADA</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4302152</td>
+<td style='background-color: #FFF300'>2023-12-13</td>
+<td style='background-color: #FFF300'>V000104</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-16.185</td>
+<td style='background-color: #FFF300'>-107.9</td>
+<td style='background-color: #FFF300'>K005324</td>
+<td style='background-color: #FFF300'>EIRHNH STAVRIANOU</td>
+<td style='background-color: #FFF300'>SINGLE MEMBER PRIVATE COMPANY</td>
+<td style='background-color: #FFF300'>GR</td>
+<td style='background-color: #FFF300'>26221</td>
+<td style='background-color: #FFF300'>Patra</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4400022</td>
+<td style='background-color: #FFF300'>2024-01-09</td>
+<td style='background-color: #FFF300'>V000104</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-14.13</td>
+<td style='background-color: #FFF300'>-94.2</td>
+<td style='background-color: #FFF300'>K006160</td>
+<td style='background-color: #FFF300'>VOULKIDIS CHRISTOS</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>GR</td>
+<td style='background-color: #FFF300'>68100</td>
+<td style='background-color: #FFF300'>ALEXANDROUPOLIS</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4400102</td>
+<td style='background-color: #FFF300'>2024-01-23</td>
+<td style='background-color: #FFF300'>V000104</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-344.751</td>
+<td style='background-color: #FFF300'>-2298.34</td>
+<td style='background-color: #FFF300'>K006160</td>
+<td style='background-color: #FFF300'>VOULKIDIS CHRISTOS</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>GR</td>
+<td style='background-color: #FFF300'>68100</td>
+<td style='background-color: #FFF300'>ALEXANDROUPOLIS</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4400121</td>
+<td style='background-color: #FFF300'>2024-01-29</td>
+<td style='background-color: #FFF300'>V000104</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-29.595</td>
+<td style='background-color: #FFF300'>-197.3</td>
+<td style='background-color: #FFF300'>K003563</td>
+<td style='background-color: #FFF300'>Garufalia Charalambaki</td>
+<td style='background-color: #FFF300'>+30 22210 86560</td>
+<td style='background-color: #FFF300'>GR</td>
+<td style='background-color: #FFF300'>34100</td>
+<td style='background-color: #FFF300'>Kalkida</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4400198</td>
+<td style='background-color: #FFF300'>2024-02-02</td>
+<td style='background-color: #FFF300'>V000104</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-517.1445</td>
+<td style='background-color: #FFF300'>-3447.63</td>
+<td style='background-color: #FFF300'>K006264</td>
+<td style='background-color: #FFF300'>QUALITY RIVER CATERING II LTD</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>ZY</td>
+<td style='background-color: #FFF300'>3305</td>
+<td style='background-color: #FFF300'>Limassol</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4400399</td>
+<td style='background-color: #00FF00'>2024-03-14</td>
+<td style='background-color: #00FF00'>V000104</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>296.238</td>
+<td style='background-color: #00FF00'>1974.92</td>
+<td style='background-color: #00FF00'>K006230</td>
+<td style='background-color: #00FF00'>QUALITY RIVER CATERING I LTD</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>ZY</td>
+<td style='background-color: #00FF00'>3305</td>
+<td style='background-color: #00FF00'>Limassol</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1974.9</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #FFFFFF'>296.2</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.07.2024,  1974.9</td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4400501</td>
+<td style='background-color: #FFF300'>2024-03-27</td>
+<td style='background-color: #FFF300'>V000104</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-873</td>
+<td style='background-color: #FFF300'>-5820</td>
+<td style='background-color: #FFF300'>K005324</td>
+<td style='background-color: #FFF300'>EIRHNH STAVRIANOU</td>
+<td style='background-color: #FFF300'>SINGLE MEMBER PRIVATE COMPANY</td>
+<td style='background-color: #FFF300'>GR</td>
+<td style='background-color: #FFF300'>26221</td>
+<td style='background-color: #FFF300'>Patra</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4400502</td>
+<td style='background-color: #FFF300'>2024-03-27</td>
+<td style='background-color: #FFF300'>V000104</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-32.589</td>
+<td style='background-color: #FFF300'>-217.26</td>
+<td style='background-color: #FFF300'>K004899</td>
+<td style='background-color: #FFF300'>KOSMIMA - KRYSTALLO E.E.</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>GR</td>
+<td style='background-color: #FFF300'>26221</td>
+<td style='background-color: #FFF300'>PATRA</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4400503</td>
+<td style='background-color: #FFF300'>2024-03-27</td>
+<td style='background-color: #FFF300'>V000104</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-305.61</td>
+<td style='background-color: #FFF300'>-2037.4</td>
+<td style='background-color: #FFF300'>K003871</td>
+<td style='background-color: #FFF300'>HATZINA NIKI MILT.</td>
+<td style='background-color: #FFF300'>TEL: (+30) 6944 698384.</td>
+<td style='background-color: #FFF300'>GR</td>
+<td style='background-color: #FFF300'>19002</td>
+<td style='background-color: #FFF300'>PAIANIA</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4400504</td>
+<td style='background-color: #FFF300'>2024-03-27</td>
+<td style='background-color: #FFF300'>V000104</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-173.7945</td>
+<td style='background-color: #FFF300'>-1158.63</td>
+<td style='background-color: #FFF300'>K004699</td>
+<td style='background-color: #FFF300'>AMBATZOGLOU EVAGGELIA</td>
+<td style='background-color: #FFF300'>NOSTOS</td>
+<td style='background-color: #FFF300'>GR</td>
+<td style='background-color: #FFF300'>84700</td>
+<td style='background-color: #FFF300'>SANTORINI</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4400505</td>
+<td style='background-color: #FFF300'>2024-03-27</td>
+<td style='background-color: #FFF300'>V000104</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-12</td>
+<td style='background-color: #FFF300'>-80</td>
+<td style='background-color: #FFF300'>K005871</td>
+<td style='background-color: #FFF300'>ISMINI BEAUTY N'STYLE</td>
+<td style='background-color: #FFF300'>Stoili Areti</td>
+<td style='background-color: #FFF300'>GR</td>
+<td style='background-color: #FFF300'>18010</td>
+<td style='background-color: #FFF300'>Aegina</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4400521</td>
+<td style='background-color: #FFF300'>2024-04-02</td>
+<td style='background-color: #FFF300'>V000104</td>
+<td style='background-color: #FFF300'>10</td>
+<td style='background-color: #FFF300'>-2.17</td>
+<td style='background-color: #FFF300'>-21.7</td>
+<td style='background-color: #FFF300'>K005020</td>
+<td style='background-color: #FFF300'>DUTY FREE SHOPS SINGLE MEMBER S.A</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>GR</td>
+<td style='background-color: #FFF300'>14565</td>
+<td style='background-color: #FFF300'>Agios Stefanos, Attika</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4400522</td>
+<td style='background-color: #FFF300'>2024-04-02</td>
+<td style='background-color: #FFF300'>V000104</td>
+<td style='background-color: #FFF300'>10</td>
+<td style='background-color: #FFF300'>-2.24</td>
+<td style='background-color: #FFF300'>-22.4</td>
+<td style='background-color: #FFF300'>K005020</td>
+<td style='background-color: #FFF300'>DUTY FREE SHOPS SINGLE MEMBER S.A</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>GR</td>
+<td style='background-color: #FFF300'>14565</td>
+<td style='background-color: #FFF300'>Agios Stefanos, Attika</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4400540</td>
+<td style='background-color: #FFF300'>2024-04-03</td>
+<td style='background-color: #FFF300'>V000104</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-465.33</td>
+<td style='background-color: #FFF300'>-3102.2</td>
+<td style='background-color: #FFF300'>K005871</td>
+<td style='background-color: #FFF300'>ISMINI BEAUTY N'STYLE</td>
+<td style='background-color: #FFF300'>Stoili Areti</td>
+<td style='background-color: #FFF300'>GR</td>
+<td style='background-color: #FFF300'>18010</td>
+<td style='background-color: #FFF300'>Aegina</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4400563</td>
+<td style='background-color: #FFF300'>2024-04-05</td>
+<td style='background-color: #FFF300'>V000104</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-2.745</td>
+<td style='background-color: #FFF300'>-18.3</td>
+<td style='background-color: #FFF300'>K004072</td>
+<td style='background-color: #FFF300'>MINOAN LINES S.A.</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>GR</td>
+<td style='background-color: #FFF300'>71202</td>
+<td style='background-color: #FFF300'>Heraklio, CRETE</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4400589</td>
+<td style='background-color: #00FF00'>2024-04-12</td>
+<td style='background-color: #00FF00'>V000104</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>68.955</td>
+<td style='background-color: #00FF00'>459.7</td>
+<td style='background-color: #00FF00'>K006230</td>
+<td style='background-color: #00FF00'>QUALITY RIVER CATERING I LTD</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>ZY</td>
+<td style='background-color: #00FF00'>3305</td>
+<td style='background-color: #00FF00'>Limassol</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>459.7</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>69</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.07.2024,  459.7</td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4400657</td>
+<td style='background-color: #FFF300'>2024-04-24</td>
+<td style='background-color: #FFF300'>V000104</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-8.76</td>
+<td style='background-color: #FFF300'>-58.4</td>
+<td style='background-color: #FFF300'>K006160</td>
+<td style='background-color: #FFF300'>VOULKIDIS CHRISTOS</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>GR</td>
+<td style='background-color: #FFF300'>68100</td>
+<td style='background-color: #FFF300'>ALEXANDROUPOLIS</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4400696</td>
+<td style='background-color: #00FF00'>2024-05-07</td>
+<td style='background-color: #00FF00'>V000104</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>718.53</td>
+<td style='background-color: #00FF00'>4790.2</td>
+<td style='background-color: #00FF00'>K006230</td>
+<td style='background-color: #00FF00'>QUALITY RIVER CATERING I LTD</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>ZY</td>
+<td style='background-color: #00FF00'>3305</td>
+<td style='background-color: #00FF00'>Limassol</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>4790.2</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>718.5</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.07.2024,  4790.2</td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4400734</td>
+<td style='background-color: #FFF300'>2024-05-15</td>
+<td style='background-color: #FFF300'>V000104</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-38.895</td>
+<td style='background-color: #FFF300'>-259.3</td>
+<td style='background-color: #FFF300'>K004123</td>
+<td style='background-color: #FFF300'>Grekas Daniel - LI-LO ACCESSORIES</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>GR</td>
+<td style='background-color: #FFF300'>16675</td>
+<td style='background-color: #FFF300'>GLYFADA</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4400758</td>
+<td style='background-color: #00FF00'>2024-05-21</td>
+<td style='background-color: #00FF00'>V000104</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>519.885</td>
+<td style='background-color: #00FF00'>3465.9</td>
+<td style='background-color: #00FF00'>K006230</td>
+<td style='background-color: #00FF00'>QUALITY RIVER CATERING I LTD</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>ZY</td>
+<td style='background-color: #00FF00'>3305</td>
+<td style='background-color: #00FF00'>Limassol</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>3465.9</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>519.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.07.2024,  3465.9</td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4400771</td>
+<td style='background-color: #FFF300'>2024-05-23</td>
+<td style='background-color: #FFF300'>V000104</td>
+<td style='background-color: #FFF300'>10</td>
+<td style='background-color: #FFF300'>-2.24</td>
+<td style='background-color: #FFF300'>-22.4</td>
+<td style='background-color: #FFF300'>K005020</td>
+<td style='background-color: #FFF300'>DUTY FREE SHOPS SINGLE MEMBER S.A</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>GR</td>
+<td style='background-color: #FFF300'>14565</td>
+<td style='background-color: #FFF300'>Agios Stefanos, Attika</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4400872</td>
+<td style='background-color: #FFF300'>2024-06-14</td>
+<td style='background-color: #FFF300'>V000104</td>
+<td style='background-color: #FFF300'>10</td>
+<td style='background-color: #FFF300'>-2.135</td>
+<td style='background-color: #FFF300'>-21.35</td>
+<td style='background-color: #FFF300'>K005020</td>
+<td style='background-color: #FFF300'>DUTY FREE SHOPS SINGLE MEMBER S.A</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>GR</td>
+<td style='background-color: #FFF300'>14565</td>
+<td style='background-color: #FFF300'>Agios Stefanos, Attika</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4400888</td>
+<td style='background-color: #00FF00'>2024-06-19</td>
+<td style='background-color: #00FF00'>V000104</td>
+<td style='background-color: #00FF00'>15</td>
+<td style='background-color: #00FF00'>75.285</td>
+<td style='background-color: #00FF00'>501.9</td>
+<td style='background-color: #00FF00'>K006185</td>
+<td style='background-color: #00FF00'>GERGOS IOANNIS</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>GR</td>
+<td style='background-color: #00FF00'>59132</td>
+<td style='background-color: #00FF00'>VEROIA</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>501.9</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>75.3</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>17.07.2024,  501.9</td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4400917</td>
+<td style='background-color: #FFF300'>2024-06-24</td>
+<td style='background-color: #FFF300'>V000104</td>
+<td style='background-color: #FFF300'>10</td>
+<td style='background-color: #FFF300'>-11.2</td>
+<td style='background-color: #FFF300'>-112</td>
+<td style='background-color: #FFF300'>K005020</td>
+<td style='background-color: #FFF300'>DUTY FREE SHOPS SINGLE MEMBER S.A</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>GR</td>
+<td style='background-color: #FFF300'>14565</td>
+<td style='background-color: #FFF300'>Agios Stefanos, Attika</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4400975</td>
+<td style='background-color: #FFF300'>2024-07-10</td>
+<td style='background-color: #FFF300'>V000104</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-1.695</td>
+<td style='background-color: #FFF300'>-11.3</td>
+<td style='background-color: #FFF300'>K003563</td>
+<td style='background-color: #FFF300'>Garufalia Charalambaki</td>
+<td style='background-color: #FFF300'>+30 22210 86560</td>
+<td style='background-color: #FFF300'>GR</td>
+<td style='background-color: #FFF300'>34100</td>
+<td style='background-color: #FFF300'>Kalkida</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4401032</td>
+<td style='background-color: #FFF300'>2024-07-23</td>
+<td style='background-color: #FFF300'>V000104</td>
+<td style='background-color: #FFF300'>10</td>
+<td style='background-color: #FFF300'>-4.55</td>
+<td style='background-color: #FFF300'>-45.5</td>
+<td style='background-color: #FFF300'>K005020</td>
+<td style='background-color: #FFF300'>DUTY FREE SHOPS SINGLE MEMBER S.A</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>GR</td>
+<td style='background-color: #FFF300'>14565</td>
+<td style='background-color: #FFF300'>Agios Stefanos, Attika</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>All paid amount</td>
+<td style='background-color: #90EE90'>19346</td>
+<td style='background-color: #FFFFFF'>All comissions</td>
+<td style='background-color: #90EE90'>2494.23</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+ </tbody>
+                    </table>
+                    {% endblock %}

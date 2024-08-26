@@ -1,0 +1,225 @@
+{%extends 'base.html'%}
+                            {% block content %}     
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--<link rel="stylesheet" type="text/css" href="normas.css">-->
+    <style>
+        body{
+            background-color: #d6e1f8;
+
+        }
+        th, td {
+            border: 1px solid #ccc;
+
+            text-align: center;
+        }
+
+        table {
+
+            border-collapse: collapse !important; /* optional: collapse the table borders */
+        }
+
+        table tr {
+            background-color: #8BC34A !important; /* Set background color of all rows */
+        }
+
+        table tr:hover td {
+            background-color: #2196F3 !important; /* Set background color of cells when hovered */
+        }
+
+    </style>
+                     <table border="1" class="dataframe" style="width:100%;">
+                                 <thead>
+                                     <tr style="text-align: right;">
+<th style='background-color: #899EF0'>RK</th>
+<th style='background-color: #899EF0'>GF-Nr</th>
+<th style='background-color: #899EF0'>Datum</th>
+<th style='background-color: #899EF0'>Vertreter</th>
+<th style='background-color: #899EF0'>ProvProz</th>
+<th style='background-color: #899EF0'>Provision</th>
+<th style='background-color: #899EF0'>Summe</th>
+<th style='background-color: #899EF0'>Lieferant</th>
+<th style='background-color: #899EF0'>Lieferantenname</th>
+<th style='background-color: #899EF0'>Name2</th>
+<th style='background-color: #899EF0'>IntKz</th>
+<th style='background-color: #899EF0'>PLZ Neu</th>
+<th style='background-color: #899EF0'>Ort</th>
+<th style='background-color: #899EF0'>s</th>
+<th style='background-color: #899EF0'>Paid amount</th>
+<th style='background-color: #899EF0'>Payment status</th>
+<th style='background-color: #899EF0'>Payment commission</th>
+<th style='background-color: #899EF0'>Payments with Rest</th>
+<th style='background-color: #899EF0'>Payments Dates</th>
+</tr>
+</thead>
+                          <tbody><tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4400710</td>
+<td style='background-color: #00FF00'>2024-05-08</td>
+<td style='background-color: #00FF00'>V000151</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>1428.8976</td>
+<td style='background-color: #00FF00'>10991.52</td>
+<td style='background-color: #00FF00'>K006247</td>
+<td style='background-color: #00FF00'>SOUVENIRS CANALEJAS S.L.</td>
+<td style='background-color: #00FF00'>B-72512734</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>28232</td>
+<td style='background-color: #00FF00'>LAS ROZAS ( MADRID )</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>3663.8</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #FFFFFF'>476.3</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>15.07.2024,  3663.8</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4400759</td>
+<td style='background-color: #00FF00'>2024-05-21</td>
+<td style='background-color: #00FF00'>V000151</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>813.852</td>
+<td style='background-color: #00FF00'>6260.4</td>
+<td style='background-color: #00FF00'>K006247</td>
+<td style='background-color: #00FF00'>SOUVENIRS CANALEJAS S.L.</td>
+<td style='background-color: #00FF00'>B-72512734</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>28232</td>
+<td style='background-color: #00FF00'>LAS ROZAS ( MADRID )</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>2086.8</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #FFFFFF'>271.3</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>01.07.2024,  2086.8</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4400760</td>
+<td style='background-color: #00FF00'>2024-05-21</td>
+<td style='background-color: #00FF00'>V000151</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>809.7453</td>
+<td style='background-color: #00FF00'>6228.81</td>
+<td style='background-color: #00FF00'>K006247</td>
+<td style='background-color: #00FF00'>SOUVENIRS CANALEJAS S.L.</td>
+<td style='background-color: #00FF00'>B-72512734</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>28232</td>
+<td style='background-color: #00FF00'>LAS ROZAS ( MADRID )</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>2076.3</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #FFFFFF'>269.9</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>01.07.2024,  2076.3</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4400825</td>
+<td style='background-color: #00FF00'>2024-06-04</td>
+<td style='background-color: #00FF00'>V000151</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>435.7548</td>
+<td style='background-color: #00FF00'>3351.96</td>
+<td style='background-color: #00FF00'>K006247</td>
+<td style='background-color: #00FF00'>SOUVENIRS CANALEJAS S.L.</td>
+<td style='background-color: #00FF00'>B-72512734</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>28232</td>
+<td style='background-color: #00FF00'>LAS ROZAS ( MADRID )</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1117.3</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #FFFFFF'>145.2</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>15.07.2024,  1117.3</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4400826</td>
+<td style='background-color: #00FF00'>2024-06-04</td>
+<td style='background-color: #00FF00'>V000151</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>262.3374</td>
+<td style='background-color: #00FF00'>2017.98</td>
+<td style='background-color: #00FF00'>K006247</td>
+<td style='background-color: #00FF00'>SOUVENIRS CANALEJAS S.L.</td>
+<td style='background-color: #00FF00'>B-72512734</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>28232</td>
+<td style='background-color: #00FF00'>LAS ROZAS ( MADRID )</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>672.7</td>
+<td style='background-color: #00FF00'>PARTIALLY PAID</td>
+<td style='background-color: #FFFFFF'>87.5</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>15.07.2024,  672.7</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4400964</td>
+<td style='background-color: #00FF00'>2024-07-09</td>
+<td style='background-color: #00FF00'>V000151</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>82.121</td>
+<td style='background-color: #00FF00'>631.7</td>
+<td style='background-color: #00FF00'>K006247</td>
+<td style='background-color: #00FF00'>SOUVENIRS CANALEJAS S.L.</td>
+<td style='background-color: #00FF00'>B-72512734</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>28232</td>
+<td style='background-color: #00FF00'>LAS ROZAS ( MADRID )</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>631.7</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>82.1</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.07.2024,  631.7</td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4400965</td>
+<td style='background-color: #00FF00'>2024-07-09</td>
+<td style='background-color: #00FF00'>V000151</td>
+<td style='background-color: #00FF00'>13</td>
+<td style='background-color: #00FF00'>226.33</td>
+<td style='background-color: #00FF00'>1741</td>
+<td style='background-color: #00FF00'>K006247</td>
+<td style='background-color: #00FF00'>SOUVENIRS CANALEJAS S.L.</td>
+<td style='background-color: #00FF00'>B-72512734</td>
+<td style='background-color: #00FF00'>ES</td>
+<td style='background-color: #00FF00'>28232</td>
+<td style='background-color: #00FF00'>LAS ROZAS ( MADRID )</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>1741</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>226.3</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>31.07.2024,  1741.0</td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>All paid amount</td>
+<td style='background-color: #90EE90'>11989.6</td>
+<td style='background-color: #FFFFFF'>All comissions</td>
+<td style='background-color: #90EE90'>1558.65</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+ </tbody>
+                    </table>
+                    {% endblock %}
