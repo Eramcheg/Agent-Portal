@@ -1,0 +1,309 @@
+{%extends 'base.html'%}
+                            {% block content %}     
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--<link rel="stylesheet" type="text/css" href="normas.css">-->
+    <style>
+        body{
+            background-color: #d6e1f8;
+
+        }
+        th, td {
+            border: 1px solid #ccc;
+
+            text-align: center;
+        }
+
+        table {
+
+            border-collapse: collapse !important; /* optional: collapse the table borders */
+        }
+
+        table tr {
+            background-color: #8BC34A !important; /* Set background color of all rows */
+        }
+
+        table tr:hover td {
+            background-color: #2196F3 !important; /* Set background color of cells when hovered */
+        }
+
+    </style>
+                     <table border="1" class="dataframe" style="width:100%;">
+                                 <thead>
+                                     <tr style="text-align: right;">
+<th style='background-color: #899EF0'>RK</th>
+<th style='background-color: #899EF0'>GF-Nr</th>
+<th style='background-color: #899EF0'>Datum</th>
+<th style='background-color: #899EF0'>Vertreter</th>
+<th style='background-color: #899EF0'>ProvProz</th>
+<th style='background-color: #899EF0'>Provision</th>
+<th style='background-color: #899EF0'>Summe</th>
+<th style='background-color: #899EF0'>Lieferant</th>
+<th style='background-color: #899EF0'>Lieferantenname</th>
+<th style='background-color: #899EF0'>Name2</th>
+<th style='background-color: #899EF0'>IntKz</th>
+<th style='background-color: #899EF0'>PLZ Neu</th>
+<th style='background-color: #899EF0'>Ort</th>
+<th style='background-color: #899EF0'>s</th>
+<th style='background-color: #899EF0'>Paid amount</th>
+<th style='background-color: #899EF0'>Payment status</th>
+<th style='background-color: #899EF0'>Payment commission</th>
+<th style='background-color: #899EF0'>Payments with Rest</th>
+<th style='background-color: #899EF0'>Payments Dates</th>
+</tr>
+</thead>
+                          <tbody><tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300356</td>
+<td style='background-color: #FFF300'>2023-03-10</td>
+<td style='background-color: #FFF300'>V000120</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>-155.4</td>
+<td style='background-color: #FFF300'>K004893</td>
+<td style='background-color: #FFF300'>Manège à bijoux LECLERC</td>
+<td style='background-color: #FFF300'>SAS SODICER 03 89754020</td>
+<td style='background-color: #FFF300'>F</td>
+<td style='background-color: #FFF300'>68703</td>
+<td style='background-color: #FFF300'>Cernay</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301130</td>
+<td style='background-color: #FFF300'>2023-06-29</td>
+<td style='background-color: #FFF300'>V000120</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-3.495</td>
+<td style='background-color: #FFF300'>-23.3</td>
+<td style='background-color: #FFF300'>K004037</td>
+<td style='background-color: #FFF300'>Annick Baal</td>
+<td style='background-color: #FFF300'>SAS GAMECA</td>
+<td style='background-color: #FFF300'>F</td>
+<td style='background-color: #FFF300'>68170</td>
+<td style='background-color: #FFF300'>Rixheim</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301376</td>
+<td style='background-color: #FFF300'>2023-08-08</td>
+<td style='background-color: #FFF300'>V000120</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-85.545</td>
+<td style='background-color: #FFF300'>-570.3</td>
+<td style='background-color: #FFF300'>K005448</td>
+<td style='background-color: #FFF300'>Super U Eschau</td>
+<td style='background-color: #FFF300'>SAS Eschaudis</td>
+<td style='background-color: #FFF300'>F</td>
+<td style='background-color: #FFF300'>67114</td>
+<td style='background-color: #FFF300'>Eschau</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301679</td>
+<td style='background-color: #FFF300'>2023-09-29</td>
+<td style='background-color: #FFF300'>V000120</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>-85</td>
+<td style='background-color: #FFF300'>K005140</td>
+<td style='background-color: #FFF300'>Manege a Bijoux Leclerc</td>
+<td style='background-color: #FFF300'>SAS NEOCADIS</td>
+<td style='background-color: #FFF300'>F</td>
+<td style='background-color: #FFF300'>88300</td>
+<td style='background-color: #FFF300'>Neufchateau</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4302088</td>
+<td style='background-color: #FFF300'>2023-12-04</td>
+<td style='background-color: #FFF300'>V000120</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-73.155</td>
+<td style='background-color: #FFF300'>-487.7</td>
+<td style='background-color: #FFF300'>K004037</td>
+<td style='background-color: #FFF300'>Annick Baal</td>
+<td style='background-color: #FFF300'>SAS GAMECA</td>
+<td style='background-color: #FFF300'>F</td>
+<td style='background-color: #FFF300'>68170</td>
+<td style='background-color: #FFF300'>Rixheim</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4400086</td>
+<td style='background-color: #FFF300'>2024-01-22</td>
+<td style='background-color: #FFF300'>V000120</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>-95.4</td>
+<td style='background-color: #FFF300'>K004893</td>
+<td style='background-color: #FFF300'>Manège à bijoux LECLERC</td>
+<td style='background-color: #FFF300'>SAS SODICER 03 89754020</td>
+<td style='background-color: #FFF300'>F</td>
+<td style='background-color: #FFF300'>68703</td>
+<td style='background-color: #FFF300'>Cernay</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4400096</td>
+<td style='background-color: #FFF300'>2024-01-23</td>
+<td style='background-color: #FFF300'>V000120</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-8.625</td>
+<td style='background-color: #FFF300'>-57.5</td>
+<td style='background-color: #FFF300'>K004583</td>
+<td style='background-color: #FFF300'>Manège à Bijoux</td>
+<td style='background-color: #FFF300'>SAS MONTBEDIS</td>
+<td style='background-color: #FFF300'>F</td>
+<td style='background-color: #FFF300'>25200</td>
+<td style='background-color: #FFF300'>Montbéliard</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4400243</td>
+<td style='background-color: #FFF300'>2024-02-14</td>
+<td style='background-color: #FFF300'>V000120</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>-95.4</td>
+<td style='background-color: #FFF300'>K004893</td>
+<td style='background-color: #FFF300'>Manège à bijoux LECLERC</td>
+<td style='background-color: #FFF300'>SAS SODICER 03 89754020</td>
+<td style='background-color: #FFF300'>F</td>
+<td style='background-color: #FFF300'>68703</td>
+<td style='background-color: #FFF300'>Cernay</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4400314</td>
+<td style='background-color: #FFF300'>2024-02-29</td>
+<td style='background-color: #FFF300'>V000120</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>-13.3</td>
+<td style='background-color: #FFF300'>K005198</td>
+<td style='background-color: #FFF300'>Manège à Bijoux E. LECLERC</td>
+<td style='background-color: #FFF300'>SARREDIS SAS</td>
+<td style='background-color: #FFF300'>F</td>
+<td style='background-color: #FFF300'>57400</td>
+<td style='background-color: #FFF300'>Sarrebourg</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4400411</td>
+<td style='background-color: #FFF300'>2024-03-15</td>
+<td style='background-color: #FFF300'>V000120</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>-1037.4</td>
+<td style='background-color: #FFF300'>K005176</td>
+<td style='background-color: #FFF300'>Manège à Bijoux Centre Leclerc</td>
+<td style='background-color: #FFF300'>SAS DENIDIS</td>
+<td style='background-color: #FFF300'>F</td>
+<td style='background-color: #FFF300'>89100</td>
+<td style='background-color: #FFF300'>Saint-Denis-lès-Sens</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4400437</td>
+<td style='background-color: #FFF300'>2024-03-20</td>
+<td style='background-color: #FFF300'>V000120</td>
+<td style='background-color: #FFF300'>15</td>
+<td style='background-color: #FFF300'>-4.065</td>
+<td style='background-color: #FFF300'>-27.1</td>
+<td style='background-color: #FFF300'>K005448</td>
+<td style='background-color: #FFF300'>Super U Eschau</td>
+<td style='background-color: #FFF300'>SAS Eschaudis</td>
+<td style='background-color: #FFF300'>F</td>
+<td style='background-color: #FFF300'>67114</td>
+<td style='background-color: #FFF300'>Eschau</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>All paid amount</td>
+<td style='background-color: #90EE90'>0</td>
+<td style='background-color: #FFFFFF'>All comissions</td>
+<td style='background-color: #90EE90'>0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+ </tbody>
+                    </table>
+                    {% endblock %}
