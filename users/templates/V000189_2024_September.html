@@ -1,0 +1,204 @@
+{%extends 'base.html'%}
+                            {% block content %}     
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--<link rel="stylesheet" type="text/css" href="normas.css">-->
+    <style>
+        body{
+            background-color: #d6e1f8;
+
+        }
+        th, td {
+            border: 1px solid #ccc;
+
+            text-align: center;
+        }
+
+        table {
+
+            border-collapse: collapse !important; /* optional: collapse the table borders */
+        }
+
+        table tr {
+            background-color: #8BC34A !important; /* Set background color of all rows */
+        }
+
+        table tr:hover td {
+            background-color: #2196F3 !important; /* Set background color of cells when hovered */
+        }
+
+    </style>
+                     <table border="1" class="dataframe" style="width:100%;">
+                                 <thead>
+                                     <tr style="text-align: right;">
+<th style='background-color: #899EF0'>RK</th>
+<th style='background-color: #899EF0'>GF-Nr</th>
+<th style='background-color: #899EF0'>Datum</th>
+<th style='background-color: #899EF0'>Vertreter</th>
+<th style='background-color: #899EF0'>ProvProz</th>
+<th style='background-color: #899EF0'>Provision</th>
+<th style='background-color: #899EF0'>Summe</th>
+<th style='background-color: #899EF0'>Lieferant</th>
+<th style='background-color: #899EF0'>Lieferantenname</th>
+<th style='background-color: #899EF0'>Name2</th>
+<th style='background-color: #899EF0'>IntKz</th>
+<th style='background-color: #899EF0'>PLZ Neu</th>
+<th style='background-color: #899EF0'>Ort</th>
+<th style='background-color: #899EF0'>s</th>
+<th style='background-color: #899EF0'>Paid amount</th>
+<th style='background-color: #899EF0'>Payment status</th>
+<th style='background-color: #899EF0'>Payment commission</th>
+<th style='background-color: #899EF0'>Payments with Rest</th>
+<th style='background-color: #899EF0'>Payments Dates</th>
+</tr>
+</thead>
+                          <tbody><tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4400273</td>
+<td style='background-color: #FFF300'>2024-02-20</td>
+<td style='background-color: #FFF300'>V000189</td>
+<td style='background-color: #FFF300'>5</td>
+<td style='background-color: #FFF300'>-25.578</td>
+<td style='background-color: #FFF300'>-511.56</td>
+<td style='background-color: #FFF300'>K006312</td>
+<td style='background-color: #FFF300'>AW IMPEX SPOLKA Z OGRANICZONA</td>
+<td style='background-color: #FFF300'>ODPOWIEDZIALNOSCIA</td>
+<td style='background-color: #FFF300'>PL</td>
+<td style='background-color: #FFF300'>14-500</td>
+<td style='background-color: #FFF300'>Braniewo</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4400366</td>
+<td style='background-color: #FFF300'>2024-03-07</td>
+<td style='background-color: #FFF300'>V000189</td>
+<td style='background-color: #FFF300'>5</td>
+<td style='background-color: #FFF300'>-124.3715</td>
+<td style='background-color: #FFF300'>-2487.43</td>
+<td style='background-color: #FFF300'>K006312</td>
+<td style='background-color: #FFF300'>AW IMPEX SPOLKA Z OGRANICZONA</td>
+<td style='background-color: #FFF300'>ODPOWIEDZIALNOSCIA</td>
+<td style='background-color: #FFF300'>PL</td>
+<td style='background-color: #FFF300'>14-500</td>
+<td style='background-color: #FFF300'>Braniewo</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4400850</td>
+<td style='background-color: #FFF300'>2024-06-10</td>
+<td style='background-color: #FFF300'>V000189</td>
+<td style='background-color: #FFF300'>5</td>
+<td style='background-color: #FFF300'>-111.3135</td>
+<td style='background-color: #FFF300'>-2226.27</td>
+<td style='background-color: #FFF300'>K006312</td>
+<td style='background-color: #FFF300'>AW IMPEX SPOLKA Z OGRANICZONA</td>
+<td style='background-color: #FFF300'>ODPOWIEDZIALNOSCIA</td>
+<td style='background-color: #FFF300'>PL</td>
+<td style='background-color: #FFF300'>14-500</td>
+<td style='background-color: #FFF300'>Braniewo</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4401126</td>
+<td style='background-color: #FFF300'>2024-08-14</td>
+<td style='background-color: #FFF300'>V000189</td>
+<td style='background-color: #FFF300'>5</td>
+<td style='background-color: #FFF300'>-13.6575</td>
+<td style='background-color: #FFF300'>-273.15</td>
+<td style='background-color: #FFF300'>K006312</td>
+<td style='background-color: #FFF300'>AW IMPEX SPOLKA Z OGRANICZONA</td>
+<td style='background-color: #FFF300'>ODPOWIEDZIALNOSCIA</td>
+<td style='background-color: #FFF300'>PL</td>
+<td style='background-color: #FFF300'>14-500</td>
+<td style='background-color: #FFF300'>Braniewo</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>RE-4401207</td>
+<td style='background-color: #00FF00'>2024-09-05</td>
+<td style='background-color: #00FF00'>V000189</td>
+<td style='background-color: #00FF00'>5</td>
+<td style='background-color: #00FF00'>1114.375</td>
+<td style='background-color: #00FF00'>22287.5</td>
+<td style='background-color: #00FF00'>K006312</td>
+<td style='background-color: #00FF00'>AW IMPEX SPOLKA Z OGRANICZONA</td>
+<td style='background-color: #00FF00'>ODPOWIEDZIALNOSCIA</td>
+<td style='background-color: #00FF00'>PL</td>
+<td style='background-color: #00FF00'>14-500</td>
+<td style='background-color: #00FF00'>Braniewo</td>
+<td style='background-color: #00FF00'> </td>
+<td style='background-color: #00FF00'>22287.5</td>
+<td style='background-color: #00FF00'>PAID</td>
+<td style='background-color: #FFFFFF'>1114.4</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>16.09.2024,  22287.5</td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4401228</td>
+<td style='background-color: #FFF300'>2024-09-11</td>
+<td style='background-color: #FFF300'>V000189</td>
+<td style='background-color: #FFF300'>5</td>
+<td style='background-color: #FFF300'>-65.4295</td>
+<td style='background-color: #FFF300'>-1308.59</td>
+<td style='background-color: #FFF300'>K006312</td>
+<td style='background-color: #FFF300'>AW IMPEX SPOLKA Z OGRANICZONA</td>
+<td style='background-color: #FFF300'>ODPOWIEDZIALNOSCIA</td>
+<td style='background-color: #FFF300'>PL</td>
+<td style='background-color: #FFF300'>14-500</td>
+<td style='background-color: #FFF300'>Braniewo</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>All paid amount</td>
+<td style='background-color: #90EE90'>22287.5</td>
+<td style='background-color: #FFFFFF'>All comissions</td>
+<td style='background-color: #90EE90'>1114.38</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+ </tbody>
+                    </table>
+                    {% endblock %}

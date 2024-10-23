@@ -1,0 +1,351 @@
+{%extends 'base.html'%}
+                            {% block content %}     
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--<link rel="stylesheet" type="text/css" href="normas.css">-->
+    <style>
+        body{
+            background-color: #d6e1f8;
+
+        }
+        th, td {
+            border: 1px solid #ccc;
+
+            text-align: center;
+        }
+
+        table {
+
+            border-collapse: collapse !important; /* optional: collapse the table borders */
+        }
+
+        table tr {
+            background-color: #8BC34A !important; /* Set background color of all rows */
+        }
+
+        table tr:hover td {
+            background-color: #2196F3 !important; /* Set background color of cells when hovered */
+        }
+
+    </style>
+                     <table border="1" class="dataframe" style="width:100%;">
+                                 <thead>
+                                     <tr style="text-align: right;">
+<th style='background-color: #899EF0'>RK</th>
+<th style='background-color: #899EF0'>GF-Nr</th>
+<th style='background-color: #899EF0'>Datum</th>
+<th style='background-color: #899EF0'>Vertreter</th>
+<th style='background-color: #899EF0'>ProvProz</th>
+<th style='background-color: #899EF0'>Provision</th>
+<th style='background-color: #899EF0'>Summe</th>
+<th style='background-color: #899EF0'>Lieferant</th>
+<th style='background-color: #899EF0'>Lieferantenname</th>
+<th style='background-color: #899EF0'>Name2</th>
+<th style='background-color: #899EF0'>IntKz</th>
+<th style='background-color: #899EF0'>PLZ Neu</th>
+<th style='background-color: #899EF0'>Ort</th>
+<th style='background-color: #899EF0'>s</th>
+<th style='background-color: #899EF0'>Paid amount</th>
+<th style='background-color: #899EF0'>Payment status</th>
+<th style='background-color: #899EF0'>Payment commission</th>
+<th style='background-color: #899EF0'>Payments with Rest</th>
+<th style='background-color: #899EF0'>Payments Dates</th>
+</tr>
+</thead>
+                          <tbody><tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300075</td>
+<td style='background-color: #FFF300'>2023-01-20</td>
+<td style='background-color: #FFF300'>V000174</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>-1527.8</td>
+<td style='background-color: #FFF300'>K004427</td>
+<td style='background-color: #FFF300'>Hotel Müller</td>
+<td style='background-color: #FFF300'>Hohenschwangau GmbH & Co. KG</td>
+<td style='background-color: #FFF300'>DE</td>
+<td style='background-color: #FFF300'>87645</td>
+<td style='background-color: #FFF300'>Hohenschwangau</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300076</td>
+<td style='background-color: #FFF300'>2023-01-20</td>
+<td style='background-color: #FFF300'>V000174</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>-101.7</td>
+<td style='background-color: #FFF300'>K004427</td>
+<td style='background-color: #FFF300'>Hotel Müller</td>
+<td style='background-color: #FFF300'>Hohenschwangau GmbH & Co. KG</td>
+<td style='background-color: #FFF300'>DE</td>
+<td style='background-color: #FFF300'>87645</td>
+<td style='background-color: #FFF300'>Hohenschwangau</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300354</td>
+<td style='background-color: #FFF300'>2023-03-10</td>
+<td style='background-color: #FFF300'>V000174</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>-1513.26</td>
+<td style='background-color: #FFF300'>K006155</td>
+<td style='background-color: #FFF300'>F.E.M.- Fehime Arifi</td>
+<td style='background-color: #FFF300'>ZAZ Nr. 203500</td>
+<td style='background-color: #FFF300'>CH</td>
+<td style='background-color: #FFF300'>9000</td>
+<td style='background-color: #FFF300'>St. Gallen</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300355</td>
+<td style='background-color: #FFF300'>2023-03-10</td>
+<td style='background-color: #FFF300'>V000174</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>-457.2</td>
+<td style='background-color: #FFF300'>K006155</td>
+<td style='background-color: #FFF300'>F.E.M.- Fehime Arifi</td>
+<td style='background-color: #FFF300'>ZAZ Nr. 203500</td>
+<td style='background-color: #FFF300'>CH</td>
+<td style='background-color: #FFF300'>9000</td>
+<td style='background-color: #FFF300'>St. Gallen</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300358</td>
+<td style='background-color: #FFF300'>2023-03-10</td>
+<td style='background-color: #FFF300'>V000174</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>-830.7</td>
+<td style='background-color: #FFF300'>K006155</td>
+<td style='background-color: #FFF300'>F.E.M.- Fehime Arifi</td>
+<td style='background-color: #FFF300'>ZAZ Nr. 203500</td>
+<td style='background-color: #FFF300'>CH</td>
+<td style='background-color: #FFF300'>9000</td>
+<td style='background-color: #FFF300'>St. Gallen</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4300521</td>
+<td style='background-color: #FFF300'>2023-04-11</td>
+<td style='background-color: #FFF300'>V000174</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>-546.47</td>
+<td style='background-color: #FFF300'>K000521</td>
+<td style='background-color: #FFF300'>Seefeld-Present</td>
+<td style='background-color: #FFF300'>Fr. Claudia Suitner</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>6100</td>
+<td style='background-color: #FFF300'>Seefeld</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301157</td>
+<td style='background-color: #FFF300'>2023-07-03</td>
+<td style='background-color: #FFF300'>V000174</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>-749.96</td>
+<td style='background-color: #FFF300'>K000521</td>
+<td style='background-color: #FFF300'>Seefeld-Present</td>
+<td style='background-color: #FFF300'>Fr. Claudia Suitner</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>6100</td>
+<td style='background-color: #FFF300'>Seefeld</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301182</td>
+<td style='background-color: #FFF300'>2023-07-06</td>
+<td style='background-color: #FFF300'>V000174</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>-45.88</td>
+<td style='background-color: #FFF300'>K000454</td>
+<td style='background-color: #FFF300'>Kisslinger Kristall-Glas GmbH</td>
+<td style='background-color: #FFF300'>& Co KG</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>6240</td>
+<td style='background-color: #FFF300'>Rattenberg</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4301926</td>
+<td style='background-color: #FFF300'>2023-11-09</td>
+<td style='background-color: #FFF300'>V000174</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>-22.14</td>
+<td style='background-color: #FFF300'>K000454</td>
+<td style='background-color: #FFF300'>Kisslinger Kristall-Glas GmbH</td>
+<td style='background-color: #FFF300'>& Co KG</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>6240</td>
+<td style='background-color: #FFF300'>Rattenberg</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4302120</td>
+<td style='background-color: #FFF300'>2023-12-07</td>
+<td style='background-color: #FFF300'>V000174</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>-19499.2</td>
+<td style='background-color: #FFF300'>K000021</td>
+<td style='background-color: #FFF300'>Meida HandelsgesmbH</td>
+<td style='background-color: #FFF300'>A&M Shop</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>1120</td>
+<td style='background-color: #FFF300'>Wien 12. Bezirk</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4400017</td>
+<td style='background-color: #FFF300'>2024-01-09</td>
+<td style='background-color: #FFF300'>V000174</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>-26.64</td>
+<td style='background-color: #FFF300'>K000454</td>
+<td style='background-color: #FFF300'>Kisslinger Kristall-Glas GmbH</td>
+<td style='background-color: #FFF300'>& Co KG</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>6240</td>
+<td style='background-color: #FFF300'>Rattenberg</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4400081</td>
+<td style='background-color: #FFF300'>2024-01-22</td>
+<td style='background-color: #FFF300'>V000174</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>-186.3</td>
+<td style='background-color: #FFF300'>K000454</td>
+<td style='background-color: #FFF300'>Kisslinger Kristall-Glas GmbH</td>
+<td style='background-color: #FFF300'>& Co KG</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>6240</td>
+<td style='background-color: #FFF300'>Rattenberg</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>RE-4400864</td>
+<td style='background-color: #FFF300'>2024-06-12</td>
+<td style='background-color: #FFF300'>V000174</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>0</td>
+<td style='background-color: #FFF300'>-48.42</td>
+<td style='background-color: #FFF300'>K000454</td>
+<td style='background-color: #FFF300'>Kisslinger Kristall-Glas GmbH</td>
+<td style='background-color: #FFF300'>& Co KG</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>6240</td>
+<td style='background-color: #FFF300'>Rattenberg</td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'> </td>
+<td style='background-color: #FFF300'>CREDIT NOTE</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+<tr>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'>All paid amount</td>
+<td style='background-color: #90EE90'>0</td>
+<td style='background-color: #FFFFFF'>All comissions</td>
+<td style='background-color: #90EE90'>0</td>
+<td style='background-color: #FFFFFF'> </td>
+<td style='background-color: #FFFFFF'> </td>
+</tr>
+ </tbody>
+                    </table>
+                    {% endblock %}
